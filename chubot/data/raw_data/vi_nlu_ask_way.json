@@ -1,0 +1,157 @@
+{
+    "nlu_data":{
+        "common_examples":[
+            {
+                "intent":"command_lead_way",
+                "text":"Dẫn t đi chơi nào"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Dẫn tôi đi thăm quan nào"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Đưa tôi đến nhà vệ sinh"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Đưa tôi đến lối ra"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Chỉ đường cho tôi đến nhà vệ sinh nào"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Đưa tôi đi một vòng xem nào"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Bạn có thể dắt tôi đi quanh chỗ này được không"
+            },
+            {
+                "intent":"ask_where",
+                "text":"Đây là đâu"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Hãy đưa tôi đi thăm quan nơi này"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"tôi muốn đi quanh nơi này"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Dẫn đường cho tôi đi"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Đưa tôi đi thăm quan nào"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"nào, Dẫn t đi một vòng xem sao"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"cùng đi nhé"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Đi chơi một chút thì sao nhỉ"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Hướng dẫn cho tôi nào"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Dẫn đường cho tôi đi"
+            },
+            {
+                "intent":"command_lead_way",
+                "text":"Đưa tôi đi quanh đây nào"
+            },
+            {
+                "intent":"ask_what",
+                "text":"đây là cái gì"
+            },
+            {
+                "intent":"ask_what",
+                "text":"đây là cái chi"
+            },
+            {
+                "intent":"ask_what",
+                "text":"ni là cái chi"
+            },
+            {
+                "intent":"command_return",
+                "text":"đi về chỗ"
+            },
+            {
+                "intent":"ask_who",
+                "text":"Tranh của ai đây",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 5,
+                        "value": "picture",
+                        "entity": "object"
+                    },
+                    {
+                        "start": 10,
+                        "end": 12,
+                        "value": "human",
+                        "entity": "human"
+                    }
+                ]
+            },
+            {
+                "intent":"ask_who",
+                "text":"Người này là ai",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 5,
+                        "value": "human",
+                        "entity": "human"
+                    },
+                    {
+                        "start": 14,
+                        "end": 16,
+                        "value": "human",
+                        "entity": "human"
+                    }
+                ]
+            },
+            {
+                "intent":"ask_who",
+                "text":"Ai đây bay",
+                "entities":[
+                    {
+                        "start":0,
+                        "end":2,
+                        "value":"human",
+                        "entity":"human"
+                    }
+                ]
+            },
+            {
+                "intent":"ask_what",
+                "text":"Vật này là cái gì vậy"
+            },
+            {
+                "intent":"ask_what",
+                "text":"cho tôi biết đây là cái gì"
+            },
+            {
+                "intent":"greeting",
+                "text":"alo alo"
+            }
+        ],
+        "regex_features": [],
+        "lookup_tables": [],
+        "entity_synonyms":[]
+    }
+}

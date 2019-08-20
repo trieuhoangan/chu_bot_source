@@ -1,0 +1,177 @@
+STT,Tên ảnh,Câu hỏi hoặc mệnh lệnh người dùng có thể đưa ra,intent
+1,,xin chào,greeting
+2,,chào bạn,greeting
+3,,chào mừng bạn,greeting
+4,,chào buổi sáng ,greeting
+5,,chào buổi chiều,greeting
+6,,hello,greeting
+7,,good morning,greeting
+8,,chào,greeting
+9,,chào cậu,greeting
+10,,chào robot,greeting
+11,,robot ơi,greeting
+12,,ê robot,greeting
+13,,xin chào robot,greeting
+14,,này robot,greeting
+15,,robot này,greeting
+16,,rất vui được làm quen,greeting
+17,,hú robot,greeting
+18,,robot kia ơi,greeting
+19,,hey robot,greeting
+20,,chào mừng robot,greeting
+21,,bạn ăn cơm chưa,chat
+22,,hôm nay bạn thế nào,chat
+23,,bye,chat
+24,,tạm biệt,chat
+25,,bạn biết bay không ,chat
+26,,bạn thích làm gì nhất,chat
+27,,bạn có thể hát một bài không,chat
+28,,good bye,chat
+29,,một cộng một bằng mấy,chat
+30,,bạn có sở thích gì không,chat
+31,,bạn có tiền không,chat
+32,,bạn thử kể một câu chuyện ma đi,chat
+33,,bạn có người yêu chưa,chat
+34,,đoán xem tôi có gì,chat
+35,,bạn là trai hay gái,chat
+36,,bạn có yêu tôi không,chat
+37,,thời tiết hôm nay thế nào,chat
+38,,bạn có bằng cấp gì không,chat
+39,,ngoài nói ra bạn có làm được thứ gì khác không,chat
+40,,chỉ số iq của bạn là bao nhiêu,chat
+41,,tên của bạn là gì,introduce
+42,,ai là người tạo ra bạn,introduce
+43,,giới thiệu về bản thân đi ,introduce
+44,,nhiệm vụ của bạn là gì,introduce
+45,,bạn bao nhiêu tuổi,introduce
+46,,bạn đến từ đâu,introduce
+47,,bạn thường làm gì lúc rảnh rỗi,introduce
+48,,bạn có thể làm được những gì,introduce
+49,,bạn là ai,introduce
+50,,sở thích của bạn là gì,introduce
+51,,ai là người đặt tên cho bạn,introduce
+52,,chất liệu để tạo ra bạn là gì,introduce
+53,,gia đình bạn có mấy người,introduce
+54,,bạn có anh chị em gì không,introduce
+55,,bạn có thích gà rán không,introduce
+56,,bạn có chỉ số EQ không,introduce
+57,,bạn thích chơi môn thể thao nào,introduce
+58,,số đo 3 vòng của bạn là bao nhiêu,introduce
+59,,kể cho mình nghe tên một vài loại mĩ phẩm bạn thường dùng,introduce
+60,,kể cho mình nghe về bố mẹ bạn,introduce
+61,,"hãy kể tên một vài món ăn mà bạn thích
+",introduce
+62,,,introduce
+63,,"ca sĩ bạn yêu thích là ai, đó là người như thế nào",introduce
+64,,bạn có thích Sơn Tùng không,introduce
+65,,,introduce
+66,,ngoài điện ra thì bạn thích ăn món gì khác ,introduce
+67,,bạn có thích xem bóng đá không,introduce
+68,,bạn thích ăn món gì,introduce
+69,,bạn có biết hát không,introduce
+70,,bạn thích con gì nhất,introduce
+71,,bạn thích môn thể thao nào,introduce
+72,,cầu thủ nào bạn yêu thích nhất,introduce
+73,,bạn có thích chơi game không,introduce
+74,,bạn có sợ cái gì không,introduce
+75,,bạn thích bài hát nào nhất,introduce
+76,,bạn cao bao nhiêu,introduce
+77,,hãy cho tôi biết số đo ba vòng của bạn đi,introduce
+78,,bạn có bay được không,introduce
+79,,bạn di chuyển như thế nào,introduce
+80,,bạn có biết làm việc nhà không,introduce
+81,,bạn dđược làm từ nguyên liệu gì,introduce
+82,,bạn có thể nấu ăn không,introduce
+83,,bạn thích trời mưa hay trời nắng,introduce
+84,,bạn có thích tập thể dục không,introduce
+85,,bạn có thể đọc sách không,introduce
+86,,bạn có biết viết không,introduce
+87,,bạn có sợ ma không,introduce
+88,,bạn đi ngủ lúc mấy giờ,introduce
+89,,bạn có sử dụng facebook không,introduce
+90,,,introduce
+91,,,
+92,,,
+93,,,
+94,,,
+95,,,
+96,,,
+97,,,
+98,,,
+99,,,
+100,,,
+101,,mật khẩu wifi phòng truyền thống là gì,ask_what
+102,,đây/kia là cái gì,ask_what
+103,,cái gì kia,ask_what
+104,,thứ trong thùng kính là cái gì thế,ask_what
+105,,đây là màu gì,ask_what
+106,,,ask_what
+107,,đây là cái gì,ask_what
+108,,,ask_what
+109,,,ask_what
+110,,đây là cái chi,ask_what
+111,,vật này là cái gì vậy,ask_what
+112,,giải thưởng này là gì,ask_what
+113,,bức ảnh này nói về cái gì,ask_what
+114,,những người trong tranh đang làm gì vậy,ask_what
+115,,,ask_what
+116,,,ask_what
+117,,,ask_what
+118,,,ask_what
+119,,,ask_what
+120,,,command_lead_way
+121,,Dẫn t đi chơi nào,command_lead_way
+122,,Dẫn tôi đi thăm quan nào,command_lead_way
+123,,Đưa tôi đến nhà vệ sinh,command_lead_way
+124,,Đưa tôi đến lối ra,command_lead_way
+125,,Chỉ đường cho tôi đến nhà vệ sinh nào,command_lead_way
+126,,Đưa tôi đi một vòng xem nào,command_lead_way
+127,,Bạn có thể dắt tôi đi quanh chỗ này được không,command_lead_way
+128,,đưa tôi đi tới các giải thưởng,command_lead_way
+129,,Hãy đưa tôi đi thăm quan nơi này,command_lead_way
+130,,tôi muốn đi quanh nơi này,command_lead_way
+131,,Dẫn đường cho tôi đi,command_lead_way
+132,,Đưa tôi đi thăm quan nào,command_lead_way
+133,,"nào, Dẫn t đi một vòng xem sao",command_lead_way
+134,,cùng đi nhé,command_lead_way
+135,,Đi chơi một chút thì sao nhỉ,command_lead_way
+136,,Hướng dẫn cho tôi nào,command_lead_way
+137,,Dẫn đường cho tôi đi,command_lead_way
+138,,Đưa tôi đi quanh đây nào,command_lead_way
+139,,Đưa tôi đi tới tượng Bác Hồ,command_lead_way
+140,,Dẫn mình đi tới khu trưng bày huân chương của đại học quốc gia,command_lead_way
+141,,nhà vệ sinh ở đâu,ask_where
+142,,Đây là đâu,ask_where
+143,,hiệu trưởng trường đại học công nghệ hiện nay là ai,ask_who
+144,,ai là nam giáo viên đẹp trai nhất đại học Công Nghệ,ask_who
+145,,ai là nữ giảng viên xinh nhất đại học Công Nghệ,ask_who
+146,,đây là ai,ask_who
+147,,ai kia,ask_who
+148,,ai đang nói thế,ask_who
+149,,ai là nhân vật chính trong bức tranh này,ask_who
+150,,,ask_who
+151,,,ask_who
+152,,,ask_who
+153,,,ask_who
+154,,cô Vân là ai,ask_who
+155,,thầy Tùng là ai,ask_who
+156,,ai là người vui tính nhất bạn đã từng gặp,ask_who
+157,,,
+158,,,
+159,,,
+160,,,
+161,1.0,Trong ảnh 1.0 là cái gì vậy,ask_what
+162,1.0,Tại sao lại có Đại Học Đông Dương,ask_why
+163,1.0,Đây là cái gì,ask_what
+164,1.0,Nguồn gốc của ảnh 1.0 là gì,ask_why
+165,1.0,Ảnh 1.0 nói về cái gì vậy,ask_what
+166,,đi về chỗ ngay,command_return
+167,,về chỗ đi ,command_return
+168,,đi về chỗ,command_return
+169,,đi về chỗ đi ,command_return
+170,,quay trở về chỗ của bạn đi,command_return
+171,,quay trở lại,command_return
+172,,về vị trí ban đầu,command_return
+173,,về,command_return
+174,,quay về,command_return
+175,,đi về,command_return

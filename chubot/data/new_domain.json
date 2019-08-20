@@ -1,0 +1,34 @@
+
+{
+    "action_domain_data" : {
+        "user_intents" : ["command_return", "greet", "introduce","command_lead_way","ask_who","ask_where","ask_what","chat"],
+        "bot_actions" : ["default_fallback", "bot_goodbye", "bot_greet","bot_return","bot_lead_way","bot_answer","bot_introduce","bot_chat" ],
+        "followup_actions" : {
+            "chat":["bot_chat"],
+            "greet" : ["bot_greet"],
+            "command_return" : ["bot_return"],
+            "introduce":["bot_introduce"],
+            "ask_who":["bot_answer"],
+            "ask_where":["bot_answer"],
+            "ask_what":  ["bot_answer"]
+        },
+        "action_templates" : {
+            "default_fallback" : ["Sorry I couldn't catch it.", "Pardon me! Can you rephrase it?"],
+            "bot_goodbye" : ["bye", "bye bye", "see you"],
+            "bot_return":["em xin phép về chỗ"],
+            "bot_greet":["xin chào bạn"],
+            "bot_introduce":["mình là FUTO"],
+            "bot_answer":["xin đơi mình 1 chút"]
+        },
+        "action_custom": {
+            "custom_retrieve_image" : {
+                "func_name" : "retrieve_image",
+                "kwargs" : {
+                    "entity" : "group",
+                    "value" : "default_value" 
+                }
+            }
+        },
+        "slots" : [{"entity" : "group", "type" : "text"}]
+    }
+}
