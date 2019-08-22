@@ -5,14 +5,16 @@ import sklearn_crfsuite
 import random
 import io
 
-class ChuBotBrain():
 
-    #TODO maybe init models folder here instead of handling in train*
+class ChuBotBrain():
+    # TODO maybe init models folder here instead of handling in train*
     def __init__(self, name, language='vi'):
         self.name = name
         self.model_folder = "./models"
-        self.crf_model_path = os.path.join("./models", self.name + "_NERCRF.pkl")
-        self.intent_cls_model_path = os.path.join("./models", self.name + "_intent_classification.pkl")
+        self.crf_model_path = os.path.join(
+            "./models", self.name + "_NERCRF.pkl")
+        self.intent_cls_model_path = os.path.join(
+            "./models", self.name + "_intent_classification.pkl")
         self.language = language
         self.common_examples = []
         self.regex_features = []
@@ -20,47 +22,47 @@ class ChuBotBrain():
         self.lookup_tables = []
 
         # mkdir if not existing
-        #TODO handle existing folder
+        # TODO handle existing folder
         try:
             os.makedirs(self.model_folder)
         except OSError:
-            print ("Creation of the directory %s failed (/Folder exists)" % self.model_folder)
+            print("Creation of the directory %s failed (/Folder exists)" %
+                  self.model_folder)
         else:
-            print ("Successfully created the directory %s " % self.model_folder)
+            print("Successfully created the directory %s " % self.model_folder)
 
         # load spacy nlp for pos tag
         # TODO handle loading exception
         if language == "en":
             self.nlp = spacy.load('en_core_web_sm')
         elif language == "vi":
-            self.nlp = spacy.load('vi_core_news_md')
+            self.nlp = spacy.load('vi_spacy_model')
 
     def load_data(self, datafile, **kwargs):
-        #TODO handle exception
-        with open(datafile, 'r',encoding="utf8") as f:
+        # TODO handle exception
+        with open(datafile, 'r', encoding="utf8") as f:
             data = json.loads(f.read())
 
-        #data fields
+        # data fields
         for cell in data['nlu_data']['common_examples']:
             # if cell.get("text") == None:
             #     continue
             self.common_examples.append(cell)
-        
+
         for cell in data['nlu_data']['entity_synonyms']:
             self.entity_synonyms.append(cell)
-        
+
         for cell in data['nlu_data']['regex_features']:
             self.regex_features.append(cell)
-        
+
         for cell in data['nlu_data']['lookup_tables']:
             self.lookup_tables.append(cell)
-        
 
     def train(self, **kwargs):
         """Training
             train nercrf and intent classification models
         """
-        crf_meta = self.train_nercrf( **kwargs)
+        crf_meta = self.train_nercrf(**kwargs)
         clf_meta = self.train_intent_classification(**kwargs)
 
         # ** implies that the argument is a dictionary.
@@ -75,7 +77,7 @@ class ChuBotBrain():
         """
         dataset = self.create_dataset()
 
-        #TODO should add to kwargs or not
+        # TODO should add to kwargs or not
         if train_test_ratio < 1.0:
             random.shuffle(dataset)
             train_sents = dataset[:int(len(dataset)*train_test_ratio)]
@@ -91,25 +93,25 @@ class ChuBotBrain():
             x_train = [self.sent2features(s) for s in train_sents]
             y_train = [self.sent2labels(s) for s in train_sents]
 
-        #TODO handle invalid train_test_ratio (<=0)
+        # TODO handle invalid train_test_ratio (<=0)
 
         # training
         crf = sklearn_crfsuite.CRF(
-                algorithm='lbfgs',
-                c1=0.1,
-                c2=0.1,
-                max_iterations=50,
-        #         all_possible_transitions=False,
-                verbose=0
+            algorithm='lbfgs',
+            c1=0.1,
+            c2=0.1,
+            max_iterations=50,
+            #         all_possible_transitions=False,
+            verbose=0
         )
         crf.fit(x_train, y_train)
 
-        #TODO add to log? or using debug flag
+        # TODO add to log? or using debug flag
         print("train accuracy", crf.score(x_train, y_train))
         if train_test_ratio < 1.0:
             print("test accuracy", crf.score(x_test, y_test))
 
-        #save model
+        # save model
         from sklearn.externals import joblib
 
         joblib.dump(crf, self.crf_model_path)
@@ -123,29 +125,31 @@ class ChuBotBrain():
         """
         from sklearn.externals import joblib
 
-        #TODO Handle load model exception
+        # TODO Handle load model exception
         crf = joblib.load(self.crf_model_path)
 
-        #vectorize the inmessage
+        # vectorize the inmessage
         indoc = self.nlp(inmessage)
-        insent = [ (ii.text, ii.tag_, 'N/A') for ii in indoc]
+        insent = [(ii.text, ii.tag_, 'N/A') for ii in indoc]
         insent_features = self.sent2features(insent)
         ent_probs = crf.predict_marginals_single(insent_features)
         # max of probability of each token
-        ent_probs_sorted = [sorted(eprob.items(), key= lambda kv:(kv[1], kv[0]))[-1] for eprob in ent_probs]
-        #TODO NOTE must handle entity with multiple tokens --> B,L, I tags not only U
-        #TODO should change bilou to bio tag?
+        ent_probs_sorted = [sorted(eprob.items(), key=lambda kv:(
+            kv[1], kv[0]))[-1] for eprob in ent_probs]
+        # TODO NOTE must handle entity with multiple tokens --> B,L, I tags not only U
+        # TODO should change bilou to bio tag?
 
-        ent_probs_idx = [(i, label, conf) for i, (label, conf) in enumerate(ent_probs_sorted) if label != "O" ]
+        ent_probs_idx = [(i, label, conf) for i, (label, conf)
+                         in enumerate(ent_probs_sorted) if label != "O"]
 
-        #also get the default value of the entity based on the entity_synonyms
-        #TODO handle synonyms here!
+        # also get the default value of the entity based on the entity_synonyms
+        # TODO handle synonyms here!
         tagged_entities = [
-                {'start': indoc[ix].idx,
-                  'end': indoc[ix].idx + len(indoc[ix].text),
-                  'value': indoc[ix].text,
-                  'entity': label[2:],
-                  'confidence': conf} for ix, label, conf in ent_probs_idx]
+            {'start': indoc[ix].idx,
+             'end': indoc[ix].idx + len(indoc[ix].text),
+             'value': indoc[ix].text,
+             'entity': label[2:],
+             'confidence': conf} for ix, label, conf in ent_probs_idx]
 
         return tagged_entities
 
@@ -159,26 +163,27 @@ class ChuBotBrain():
         from sklearn.svm import SVC
         import cloudpickle
 
-        #tokenize using spacy
-        x_docs = [self.nlp(example['text']) for example in self.common_examples]
+        # tokenize using spacy
+        x_docs = [self.nlp(example['text'])
+                  for example in self.common_examples]
         y_labels = [example['intent'] for example in self.common_examples]
 
-        #extract tokens from Spacy Doc objects
+        # extract tokens from Spacy Doc objects
         x_tokenized = [[token.text for token in doc] for doc in x_docs]
         # join tokens
         x_join_tokens = [" ".join(token_list) for token_list in x_tokenized]
 
-        #vectorize x
-        #TODO Word embedding
+        # vectorize x
+        # TODO Word embedding
         tfidf = TfidfVectorizer()
         x_train = tfidf.fit_transform(x_join_tokens)
-        #print(x_train[0].todense())   ## x_train is in compressed sparse row format
+        # print(x_train[0].todense())   ## x_train is in compressed sparse row format
         # transform y
         le = LabelEncoder()
         y_train = le.fit_transform(y_labels)
 
-        #classifier
-        #TODO do a gridsearch for xgboost or just a simple linear svc?
+        # classifier
+        # TODO do a gridsearch for xgboost or just a simple linear svc?
         clf = SVC(kernel='linear', C=1, probability=True)
         # clf = xgboost.XGBClassifier(max_depth=7,
         #                    min_child_weight=1,
@@ -198,7 +203,7 @@ class ChuBotBrain():
         #                    verbosity=3)
         clf.fit(x_train, y_train)
 
-        #save model
+        # save model
         # 1. tfidf model
         # 2. labels of intents from LabelEncoder
         # 3. classification model
@@ -208,57 +213,56 @@ class ChuBotBrain():
 
         return {"path_to_clf_model": self.intent_cls_model_path}
 
-
     def predict_intent(self, inmessage):
         """inmessage: Text -> sorted List[Tuple(probability: Float, intent: Text)]
         """
         import cloudpickle
 
-        #load models
-        #TODO handle exception?
+        # load models
+        # TODO handle exception?
         with io.open(self.intent_cls_model_path, "rb") as f:
             tfidf, le, clf = cloudpickle.load(f)
 
-        #Tokenize message using spacy nlp
+        # Tokenize message using spacy nlp
         # Vectorize using tfidf
         inmessage_tokens = [token.text for token in self.nlp(inmessage)]
         inmessage_join_tokens = " ".join(inmessage_tokens)
         inmessage_vector = tfidf.transform([inmessage_join_tokens])
-        #predict the probabilies
+        # predict the probabilies
         y_probs = clf.predict_proba(inmessage_vector)
 
-        #labels of each classes
+        # labels of each classes
         labels = le.inverse_transform(clf.classes_)
         # print(labels)
         y_probs_with_labels = list(zip(y_probs[0], labels))
         # sort the probabilities retrieving the indices of
         # the elements in sorted order
-        #TODO, try this method: sorted_indices = np.fliplr(np.argsort(pred_result, axis=1))
-        y_probs_with_labels.sort(key = lambda v: -v[0])
+        # TODO, try this method: sorted_indices = np.fliplr(np.argsort(pred_result, axis=1))
+        y_probs_with_labels.sort(key=lambda v: -v[0])
 
         return y_probs_with_labels
 
     @staticmethod
     def load_json_data(datafile):
-        #deprecated!!!
-        #TODO handle exception here
+        # deprecated!!!
+        # TODO handle exception here
         with open(datafile, 'r') as f:
             data = json.loads(f.read())
 
-        #data fields
+        # data fields
         common_examples = data['nlu_data']['common_examples']
         entity_synonyms = data['nlu_data']['entity_synonyms']
         regex_features = data['nlu_data']['regex_features']
         lookup_tables = data['nlu_data']['lookup_tables']
 
-        #reformat entity_synonyms
+        # reformat entity_synonyms
         return (common_examples, entity_synonyms, regex_features, lookup_tables)
 
     def create_dataset(self, **kwargs):
         """dataset is a list of List[List[Tuple[token, POS-tag, entity]]] for NERCRF
         """
 
-        #dataset
+        # dataset
         dataset = []
 
         print(self.common_examples)
@@ -266,22 +270,23 @@ class ChuBotBrain():
             #  List[(start_index, end_index, entity)]
             # if example.get('text')==None:
             #     continue
-            entity_offsets = [ (e["start"], e["end"], e["entity"])
-                for e in example.get("entities", [])
-            ]
+            entity_offsets = [(e["start"], e["end"], e["entity"])
+                              for e in example.get("entities", [])
+                              ]
 
             # tokenize each example and get pos_tag
             # print(example["text"])
-            
-            
+
             doc = self.nlp(example["text"])
 
             # bilou tags :: a list of tags
             # for example
             # tokens :: [show, me, a, mexican, place, in, the, centre]
             # BILOU  :: [O,    O,  O,'U-cuisine', O,   O, O, 'U-location']
-            bilou_tags = spacy.gold.biluo_tags_from_offsets(doc, entity_offsets)
-            example_data = [(token.text, token.tag_, bilou_tags[i]) for i, token in enumerate(doc)]
+            bilou_tags = spacy.gold.biluo_tags_from_offsets(
+                doc, entity_offsets)
+            example_data = [(token.text, token.tag_, bilou_tags[i])
+                            for i, token in enumerate(doc)]
             dataset.append(example_data)
 
         return dataset
@@ -336,5 +341,5 @@ class ChuBotBrain():
         return [label for token, postag, label in sent]
 
     def sent2tokens(self, sent):
-        #token is the word!
+        # token is the word!
         return [token for token, postag, label in sent]

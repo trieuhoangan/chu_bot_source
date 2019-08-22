@@ -1,1 +1,1632 @@
-{"nlu_data": {"common_examples": [{"text": "xin chào", "intent": "greeting"}, {"text": "chào bạn", "intent": "greeting"}, {"text": "chào mừng bạn", "intent": "greeting"}, {"text": "chào buổi sáng ", "intent": "greeting"}, {"text": "chào buổi chiều", "intent": "greeting", "entities": [{"start": 10, "end": 13, "entity": "object", "value": "question"}]}, {"text": "hello", "intent": "greeting"}, {"text": "good morning", "intent": "greeting", "entities": [{"start": 8, "end": 10, "entity": "location", "value": "position"}]}, {"text": "chào", "intent": "greeting"}, {"text": "chào cậu", "intent": "greeting"}, {"text": "chào robot", "intent": "greeting"}, {"text": "robot ơi", "intent": "greeting"}, {"text": "ê robot", "intent": "greeting"}, {"text": "xin chào robot", "intent": "greeting"}, {"text": "này robot", "intent": "greeting", "entities": [{"start": 0, "end": 3, "entity": "location", "value": "position"}]}, {"text": "robot này", "intent": "greeting", "entities": [{"start": 6, "end": 9, "entity": "location", "value": "position"}]}, {"text": "rất vui được làm quen", "intent": "greeting"}, {"text": "hú robot", "intent": "greeting"}, {"text": "robot kia ơi", "intent": "greeting", "entities": [{"start": 6, "end": 9, "entity": "location", "value": "position"}]}, {"text": "hey robot", "intent": "greeting"}, {"text": "chào mừng robot", "intent": "greeting"}, {"text": "bạn ăn cơm chưa", "intent": "chat"}, {"text": "hôm nay bạn thế nào", "intent": "chat"}, {"text": "bye", "intent": "chat"}, {"text": "tạm biệt", "intent": "chat"}, {"text": "bạn biết bay không ", "intent": "chat"}, {"text": "bạn thích làm gì nhất", "intent": "chat", "entities": [{"start": 14, "end": 16, "entity": "object", "value": "question"}]}, {"text": "bạn có thể hát một bài không", "intent": "chat"}, {"text": "good bye", "intent": "chat"}, {"text": "một cộng một bằng mấy", "intent": "chat"}, {"text": "bạn có sở thích gì không", "intent": "chat", "entities": [{"start": 16, "end": 18, "entity": "object", "value": "question"}]}, {"text": "bạn có tiền không", "intent": "chat"}, {"text": "bạn thử kể một câu chuyện ma đi", "intent": "chat"}, {"text": "bạn có người yêu chưa", "intent": "chat", "entities": [{"start": 7, "end": 12, "entity": "human", "value": "human"}]}, {"text": "đoán xem tôi có gì", "intent": "chat", "entities": [{"start": 16, "end": 18, "entity": "object", "value": "question"}]}, {"text": "bạn là trai hay gái", "intent": "chat", "entities": [{"start": 9, "end": 11, "entity": "human", "value": "question"}]}, {"text": "bạn có yêu tôi không", "intent": "chat"}, {"text": "thời tiết hôm nay thế nào", "intent": "chat"}, {"text": "bạn có bằng cấp gì không", "intent": "chat", "entities": [{"start": 16, "end": 18, "entity": "object", "value": "question"}]}, {"text": "ngoài nói ra bạn có làm được thứ gì khác không", "intent": "chat", "entities": [{"start": 33, "end": 35, "entity": "object", "value": "question"}]}, {"text": "chỉ số iq của bạn là bao nhiêu", "intent": "chat"}, {"text": "tên của bạn là gì", "intent": "introduce", "entities": [{"start": 15, "end": 17, "entity": "object", "value": "question"}]}, {"text": "ai là người tạo ra bạn", "intent": "introduce", "entities": [{"start": 6, "end": 11, "entity": "human", "value": "human"}, {"start": 0, "end": 2, "entity": "human", "value": "question"}]}, {"text": "giới thiệu về bản thân đi ", "intent": "introduce"}, {"text": "nhiệm vụ của bạn là gì", "intent": "introduce", "entities": [{"start": 20, "end": 22, "entity": "object", "value": "question"}]}, {"text": "bạn bao nhiêu tuổi", "intent": "introduce"}, {"text": "bạn đến từ đâu", "intent": "introduce", "entities": [{"start": 11, "end": 14, "entity": "location", "value": "question"}]}, {"text": "bạn thường làm gì lúc rảnh rỗi", "intent": "introduce", "entities": [{"start": 23, "end": 26, "entity": "object", "value": "picture"}, {"start": 15, "end": 17, "entity": "object", "value": "question"}]}, {"text": "bạn có thể làm được những gì", "intent": "introduce", "entities": [{"start": 26, "end": 28, "entity": "object", "value": "question"}]}, {"text": "bạn là ai", "intent": "introduce", "entities": [{"start": 7, "end": 9, "entity": "human", "value": "question"}]}, {"text": "sở thích của bạn là gì", "intent": "introduce", "entities": [{"start": 20, "end": 22, "entity": "object", "value": "question"}]}, {"text": "ai là người đặt tên cho bạn", "intent": "introduce", "entities": [{"start": 6, "end": 11, "entity": "human", "value": "human"}, {"start": 0, "end": 2, "entity": "human", "value": "question"}]}, {"text": "chất liệu để tạo ra bạn là gì", "intent": "introduce", "entities": [{"start": 27, "end": 29, "entity": "object", "value": "question"}]}, {"text": "gia đình bạn có mấy người", "intent": "introduce", "entities": [{"start": 20, "end": 25, "entity": "human", "value": "human"}]}, {"text": "bạn có anh chị em gì không", "intent": "introduce", "entities": [{"start": 18, "end": 20, "entity": "object", "value": "question"}]}, {"text": "bạn có thích gà rán không", "intent": "introduce"}, {"text": "bạn có chỉ số eq không", "intent": "introduce"}, {"text": "bạn thích chơi môn thể thao nào", "intent": "introduce", "entities": [{"start": 15, "end": 17, "entity": "location", "value": "position"}]}, {"text": "số đo 3 vòng của bạn là bao nhiêu", "intent": "introduce"}, {"text": "kể cho mình nghe tên một vài loại mĩ phẩm bạn thường dùng", "intent": "introduce"}, {"text": "kể cho mình nghe về bố mẹ bạn", "intent": "introduce"}, {"text": "hãy kể tên một vài món ăn mà bạn thích\n", "intent": "introduce"}, {"text": "ca sĩ bạn yêu thích là ai, đó là người như thế nào", "intent": "introduce", "entities": [{"start": 33, "end": 38, "entity": "human", "value": "human"}, {"start": 23, "end": 25, "entity": "human", "value": "question"}, {"start": 27, "end": 29, "entity": "location", "value": "position"}]}, {"text": "bạn có thích sơn tùng không", "intent": "introduce"}, {"text": "ngoài điện ra thì bạn thích ăn món gì khác ", "intent": "introduce", "entities": [{"start": 35, "end": 37, "entity": "object", "value": "question"}]}, {"text": "bạn có thích xem bóng đá không", "intent": "introduce"}, {"text": "bạn thích ăn món gì", "intent": "introduce", "entities": [{"start": 17, "end": 19, "entity": "object", "value": "question"}]}, {"text": "bạn có biết hát không", "intent": "introduce"}, {"text": "bạn thích con gì nhất", "intent": "introduce", "entities": [{"start": 14, "end": 16, "entity": "object", "value": "question"}]}, {"text": "bạn thích môn thể thao nào", "intent": "introduce", "entities": [{"start": 10, "end": 12, "entity": "location", "value": "position"}]}, {"text": "cầu thủ nào bạn yêu thích nhất", "intent": "introduce"}, {"text": "bạn có thích chơi game không", "intent": "introduce"}, {"text": "bạn có sợ cái gì không", "intent": "introduce", "entities": [{"start": 14, "end": 16, "entity": "object", "value": "question"}, {"start": 10, "end": 16, "entity": "object", "value": "question"}]}, {"text": "bạn thích bài hát nào nhất", "intent": "introduce"}, {"text": "bạn cao bao nhiêu", "intent": "introduce"}, {"text": "hãy cho tôi biết số đo ba vòng của bạn đi", "intent": "introduce"}, {"text": "bạn có bay được không", "intent": "introduce"}, {"text": "bạn di chuyển như thế nào", "intent": "introduce"}, {"text": "bạn có biết làm việc nhà không", "intent": "introduce", "entities": [{"start": 21, "end": 24, "entity": "object", "value": "building"}]}, {"text": "bạn dđược làm từ nguyên liệu gì", "intent": "introduce", "entities": [{"start": 29, "end": 31, "entity": "object", "value": "question"}]}, {"text": "bạn có thể nấu ăn không", "intent": "introduce"}, {"text": "bạn thích trời mưa hay trời nắng", "intent": "introduce"}, {"text": "bạn có thích tập thể dục không", "intent": "introduce"}, {"text": "bạn có thể đọc sách không", "intent": "introduce"}, {"text": "bạn có biết viết không", "intent": "introduce"}, {"text": "bạn có sợ ma không", "intent": "introduce"}, {"text": "bạn đi ngủ lúc mấy giờ", "intent": "introduce"}, {"text": "bạn có sử dụng facebook không", "intent": "introduce"}, {"text": "mật khẩu wifi phòng truyền thống là gì", "intent": "ask_what", "entities": [{"start": 36, "end": 38, "entity": "object", "value": "question"}]}, {"text": "đây/kia là cái gì", "intent": "ask_what", "entities": [{"start": 15, "end": 17, "entity": "object", "value": "question"}, {"start": 11, "end": 17, "entity": "object", "value": "question"}, {"start": 0, "end": 3, "entity": "location", "value": "position"}, {"start": 4, "end": 7, "entity": "location", "value": "position"}]}, {"text": "cái gì kia", "intent": "ask_what", "entities": [{"start": 4, "end": 6, "entity": "object", "value": "question"}, {"start": 0, "end": 6, "entity": "object", "value": "question"}, {"start": 7, "end": 10, "entity": "location", "value": "position"}]}, {"text": "thứ trong thùng kính là cái gì thế", "intent": "ask_what", "entities": [{"start": 28, "end": 30, "entity": "object", "value": "question"}, {"start": 24, "end": 30, "entity": "object", "value": "question"}]}, {"text": "đây là màu gì", "intent": "ask_what", "entities": [{"start": 11, "end": 13, "entity": "object", "value": "question"}, {"start": 0, "end": 3, "entity": "location", "value": "position"}]}, {"text": "đây là cái gì", "intent": "ask_what", "entities": [{"start": 11, "end": 13, "entity": "object", "value": "question"}, {"start": 7, "end": 13, "entity": "object", "value": "question"}, {"start": 0, "end": 3, "entity": "location", "value": "position"}]}, {"text": "đây là cái chi", "intent": "ask_what", "entities": [{"start": 11, "end": 14, "entity": "object", "value": "question"}, {"start": 7, "end": 14, "entity": "object", "value": "question"}, {"start": 0, "end": 3, "entity": "location", "value": "position"}]}, {"text": "vật này là cái gì vậy", "intent": "ask_what", "entities": [{"start": 15, "end": 17, "entity": "object", "value": "question"}, {"start": 11, "end": 17, "entity": "object", "value": "question"}, {"start": 4, "end": 7, "entity": "location", "value": "position"}]}, {"text": "giải thưởng này là gì", "intent": "ask_what", "entities": [{"start": 0, "end": 11, "entity": "object", "value": "cup"}, {"start": 19, "end": 21, "entity": "object", "value": "question"}, {"start": 12, "end": 15, "entity": "location", "value": "position"}]}, {"text": "bức ảnh này nói về cái gì", "intent": "ask_what", "entities": [{"start": 0, "end": 7, "entity": "object", "value": "picture"}, {"start": 4, "end": 7, "entity": "object", "value": "picture"}, {"start": 23, "end": 25, "entity": "object", "value": "question"}, {"start": 19, "end": 25, "entity": "object", "value": "question"}, {"start": 8, "end": 11, "entity": "location", "value": "position"}]}, {"text": "những người trong tranh đang làm gì vậy", "intent": "ask_what", "entities": [{"start": 33, "end": 35, "entity": "object", "value": "question"}, {"start": 6, "end": 11, "entity": "human", "value": "human"}]}, {"text": "dẫn t đi chơi nào", "intent": "command_lead_way"}, {"text": "dẫn tôi đi thăm quan nào", "intent": "command_lead_way"}, {"text": "đưa tôi đến nhà vệ sinh", "intent": "command_lead_way", "entities": [{"start": 12, "end": 15, "entity": "object", "value": "building"}, {"start": 12, "end": 23, "entity": "location", "value": "place"}]}, {"text": "đưa tôi đến lối ra", "intent": "command_lead_way", "entities": [{"start": 12, "end": 18, "entity": "location", "value": "place"}]}, {"text": "chỉ đường cho tôi đến nhà vệ sinh nào", "intent": "command_lead_way", "entities": [{"start": 22, "end": 25, "entity": "object", "value": "building"}, {"start": 22, "end": 33, "entity": "location", "value": "place"}]}, {"text": "đưa tôi đi một vòng xem nào", "intent": "command_lead_way"}, {"text": "bạn có thể dắt tôi đi quanh chỗ này được không", "intent": "command_lead_way", "entities": [{"start": 32, "end": 35, "entity": "location", "value": "position"}]}, {"text": "đưa tôi đi tới các giải thưởng", "intent": "command_lead_way", "entities": [{"start": 19, "end": 30, "entity": "object", "value": "cup"}]}, {"text": "hãy đưa tôi đi thăm quan nơi này", "intent": "command_lead_way", "entities": [{"start": 29, "end": 32, "entity": "location", "value": "position"}]}, {"text": "tôi muốn đi quanh nơi này", "intent": "command_lead_way", "entities": [{"start": 22, "end": 25, "entity": "location", "value": "position"}]}, {"text": "dẫn đường cho tôi đi", "intent": "command_lead_way"}, {"text": "đưa tôi đi thăm quan nào", "intent": "command_lead_way"}, {"text": "nào, dẫn t đi một vòng xem sao", "intent": "command_lead_way"}, {"text": "cùng đi nhé", "intent": "command_lead_way"}, {"text": "đi chơi một chút thì sao nhỉ", "intent": "command_lead_way"}, {"text": "hướng dẫn cho tôi nào", "intent": "command_lead_way"}, {"text": "dẫn đường cho tôi đi", "intent": "command_lead_way"}, {"text": "đưa tôi đi quanh đây nào", "intent": "command_lead_way", "entities": [{"start": 17, "end": 20, "entity": "location", "value": "position"}]}, {"text": "đưa tôi đi tới tượng bác hồ", "intent": "command_lead_way", "entities": [{"start": 15, "end": 20, "entity": "object", "value": "statue"}]}, {"text": "dẫn mình đi tới khu trưng bày huân chương của đại học quốc gia", "intent": "command_lead_way", "entities": [{"start": 30, "end": 41, "entity": "object", "value": "cup"}, {"start": 46, "end": 53, "entity": "object", "value": "building"}, {"start": 46, "end": 62, "entity": "university", "value": "university"}]}, {"text": "nhà vệ sinh ở đâu", "intent": "ask_where", "entities": [{"start": 0, "end": 3, "entity": "object", "value": "building"}, {"start": 0, "end": 11, "entity": "location", "value": "place"}, {"start": 14, "end": 17, "entity": "location", "value": "question"}, {"start": 12, "end": 17, "entity": "location", "value": "question"}]}, {"text": "đây là đâu", "intent": "ask_where", "entities": [{"start": 0, "end": 3, "entity": "location", "value": "position"}, {"start": 7, "end": 10, "entity": "location", "value": "question"}]}, {"text": "hiệu trưởng trường đại học công nghệ hiện nay là ai", "intent": "ask_who", "entities": [{"start": 19, "end": 26, "entity": "object", "value": "building"}, {"start": 0, "end": 11, "entity": "human", "value": "job"}, {"start": 49, "end": 51, "entity": "human", "value": "question"}, {"start": 19, "end": 36, "entity": "university", "value": "university"}]}, {"text": "ai là nam giáo viên đẹp trai nhất đại học công nghệ", "intent": "ask_who", "entities": [{"start": 34, "end": 41, "entity": "object", "value": "building"}, {"start": 10, "end": 19, "entity": "human", "value": "job"}, {"start": 0, "end": 2, "entity": "human", "value": "question"}, {"start": 34, "end": 51, "entity": "university", "value": "university"}]}, {"text": "ai là nữ giảng viên xinh nhất đại học công nghệ", "intent": "ask_who", "entities": [{"start": 30, "end": 37, "entity": "object", "value": "building"}, {"start": 9, "end": 19, "entity": "human", "value": "job"}, {"start": 0, "end": 2, "entity": "human", "value": "question"}, {"start": 30, "end": 47, "entity": "university", "value": "university"}]}, {"text": "đây là ai", "intent": "ask_who", "entities": [{"start": 7, "end": 9, "entity": "human", "value": "question"}, {"start": 0, "end": 3, "entity": "location", "value": "position"}]}, {"text": "ai kia", "intent": "ask_who", "entities": [{"start": 0, "end": 2, "entity": "human", "value": "question"}, {"start": 3, "end": 6, "entity": "location", "value": "position"}]}, {"text": "ai đang nói thế", "intent": "ask_who", "entities": [{"start": 0, "end": 2, "entity": "human", "value": "question"}]}, {"text": "ai là nhân vật chính trong bức tranh này", "intent": "ask_who", "entities": [{"start": 27, "end": 36, "entity": "object", "value": "picture"}, {"start": 0, "end": 2, "entity": "human", "value": "question"}, {"start": 37, "end": 40, "entity": "location", "value": "position"}]}, {"text": "cô vân là ai", "intent": "ask_who", "entities": [{"start": 10, "end": 12, "entity": "human", "value": "question"}]}, {"text": "thầy tùng là ai", "intent": "ask_who", "entities": [{"start": 13, "end": 15, "entity": "human", "value": "question"}]}, {"text": "ai là người vui tính nhất bạn đã từng gặp", "intent": "ask_who", "entities": [{"start": 6, "end": 11, "entity": "human", "value": "human"}, {"start": 0, "end": 2, "entity": "human", "value": "question"}]}, {"text": "trong ảnh 1.0 là cái gì vậy", "intent": "ask_what", "entities": [{"start": 6, "end": 9, "entity": "object", "value": "picture"}, {"start": 21, "end": 23, "entity": "object", "value": "question"}, {"start": 17, "end": 23, "entity": "object", "value": "question"}]}, {"text": "tại sao lại có đại học đông dương", "intent": "ask_why", "entities": [{"start": 15, "end": 22, "entity": "object", "value": "building"}, {"start": 15, "end": 33, "entity": "university", "value": "university"}]}, {"text": "đây là cái gì", "intent": "ask_what", "entities": [{"start": 11, "end": 13, "entity": "object", "value": "question"}, {"start": 7, "end": 13, "entity": "object", "value": "question"}, {"start": 0, "end": 3, "entity": "location", "value": "position"}]}, {"text": "nguồn gốc của ảnh 1.0 là gì", "intent": "ask_why", "entities": [{"start": 14, "end": 17, "entity": "object", "value": "picture"}, {"start": 25, "end": 27, "entity": "object", "value": "question"}]}, {"text": "ảnh 1.0 nói về cái gì vậy", "intent": "ask_what", "entities": [{"start": 0, "end": 3, "entity": "object", "value": "picture"}, {"start": 19, "end": 21, "entity": "object", "value": "question"}, {"start": 15, "end": 21, "entity": "object", "value": "question"}]}, {"text": "đi về chỗ ngay", "intent": "command_return"}, {"text": "về chỗ đi ", "intent": "command_return"}, {"text": "đi về chỗ", "intent": "command_return"}, {"text": "đi về chỗ đi ", "intent": "command_return"}, {"text": "quay trở về chỗ của bạn đi", "intent": "command_return"}, {"text": "quay trở lại", "intent": "command_return"}, {"text": "về vị trí ban đầu", "intent": "command_return"}, {"text": "về", "intent": "command_return"}, {"text": "quay về", "intent": "command_return"}, {"text": "đi về", "intent": "command_return"}], "regex_features": [], "lookup_tables": [], "entity_synonyms": [{"entity": "object", "original_value": "picture", "synonyms": ["bức ảnh", "ảnh", "tấm ảnh", "bức tranh", "bản đồ"]}, {"entity": "object", "original_value": "cup", "synonyms": ["cúp", "huân chương", "kỷ niệm chương", "giải thưởng"]}, {"entity": "object", "original_value": "statue", "synonyms": ["tượng", "bức tượng"]}, {"entity": "object", "original_value": "building", "synonyms": ["tòa nhà", "công trình", "nhà", "đại học", "lối vào"]}, {"entity": "object", "original_value": "meeting", "synonyms": ["cuộc họp", "hội nghị"]}, {"entity": "object", "original_value": "board", "synonyms": ["bảng biểu", "bảng"]}, {"entity": "object", "original_value": "question", "synonyms": ["gì", "cái gì", "chi", "cái chi"]}, {"entity": "human", "original_value": "job", "synonyms": ["hiệu trưởng", "giáo viên", "giảng viên", "giáo sư", "tiến sĩ", "giám đốc", "giáo sư", "nhà giáo", "cán bộ", "chủ tịch nước", "tác giả"]}, {"entity": "human", "original_value": "human", "synonyms": ["người"]}, {"entity": "human", "original_value": "question", "synonyms": ["ai", "người nào"]}, {"entity": "location", "original_value": "position", "synonyms": ["đây", "này", "kia", "đó", "nọ", "ni", "mô"]}, {"entity": "location", "original_value": "place", "synonyms": ["nhà vệ sinh", "lối ra", "lối vào"]}, {"entity": "location", "original_value": "question", "synonyms": ["đâu", "ở đâu", "chỗ nào"]}, {"entity": "university", "original_value": "university", "synonyms": ["đại học công nghệ", "đại học quốc gia", "đại học đông dương"]}]}}
+{
+    "nlu_data": {
+        "common_examples": [
+            {
+                "text": "xin chào",
+                "intent": "greeting"
+            },
+            {
+                "text": "chào bạn",
+                "intent": "greeting"
+            },
+            {
+                "text": "chào mừng bạn",
+                "intent": "greeting"
+            },
+            {
+                "text": "chào buổi sáng ",
+                "intent": "greeting"
+            },
+            {
+                "text": "chào buổi chiều",
+                "intent": "greeting",
+                "entities": [
+                    {
+                        "start": 10,
+                        "end": 13,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "hello",
+                "intent": "greeting"
+            },
+            {
+                "text": "good morning",
+                "intent": "greeting",
+                "entities": [
+                    {
+                        "start": 8,
+                        "end": 10,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "chào",
+                "intent": "greeting"
+            },
+            {
+                "text": "chào cậu",
+                "intent": "greeting"
+            },
+            {
+                "text": "chào robot",
+                "intent": "greeting"
+            },
+            {
+                "text": "robot ơi",
+                "intent": "greeting"
+            },
+            {
+                "text": "ê robot",
+                "intent": "greeting"
+            },
+            {
+                "text": "xin chào robot",
+                "intent": "greeting"
+            },
+            {
+                "text": "này robot",
+                "intent": "greeting",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "robot này",
+                "intent": "greeting",
+                "entities": [
+                    {
+                        "start": 6,
+                        "end": 9,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "rất vui được làm quen",
+                "intent": "greeting"
+            },
+            {
+                "text": "hú robot",
+                "intent": "greeting"
+            },
+            {
+                "text": "robot kia ơi",
+                "intent": "greeting",
+                "entities": [
+                    {
+                        "start": 6,
+                        "end": 9,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "hey robot",
+                "intent": "greeting"
+            },
+            {
+                "text": "chào mừng robot",
+                "intent": "greeting"
+            },
+            {
+                "text": "bạn ăn cơm chưa",
+                "intent": "chat"
+            },
+            {
+                "text": "hôm nay bạn thế nào",
+                "intent": "chat"
+            },
+            {
+                "text": "bye",
+                "intent": "chat"
+            },
+            {
+                "text": "tạm biệt",
+                "intent": "chat"
+            },
+            {
+                "text": "bạn biết bay không ",
+                "intent": "chat"
+            },
+            {
+                "text": "bạn thích làm gì nhất",
+                "intent": "chat",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 16,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có thể hát một bài không",
+                "intent": "chat"
+            },
+            {
+                "text": "good bye",
+                "intent": "chat"
+            },
+            {
+                "text": "một cộng một bằng mấy",
+                "intent": "chat"
+            },
+            {
+                "text": "bạn có sở thích gì không",
+                "intent": "chat",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có tiền không",
+                "intent": "chat"
+            },
+            {
+                "text": "bạn thử kể một câu chuyện ma đi",
+                "intent": "chat"
+            },
+            {
+                "text": "bạn có người yêu chưa",
+                "intent": "chat",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 12,
+                        "entity": "human",
+                        "value": "human"
+                    }
+                ]
+            },
+            {
+                "text": "đoán xem tôi có gì",
+                "intent": "chat",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn là trai hay gái",
+                "intent": "chat",
+                "entities": [
+                    {
+                        "start": 9,
+                        "end": 11,
+                        "entity": "human",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có yêu tôi không",
+                "intent": "chat"
+            },
+            {
+                "text": "thời tiết hôm nay thế nào",
+                "intent": "chat"
+            },
+            {
+                "text": "bạn có bằng cấp gì không",
+                "intent": "chat",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "ngoài nói ra bạn có làm được thứ gì khác không",
+                "intent": "chat",
+                "entities": [
+                    {
+                        "start": 33,
+                        "end": 35,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "chỉ số iq của bạn là bao nhiêu",
+                "intent": "chat"
+            },
+            {
+                "text": "tên của bạn là gì",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 17,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "ai là người tạo ra bạn",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 6,
+                        "end": 11,
+                        "entity": "human",
+                        "value": "human"
+                    },
+                    {
+                        "start": 0,
+                        "end": 2,
+                        "entity": "human",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "giới thiệu về bản thân đi ",
+                "intent": "introduce"
+            },
+            {
+                "text": "nhiệm vụ của bạn là gì",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 22,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn bao nhiêu tuổi",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn đến từ đâu",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 14,
+                        "entity": "location",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn thường làm gì lúc rảnh rỗi",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 23,
+                        "end": 26,
+                        "entity": "object",
+                        "value": "picture"
+                    },
+                    {
+                        "start": 15,
+                        "end": 17,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có thể làm được những gì",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 26,
+                        "end": 28,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn là ai",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 9,
+                        "entity": "human",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "sở thích của bạn là gì",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 22,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "ai là người đặt tên cho bạn",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 6,
+                        "end": 11,
+                        "entity": "human",
+                        "value": "human"
+                    },
+                    {
+                        "start": 0,
+                        "end": 2,
+                        "entity": "human",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "chất liệu để tạo ra bạn là gì",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 29,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "gia đình bạn có mấy người",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 20,
+                        "end": 25,
+                        "entity": "human",
+                        "value": "human"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có anh chị em gì không",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 18,
+                        "end": 20,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có thích gà rán không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có chỉ số eq không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn thích chơi môn thể thao nào",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 17,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "số đo 3 vòng của bạn là bao nhiêu",
+                "intent": "introduce"
+            },
+            {
+                "text": "kể cho mình nghe tên một vài loại mĩ phẩm bạn thường dùng",
+                "intent": "introduce"
+            },
+            {
+                "text": "kể cho mình nghe về bố mẹ bạn",
+                "intent": "introduce"
+            },
+            {
+                "text": "hãy kể tên một vài món ăn mà bạn thích\n",
+                "intent": "introduce"
+            },
+            {
+                "text": "ca sĩ bạn yêu thích là ai, đó là người như thế nào",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 33,
+                        "end": 38,
+                        "entity": "human",
+                        "value": "human"
+                    },
+                    {
+                        "start": 23,
+                        "end": 25,
+                        "entity": "human",
+                        "value": "question"
+                    },
+                    {
+                        "start": 27,
+                        "end": 29,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có thích sơn tùng không",
+                "intent": "introduce"
+            },
+            {
+                "text": "ngoài điện ra thì bạn thích ăn món gì khác ",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 35,
+                        "end": 37,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có thích xem bóng đá không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn thích ăn món gì",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 17,
+                        "end": 19,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có biết hát không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn thích con gì nhất",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 16,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn thích môn thể thao nào",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 10,
+                        "end": 12,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "cầu thủ nào bạn yêu thích nhất",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có thích chơi game không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có sợ cái gì không",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 16,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 10,
+                        "end": 16,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn thích bài hát nào nhất",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn cao bao nhiêu",
+                "intent": "introduce"
+            },
+            {
+                "text": "hãy cho tôi biết số đo ba vòng của bạn đi",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có bay được không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn di chuyển như thế nào",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có biết làm việc nhà không",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 21,
+                        "end": 24,
+                        "entity": "object",
+                        "value": "building"
+                    }
+                ]
+            },
+            {
+                "text": "bạn dđược làm từ nguyên liệu gì",
+                "intent": "introduce",
+                "entities": [
+                    {
+                        "start": 29,
+                        "end": 31,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "bạn có thể nấu ăn không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn thích trời mưa hay trời nắng",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có thích tập thể dục không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có thể đọc sách không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có biết viết không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có sợ ma không",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn đi ngủ lúc mấy giờ",
+                "intent": "introduce"
+            },
+            {
+                "text": "bạn có sử dụng facebook không",
+                "intent": "introduce"
+            },
+            {
+                "text": "mật khẩu wifi phòng truyền thống là gì",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 36,
+                        "end": 38,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "đây/kia là cái gì",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 17,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 11,
+                        "end": 17,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "location",
+                        "value": "position"
+                    },
+                    {
+                        "start": 4,
+                        "end": 7,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "cái gì kia",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 4,
+                        "end": 6,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 0,
+                        "end": 6,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 7,
+                        "end": 10,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "thứ trong thùng kính là cái gì thế",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 28,
+                        "end": 30,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 24,
+                        "end": 30,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "đây là màu gì",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 13,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "đây là cái gì",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 13,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 7,
+                        "end": 13,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "đây là cái chi",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 14,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 7,
+                        "end": 14,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "vật này là cái gì vậy",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 17,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 11,
+                        "end": 17,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 4,
+                        "end": 7,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "giải thưởng này là gì",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 11,
+                        "entity": "object",
+                        "value": "cup"
+                    },
+                    {
+                        "start": 19,
+                        "end": 21,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 12,
+                        "end": 15,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "bức ảnh này nói về cái gì",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 7,
+                        "entity": "object",
+                        "value": "picture"
+                    },
+                    {
+                        "start": 4,
+                        "end": 7,
+                        "entity": "object",
+                        "value": "picture"
+                    },
+                    {
+                        "start": 23,
+                        "end": 25,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 19,
+                        "end": 25,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 8,
+                        "end": 11,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "những người trong tranh đang làm gì vậy",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 33,
+                        "end": 35,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 6,
+                        "end": 11,
+                        "entity": "human",
+                        "value": "human"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn t đi chơi nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "dẫn tôi đi thăm quan nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tôi đến nhà vệ sinh",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 15,
+                        "entity": "object",
+                        "value": "building"
+                    },
+                    {
+                        "start": 12,
+                        "end": 23,
+                        "entity": "location",
+                        "value": "place"
+                    }
+                ]
+            },
+            {
+                "text": "đưa tôi đến lối ra",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "place"
+                    }
+                ]
+            },
+            {
+                "text": "chỉ đường cho tôi đến nhà vệ sinh nào",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 25,
+                        "entity": "object",
+                        "value": "building"
+                    },
+                    {
+                        "start": 22,
+                        "end": 33,
+                        "entity": "location",
+                        "value": "place"
+                    }
+                ]
+            },
+            {
+                "text": "đưa tôi đi một vòng xem nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "bạn có thể dắt tôi đi quanh chỗ này được không",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 32,
+                        "end": 35,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "đưa tôi đi tới các giải thưởng",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 30,
+                        "entity": "object",
+                        "value": "cup"
+                    }
+                ]
+            },
+            {
+                "text": "hãy đưa tôi đi thăm quan nơi này",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 29,
+                        "end": 32,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "tôi muốn đi quanh nơi này",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 25,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi đi",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tôi đi thăm quan nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "nào, dẫn t đi một vòng xem sao",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "cùng đi nhé",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đi chơi một chút thì sao nhỉ",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "hướng dẫn cho tôi nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "dẫn đường cho tôi đi",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tôi đi quanh đây nào",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 17,
+                        "end": 20,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "đưa tôi đi tới tượng bác hồ",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 20,
+                        "entity": "object",
+                        "value": "statue"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn mình đi tới khu trưng bày huân chương của đại học quốc gia",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 30,
+                        "end": 41,
+                        "entity": "object",
+                        "value": "cup"
+                    },
+                    {
+                        "start": 46,
+                        "end": 53,
+                        "entity": "object",
+                        "value": "building"
+                    },
+                    {
+                        "start": 46,
+                        "end": 62,
+                        "entity": "university",
+                        "value": "university"
+                    }
+                ]
+            },
+            {
+                "text": "nhà vệ sinh ở đâu",
+                "intent": "ask_where",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "object",
+                        "value": "building"
+                    },
+                    {
+                        "start": 0,
+                        "end": 11,
+                        "entity": "location",
+                        "value": "place"
+                    },
+                    {
+                        "start": 14,
+                        "end": 17,
+                        "entity": "location",
+                        "value": "question"
+                    },
+                    {
+                        "start": 12,
+                        "end": 17,
+                        "entity": "location",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "đây là đâu",
+                "intent": "ask_where",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "location",
+                        "value": "position"
+                    },
+                    {
+                        "start": 7,
+                        "end": 10,
+                        "entity": "location",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "hiệu trưởng trường đại học công nghệ hiện nay là ai",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 19,
+                        "end": 26,
+                        "entity": "object",
+                        "value": "building"
+                    },
+                    {
+                        "start": 0,
+                        "end": 11,
+                        "entity": "human",
+                        "value": "job"
+                    },
+                    {
+                        "start": 49,
+                        "end": 51,
+                        "entity": "human",
+                        "value": "question"
+                    },
+                    {
+                        "start": 19,
+                        "end": 36,
+                        "entity": "university",
+                        "value": "university"
+                    }
+                ]
+            },
+            {
+                "text": "ai là nam giáo viên đẹp trai nhất đại học công nghệ",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 34,
+                        "end": 41,
+                        "entity": "object",
+                        "value": "building"
+                    },
+                    {
+                        "start": 10,
+                        "end": 19,
+                        "entity": "human",
+                        "value": "job"
+                    },
+                    {
+                        "start": 0,
+                        "end": 2,
+                        "entity": "human",
+                        "value": "question"
+                    },
+                    {
+                        "start": 34,
+                        "end": 51,
+                        "entity": "university",
+                        "value": "university"
+                    }
+                ]
+            },
+            {
+                "text": "ai là nữ giảng viên xinh nhất đại học công nghệ",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 30,
+                        "end": 37,
+                        "entity": "object",
+                        "value": "building"
+                    },
+                    {
+                        "start": 9,
+                        "end": 19,
+                        "entity": "human",
+                        "value": "job"
+                    },
+                    {
+                        "start": 0,
+                        "end": 2,
+                        "entity": "human",
+                        "value": "question"
+                    },
+                    {
+                        "start": 30,
+                        "end": 47,
+                        "entity": "university",
+                        "value": "university"
+                    }
+                ]
+            },
+            {
+                "text": "đây là ai",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 7,
+                        "end": 9,
+                        "entity": "human",
+                        "value": "question"
+                    },
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "ai kia",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 2,
+                        "entity": "human",
+                        "value": "question"
+                    },
+                    {
+                        "start": 3,
+                        "end": 6,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "ai đang nói thế",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 2,
+                        "entity": "human",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "ai là nhân vật chính trong bức tranh này",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 27,
+                        "end": 36,
+                        "entity": "object",
+                        "value": "picture"
+                    },
+                    {
+                        "start": 0,
+                        "end": 2,
+                        "entity": "human",
+                        "value": "question"
+                    },
+                    {
+                        "start": 37,
+                        "end": 40,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "cô vân là ai",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 10,
+                        "end": 12,
+                        "entity": "human",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "thầy tùng là ai",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 13,
+                        "end": 15,
+                        "entity": "human",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "ai là người vui tính nhất bạn đã từng gặp",
+                "intent": "ask_who",
+                "entities": [
+                    {
+                        "start": 6,
+                        "end": 11,
+                        "entity": "human",
+                        "value": "human"
+                    },
+                    {
+                        "start": 0,
+                        "end": 2,
+                        "entity": "human",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "trong ảnh 1.0 là cái gì vậy",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 6,
+                        "end": 9,
+                        "entity": "object",
+                        "value": "picture"
+                    },
+                    {
+                        "start": 21,
+                        "end": 23,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 17,
+                        "end": 23,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "tại sao lại có đại học đông dương",
+                "intent": "ask_why",
+                "entities": [
+                    {
+                        "start": 15,
+                        "end": 22,
+                        "entity": "object",
+                        "value": "building"
+                    },
+                    {
+                        "start": 15,
+                        "end": 33,
+                        "entity": "university",
+                        "value": "university"
+                    }
+                ]
+            },
+            {
+                "text": "đây là cái gì",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 11,
+                        "end": 13,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 7,
+                        "end": 13,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            },
+            {
+                "text": "nguồn gốc của ảnh 1.0 là gì",
+                "intent": "ask_why",
+                "entities": [
+                    {
+                        "start": 14,
+                        "end": 17,
+                        "entity": "object",
+                        "value": "picture"
+                    },
+                    {
+                        "start": 25,
+                        "end": 27,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "ảnh 1.0 nói về cái gì vậy",
+                "intent": "ask_what",
+                "entities": [
+                    {
+                        "start": 0,
+                        "end": 3,
+                        "entity": "object",
+                        "value": "picture"
+                    },
+                    {
+                        "start": 19,
+                        "end": 21,
+                        "entity": "object",
+                        "value": "question"
+                    },
+                    {
+                        "start": 15,
+                        "end": 21,
+                        "entity": "object",
+                        "value": "question"
+                    }
+                ]
+            },
+            {
+                "text": "đi về chỗ ngay",
+                "intent": "command_return"
+            },
+            {
+                "text": "về chỗ đi ",
+                "intent": "command_return"
+            },
+            {
+                "text": "đi về chỗ",
+                "intent": "command_return"
+            },
+            {
+                "text": "đi về chỗ đi ",
+                "intent": "command_return"
+            },
+            {
+                "text": "quay trở về chỗ của bạn đi",
+                "intent": "command_return"
+            },
+            {
+                "text": "quay trở lại",
+                "intent": "command_return"
+            },
+            {
+                "text": "về vị trí ban đầu",
+                "intent": "command_return"
+            },
+            {
+                "text": "về",
+                "intent": "command_return"
+            },
+            {
+                "text": "quay về",
+                "intent": "command_return"
+            },
+            {
+                "text": "đi về",
+                "intent": "command_return"
+            }
+        ],
+        "regex_features": [],
+        "lookup_tables": [],
+        "entity_synonyms": [
+            {
+                "entity": "object",
+                "original_value": "picture",
+                "synonyms": [
+                    "bức ảnh",
+                    "ảnh",
+                    "tấm ảnh",
+                    "bức tranh",
+                    "bản đồ"
+                ]
+            },
+            {
+                "entity": "object",
+                "original_value": "cup",
+                "synonyms": [
+                    "cúp",
+                    "huân chương",
+                    "kỷ niệm chương",
+                    "giải thưởng"
+                ]
+            },
+            {
+                "entity": "object",
+                "original_value": "statue",
+                "synonyms": [
+                    "tượng",
+                    "bức tượng"
+                ]
+            },
+            {
+                "entity": "object",
+                "original_value": "building",
+                "synonyms": [
+                    "tòa nhà",
+                    "công trình",
+                    "nhà",
+                    "đại học",
+                    "lối vào"
+                ]
+            },
+            {
+                "entity": "object",
+                "original_value": "meeting",
+                "synonyms": [
+                    "cuộc họp",
+                    "hội nghị"
+                ]
+            },
+            {
+                "entity": "object",
+                "original_value": "board",
+                "synonyms": [
+                    "bảng biểu",
+                    "bảng"
+                ]
+            },
+            {
+                "entity": "object",
+                "original_value": "question",
+                "synonyms": [
+                    "gì",
+                    "cái gì",
+                    "chi",
+                    "cái chi"
+                ]
+            },
+            {
+                "entity": "human",
+                "original_value": "job",
+                "synonyms": [
+                    "hiệu trưởng",
+                    "giáo viên",
+                    "giảng viên",
+                    "giáo sư",
+                    "tiến sĩ",
+                    "giám đốc",
+                    "giáo sư",
+                    "nhà giáo",
+                    "cán bộ",
+                    "chủ tịch nước",
+                    "tác giả"
+                ]
+            },
+            {
+                "entity": "human",
+                "original_value": "human",
+                "synonyms": [
+                    "người"
+                ]
+            },
+            {
+                "entity": "human",
+                "original_value": "question",
+                "synonyms": [
+                    "ai",
+                    "người nào"
+                ]
+            },
+            {
+                "entity": "location",
+                "original_value": "position",
+                "synonyms": [
+                    "đây",
+                    "này",
+                    "kia",
+                    "đó",
+                    "nọ",
+                    "ni",
+                    "mô"
+                ]
+            },
+            {
+                "entity": "location",
+                "original_value": "place",
+                "synonyms": [
+                    "nhà vệ sinh",
+                    "lối ra",
+                    "lối vào"
+                ]
+            },
+            {
+                "entity": "location",
+                "original_value": "question",
+                "synonyms": [
+                    "đâu",
+                    "ở đâu",
+                    "chỗ nào"
+                ]
+            },
+            {
+                "entity": "university",
+                "original_value": "university",
+                "synonyms": [
+                    "đại học công nghệ",
+                    "đại học quốc gia",
+                    "đại học đông dương"
+                ]
+            }
+        ]
+    }
+}
