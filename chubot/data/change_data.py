@@ -19,15 +19,14 @@ for row in csv_reader:
 
 entity_file.close()
 all_entity = json_object.get("nlu_data").get("entity_synonyms")
-
 csv_reader = csv.reader(intent_file, delimiter=',')
 line_count = 0
 for row in csv_reader:
     if line_count==0:
         line_count = line_count+1
         continue
-    text = row[2].lower()
-    intent = row[3].lower()
+    text = row[0].lower()
+    intent = row[1].lower()
     if text!= "":
         entities = []
         
