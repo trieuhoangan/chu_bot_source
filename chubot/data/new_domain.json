@@ -18,16 +18,20 @@
       "bot_lead_way",
       "bot_answer",
       "bot_introduce",
-      "bot_chat"
+      "bot_chat",
+      "bot_ask_who",
+      "bot_ask_what",
+      "bot_ask_where"
     ],
     "followup_actions": {
       "chat": ["bot_chat"],
       "greeting": ["bot_greeting"],
       "command_return": ["bot_return"],
       "introduce": ["bot_introduce"],
-      "ask_who": ["bot_answer"],
-      "ask_where": ["bot_answer"],
-      "ask_what": ["bot_answer"]
+      "ask_who": ["bot_ask_who"],
+      "ask_where": ["bot_ask_where"],
+      "ask_what": ["bot_ask_what"],
+      "command_lead_way": ["bot_command_lead_way"]
     },
     "action_templates": {
       "default_fallback": [
@@ -38,7 +42,12 @@
       "bot_return": ["em xin phép về chỗ"],
       "bot_greeting": ["xin chào bạn"],
       "bot_introduce": ["mình là FUTO", "mình là piggy"],
-      "bot_answer": ["xin đơi mình 1 chút"]
+      "bot_answer": ["xin đơi mình 1 chút"],
+      "bot_command_lead_way": ["ok đi theo mình nào"],
+      "bot_ask_who": ["đây là bác hồ"],
+      "bot_ask_where": ["đây là việt nam"],
+      "bot_ask_what": ["đây là bức tranh"],
+      "bot_chat": ["đang giờ làm việc k nói chuyện riêng"]
     },
     "action_custom": {
       "custom_retrieve_image": {

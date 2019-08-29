@@ -10,8 +10,8 @@ def craete_model(name):
     chubot.load_data("data/test.json")
     # chubot.load_data("data/vi_nlu_ask_way.json")
     meta = chubot.train()
-    print(meta)
-    print(chubot.entity_synonyms)
+    # print(meta)
+    # print(chubot.entity_synonyms)
 
 
 def test_response():

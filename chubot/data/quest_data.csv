@@ -1,177 +1,1967 @@
-STT,Tên ảnh,Câu hỏi hoặc mệnh lệnh người dùng có thể đưa ra,intent
-1,,xin chào,greeting
-2,,chào bạn,greeting
-3,,chào mừng bạn,greeting
-4,,chào buổi sáng ,greeting
-5,,chào buổi chiều,greeting
-6,,hello,greeting
-7,,good morning,greeting
-8,,chào,greeting
-9,,chào cậu,greeting
-10,,chào robot,greeting
-11,,robot ơi,greeting
-12,,ê robot,greeting
-13,,xin chào robot,greeting
-14,,này robot,greeting
-15,,robot này,greeting
-16,,rất vui được làm quen,greeting
-17,,hú robot,greeting
-18,,robot kia ơi,greeting
-19,,hey robot,greeting
-20,,chào mừng robot,greeting
-21,,bạn ăn cơm chưa,chat
-22,,hôm nay bạn thế nào,chat
-23,,bye,chat
-24,,tạm biệt,chat
-25,,bạn biết bay không ,chat
-26,,bạn thích làm gì nhất,chat
-27,,bạn có thể hát một bài không,chat
-28,,good bye,chat
-29,,một cộng một bằng mấy,chat
-30,,bạn có sở thích gì không,chat
-31,,bạn có tiền không,chat
-32,,bạn thử kể một câu chuyện ma đi,chat
-33,,bạn có người yêu chưa,chat
-34,,đoán xem tôi có gì,chat
-35,,bạn là trai hay gái,chat
-36,,bạn có yêu tôi không,chat
-37,,thời tiết hôm nay thế nào,chat
-38,,bạn có bằng cấp gì không,chat
-39,,ngoài nói ra bạn có làm được thứ gì khác không,chat
-40,,chỉ số iq của bạn là bao nhiêu,chat
-41,,tên của bạn là gì,introduce
-42,,ai là người tạo ra bạn,introduce
-43,,giới thiệu về bản thân đi ,introduce
-44,,nhiệm vụ của bạn là gì,introduce
-45,,bạn bao nhiêu tuổi,introduce
-46,,bạn đến từ đâu,introduce
-47,,bạn thường làm gì lúc rảnh rỗi,introduce
-48,,bạn có thể làm được những gì,introduce
-49,,bạn là ai,introduce
-50,,sở thích của bạn là gì,introduce
-51,,ai là người đặt tên cho bạn,introduce
-52,,chất liệu để tạo ra bạn là gì,introduce
-53,,gia đình bạn có mấy người,introduce
-54,,bạn có anh chị em gì không,introduce
-55,,bạn có thích gà rán không,introduce
-56,,bạn có chỉ số EQ không,introduce
-57,,bạn thích chơi môn thể thao nào,introduce
-58,,số đo 3 vòng của bạn là bao nhiêu,introduce
-59,,kể cho mình nghe tên một vài loại mĩ phẩm bạn thường dùng,introduce
-60,,kể cho mình nghe về bố mẹ bạn,introduce
-61,,"hãy kể tên một vài món ăn mà bạn thích
-",introduce
-62,,,introduce
-63,,"ca sĩ bạn yêu thích là ai, đó là người như thế nào",introduce
-64,,bạn có thích Sơn Tùng không,introduce
-65,,,introduce
-66,,ngoài điện ra thì bạn thích ăn món gì khác ,introduce
-67,,bạn có thích xem bóng đá không,introduce
-68,,bạn thích ăn món gì,introduce
-69,,bạn có biết hát không,introduce
-70,,bạn thích con gì nhất,introduce
-71,,bạn thích môn thể thao nào,introduce
-72,,cầu thủ nào bạn yêu thích nhất,introduce
-73,,bạn có thích chơi game không,introduce
-74,,bạn có sợ cái gì không,introduce
-75,,bạn thích bài hát nào nhất,introduce
-76,,bạn cao bao nhiêu,introduce
-77,,hãy cho tôi biết số đo ba vòng của bạn đi,introduce
-78,,bạn có bay được không,introduce
-79,,bạn di chuyển như thế nào,introduce
-80,,bạn có biết làm việc nhà không,introduce
-81,,bạn dđược làm từ nguyên liệu gì,introduce
-82,,bạn có thể nấu ăn không,introduce
-83,,bạn thích trời mưa hay trời nắng,introduce
-84,,bạn có thích tập thể dục không,introduce
-85,,bạn có thể đọc sách không,introduce
-86,,bạn có biết viết không,introduce
-87,,bạn có sợ ma không,introduce
-88,,bạn đi ngủ lúc mấy giờ,introduce
-89,,bạn có sử dụng facebook không,introduce
-90,,,introduce
-91,,,
-92,,,
-93,,,
-94,,,
-95,,,
-96,,,
-97,,,
-98,,,
-99,,,
-100,,,
-101,,mật khẩu wifi phòng truyền thống là gì,ask_what
-102,,đây/kia là cái gì,ask_what
-103,,cái gì kia,ask_what
-104,,thứ trong thùng kính là cái gì thế,ask_what
-105,,đây là màu gì,ask_what
-106,,,ask_what
-107,,đây là cái gì,ask_what
-108,,,ask_what
-109,,,ask_what
-110,,đây là cái chi,ask_what
-111,,vật này là cái gì vậy,ask_what
-112,,giải thưởng này là gì,ask_what
-113,,bức ảnh này nói về cái gì,ask_what
-114,,những người trong tranh đang làm gì vậy,ask_what
-115,,,ask_what
-116,,,ask_what
-117,,,ask_what
-118,,,ask_what
-119,,,ask_what
-120,,,command_lead_way
-121,,Dẫn t đi chơi nào,command_lead_way
-122,,Dẫn tôi đi thăm quan nào,command_lead_way
-123,,Đưa tôi đến nhà vệ sinh,command_lead_way
-124,,Đưa tôi đến lối ra,command_lead_way
-125,,Chỉ đường cho tôi đến nhà vệ sinh nào,command_lead_way
-126,,Đưa tôi đi một vòng xem nào,command_lead_way
-127,,Bạn có thể dắt tôi đi quanh chỗ này được không,command_lead_way
-128,,đưa tôi đi tới các giải thưởng,command_lead_way
-129,,Hãy đưa tôi đi thăm quan nơi này,command_lead_way
-130,,tôi muốn đi quanh nơi này,command_lead_way
-131,,Dẫn đường cho tôi đi,command_lead_way
-132,,Đưa tôi đi thăm quan nào,command_lead_way
-133,,"nào, Dẫn t đi một vòng xem sao",command_lead_way
-134,,cùng đi nhé,command_lead_way
-135,,Đi chơi một chút thì sao nhỉ,command_lead_way
-136,,Hướng dẫn cho tôi nào,command_lead_way
-137,,Dẫn đường cho tôi đi,command_lead_way
-138,,Đưa tôi đi quanh đây nào,command_lead_way
-139,,Đưa tôi đi tới tượng Bác Hồ,command_lead_way
-140,,Dẫn mình đi tới khu trưng bày huân chương của đại học quốc gia,command_lead_way
-141,,nhà vệ sinh ở đâu,ask_where
-142,,Đây là đâu,ask_where
-143,,hiệu trưởng trường đại học công nghệ hiện nay là ai,ask_who
-144,,ai là nam giáo viên đẹp trai nhất đại học Công Nghệ,ask_who
-145,,ai là nữ giảng viên xinh nhất đại học Công Nghệ,ask_who
-146,,đây là ai,ask_who
-147,,ai kia,ask_who
-148,,ai đang nói thế,ask_who
-149,,ai là nhân vật chính trong bức tranh này,ask_who
-150,,,ask_who
-151,,,ask_who
-152,,,ask_who
-153,,,ask_who
-154,,cô Vân là ai,ask_who
-155,,thầy Tùng là ai,ask_who
-156,,ai là người vui tính nhất bạn đã từng gặp,ask_who
-157,,,
-158,,,
-159,,,
-160,,,
-161,1.0,Trong ảnh 1.0 là cái gì vậy,ask_what
-162,1.0,Tại sao lại có Đại Học Đông Dương,ask_why
-163,1.0,Đây là cái gì,ask_what
-164,1.0,Nguồn gốc của ảnh 1.0 là gì,ask_why
-165,1.0,Ảnh 1.0 nói về cái gì vậy,ask_what
-166,,đi về chỗ ngay,command_return
-167,,về chỗ đi ,command_return
-168,,đi về chỗ,command_return
-169,,đi về chỗ đi ,command_return
-170,,quay trở về chỗ của bạn đi,command_return
-171,,quay trở lại,command_return
-172,,về vị trí ban đầu,command_return
-173,,về,command_return
-174,,quay về,command_return
-175,,đi về,command_return
+greeting,xin chào
+greeting,xin chào
+greeting,xin chào
+greeting,xin chào
+greeting,chào bạn
+greeting,chào bạn
+greeting,chào mừng bạn
+greeting,chào mừng bạn
+greeting,chào buổi sáng
+greeting,chào buổi sáng
+greeting,chào buổi chiều
+greeting,hello
+greeting,hello
+greeting,good morning
+greeting,good morning
+greeting,chào
+greeting,chào
+greeting,chào cậu
+greeting,chào cậu
+greeting,robot
+greeting,chào robot
+greeting,robot ơi
+greeting,robot
+greeting,aerobic
+greeting,aerobic
+greeting,xin chào robot
+greeting,xin chào robot
+greeting,này robot
+greeting,này robot
+greeting,robot này
+greeting,21
+greeting,rất vui được làm quen
+greeting,rất vui được làm quen
+greeting,cứ facebook
+greeting,robot
+greeting,tất cả những cánh hoa rơi
+greeting,robot yêu ơi
+greeting,xe robot
+greeting,robot
+greeting,chào mừng robot
+greeting,chào mừng robot
+greeting,kính chào bạn
+greeting,tính đào tạo
+greeting,xin chào bạn
+greeting,xin chào bạn
+greeting,rất hân hạnh được làm quen
+greeting,rất hân hạnh được làm quen
+greeting,cho mình hỏi với
+greeting,cho mình hỏi với
+greeting,cho mình hỏi với
+greeting,cho mình hỏi với
+greeting,xin chào
+greeting,xin chào
+greeting,chào bạn
+greeting,chào bạn
+greeting,chào mừng bạn
+greeting,chào mừng bạn
+greeting,chào mừng bạn
+greeting,chào mừng bạn
+greeting,chào buổi sáng
+greeting,chào buổi sáng
+greeting,chào buổi chiều
+greeting,chào buổi chiều
+greeting,hello
+greeting,hello
+greeting,good morning
+greeting,good morning
+greeting,chào
+greeting,chào
+greeting,sao cậu
+greeting,chào vợ
+greeting,xe robot
+greeting,robot
+greeting,robot ơi
+greeting,robot
+greeting,robot
+greeting,robot
+greeting,xin chào robot
+greeting,xin chào robot
+greeting,mày robot
+greeting,robot này
+greeting,robot này
+greeting,rất vui được làm quen
+greeting,rất vui được làm quen
+greeting,robot
+greeting,robot
+greeting,robot kia ơi
+greeting,robot chơi
+greeting,xe robot
+greeting,harry potter
+greeting,chào mừng robot
+greeting,chào mừng robot
+greeting,kính chào bạn
+greeting,xin chào bạn
+greeting,xin chào bạn
+greeting,xin chào bạn
+greeting,rất hân hạnh được làm quen
+greeting,rất hân hạnh được làm quen
+greeting,cho mình hỏi với
+greeting,cho mình hỏi với
+greeting,xin chào
+greeting,xin chào
+greeting,chào bạn
+greeting,chào bạn
+greeting,chào mừng bạn
+greeting,chào mừng bạn
+greeting,chào buổi sáng
+greeting,chào buổi sáng
+greeting,chào buổi chiều
+greeting,chào buổi chiều
+greeting,hello
+greeting,hello
+greeting,good morning
+greeting,good morning
+greeting,chào
+greeting,chào
+greeting,chào cậu
+greeting,chào cậu
+greeting,robot
+greeting,chào robot
+greeting,robot
+greeting,robot ơi
+greeting,robot
+greeting,robot
+greeting,xin chào robot
+greeting,xin chào robot
+greeting,mày robot
+greeting,nay robot
+greeting,robot này
+greeting,robot này
+greeting,rất vui được làm quen
+greeting,rất vui được làm quen
+greeting,robot
+greeting,robot
+greeting,robot kia ơi
+greeting,robot kia ơi
+greeting,herobot
+greeting,herobot
+greeting,chào mừng robot
+greeting,chào mừng robot
+greeting,kính chào bạn
+greeting,kính chào bạn
+greeting,xin chào bạn
+greeting,xin chào bạn
+greeting,rất hân hạnh được làm quen
+greeting,rất hân hạnh được làm quen
+greeting,cho mình hỏi với
+greeting,cho mình hỏi với
+ask_what,trong ảnh 1.0 là cái gì
+ask_what,đây là cái gì
+ask_what,mật khẩu wifi phòng truyền thống là gì
+ask_what,bức ảnh nói về cái gì
+ask_what,thử trong thùng kín là cái gì thế
+ask_what,kẻ mí ra cái chi rứa
+ask_what,ảnh này nói về vấn đề gì
+ask_what,mật khẩu wifi phòng truyền thống là gì
+ask_what,vật ở đó là cái gì
+ask_what,cảnh này nói về cái gì
+ask_what,bức tranh này nói về cái gì
+ask_what,vật này là cái gì vậy
+ask_what,ảnh một chấm không nói về cái gì vậy
+ask_what,kia là cái gì
+ask_what,kia là cái gì
+ask_what,đây là cái chi
+ask_what,trong ảnh một chấm không là cái
+ask_what,giải thưởng này là gì
+ask_what,những người trong tranh đang làm gì vậy
+ask_what,ảnh này nói về vấn đề gì vậy
+ask_what,đây là cái chi
+ask_what,bức ảnh này nói về cái gì
+ask_what,trường này là cái gì
+ask_what,đây là cái gì
+ask_what,thử trong thùng kín là cái gì thế
+ask_what,cái gì kìa
+ask_what,bức ảnh này nói về cái gì
+ask_what,huân chương này là cái gì
+ask_what,đây là màu gì
+ask_what,cái gì kia
+ask_what,vật này là cái gì vậy
+ask_what,bức ảnh nói về cái gì
+ask_what,đây là màu gì
+ask_what,ảnh một chấm không nói về cái gì vậy
+ask_what,những người trong tranh đang làm gì vậy
+ask_what,giải thưởng này là gì
+ask_what,vật ở đó là cái gì
+ask_what,cãi lý là cái chi rứa
+ask_who,hiệu trưởng trường đại học công nghệ hiện nay là ai
+ask_who,tiểu sử trần đại quang hiện nay là ai
+ask_who,đây là ai
+ask_who,đây này
+ask_who,ai kia
+ask_who,ai đang nói thế
+ask_who,ai đang nói thế
+ask_who,ai là nhân vật chính trong bức tranh này
+ask_who,ai cho mình cái này
+ask_who,cô vân là ai
+ask_who,google là ai
+ask_who,thầy tùng là ai
+ask_who,từ láy
+ask_who,ai là người vui tính nhất bạn đã từng gặp
+ask_who,kia là ai
+ask_who,kia là ai
+ask_who,bạn kia là ai
+ask_who,bạn kia là ai
+ask_who,người trong ảnh kia là ai
+ask_who,người kia là ai
+ask_who,ai đang đứng trong ảnh kia
+ask_who,bài giảng kia
+ask_who,nhân vật nào đang đứng trong ảnh
+ask_who,nhưng trong ảnh
+ask_who,người trên ảnh là ai
+ask_who,người chết là ai
+ask_who,người kia là ai
+ask_who,người kia là ai
+ask_what,đây là cái gì
+ask_what,đây là cái gì
+ask_what,kem là cái gì
+ask_what,kia là cái gì
+ask_what,cái gì kia
+ask_what,cái gì kìa
+ask_what,hứa trong thùng kín là cái gì thế
+ask_what,thứ trong thùng tính là cái gì thế
+ask_what,nên là màu gì
+ask_what,đây là màu gì
+ask_what,đây là cái gì
+ask_what,đây là cái gì
+ask_what,đây là cái chi
+ask_what,đây là cái gì
+ask_what,vật này là cái gì vậy
+ask_what,mặt này là cái gì vậy
+ask_what,giải thưởng giải thưởng này là gì
+ask_what,giải tuần này là gì
+ask_what,bức ảnh này nói về cái gì
+ask_what,bức ảnh này nói về cái gì
+ask_what,những người trong tranh đang làm gì
+ask_what,những người trong tranh đang làm gì vậy
+ask_what,trong ảnh một chấm không là cái gì vậy
+ask_what,những người trong tranh đang làm gì thế
+ask_what,những người trong tranh đang làm gì thế
+ask_what,trong ảnh một chấm không là cái gì vậy
+ask_what,đây là cái gì
+ask_what,đây là cái gì
+ask_what,ảnh một chấm không nói về cái gì thế
+ask_what,1.0 nói về cái gì thế
+ask_what,ảnh một chồng không nói về cái gì vậy
+ask_what,anh 100 không nói về cái gì vậy
+ask_what,ảnh này nói về vấn đề gì vậy
+ask_what,ảnh này nói về vấn đề gì vậy
+ask_what,bức tranh này nói về cái gì thế
+ask_what,bức tranh này nói về cái gì thế
+ask_what,huân chương này là cái gì
+ask_what,văn chương này là máy gì
+ask_what,đây là cái gì
+ask_what,đây là cái gì
+ask_what,mặt ở đó là cái gì
+ask_what,mặt ở đó là cái gì
+ask_what,bức ảnh này nói về cái gì
+ask_what,bức ảnh này nói về cái gì
+ask_what,người này nói về cái gì
+ask_what,ảnh này nói về cái gì
+ask_what,đây là cái gì
+ask_what,cái này nói về cái gì
+ask_what,mày nói cái gì
+ask_what,bức ảnh này nói về cái gì
+ask_what,nói về cái gì
+command_lead_way,dẫn tôi đi chơi nào
+command_lead_way,dẫn tôi đi tham quan nào
+command_lead_way,dẫn tôi đi tham quan nào
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,đưa tôi đi một vòng xem nào
+command_lead_way,đưa tôi đi một vòng xem nào
+command_lead_way,bạn có thể giúp tôi đi qua chỗ này được không
+command_lead_way,bạn có thể giúp tôi đi qua chỗ này được không
+command_lead_way,đưa tôi đi tới các giải thưởng
+command_lead_way,hãy đưa tôi đi tham quan đây này
+command_lead_way,hãy đưa tôi đi tham quan nơi này
+command_lead_way,từng đi quanh nơi này
+command_lead_way,tôi muốn đi quanh đây này
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,nào dẫn tôi đi một vòng xem sao
+command_lead_way,nào dẫn tôi đi một vòng xem sao
+command_lead_way,cùng đi nhé
+command_lead_way,cùng đi nhé
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,đi thêm một chút thì sao nhỉ
+command_lead_way,hướng dẫn cho tôi nào
+command_lead_way,hướng dẫn cho tôi nào
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đưa tôi đi quanh đây nào
+command_lead_way,đưa tôi đi quanh đây nào
+command_lead_way,đưa tôi đi tới tượng bác hồ
+command_lead_way,đưa tôi đi tới tượng bác hồ
+command_lead_way,dẫn mình đi tới khu trưng bày huân chương của đại học quốc gia
+command_lead_way,dẫn mình đi tới khu trưng bày huân chương của đại học quốc gia
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,dẫn tôi đi nào
+command_lead_way,dẫn tôi đi nào
+command_lead_way,đưa tôi tới chỗ đó
+command_lead_way,đưa tôi tới chỗ đó
+command_lead_way,đưa tôi ra đó
+command_lead_way,đưa tôi ra đó
+command_lead_way,chỉ tôi ra chỗ đó
+command_lead_way,chỉ tôi ra chỗ đó
+command_lead_way,cho tôi ra chỗ đó
+command_lead_way,cho tôi ra chỗ đó
+command_lead_way,cho tôi ra chỗ kia
+command_lead_way,cho tôi ra chỗ kia
+command_lead_way,dẫn tôi ra kia
+command_lead_way,giận tôi ra kìa
+command_lead_way,chỉ đường cho tôi
+command_lead_way,chỉ đường cho tôi
+command_lead_way,chỉ tôi ra chỗ đó
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,đưa bọn mình ra cái ảnh đó
+command_lead_way,đưa bọn mình ra cái ảnh đó
+command_lead_way,đưa bọn mình tới đó
+command_lead_way,đưa bọn mình tới đó
+command_lead_way,đưa anh tới đó
+command_lead_way,đưa anh tới đó
+command_lead_way,đưa thầy tế đó
+command_lead_way,đưa thầy tới đó
+command_lead_way,dẫn thầy tới đó
+command_lead_way,dẫn thầy tới đó
+command_lead_way,dẫn cô tới đó
+command_lead_way,dẫn cô tới đó
+command_lead_way,dẫn đường cho thấy ra chỗ đó
+command_lead_way,dẫn đường cho thấy ra chỗ đó
+command_lead_way,dẫn đường cho thấy ra chỗ bức ảnh này
+command_lead_way,dẫn đường cho thầy giáo có chỗ bức ảnh này
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,xin hãy đưa mình đi
+command_lead_way,xin hãy đưa mình đi
+ask_where,nguyên tổng bí thư chương trình từng là cựu sinh viên ở đâu
+ask_where,lối ra ở chỗ nào
+ask_where,các danh hiệu của trường ở đâu
+ask_where,nguyên tổng bí thư trường trinh từng học ở đại học
+ask_where,lễ khai giảng năm học đầu tiên của đại học quốc gia việt nam được tổ chức ở đâu
+ask_where,đây là đâu
+ask_where,tòa nhà điều hành nằm ở vị trí nào
+ask_where,bức ảnh được chụp ở đâu
+ask_where,lễ khai giảng năm học đầu tiên của đại học quốc gia việt nam được tổ chức ở
+ask_where,diễn đàn bốn đại học tủ đông á tổ chức tại đâu năm 2000
+ask_where,đại tướng võ nguyên giáp đã từng học tập ở đâu
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 với chủ đề phát triển bền vững trong bối cảnh biến đổi toàn cầu diễn ra ở đâu
+ask_where,đại tướng võ nguyên giáp đã từng học tập ở đâu
+ask_where,đại tướng võ nguyên giáp đã từng học tập tại địa điểm nào
+ask_where,diễn đàn bốn đại học chủ chốt đông á tổ chức tại đâu năm 2006
+ask_where,đây là đâu
+ask_where,nguyên tổng bí thư trường trinh từng là cựu sinh viên ở đâu
+ask_where,nhà vệ sinh ở hướng nào
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 với chủ đề phát triển bền vững trong buổi bối cảnh biến đổi toàn cầu diễn ra ở đâu
+ask_where,nguyên tổng bí thư trường trinh từng theo học ở đại học
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 được tổ chức ở địa điểm nào
+ask_where,diễn đàn bổ đại học chủ chốt đông á năm 2006 được tổ chức ở
+ask_where,hội thảo quốc tế về biến đổi khí hậu do tổ chức ipcc thuộc liên hợp quốc được tổ chức tại
+ask_where,các danh hiệu của trường ở đâu
+ask_where,lối ra ở đâu
+ask_where,tòa nhà điều hành nằm ở vị trí nào
+ask_where,lối ra ở đâu
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 được tổ chức ở điểm nào
+ask_where,tòa nhà điều hành ở đâu
+ask_where,nhà vệ sinh ở đâu
+ask_where,đại học quốc gia hà nội được xây dựng lại ở đâu vào năm 2000
+ask_where,nhà vệ sinh ở hướng nào
+ask_where,hội thảo quốc tế về biến đổi khí hậu do tổ chức ipcc thuộc liên hợp quốc được tổ chức tại nơi nào
+ask_where,nhà vệ sinh ở đâu
+ask_where,tòa nhà điều hành ở đâu
+ask_where,bức ảnh được chụp ở đâu
+ask_where,diễn đàn bốn đại học chủ chốt độc đông á năm 2006 được tổ chức
+ask_where,nồi lá ở chỗ nào
+ask_where,đại tướng võ nguyên giáp đã từng học tập tại địa điểm
+ask_where,đại học quốc gia hà nội được xây dựng lại ở đâu vào năm 2004
+introduce,tên của bạn là gì
+introduce,tên của bạn là gì
+introduce,ai là người tạo ra bạn
+introduce,ai là người tạo ra bạn
+introduce,giới thiệu về bản thân đi
+introduce,giới thiệu về bản thân đi
+introduce,nhiệm vụ của bạn là gì
+introduce,nhiệm vụ của bạn là gì
+introduce,bạn bao nhiêu tuổi
+introduce,bạn bao nhiêu tuổi
+introduce,bạn đến từ đâu
+introduce,bạn đến từ đâu
+introduce,bạn thường làm gì lúc rảnh rỗi
+introduce,bạn thường làm gì lúc rảnh rỗi
+introduce,bạn có thể làm được những gì
+introduce,bạn có thể làm được những gì
+introduce,bạn là ai
+introduce,bạn là ai
+introduce,giải thích của bạn là gì
+introduce,ai là người đặt tên cho bạn
+introduce,ai là người đặt tên cho bạn
+introduce,bạn là ai vậy
+introduce,bạn là ai vậy
+introduce,bạn là ai vậy
+introduce,bạn là ai vậy
+introduce,xin hỏi bạn là ai
+introduce,bạn là ai thế
+introduce,xin hỏi bạn là ai
+introduce,bạn là ai thế
+introduce,giới thiệu về bạn đi
+introduce,giới thiệu về bạn đi
+introduce,giới thiệu về bản tin
+introduce,ai tạo ra bạn
+introduce,ai tạo ra bạn
+introduce,ai tạo ra bạn
+introduce,ai tạo ra bạn
+introduce,ai làm ra bạn
+introduce,anh làm sao bạn
+introduce,anh đang ra bạn
+introduce,anh làm sao bạn
+introduce,ai tạo ra mày
+introduce,ai tạo ra máy
+introduce,mày nó ai
+introduce,mày là ai
+introduce,bạn là cái gì thế
+introduce,bạn là cái gì thế
+introduce,bạn làm cái gì thế
+command_lead_way,dẫn tớ đi chơi nào
+command_lead_way,dẫn từ đi thôi nào
+command_lead_way,dẫn tôi đi tham quan nào
+command_lead_way,dẫn tôi đi thăm quan nào
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,đưa tôi đi một vòng xem nào
+command_lead_way,đưa tôi đi một vòng xem nào
+command_lead_way,bạn có thể bạn có thể giúp tôi đi quanh chỗ này được không
+command_lead_way,bạn có thể giúp tôi đi quanh chỗ này được không
+command_lead_way,đưa tôi đi tới các giải thưởng
+command_lead_way,đưa tôi đi đến các giải thưởng
+command_lead_way,hãy đưa tôi đi thông qua nơi này
+command_lead_way,hãy đưa tôi đi thông qua nơi này
+command_lead_way,tôi muốn đi quanh nơi này
+command_lead_way,tôi muốn đi qua nơi này
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,đưa tôi đi thăm quan nào
+command_lead_way,nào dẫn tôi đi một vòng xem sao
+command_lead_way,nào dẫn tôi đi một vòng xem sao
+command_lead_way,cùng đi nhé
+command_lead_way,cùng đi nhé
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,hướng dẫn cho tôi đi làm
+command_lead_way,hướng dẫn cho tôi đi nào
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đưa tôi đi quanh đây nào
+command_lead_way,ô tô đi quanh nơi đây nào
+command_lead_way,đưa tôi đi tới tượng bác hồ
+command_lead_way,đưa tôi đi đến tượng bác hồ
+command_lead_way,giật mình đi tới khu trưng bày huân chương của đại học quốc gia
+command_lead_way,tân mình đi tới khu trưng bày huân chương của đại học quốc gia
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,dẫn đường cho mình đi
+command_lead_way,dẫn đường cho mình đi
+command_lead_way,dân tôi đi nào
+command_lead_way,cho tôi đi nào
+command_lead_way,đưa tôi đi đưa tôi tới chỗ đó
+command_lead_way,đưa tôi tới chỗ đó
+command_lead_way,đưa tôi ra đó
+command_lead_way,đưa tôi ra đó
+command_lead_way,chỉ tôi ra chỗ đấy
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,cho tôi ra chỗ đó
+command_lead_way,cho tôi ra chỗ đó
+command_lead_way,cho tôi ra chỗ kia
+command_lead_way,cho tôi ra chỗ kia
+command_lead_way,dẫn tôi ra chỗ kia
+command_lead_way,tôi ra chỗ kia
+command_lead_way,chỉ đường cho tôi
+command_lead_way,chỉ đường cho tôi
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,đưa bọn mình ra cái ảnh đó
+command_lead_way,đưa bọn mình ra cái ảnh đó
+command_lead_way,đưa bọn mình tới đó
+command_lead_way,đưa bọn mình tới đó
+command_lead_way,đưa anh tới đó
+command_lead_way,đưa anh tới đó
+command_lead_way,đưa thầy tới đó
+command_lead_way,đưa thầy từ đó
+command_lead_way,dẫn thầy rồi đó
+command_lead_way,vẫn thấy tớ đó
+command_lead_way,dây dẫn cô tới đó
+command_lead_way,dẫn cô tới đó
+command_lead_way,đường cho thấy ra chỗ đó
+command_lead_way,dẫn đường cho thầy ra chỗ đó
+command_lead_way,dẫn đường cho thấy ra bức ảnh này
+command_lead_way,dẫn đường cho thầy ra bức ra trong bức ảnh này
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,xin hãy đưa mình đi
+command_lead_way,xin hãy đưa mình đi
+introduce,một vài món ăn mà
+introduce,bạn đến từ đâu
+introduce,bạn có bay được không
+introduce,bạn có biết hát không
+introduce,bài viết chuẩn như
+introduce,ca sĩ bạn yêu thích mà đó là người như thế nào
+introduce,bạn thường làm gì lúc rảnh rỗi
+introduce,chất liệu tạo ra bạn là thạch
+introduce,mẹ thằng nào
+introduce,bạn có thể nấu ăn
+introduce,tên của bác lavie
+introduce,giới thiệu về ba đi
+introduce,kể cho mình nghe về bố mẹ
+introduce,bà thế ăn mòn
+introduce,bạn có thích xem đá bóng
+introduce,tên của bạn là
+introduce,gà rán
+introduce,bạn thích con gì nhất
+introduce,ai là người tạo ra bạn
+introduce,bạn bao nhiêu tuổi
+introduce,bạn được làm từ nguyên liệu gì
+introduce,bạn di chuyển như thế
+introduce,ai là người đặt tên cho bạn
+introduce,người tạo ra
+introduce,bạn thích trời mới chơi
+introduce,hãy cho tôi biết số đo bảo bạn
+introduce,gọi điện ra thì đã thích ăn cái gì
+introduce,cầu thủ nào
+introduce,bà đã
+introduce,adiva
+introduce,bà con không
+introduce,bạn đến từ đâu
+introduce,bà lái vậy
+introduce,bạn bao nhiêu tuổi
+introduce,làm gì lúc rảnh
+introduce,bạn có biết tiết không
+introduce,giới thiệu về bạn
+introduce,bạn bao nhiêu tuổi
+introduce,cao bao nhiêu
+introduce,bạn có tập thể dục không
+introduce,bạn có thể làm được những gì
+introduce,bạn thích môn thể thao
+introduce,chất liệu da bán là gì
+introduce,con gees
+introduce,cái gì thế
+introduce,đi ngủ lúc mấy giờ
+introduce,mỹ là ai rứa
+introduce,who are you
+introduce,mẹ thằng
+introduce,có thể nó ăn không
+introduce,bạn có thì đọc sách không
+introduce,tang môn chi rứa
+introduce,bạn có thích
+introduce,gia đình bạn có mấy người
+introduce,ăn cò biết không
+introduce,xin hỏi bạn là ai
+introduce,nhiệm vụ của bạn là gì
+introduce,nhiệm vụ của bạn là gì
+introduce,bạn có sử dụng facebook không
+introduce,ai là người đặt tên cho bạn
+introduce,7m
+introduce,gọi là gì
+introduce,bạn có sợ ma không
+introduce,bạn có thể nói
+introduce,ai là người tạo ra bạn
+introduce,bạn có thích chơi
+introduce,hãy kể tên một vài món ăn mà bà
+introduce,bạn có thể đọc
+introduce,sở thích
+introduce,bạn có thể làm được gì
+introduce,bạn thích chơi thể thao nào
+introduce,mày là ai
+introduce,báo thức
+introduce,bạn là ai vậy
+introduce,bạn cao bao nhiêu
+introduce,bạn thường làm gì lúc rảnh rỗi
+introduce,giới thiệu về bản thân
+introduce,bạn đến từ đâu
+introduce,tết của malaysia
+introduce,bạn có biết hát
+introduce,gia đình của bạn có mấy người
+command_lead_way,dẫn tôi đi
+command_lead_way,đi cùng nhé
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,dẫn đường cho thấy ra chỗ đó
+command_lead_way,chỉ đường cho tôi
+command_lead_way,nào dẫn tôi đi một vòng xem sao
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,đưa tôi đi tới các giải thương
+command_lead_way,bạn có thể giúp tôi được cái chỗ này được không
+command_lead_way,giới thiệu tới đó
+command_lead_way,dẫn đường cho mình đi
+command_lead_way,đưa tối đến nỗi ra
+command_lead_way,dẫn tôi đi chơi nào
+command_lead_way,dẫn đường cho mình
+command_lead_way,đưa bọn mình tới đó
+command_lead_way,đưa tối đợi trâu đó
+command_lead_way,cho tôi đá chỗ kia
+command_lead_way,tân cổ tới đó
+command_lead_way,đưa bọn mình ra cái ảnh đó
+command_lead_way,tôi đi tới tượng bác hồ
+command_lead_way,cho tôi đi một vòng xem nào
+command_lead_way,dân mình đi tới khu trưng bày huân chương của đại học quốc gia
+command_lead_way,hai đứa tuổi đi tham quan nơi này
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,hướng dẫn cho tôi
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,cơ thể tới đó
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,chỉ đường cho mình
+command_lead_way,rất tối đi chơi nào
+command_lead_way,giờ tôi tên các giải thưởng
+command_lead_way,đưa một mình ra cái ảnh đó
+command_lead_way,dẫn đường cho thể đã chỗ đó
+command_lead_way,bữa tối nên nhà vệ sinh
+command_lead_way,hướng dẫn cho tôi
+command_lead_way,đưa tôi ra
+command_lead_way,giận tôi đi nào
+command_lead_way,đưa đối tượng trâu đó
+command_lead_way,đưa bọn mình tới đó
+command_lead_way,đi cùng nhé
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,thích thì tới đó
+command_lead_way,dẫn tôi đi lát
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,cho tôi đi tham quan nào
+command_lead_way,đưa anh tới
+command_lead_way,đưa tôi đi tới tượng bác hồ
+command_lead_way,giận thấy tới đó
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,tôi đi tham quan nào
+command_lead_way,cho tôi đá châu á
+command_lead_way,thì tối lai châu
+command_lead_way,đưa tôi đi quanh đây nè
+command_lead_way,đưa anh tới đó
+command_lead_way,dẫn tôi đi ra kia
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,giận mình đi tới khu trưng bày huân chương của đại học quốc gia
+command_lead_way,tớ muộn ý quanh nơi này
+command_lead_way,đưa tôi đến nỗi ra
+command_lead_way,dẫn đường cho thể đá cho bức ảnh này
+command_lead_way,chỉ đường
+command_lead_way,đưa tôi đi quanh đây nào
+command_lead_way,cho tôi đến chỗ đó
+command_lead_way,xin hãy đưa mình đi
+command_lead_way,đưa tôi đi một vòng xem nào
+command_lead_way,dẫn đường cho tôi
+command_lead_way,làm món rất mình đi
+command_lead_way,đưa tôi đã nói
+command_lead_way,dân cố tai nạn
+command_lead_way,nhắc tôi đi tham quan nào
+command_lead_way,dẫn đường cho thể đã chỗ bức ảnh này
+command_lead_way,tối 1 đi qua nơi này
+command_lead_way,hai đứa tôi đi thăm quan ơi
+command_lead_way,bạn có thể giúp tôi đi cái chỗ này được không
+command_lead_way,9 hai đứa mình đi
+command_lead_way,cho tôi ra chỗ đó
+command_lead_way,nào dẫn tôi đi một vòng xem sao
+introduce,bạn là ai
+introduce,cầu thủ nào bạn yêu thích nhất
+introduce,bạn di chuyển như thế nào
+introduce,bạn có biết viết không
+introduce,ai tạo ra bạn
+introduce,ai làm ra bán
+introduce,giới thiệu về bản thân đi
+introduce,bạn có thích xem bóng đá
+introduce,bạn có thích tập thể dục
+introduce,giới thiệu về bản thân
+introduce,ai là người tạo ra bạn
+introduce,phải làm là bạn
+introduce,bạn có anh chị em gì
+introduce,bạn có thích tập thể dục
+introduce,bạn thích chơi môn thể thao nào
+introduce,bạn bao nhiêu tuổi
+introduce,bạn là ai
+introduce,hãy cho tôi biết số đo 3 vòng của bạn
+introduce,bạn có thể nấu ăn không
+introduce,bạn có biết làm việc nhà
+introduce,ngoài điện ra bạn có thích ăn món gì khác
+introduce,bạn cao bao nhiêu
+introduce,bạn có sử dụng facebook không
+introduce,bà là cái gì thế
+introduce,ai là người đặt tên cho
+introduce,chất liệu để tạo ra bạn là gì
+introduce,bạn là ai
+introduce,bán cò bay
+introduce,bạn thích trời mưa hay đấy
+introduce,gia đình bạn có mấy người
+introduce,ai tạo ra mày
+introduce,cá gì bạn yêu thích là ai đó là người như thế
+introduce,bạn có biết hát không
+introduce,tên của bạn là gì
+introduce,bạn có thích sơn tùng
+introduce,gia đình bạn có mấy
+introduce,bạn thích bài hát nào nhất
+introduce,kể cho mình nghe tên một vài loại mỹ phẩm bạn thường dùng
+introduce,số đo 3 vòng của bạn là bao
+introduce,mày là ai
+introduce,bạn có chỉ số eq
+introduce,bạn thích con gì nhất
+introduce,hãy kể tên một vài món ăn bạn thích
+introduce,bạn có thích chơi game không
+introduce,bạn có bay được
+introduce,cho mình vẽ về bố mẹ
+introduce,bạn đến từ đâu
+introduce,ai tạo ra bạn
+introduce,bạn có biết viết không
+introduce,bạn là ai
+introduce,bạn thích môn thể thao
+introduce,giới thiệu về bạn
+introduce,bạn thích chơi môn thể thao
+introduce,nhiệm vụ của bạn là gì
+introduce,bạn đi ngủ lúc mấy giờ
+introduce,bạn thích ăn món gì
+introduce,bán cỏ sử dụng facebook không
+introduce,bạn thích bài hát nào nhất
+introduce,cho mình nghe tên một vài loại mỹ phẩm bạn thường
+introduce,bạn còn sợ cái gì không
+introduce,sở thích của bạn là gì
+introduce,nhiệm vụ của bạn là gì
+introduce,bạn có thích sơn tùng
+introduce,bạn có thích rán không
+introduce,sở thích của bạn là gì
+introduce,cầu thủ nào bạn yêu thích nhất
+introduce,bạn có thích xem bóng đá không
+introduce,bạn có thể làm được những gì
+introduce,hãy cho tôi biết số đo 3 vòng của bạn
+introduce,vậy là
+introduce,bán còn sở cái gì
+introduce,bạn thích môn thể thao
+introduce,bạn thích trời mưa hay trời
+introduce,ai là người đặt tên cho bạn
+introduce,ai tạo ra mà
+introduce,hãy kể tên một vài loại món ăn bạn
+introduce,bạn có thể đọc sách không
+introduce,bạn có anh chị em gì không
+introduce,bạn có spa
+introduce,bạn có biết hát không
+introduce,bạn cao bao nhiêu
+introduce,bạn đi ngủ lúc mấy
+introduce,bạn có thể làm được những gì
+introduce,số đo 3 vòng của bạn là bao
+introduce,bạn con smart
+introduce,xin hỏi bạn là ai
+introduce,bạn có thể nấu ăn không
+introduce,bạn di chuyển như thế nào
+introduce,bạn bao nhiêu tuổi
+introduce,ngoài điện ra bạn có thích ăn món gì
+introduce,kể cho mình nghe về bố mẹ
+introduce,cá gì bạn yêu thích là ai đó là người như thế nào
+introduce,bảng xếp hạng vô địch
+introduce,bạn thích con gì nhất
+introduce,bạn có thể đọc sách không
+introduce,dạy trẻ về bạn đi
+introduce,xin hỏi bạn là ai
+introduce,bạn có thích chơi game không
+introduce,bạn có thích gà không
+introduce,bạn có biết làm được nhà
+introduce,chất liệu để tạo ra bạn là gì
+introduce,bạn đến từ đâu
+introduce,ai là người tạo ra bạn
+introduce,bạn là cái gì
+introduce,bạn thường làm gì lúc rảnh rỗi
+introduce,bạn có chỉ số eq
+introduce,bạn thường làm gì lúc này rồi
+introduce,tên của bạn là gì
+greeting,chào mừng robot
+greeting,xin chào
+greeting,rất vui được làm quen với bạn
+greeting,chào bạn
+greeting,good morning
+greeting,xin chào robot
+greeting,chào bạn
+greeting,chào
+greeting,chào buổi sáng
+greeting,hạnh được làm quen với bạn
+greeting,good morning
+greeting,hello
+greeting,ơi
+greeting,chào buổi chiều
+greeting,chào buổi sáng
+greeting,mình hỏi một chút
+greeting,robot
+greeting,robot
+greeting,tôi muốn ở
+greeting,chào buổi sáng
+greeting,rất vui được làm quen
+greeting,xin chào robot
+greeting,good morning
+greeting,chào bạn
+greeting,robot
+greeting,chào
+greeting,chào robot
+greeting,chào robot
+greeting,chào buổi sáng
+greeting,xin chào
+greeting,bạn cho mình hỏi một câu có được không
+greeting,nay robot
+greeting,chào buổi chiều
+greeting,cho mình hỏi với
+greeting,chào mừng bạn
+greeting,nay robot
+greeting,chào mừng robot
+greeting,chào mừng bạn
+greeting,sinh học một chút
+greeting,chào mừng bạn
+greeting,robot
+greeting,chào
+greeting,hello
+greeting,xin chào
+greeting,xin chào
+greeting,chó robot
+greeting,hello
+greeting,bao tử
+greeting,hai robot
+greeting,số điện thoại một chút với
+greeting,chào buổi chiếu
+greeting,cao cấp
+greeting,chào buổi sáng
+greeting,cũng được làm quen với bạn
+greeting,sức mạnh được làm quen với bạn
+greeting,nay robot
+greeting,good morning
+greeting,croatia ơi
+greeting,hello
+greeting,rất vui được làm quen
+greeting,chào mừng bạn
+greeting,hôm nay robot
+greeting,xin chào robot
+greeting,chào buổi sáng
+greeting,chào buổi sáng
+greeting,nàng robot
+greeting,rất vui được làm quen
+greeting,chào bạn
+greeting,chào
+greeting,cho cậu
+greeting,chào mừng robot
+greeting,xin chào
+greeting,xin chào bạn
+greeting,facebook ơi
+greeting,lối ra xin chào bạn
+greeting,robot
+command_lead_way,cho tôi xem nào
+command_lead_way,cho tôi đi chơi nào
+command_lead_way,cho tôi đi tham quan nào
+command_lead_way,tôi tham quan nào
+command_lead_way,đưa tôi nhà vệ sinh
+command_lead_way,đưa đi vệ sinh
+command_lead_way,đưa tôi đến nói ra
+command_lead_way,trữ tình mp3
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,chiều của tôi đến nhà vệ sinh nào
+command_lead_way,đưa tôi đi vòng vòng xem nào
+command_lead_way,đưa tôi đi vòng vòng xem nào
+command_lead_way,bạn có thể giúp tôi đi qua chỗ này được không
+command_lead_way,bạn có thể giúp tôi đi qua chỗ này được không
+command_lead_way,đưa tôi đi để tới các thầy thường
+command_lead_way,đưa tôi đi tới các giải thưởng
+command_lead_way,hãy đưa tôi đi tham quan đây này
+command_lead_way,hãy đưa tôi đi tham quan nơi này
+command_lead_way,tôi muốn đi qua nơi này
+command_lead_way,tôi muốn đi qua nơi này
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,nào dẫn tôi đi vào xem sao
+command_lead_way,nào cho tôi đi bộ xem sao
+command_lead_way,cùng đi nhé
+command_lead_way,cùng đi nhé
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,hướng dẫn hướng dẫn cho tôi nào
+command_lead_way,hướng dẫn cho tôi nào
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đưa tôi đi qua đây nào
+command_lead_way,đưa tôi đi qua đây nào
+command_lead_way,đưa tôi đi tới tượng bác hồ
+command_lead_way,đưa tôi đi tới tượng bác hồ
+command_lead_way,gummy bear youtube đẹp quốc gia
+command_lead_way,dẫn đường đi tới khu trưng bày huân chương của đảng quốc gia
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,dẫn đường cho mình đi
+command_lead_way,dẫn đường cho mình đi
+command_lead_way,dẫn tôi đi nào
+command_lead_way,youtube đi nào
+command_lead_way,đưa tôi tới chợ đó
+command_lead_way,đưa từ đó
+command_lead_way,cho tôi ra đó
+command_lead_way,từ từ ra đó
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,chưa đó
+command_lead_way,cho nó trước kia
+command_lead_way,cho tôi ra chỗ kia
+command_lead_way,dẫn tôi ra kia
+command_lead_way,ra kia
+command_lead_way,chỉ đường cho tôi
+command_lead_way,chỉ cho tôi
+command_lead_way,chỉ đường cho đó
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,đưa bọn mình ra cái ảnh đó
+command_lead_way,đua mình cái nó
+command_lead_way,đưa bọn mình đấy đó
+command_lead_way,đua mình tới đó
+command_lead_way,đưa anh tới đó
+command_lead_way,đưa anh tới đó
+command_lead_way,đưa thầy tới đó
+command_lead_way,điều gì đó
+command_lead_way,dẫn thầy tới đó
+command_lead_way,lửa đỏ
+command_lead_way,tấn công từ đó
+command_lead_way,dẫn đường cho thấy ra số đó
+command_lead_way,sen đỏ
+command_lead_way,dẫn đường cho thấy ra chỗ bức ảnh này
+command_lead_way,thứ bảy này
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,tin hai đứa mình đi
+command_lead_way,xe đời mới
+ask_who,ai là người vui tính nhất bạn đã từng
+ask_who,ai là nữ giảng viên xinh nhất đạo công
+ask_who,người trong ảnh kia là ai
+ask_who,ai là người vui tính nhất bạn đã từng gặp
+ask_who,ai là nữ diễn viên xinh nhất đại học công
+ask_who,ai là năm giáo viên đẹp trai nhất đại học
+ask_who,hiệu trưởng trường đại học công nghệ hiện nay là ai
+ask_who,đây là ai
+ask_who,kia là ai
+ask_who,ai kia
+ask_who,ai đang nói thế
+ask_who,người trong ảnh kia là ai
+ask_who,bạn kia là ai
+ask_who,người kia là ai
+ask_who,hiệu trưởng trường đại học công nghệ hiện nay là
+ask_who,ai là người trong ảnh
+ask_who,người kia là ai
+ask_who,thầy tùng là ai
+ask_who,kia là ai
+ask_who,ai kia
+ask_who,bạn kia là ai
+ask_who,ai là nhân vật chính trong bức tranh này
+ask_who,ai đang đứng trong ảnh kia
+ask_who,ai là nhân vật chính trong bức tranh này
+ask_who,đây là ai
+ask_who,cô vân là ai
+ask_who,thầy tùng là ai
+ask_who,cô vân là ai
+ask_who,ai đang nói thế
+ask_who,ai là người trong ảnh
+ask_who,ai là nam giáo viên đẹp trai nhất đại học công nghệ
+ask_who,đây là ai
+introduce,bạn thích bài hát nào nhất
+introduce,bạn là cái gì thế
+introduce,bạn thường làm gì lúc rảnh rỗi
+introduce,bạn di chuyển như thế nào
+introduce,bà có biết không
+introduce,bạn cao bao nhiêu
+introduce,giới thiệu về bản thân
+introduce,xin hỏi bạn là ai
+introduce,bạn bao nhiêu tuổi
+introduce,ai là người đặt tên cho bạn
+introduce,nhiệm vụ của bạn là gì
+introduce,bạn là ai
+introduce,ai là người đặt tên cho bạn
+introduce,giới thiệu về bản thân đi
+introduce,bạn có sợ ma
+introduce,bạn là ai vậy
+introduce,xin hỏi bạn là ai
+introduce,bạn là cái gì thế
+introduce,giới thiệu về bạn đi
+introduce,nhiệm vụ của bạn là gì
+introduce,bạn được làm từ nguyên liệu gì
+introduce,bạn có thể làm được những gì
+introduce,ai làm ra bạn
+introduce,ai làm ra bạn
+introduce,bạn là ai thế
+introduce,chất liệu để tạo ra bạn là gì
+introduce,ai tạo ra bạn
+introduce,ai là người tạo ra bạn
+introduce,giới thiệu về bạn đi
+introduce,ai là người tạo ra bạn
+introduce,bạn là ai
+introduce,tên của bạn là gì
+introduce,bạn là ai
+introduce,bạn là ai vậy
+introduce,bạn được làm từ nguyên liệu gì
+introduce,bạn bao nhiêu tuổi
+introduce,bạn có biết làm việc nhà không
+introduce,bạn có bay được không
+introduce,ai tạo ra bạn
+introduce,tên của bạn là gì
+introduce,bạn có thể làm được những gì
+introduce,ai là người đặt tên cho bạn
+introduce,bạn là ai vậy
+introduce,bạn là ai
+introduce,bạn là ai
+introduce,chất liệu để bán
+introduce,bạn là ai thế
+introduce,bạn đến từ đâu
+introduce,ai là người đặt tên cho
+introduce,bạn có sợ ma không
+command_lead_way,dẫn đường cho mình đi bán nó
+command_lead_way,có thể dẫn mình đi chơi được không
+command_lead_way,ô tô đi tham quan nào
+command_lead_way,đội mình ra cái ảnh đó
+command_lead_way,dẫn thấy tới đó
+command_lead_way,đưa cho tới tới đó đi
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,dẫn thầy tới đó
+command_lead_way,nước cốt từ đó
+command_lead_way,đưa bọn mình tới đó
+command_lead_way,đưa tôi tới chỗ đó đi
+command_lead_way,dẫn mình đi tới khu trưng bày huân chương của đại học quốc gia hà nội xem
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,dẫn đường đến thầy chùa phước hải
+command_lead_way,cho tôi đi một vòng trong nhà
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,chúng tôi đi tham quan nào
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,đưa tôi đi một vòng xem nào
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,lại đưa mình đi
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,đưa tôi đi một vòng xem nào
+command_lead_way,nhắc tôi đi qua chỗ này được không
+command_lead_way,hãy đưa tôi đi tham quan nơi này
+command_lead_way,cho tôi đi một vòng xem nào
+command_lead_way,dẫn tôi đi một vòng xem sao
+command_lead_way,uốn quanh nơi này
+command_lead_way,dẫn tôi đi chơi nào
+command_lead_way,chúng tôi đi tham quan nào
+command_lead_way,dẫn tôi ra đằng kia
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đưa tôi đi tới chỗ khác ở các giải thưởng
+command_lead_way,dẫn tới đi chơi nào
+command_lead_way,xin hãy đưa cho mình đi
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,dẫn mình tới khu trưng bày huân chương của đại học quốc gia đi
+command_lead_way,đưa cô từ đó đi
+command_lead_way,hãy đưa tôi đi tham quan chỗ này
+command_lead_way,dẫn tôi đi chơi nữa
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,tôi muốn đi qua nơi này
+command_lead_way,đưa tôi tới chỗ đó
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,đưa tôi tới bác hồ
+command_lead_way,mình đi được rồi đó
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,lô tô đi tham quan nào
+command_lead_way,đưa tôi đi tới khác chỗ giải thưởng
+command_lead_way,hãy đưa tôi đi thông qua nơi này
+command_lead_way,thôi tao cũng qua nơi này
+command_lead_way,dẫn tôi đi chơi nào
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,đồng minh ra cái ảnh đó
+command_lead_way,bạn có thể dẫn tôi đi qua chỗ này được không
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,cùng đi chơi nhé
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,liên minh tới khu trưng bày huân chương đại học quốc gia đi
+command_lead_way,dẫn đường cho mình đi bán
+command_lead_way,dẫn tôi đi tham quan nào
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,đưa tôi đi tới tượng bác hồ
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,cho tôi đi một vòng xem nào
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nữa
+command_lead_way,tôi muốn đi qua nơi này
+command_lead_way,dẫn đường cho thấy ra chỗ đó
+command_lead_way,xin hãy đưa mình đi
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,từ từ tượng bác hồ
+command_lead_way,dẫn thời tới đó
+command_lead_way,hướng dẫn tôi đi nào
+command_lead_way,nàng dâu tôi đi một vòng xem sao
+command_lead_way,dẫn tôi đi một vòng xem sao
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,bạn có thể dẫn tôi đi qua chỗ này được không
+command_lead_way,dẫn mình đi đâu không
+command_lead_way,tính tình thì cho số đó
+command_lead_way,đi chơi nào
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,bạn có thể giúp tôi đi qua chỗ này được không
+command_lead_way,dẫn tôi đi tham quan nào
+command_lead_way,hướng dẫn cho tôi nè
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,đưa tôi đến nhà vệ sinh bạn ơi
+command_lead_way,cùng đi chơi nhé
+command_lead_way,làm hướng dẫn mình đến
+command_lead_way,cho tôi đi làm
+command_lead_way,cho tôi ra chỗ kia
+command_lead_way,đưa tao đi tham quan nơi này
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,cho tôi xem số đó
+command_lead_way,đưa tôi tới tượng bác hồ
+command_lead_way,dẫn đường cho tôi đi nào
+command_lead_way,đồng minh ra cái ảnh đó
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,xem sao
+command_lead_way,có thể dẫn mình đi được không
+command_lead_way,cho tôi đi qua đây nào
+command_lead_way,chậm tôi đi chơi nào
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,đặt vòng xem sao
+command_lead_way,chỉ đường cho tôi
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,tôi muốn đi qua nơi này
+command_lead_way,tôi muốn đi qua nơi này
+greeting,robot
+greeting,chào buổi sáng
+greeting,chào buổi chiều
+greeting,xem robot
+greeting,good morning
+greeting,trong showbiz
+greeting,kính chào bạn
+greeting,này robot
+greeting,hello
+greeting,robot chơi
+greeting,rất hân hạnh được làm quen
+greeting,good morning
+greeting,rất vui được làm quen
+greeting,rất vui được làm quen
+greeting,robot
+greeting,chào mừng robot
+greeting,chào bạn
+greeting,chọc cậu
+greeting,xử lý máy nhiệt hello
+greeting,chào buổi tối
+greeting,xin chào bạn
+greeting,xin chào
+greeting,xin chào robot
+greeting,xe robot
+greeting,chào buổi sáng
+greeting,robot chơi
+greeting,cho mình hỏi với
+greeting,cho mình hỏi với
+greeting,làm quen
+greeting,ủa robot
+greeting,robot
+greeting,kính chào bạn
+greeting,chào buổi chiều
+greeting,robot
+greeting,aerobic
+greeting,xin chào bạn
+greeting,tên của bạn là gì
+greeting,rất hân hạnh được làm quen
+greeting,xin chào robot
+greeting,xin chào
+greeting,tôi đi tham quan cho ăn
+introduce,bạn là cái gì thế
+introduce,giới thiệu về bản thân bạn đi
+introduce,chất liệu để tạo ra bạn là gì
+introduce,bạn là ai thế
+introduce,giới thiệu về bản thân bạn đi
+introduce,bạn đến từ đâu
+introduce,bạn là ai thế
+introduce,bạn bao nhiêu tuổi
+introduce,bạn là ai
+introduce,bạn bao nhiêu tuổi
+introduce,mày là ai
+introduce,bạn là ai
+introduce,bạn là ai vậy
+introduce,ba là ai
+introduce,nhiệm vụ của bạn là gì
+introduce,ai là người đặt tên cho bạn
+introduce,báo thức làm được những gì
+introduce,ê bà là ai
+introduce,hai người tạo ra bạn
+introduce,giới thiệu về bản thân đi
+introduce,nhiệm vụ của bạn là gì
+introduce,ai là người tạo ra bạn
+introduce,bạn là ai
+introduce,ai là người tạo ra bạn thế
+introduce,ai là người tạo ra bạn
+introduce,mày là ai
+introduce,tên của bạn là gì
+introduce,bạn đến từ đâu
+introduce,ai là người đặt tên cho bạn
+introduce,bạn thường làm gì lúc rảnh rỗi
+introduce,bạn thường làm gì lúc rảnh rỗi
+introduce,tên của bạn là gì
+introduce,ai là người tạo ra bạn
+introduce,mày là ai
+introduce,ai là người tạo ra bạn
+introduce,bạn có thể làm được những gì
+introduce,giới thiệu về bản thân đi
+introduce,bạn là ai vậy
+introduce,giới thiệu về bạn đi
+introduce,tôi xem phiên bản thân bạn đi
+introduce,bạn bao nhiêu tuổi
+introduce,giới thiệu về bạn đi
+introduce,ai là người tạo ra bạn vậy
+command_lead_way,chỉ đường cho tôi
+command_lead_way,hãy đưa tôi đi thăm quan ơi
+command_lead_way,đưa tô đi tham quan nào
+command_lead_way,đưa tôi đi tới các giải thưởng
+command_lead_way,đưa anh tới đó
+command_lead_way,dẫn tôi đi chơi nào
+command_lead_way,dẫn tôi đi nào
+command_lead_way,đưa tôi ra đó
+command_lead_way,dân mình đi tới khu trưng bày huân chương của đại học quốc
+command_lead_way,hướng dẫn cho tôi nào
+command_lead_way,đưa tôi đi tới tượng bác hồ
+command_lead_way,nào dẫn tôi đi một vòng xem sao
+command_lead_way,đưa tôi đi thăm quan nào
+command_lead_way,xin hãy đưa mình
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,chỉ tôi ra chỗ đó
+command_lead_way,chỉ đường cho mình đi
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,đưa tôi tới chỗ đỏ
+command_lead_way,dẫn đi chơi
+command_lead_way,đưa tôi đi một vòng xem nào
+command_lead_way,xin hãy đưa mình
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,cho tôi ra chỗ kia
+command_lead_way,đưa bọn mình tới đó
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đưa bọn mình tới đó
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,đưa tôi đi một vòng xem nào
+command_lead_way,cùng đi nhé
+command_lead_way,đưa tôi ra đó
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,đưa tôi đi quanh đây
+command_lead_way,dân tôi giá kia
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,đưa tôi đến lối ra
+command_lead_way,đưa tôi tới chỗ đỏ
+command_lead_way,dẫn mình đi tới khu trưng bày huân chương của đại học quốc gia
+command_lead_way,dẫn đường cho tôi
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,dẫn tôi đi nào
+command_lead_way,dẫn tôi đi tham quan nào
+command_lead_way,nào dẫn tôi đi một vòng xem nào
+command_lead_way,cho tôi ra chỗ kia
+command_lead_way,chỉ tôi ra chỗ đó
+command_lead_way,dẫn đường cho mình đi
+command_lead_way,đưa thầy tới đó
+command_lead_way,hãy đưa tôi đi tham quan nơi này
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,dân tôi gia kia
+command_lead_way,chỉ đường cho tôi
+command_lead_way,tôi muốn đi qua nơi này
+command_lead_way,đưa tôi đi tới các giải thưởng
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh
+command_lead_way,đưa tôi tới chỗ đó
+command_lead_way,đưa thầy tuổi đó
+command_lead_way,bạn có thể giúp tôi đi qua chỗ này được không
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,dẫn đường cho mình đi
+command_lead_way,sơn tây đi tham quan nào
+command_lead_way,tôi muốn đi qua nơi này
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,cùng đi nhé
+command_lead_way,hướng dẫn cho tôi nào
+command_lead_way,đưa anh tới đó
+command_lead_way,đưa tôi tới chỗ đó
+command_lead_way,bạn có thể giúp tôi đi qua chỗ này được không
+ask_where,hội thảo quốc tế học việt nam lần thứ 5 với chủ đề phát triển bền vững trong bối cảnh biến đổi toàn câu diễn ra ở đâu
+ask_where,bức ảnh được chụp
+ask_where,lễ khai giảng năm học đầu tiên của đại học quốc gia việt nam ngày 15 tháng 11 năm 1945 được tổ chức ở đâu
+ask_where,lời giải ở đâu
+ask_where,các danh hiệu của dương ở đâu
+ask_where,lễ khai giảng năm học đầu tiên của đại học quốc gia việt nam ngày 15 tháng 11 năm 1945 được tổ chức ở đâu
+ask_where,nhà vệ sinh ở đâu
+ask_where,diễn đàn buồn đại học thùy chốt đầu nha tổ chức tại đâu năm 2006
+ask_where,đây là đâu
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 được tổ chức ở địa điểm nào
+ask_where,bức ảnh được chụp ở
+ask_where,nhà vệ sinh ở
+ask_where,đại tướng võ nguyên giáp đã từng học tập ở đâu
+ask_where,đại học quốc gia hà nội được xây dựng lại ở đâu vào năm 2004
+ask_where,nhà vệ sinh ở hướng
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 với chủ đề để phát triển bền vững trong bối cảnh miền núi toàn cầu diễn ra ở đâu
+ask_where,người lạ ở chỗ
+ask_where,đại tướng võ nguyên giáp đã từng học tập tại địa điểm nào
+ask_where,đại tướng võ nguyên giáp đã từng học tập tại địa điểm nào
+ask_where,tòa nhà điều hành nằm ở vị trí nào
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 được tổ chức ở địa điểm nào
+ask_where,đại học quốc gia hà nội được xây dựng lại ở đâu vào năm 2004
+ask_where,tôi là ở chỗ nào
+ask_where,nguyên tổng bí thư trường trinh từng theo học ở đại học
+ask_where,nguyên tổng bí thư trường trinh từng theo học ở đại học nào
+ask_where,các danh hiệu của trường ở
+ask_where,nhà vệ sinh ở hưng
+ask_where,đây là đâu
+ask_where,diễn đàn buồn đại học chú chuột đông á tổ chức tại đâu 2006
+ask_where,tòa nhà điều hành ở đâu
+ask_where,diễn đàn buồn đại học chú chuột đông a năm 2006 được tổ chức ở nước nào
+ask_where,tòa nhà điều hành nằm ở vị trí
+ask_where,đại tướng võ nguyên giáp đã từng học tập ở đâu
+ask_where,tòa nhà điều hành ở đâu
+ask_where,người ta ở đâu
+ask_where,cán bộ đại học đông a năm 2006 được tổ chức ở nơi nào
+chat,chỉ số iq của bạn là bao nhiêu
+chat,chỉ số iq của bạn là bao nhiêu
+chat,bạn thích làm gì nhất
+chat,bạn có sở thích gì không
+chat,goodbye
+chat,bài
+chat,bạn là trai hay gái
+chat,bạn thử kể một câu chuyện ma đi
+chat,bạn có sở thích gì không
+chat,đoán xem tôi có gì
+chat,chỉ số iq của bạn là bao nhiêu
+chat,bạn có bằng cấp gì không
+chat,bạn ăn cơm chưa
+chat,bạn ăn cơm chưa
+chat,arata gay
+chat,bạn biết bay không
+chat,bài
+chat,ngoài nói ra bạn có làm được thứ gì khác không
+chat,tạm biệt
+chat,bạn có thể hát một bài không
+chat,tạm biệt
+chat,bạn biết bay không
+chat,bạn có tiền không
+chat,bạn thích làm gì nhất
+chat,bạn có thể hạ bài không
+chat,bạn thử kể một câu chuyện ma đi
+chat,bạn có yêu tôi không
+chat,hôm nay bạn thế nào
+chat,thời tiết hôm nay thế nào
+chat,bạn có người yêu chưa
+chat,thời tiết hôm nay thế nào
+chat,một cộng một bằng mấy
+chat,bạn có tiền không
+chat,bạn có bằng cấp gì không
+chat,ngoài nói ra bạn có làm được thứ gì khác không
+chat,hôm nay bạn thế nào
+chat,một cộng một bằng mấy
+chat,bạn có người yêu chưa
+chat,đoán xem tôi có gì
+chat,bạn có yêu tôi không
+greeting,chào mừng bạn
+greeting,chào mừng robot
+greeting,rất hân hạnh được làm quen
+greeting,rất hân hạnh được làm quen
+greeting,6 +
+greeting,robot đời
+greeting,chào buổi chiều
+greeting,robot
+greeting,xin chào robot
+greeting,chào robot
+greeting,cho mình hỏi với
+greeting,hello
+greeting,chào bạn
+greeting,nay robot
+greeting,rất vui được làm quen
+greeting,chào
+greeting,ê cu
+greeting,xin chào
+greeting,robot
+greeting,chào buổi sáng
+greeting,hello
+greeting,hi google
+greeting,xin chào bạn
+greeting,chào buổi chiều
+greeting,kính chào bạn
+greeting,cho mình hỏi với
+greeting,chào cậu
+greeting,xin chào
+greeting,chào mừng bạn
+greeting,ê cu
+greeting,xin chào robot
+greeting,rất vui được làm quen
+greeting,robot
+greeting,hi girl
+greeting,kính chào bạn
+greeting,nhảy robot
+greeting,chào buổi sáng
+greeting,xe robot
+greeting,good morning
+greeting,chào bạn
+greeting,good morning
+greeting,chào robot
+greeting,xin chào bạn
+greeting,chào mừng robot
+greeting,chào
+introduce,tên của bạn là gì
+introduce,tên của bạn là gì
+introduce,các bạn
+introduce,ai là người tạo ra bạn
+introduce,giới thiệu về bản thân đi
+introduce,giới thiệu khởi my
+introduce,nhiệm vụ của bạn là gì
+introduce,vụ là gì
+introduce,bạn bao nhiêu tuổi
+introduce,bao nhiêu tuổi
+introduce,bạn có thể làm được những gì
+introduce,bạn có thể làm những gì
+introduce,bạn là ai
+introduce,bạn là ai
+introduce,chất liệu để tạo ra bạn là gì
+introduce,chất liệu đoạn là gì
+introduce,ai là người đặt tên cho bạn
+introduce,ăn liền cho bạn
+introduce,bạn di chuyển như thế nào
+introduce,bạn là ai vậy
+introduce,bạn là ai vậy
+introduce,gửi thiệu về bạn đi
+introduce,ai tạo ra bạn
+introduce,mày là ai
+introduce,mày là ai
+introduce,bạn anh thế
+introduce,bạn lại cái gì thế
+introduce,xin hỏi bạn là ai
+introduce,xin lỗi bạn là ai
+introduce,giới thiệu về bạn đi
+introduce,giới thiệu bạn đi
+ask_what,kêu là cái gì vậy
+ask_what,bạn có thể giải thích cho tôi về bức ảnh này được không
+ask_what,hãy giải thích cho tôi về vấn đề này được
+ask_what,bạn có thể giải thích cho tôi về bức ảnh này được không
+ask_what,bạn có thể giải thích cho tôi về bức ảnh này được không
+ask_what,hãy giải thích cho tôi về bức ảnh này được không
+ask_what,giải thích cho tôi bức ảnh này được không
+ask_what,bạn có thể giải thích cho tôi về bức ảnh này được không
+ask_what,bạn có thể giải thích cho tôi những bức ảnh này được không
+ask_what,đây là cái gì vậy
+ask_what,đây là cái gì vậy
+ask_what,hãy giải thích cho tôi về bức ảnh này được không
+ask_what,cái gì vậy
+ask_what,đây là cái gì
+ask_where,nhà vệ sinh ở đâu
+ask_where,ở đâu
+ask_where,đây là đâu
+ask_where,về đâu
+ask_where,bữa nay chủ ở đâu
+ask_where,bức ảnh được chụp ở đâu
+ask_where,núi ở đâu
+ask_where,lối ra ở đâu
+ask_where,các danh hiệu của trường ở đâu
+ask_where,các ngôi trường ở đâu
+ask_where,tòa nhà điều hành ở đâu
+ask_where,tôi đang ở đâu
+ask_where,đại tướng võ nguyên giáp đã từng học tập ở đâu
+ask_where,tại chợ 46 tầng ở đâu
+ask_where,nguyên tổng bí thư trường trinh từng là cựu sinh viên ở đâu
+ask_where,nguyên tổng bí thư đinh thế giới ở đâu
+ask_where,diễn đàn bốn đại học thủ chốt đông nam á tổ chức tại đâu năm 2006
+ask_where,2016
+ask_where,lễ khai giảng năm học đầu tiên của đại học quốc gia việt nam được tổ chức ở đâu
+ask_where,quốc gia việt nam được tổ chức ở đâu
+ask_where,đại học quốc gia hà nội được xây dựng lại ở đâu võ năm 2014
+ask_where,đại học quốc gia hà nội được xây dựng ở đâu vào năm 2004
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 với chủ đề phát triển bền vững trong bối cảnh biến đổi toàn cầu diễn ra ở đâu
+ask_where,tiếng việt nam học lần thứ 5 với chủ đề phát triển bền vững trong bối cảnh toàn cầu hiện lương ở đâu
+ask_where,hội thảo quốc tế về biến đổi khí hậu do tổ chức ipcc chủ liên hợp quốc được tổ chức tại nơi nào
+ask_where,hội thảo quốc tế về biến đổi khí hậu tổ chức ipcc thuộc liên hợp quốc ở tổ chức tại nơi nào
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 được tổ chức ở địa điểm nào
+ask_where,việt nam học lần thứ 5 được tổ chức ở đường nào
+ask_where,tòa nhà điều hành nằm ở vị trí nào
+ask_where,tòa nhà điều hành nằm ở vị trí nào
+ask_where,đối dài chỗ nào
+ask_where,lối ra ở chỗ nào
+ask_where,nhà vệ sinh ở hướng nào
+ask_where,em xinh ở chỗ nào
+ask_where,đại tướng võ nguyên giáp đã từng học tập tại địa điểm nào
+ask_where,đại tướng võ nguyên giáp ở tại bệnh viện nào
+ask_where,nguyên tổng bí thư trường trinh từng theo học ở đại học nào
+ask_where,nguyên tổng bí thư trường trinh từ đại học ở đại học nào
+ask_where,diễn đàn muốn học đông nam á năm 2006 được tổ chức nơi nào
+ask_where,diễn đàn muốn học cho năm 2006 là của nước nào
+chat,bạn có biết hát không
+chat,ngoài nói ra bạn có làm được thứ gì khác không
+chat,bạn thích bài hát nào nhất
+chat,cầu thủ nào tốt nhất
+chat,bạn có thích sơn tùng không
+chat,bạn có thích gà rán không
+chat,bạn là trai hay gái
+chat,bạn biết bay không
+chat,bạn thích con gì nhất
+chat,bạn có thể hát một bài không
+chat,một cộng một bằng mấy
+chat,bạn thích ăn món gì
+chat,bye
+chat,bạn có tiền không
+chat,thời tiết hôm nay thế
+chat,bạn có thể nấu ăn không
+chat,bạn có sở thích gì không
+chat,chất liệu để tạo ra bạn là gì
+chat,bạn thích làm gì nhất
+chat,bạn có thích gà rán không
+chat,bạn có thể đọc sách không
+chat,bạn có thích chơi game không
+chat,bạn có thích tập thể dục không
+chat,bạn thích môn thể thao nào
+chat,kể cho mình nghe về bố mẹ ạ
+chat,bạn ăn cơm chưa
+chat,một cộng một bằng mấy
+chat,sở thích của bạn là gì
+chat,bạn có thể nấu ăn không
+chat,ca sĩ bạn yêu thích là ai đó là người như thế nào
+chat,bạn có thích xem bóng đá không
+chat,tạm biệt
+chat,bạn có người yêu chưa
+chat,ca sĩ bạn yêu thích là ai đó là người như thế nào
+chat,ngoài đó ra bạn có làm được thứ gì khác không
+chat,thời tiết hôm nay thế nào
+chat,kể cho mình nghe về bố mẹ bạn
+chat,gọi điện ra thì bạn theo màu gì khác
+chat,bạn có người yêu chưa
+chat,bạn thích ăn món gì
+chat,kể cho mình nghe tên một vài loại mỹ phẩm bạn thường dùng
+chat,bạn có chỉ số eq không
+chat,hôm nay bạn thế nào
+chat,bạn ăn cơm chưa
+chat,cầu thủ nào bạn yêu thích nhất
+chat,bạn thử kể một câu chuyện ma
+chat,bạn di chuyển như thế nào
+chat,bạn có biết làm việc nhà không
+chat,bay
+chat,bạn có thích sơn tùng không
+chat,goodbye
+chat,bạn có thể đọc sách không
+chat,bạn có tiền không
+chat,hãy kể tên một vài món ăn mà bạn thích
+chat,chỉ số iq của bạn là bao nhiêu
+chat,bạn có biết viết không
+chat,ngoài điện ra thì bạn thích ăn món gì khác
+chat,bạn có bằng cấp gì không
+chat,đoán xem tôi có gì
+chat,bạn có biết hát không
+chat,bạn thích trời mưa hay trời nắng
+chat,bạn thích chơi môn thể thao nào
+chat,chỉ số iq của bạn là bao nhiêu
+chat,bạn cao bao nhiêu
+chat,hôm nay bạn thế nào
+chat,bạn có thích bóng đá
+chat,bạn có sợ cái gì không
+chat,bạn có thích chơi game không
+chat,bạn có thể hát một bài không
+chat,bạn thích con gì
+chat,bạn thường làm gì lúc rảnh rỗi
+chat,giá xe ô tô có gì
+chat,goodbye
+chat,bạn thích chơi môn thể thao nào
+chat,bạn thích làm gì nhất
+chat,bạn biết bay không
+chat,bà thử kể một câu chuyện ma
+chat,tạm biệt
+chat,bạn có sợ cái gì không
+chat,bạn có bằng cấp gì không
+chat,bạn thích môn thể thao
+chat,bạn là trai hay gái
+chat,bạn có yêu tôi không
+chat,bạn có yêu tôi không
+chat,bạn có thích tập thể dục không
+chat,sở thích của bạn là gì
+chat,bạn có chỉ số eq không
+chat,kể cho mình nghe tên một vài loại mỹ phẩm bạn thường dùng
+chat,hãy kể tên một vài món ăn mà bạn thích
+chat,bạn có sở thích gì không
+chat,bạn có bay được không
+chat,bạn đến từ đâu
+ask_where,nhà vệ sinh ở hướng nào
+ask_where,đây là đâu
+ask_where,tòa điều hành ở
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 được tổ chức ở địa điểm
+ask_where,lối ra ở chỗ nào
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 được tổ chức ở địa điểm nào
+ask_where,lối ra ở đâu
+ask_where,nhà vệ sinh ở hướng nào
+ask_where,đại học quốc gia hà nội được xây dựng lại ở đâu năm 2000
+ask_where,lễ khai giảng năm học đầu tiên của đại học quốc gia việt nam được tổ chức
+ask_where,nhà vệ sinh ở đâu
+ask_where,đưa ra ở chỗ nào
+ask_where,tòa nhà điều hành nằm ở vị trí nào
+ask_where,lối ra ở
+ask_where,bức ảnh được chụp ở đâu
+ask_where,diễn đạt bốn đại học thủ tốt đông á tổ chức tại đâu năm 2006
+ask_where,hội thảo quốc tế về biến đổi khí hậu do tổ chức ipcc thuộc liên hợp quốc được tổ chức tại nơi nào
+ask_where,đại học quốc gia hà nội được xây dựng lại ở đâu năm 2000
+ask_where,bức ảnh được chụp ở đâu
+ask_where,tòa nhà điều hành nằm ở vị trí nào
+ask_where,đại tướng võ nguyên giáp đã từng học tập ở đâu
+ask_where,nguyên tổng bí thư trường trinh từng là cựu sinh viên ở đâu
+ask_where,lễ khai giảng năm học đầu tiên của đại học quốc gia việt nam được tổ chức ở
+ask_where,nhà vệ sinh ở đâu
+ask_where,các danh hiệu của trường ở đâu
+ask_where,hội thảo quốc tế về biến đổi khí hậu do tổ chức ipcc thuộc liên hợp quốc được tổ chức tại nơi nào
+ask_where,nguyên tổng bí thư trường trinh từng là cựu sinh viên ở
+ask_where,các danh hiệu của trường ở
+ask_where,đại tướng võ nguyên giáp đã từng học tập ở
+ask_where,diễn đàn bốn đại học chủ chốt đông á tổ chức tại đâu năm 2000
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 với chủ đề phát triển bền vững trong bối cảnh biến đổi toàn cầu diễn ra ở đâu
+ask_where,đây là đâu
+ask_where,hội thảo quốc tế việt nam học lần thứ 5 với chủ đề phát triển bền vững trong bối cảnh biến đổi toàn cầu diễn ra ở đâu
+ask_where,tòa điều hành ở
+greeting,thú robot
+greeting,nhảy robot
+greeting,robot ơi
+greeting,cho mình hỏi với
+greeting,chào buổi sáng
+greeting,xin chào
+greeting,hai robot
+greeting,chào mừng bạn
+greeting,chào
+greeting,kính chào bạn
+greeting,chào cậu
+greeting,good morning
+greeting,chào
+greeting,robot
+greeting,chào robot
+greeting,good morning
+greeting,chào buổi chiều
+greeting,chào buổi chiều
+greeting,xin chào bạn
+greeting,chào mừng robot
+greeting,xe robot
+greeting,rất vui được làm quen
+greeting,chào mừng robot
+greeting,xin chào robot
+greeting,chào bạn
+greeting,hello
+greeting,chào bạn
+greeting,chào robot
+greeting,rất vui được làm quen
+greeting,kính chào bạn
+greeting,rất hân hạnh được làm quen
+greeting,này robot
+greeting,xe robot
+greeting,robot
+greeting,rất hân hạnh được làm
+greeting,chào mừng bạn
+greeting,robot này
+greeting,xin chào bạn
+greeting,xin chào robot
+greeting,robot đồ chơi
+greeting,xin chào
+greeting,chào bạn chào bạn
+greeting,chào buổi sáng
+greeting,hello
+greeting,robot
+greeting,robot kia ơi
+greeting,robot này
+greeting,robot kia ơi
+greeting,chào cậu
+command_lead_way,dẫn đường đi tới khu trước mà vẫn chưa của đại quốc gia
+command_lead_way,chỉ đường cho
+command_lead_way,đi cùng
+command_lead_way,vẫn thấy đó
+command_lead_way,tôi muốn đi quay lưng
+command_lead_way,bạn có thể cho tôi cái chỗ này
+command_lead_way,chị tôi ra chỗ đó
+command_lead_way,dẫn đường cho thời gian số 1
+command_lead_way,chỉ đường cho tôi đến nhà vệ sinh nào
+command_lead_way,xin hãy đưa mình đi
+command_lead_way,gọi mình tới đó
+command_lead_way,nước ta
+command_lead_way,dẫn đường cho tôi đi
+command_lead_way,đi chơi một chút thì sao nhỉ
+command_lead_way,dân ta đi chơi nào
+command_lead_way,tôi đi tham quan nào
+command_lead_way,cho tôi coi chị bí đỏ
+command_lead_way,nữ thần đó
+command_lead_way,lá mơ chữa bệnh gì
+command_lead_way,chỉ đường cho
+command_lead_way,tôi đi qua
+command_lead_way,rất mình đi tới khu trưng bày huân chương của đảng
+command_lead_way,bạn có thể cho tôi đi qua chỗ này
+command_lead_way,nào dẫn tôi đi vào xem nào
+command_lead_way,cho tôi đi tới các thể thơ
+command_lead_way,cho tôi xem súng
+command_lead_way,cùng đi nhé
+command_lead_way,nước một mình giá cả
+command_lead_way,đua ô tô đi tham quan nào
+command_lead_way,vẫn cố thân đê
+command_lead_way,người ta đi vào xem nào
+command_lead_way,dẫn đường tới thành phố
+command_lead_way,dẫn đường cho thầy ra số 3
+command_lead_way,chỉ đường ra chỗ đó
+command_lead_way,chỉ đường
+command_lead_way,dẫu sao
+command_lead_way,chị tôi đang cho nó
+command_lead_way,cho tôi
+command_lead_way,đưa tôi đi tham quan à
+command_lead_way,đường đi tới khu trưng bay của đại học quốc gia
+command_lead_way,hãy đưa tôi đi
+command_lead_way,tôi thapki
+command_lead_way,dẫn tao đi chơi nào
+command_lead_way,đai đỏ
+command_lead_way,xem bóng đá trực tuyến
+command_lead_way,tao đi chỗ nào
+command_lead_way,nữ thần rắn
+command_lead_way,đưa tôi đến nó ra
+command_lead_way,dẫn thời tiết
+command_lead_way,đưa tôi đi bảo
+command_lead_way,đưa tôi đi tới về bác hồ
+command_lead_way,đưa tôi đến rồi
+command_lead_way,đưa tôi đi qua đây nào
+command_lead_way,đưa tôi đến nhà vệ sinh
+command_lead_way,nào giờ tôi đi một vòng
+greeting,chào
+greeting,nhảy robot
+greeting,chào mừng bạn
+greeting,thay đổi
+greeting,chào mừng robot
+greeting,chào buổi sáng
+greeting,nhảy robot
+greeting,chào cậu
+greeting,chào buổi chiều
+greeting,xin chào bạn
+greeting,số điện thoại
+greeting,rất vui được làm quen
+greeting,xin chào bạn
+greeting,robot chị ơi
+greeting,xin chào
+greeting,rất hân hạnh được làm
+greeting,xin chào bạn
+greeting,chào buổi sáng
+greeting,dấu một ơi
+greeting,chào robot
+greeting,xin chào
+greeting,chào bạn
+greeting,chào
+greeting,trợ thủ môn
+greeting,chào mừng bạn
+greeting,xin chào robot
+greeting,chào cậu
+greeting,rủ một ơi
+greeting,rất vui được làm quen
+greeting,rất hân hạnh được làm quen
+greeting,chào buổi chiều
+greeting,chào mừng tổ 1
+greeting,xin chào robot
+greeting,xin chào bạn
+greeting,robot kia ơi
+greeting,cho mình hỏi với
+greeting,aerobic
+greeting,chào bạn
+greeting,hai robot
+greeting,aroma
+ask_who,người tên anh là ai
+ask_who,thì đúng là ai
+ask_who,thầy tụng là ai
+ask_who,người chồng anh kia là ai
+ask_who,ai là người vui tính nhất bạn đã từng gặp
+ask_who,ai làm giáo viên đẹp trai nhất trường đại học công nghệ
+ask_who,bạn kia là ai
+ask_who,hiệu trưởng trường đại học công nghệ hiện nay là
+ask_who,đây là
+ask_who,ai thắng nói thế
+ask_who,ai đã nói
+ask_who,ai là nam diễn viên đẹp trai nhất đại học công nghệ
+ask_who,kia là ai
+ask_who,bố vẫn là ai
+ask_who,ai là người vui tính nhất bạn đã từng gặp
+ask_who,ai là người đông anh
+ask_who,ngày kia là
+ask_who,ai là người trong các thế kỉ
+ask_who,người kia là ai
+ask_who,ai đánh đức trong anh
+ask_who,người chồng anh kia là ai
+ask_who,nhân vật đáng đứng trong
+ask_who,bạn kia là ai
+ask_who,ai là người đóng băng
+ask_who,ai đang đứng trong anh kia
+ask_who,ai là người châu á
+ask_who,ai là nhân vật chính trong bức tranh này
+ask_who,nhân vật nào đáng đứng trong anh
+ask_who,người tiếng anh là ai
+ask_who,bố bạn là ai
+ask_who,ai là nữ diễn viên xinh nhất đại học có
+ask_who,thiên ái
+ask_who,hiệu trưởng trường đại học công nghệ hiện nay là ai
+ask_who,đây là ai
+ask_who,ai là nhân vật chính trong bức tranh
+ask_who,ai là nữ diễn viên xinh nhất đại học công nghệ
+ask_what,bức tranh này nói về cái gì
+ask_what,trâu ảnh 1.0 là cái gì vậy
+ask_what,vật này là cái gì vậy
+ask_what,đây là cái gì
+ask_what,con trâu này là cái gì
+ask_what,vật ở đó là cái gì
+ask_what,vật ở đó là cái gì
+ask_what,bức ảnh này nói về cái
+ask_what,ảnh một chấm không nói về cái gì vậy
+ask_what,cái gì kia
+ask_what,bức tranh nói về cái gì
+ask_what,bức ảnh này nói về cái gì
+ask_what,cái gì kia
+ask_what,thứ trong thùng kín là cái gì thế
+ask_what,chụp ảnh 1.0 là cái gì
+ask_what,con trâu này là cái gì
+ask_what,bức tranh nói về cái gì
+ask_what,thứ trong thùng kín là cái gì thế
+ask_what,đây là màu gì
+ask_what,đây là cái chi
+ask_what,đây là cái gì
+ask_what,kia là cái gì
+ask_what,những người trong tranh đang làm gì vậy
+ask_what,mật khẩu wi-fi cho phòng truyền thống là gì
+ask_what,giải thưởng này là gì
+ask_what,mật khẩu wifi phòng truyền thống là gì
+ask_what,những người trong tranh đang làm gì
+ask_what,bức tranh này nói về cái gì
+ask_what,đây là cái gì
+ask_what,kia là cái gì
+ask_what,t là cái gì
+ask_what,ảnh 1.0 nói về cái gì
+ask_what,đây là cái gì
+ask_what,ảnh này nói về vấn đề gì vậy
+ask_what,đây là cái chi
+ask_what,ảnh này nói về vấn đề gì
+ask_what,vật này là cái gì vậy
+ask_what,giải thưởng này là gì
+greeting,chào buổi sáng
+greeting,good morning
+greeting,cao
+greeting,cho mình hỏi với
+greeting,goodbye
+greeting,robot đời
+greeting,xin chào robot
+greeting,xin chào
+greeting,robot này
+greeting,hai robot
+greeting,hello
+greeting,chào buổi chiều
+greeting,rất vui được làm quen
+greeting,xin chào
+greeting,rất hân hạnh được làm quen
+greeting,xin chào bạn
+greeting,chào bạn
+greeting,hello
+greeting,yêu beat
+greeting,cho mình hỏi với
+greeting,dù chị ơi
+greeting,gà tấn hàng được làm quen
+greeting,chào buổi sáng
+greeting,kính chào bạn
+greeting,xin chào
+greeting,hello
+greeting,cháo
+greeting,hai robot
+greeting,chào mừng bạn
+greeting,chào
+greeting,kính chào bạn
+greeting,chào mừng robot
+greeting,chào buổi chiều
+greeting,google now
+greeting,chào
+greeting,chào mừng bạn
+greeting,xin chào
+greeting,chào buổi chiều
+greeting,good morning
+greeting,good morning
+greeting,chào bà
+greeting,chào mừng bạn
+greeting,chào buổi sáng
+greeting,vụ robot
+greeting,robot
+greeting,rất vui được làm quen
+greeting,nay robot
+greeting,hello
+greeting,chào buổi sáng
+greeting,xin chào bạn
+greeting,chào cậu
+greeting,chào mừng bạn
+greeting,chào robot
+greeting,đồ chơi
+greeting,chào robot
+greeting,cao robot
+greeting,chào cậu
+greeting,chào bạn
+greeting,cảm ứng robot
+greeting,xin chào robot
+greeting,chào buổi chiều
+greeting,chào bạn
+greeting,xe robot
+greeting,nay robot
+greeting,câu hỏi ơi
+chat,bạn ăn cơm chưa
+chat,thời tiết hôm nay thế nào
+chat,ngoài ra bạn có làm được thứ gì khác không
+chat,hôm nay bạn thế nào
+chat,bạn có yêu tôi không
+chat,tạm biệt
+chat,bạn có người yêu chưa
+chat,bạn là trai hay gái
+chat,ngoài ra bạn còn làm được gì khác không
+chat,lá thư kể một câu chuyện mà em đi
+chat,chỉ số iq của bạn là bao
+chat,chỉ số iq của bạn là bao nhiêu
+chat,tạm biệt
+chat,bạn có tiền không
+chat,bạn còn tiền không
+chat,bạn có thể hát một bài không
+chat,bạn có bằng cấp gì không
+chat,bạn biết bay không
+chat,bạn ăn cơm chưa
+chat,bạn thích làm gì nhất
+chat,bạn có người yêu chưa
+chat,bạn có yêu tôi không
+chat,một cộng một bằng mấy
+chat,bạn có bằng cấp gì không
+chat,một cộng một bằng mấy
+chat,bạn có thể hát một bài không
+chat,bạn thư kể một câu chuyện mà em đi
+chat,hôm nay bạn thế nào
+chat,bạn biết bay không
+chat,cho xem tôi coi gì
+chat,đang xem tuổi con gì
+chat,bạn có sở thích gì không
+chat,bạn thích làm gì nhất
+chat,bạn là trai hay gái
+chat,thời tiết hôm nay thế nào
+chat,bạn có sở thích gì không
+ask_what,mật khẩu wifi phòng truyền thống là gì
+ask_what,mật khẩu tính là gì
+ask_what,đây là cái gì
+ask_what,đây là cái gì
+ask_what,cái gì kia
+ask_what,cái gì kìa
+ask_what,thứ trong thùng kính là cái gì thế
+ask_what,như thế
+ask_what,đêm màu gì
+ask_what,đây là màu gì
+ask_what,đây là cái gì
+ask_what,đây là cái gì
+ask_what,đây là cái gì
+ask_what,khi là cái chi
+ask_what,vật này là cái gì vậy
+ask_what,hôm nay là cái gì vậy
+ask_what,đây là gì
+ask_what,giải tiếng này là gì
+ask_what,nói cái gì
+ask_what,bữa nay nó bị cái gì
+ask_what,những người trong tranh đang làm gì vậy
+ask_what,đang làm gì vậy
+ask_what,trong ảnh là cái gì vậy
+ask_what,cái này là cái gì vậy
+ask_what,ảnh này nói về cái gì vậy
+ask_what,ảnh này nói về cái gì vậy
+ask_what,bức tranh này nói về cái gì
+ask_what,bến xe nói cái gì
+ask_what,huân chương này là cái gì
+ask_what,là cái gì
+ask_what,đây là cái gì
+ask_what,đây là cái gì
+ask_what,bật ở đó là cái gì
+ask_what,bật cái gì
