@@ -35,6 +35,8 @@ for row in csv_reader:
             for symnonym in entity.get("synonyms"):
                 if symnonym in text:
                     start = text.index(symnonym)
+                    if start >1 and text[start-1] != ' ':
+                        continue
                     end = start + len(symnonym)
                     entities.append({"start":start,"end":end,"entity":entity.get("entity"),"value":entity.get("original_value")})
         if len(entities)==0:
