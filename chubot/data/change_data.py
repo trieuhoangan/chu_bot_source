@@ -37,7 +37,10 @@ for row in csv_reader:
                     start = text.index(symnonym)
                     if start >1 and text[start-1] != ' ':
                         continue
-                    end = start + len(symnonym)
+                    end = start + len(symnonym) - 1
+                    if end+1 != len(text):
+                        if text[end+1] != ' ':
+                            continue
                     entities.append({"start":start,"end":end,"entity":entity.get("entity"),"value":entity.get("original_value")})
         if len(entities)==0:
             json_object.get("nlu_data").get("common_examples").append({"text":text,"intent":intent})
