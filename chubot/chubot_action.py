@@ -17,7 +17,7 @@ class ChuBotAction():
         self.start_flag = True
         self.active_entities = {}
         # TODO perhaps if folder exists -> load metadata file
-
+        
     def load_domain(self, domain_file):
         """Load domain info to bot
         """
@@ -131,3 +131,37 @@ class ChuBotAction():
             responses = self.handle_message(inmessage, debug=False)
             for response in responses:
                 print("Chubot:", response)
+
+    def custom_handle_message(self, inmessage, debug=False, intent_prob_threshold=0.3, **kwargs):
+        """Simple rule_based response
+        """
+        import itertools
+
+        # TODO handle first welcome, repetitive input, etc -> state of conversation
+        entities_pred = self.chubot.predict_entity(inmessage)
+        intents_pred = self.chubot.predict_intent(inmessage)
+        if debug:
+            print("Predicted entity: ", entities_pred)
+            print("Predicted intent: ", intents_pred)
+
+        # select the first ranked predicted entity/intents
+        # handle entities with different values but same entity type
+
+        active_entities = {"active_entities": entities_pred}
+        # select highest probable intent
+        (prob, intent) = intents_pred[0]
+
+        if prob < intent_prob_threshold:
+            bot_actions = ["default_fallback"]
+        else:
+            # TODO handle key error?
+            bot_actions = self.followup_actions.get(intent)
+
+        if debug:
+            print(bot_actions)
+
+        bot_responses = [self.handle_action(
+            action, **active_entities) for action in bot_actions]
+        bot_responses = list(itertools.chain(*bot_responses))
+
+        return bot_responses

@@ -1,16 +1,19 @@
+# -*- coding: utf-8 -*-
 import json
 import os
 import spacy
 import sklearn_crfsuite
 import random
 import io
-
+import codecs
 
 class ChuBotBrain():
     # TODO maybe init models folder here instead of handling in train*
     def __init__(self, name, language='vi'):
+        
         self.name = name
         self.model_folder = "./models"
+        
         self.crf_model_path = os.path.join(
             "./models", self.name + "_NERCRF.pkl")
         self.intent_cls_model_path = os.path.join(
@@ -30,7 +33,6 @@ class ChuBotBrain():
                   self.model_folder)
         else:
             print("Successfully created the directory %s " % self.model_folder)
-
         # load spacy nlp for pos tag
         # TODO handle loading exception
         if language == "en":
@@ -40,13 +42,17 @@ class ChuBotBrain():
 
     def load_data(self, datafile, **kwargs):
         # TODO handle exception
-        with open(datafile, 'r', encoding="utf8") as f:
-            data = json.loads(f.read())
+        with open(datafile,'r',encoding='utf-8') as f:
+            # print("xin chào")
+            # print(f.read())
 
+            data = json.loads(f.read())
+        # print(data)
         # data fields
         for cell in data['nlu_data']['common_examples']:
             # if cell.get("text") == None:
             #     continue
+            # print(cell)
             self.common_examples.append(cell)
 
         for cell in data['nlu_data']['entity_synonyms']:
@@ -246,7 +252,7 @@ class ChuBotBrain():
     def load_json_data(datafile):
         # deprecated!!!
         # TODO handle exception here
-        with open(datafile, 'r') as f:
+        with open(datafile, 'r',encoding="utf-8") as f:
             data = json.loads(f.read())
 
         # data fields
@@ -264,8 +270,9 @@ class ChuBotBrain():
 
         # dataset
         dataset = []
-
-        print(self.common_examples)
+        with open('log.txt','w',encoding='utf-8') as f:
+            f.write(str(self.common_examples))
+        
         for example in self.common_examples:
             #  List[(start_index, end_index, entity)]
             # if example.get('text')==None:
@@ -343,3 +350,4 @@ class ChuBotBrain():
     def sent2tokens(self, sent):
         # token is the word!
         return [token for token, postag, label in sent]
+    def load_model(self):

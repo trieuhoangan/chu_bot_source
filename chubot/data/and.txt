@@ -1,0 +1,12 @@
+{
+                "text": "robot kia oi",
+                "intent": "greeting",
+                "entities": [
+                    {
+                        "start": 6,
+                        "end": 8,
+                        "entity": "location",
+                        "value": "position"
+                    }
+                ]
+            }

@@ -1,11 +1,13 @@
+# coding=<utf-8>
 from chubot_brain import ChuBotBrain
 from chubot_action import ChuBotAction
 import sys
 import csv
 import json
+import codecs
 
 
-def craete_model(name):
+def create_model(name):
     chubot = ChuBotBrain(name, language='vi')
     chubot.load_data("data/test.json")
     # chubot.load_data("data/vi_nlu_ask_way.json")
@@ -28,7 +30,7 @@ def test_predict():
     # chubot = ChuBotBrain(botname, language='vi')
     action = ChuBotAction(botname)
     action.load_domain(action_domain_file)
-    intent_file = open('data/intent.csv', 'r', encoding="utf8")
+    intent_file = open('data/intent.csv', 'r', encoding="utf-8")
     csvreader = csv.reader(intent_file, delimiter=',')
     list_command_code = []
     for row in csvreader:
@@ -42,6 +44,9 @@ def test_predict():
         inmessage = inmessage.lower()
         responses = action.chubot.predict_intent(inmessage)
         entities = action.chubot.predict_entity(inmessage)
+        f = open('log.txt','w',encoding='utf-8')
+        
+        
         print(action.chubot.nlp(inmessage))
         print(responses)
         print("\n")
@@ -63,6 +68,6 @@ def test_predict():
 
 
 if __name__ == "__main__":
-    craete_model('an')
+    create_model('an')
     # test_response()
     test_predict()
