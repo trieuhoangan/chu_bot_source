@@ -1,6 +1,7 @@
 # coding=<utf-8>
 from chubot_brain import ChuBotBrain
 from chubot_action import ChuBotAction
+from api import ChatBotAPI
 import sys
 import csv
 import json
@@ -68,6 +69,9 @@ def test_predict():
 
 
 if __name__ == "__main__":
-    create_model('an')
+    bot = ChatBotAPI('vi','an')
     # test_response()
-    test_predict()
+    # test_predict()
+    bot.load_model()
+    line = bot.predict_message("aloha")
+    print(line)

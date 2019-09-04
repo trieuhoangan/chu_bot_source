@@ -350,4 +350,3 @@ class ChuBotBrain():
     def sent2tokens(self, sent):
         # token is the word!
         return [token for token, postag, label in sent]
-    def load_model(self):

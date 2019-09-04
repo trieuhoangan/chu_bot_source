@@ -1,24 +1,33 @@
 import json
-
+from chubot_brain import ChuBotBrain
 import sklearn_crfsuite
-
+import io
+import csv
 class ChatBotAPI():
     def __init__(self,language,botname):
         self.followup_actions = []
         self.action_templates = []
         self.action_custom = []
         self.slots = []
-        action_domain_file = "data/new_domain.json"
-        self.load_domain(action_domain_file)
+        domain_file = "data/new_domain.json"
+        # self.load_domain(action_domain_file)
         self.chatbot = ChuBotBrain(botname, "vi")
-        self.entity_model = None
-        self.intent_model = None
         self.tfidf = None
         self.le = None
-        self.followup_actions = None
-        self.action_templates = None
-        self.action_custom = None
-        self.slots = None
+        self.crf = None
+        self.clf = None
+        with io.open(domain_file) as f:
+            action_domain = json.loads(
+                open(domain_file, encoding="utf-8").read())
+
+        # self.followup_actions = None
+        # self.action_templates = None
+        # self.action_custom = None
+        # self.slots = None
+        self.followup_actions = action_domain["action_domain_data"]["followup_actions"]
+        self.action_templates = action_domain["action_domain_data"]["action_templates"]
+        self.action_custom = action_domain["action_domain_data"]["action_custom"]
+        self.slots = action_domain["action_domain_data"]["slots"]
     def load_domain(self, domain_file):
         """Load domain info to bot
         """
@@ -33,15 +42,17 @@ class ChatBotAPI():
         self.action_templates = action_domain["action_domain_data"]["action_templates"]
         self.action_custom = action_domain["action_domain_data"]["action_custom"]
         self.slots = action_domain["action_domain_data"]["slots"]
+
     def load_model(self):
         import cloudpickle
         from sklearn.externals import joblib
         crf = joblib.load(self.chatbot.crf_model_path)
+        self.crf = crf
         with io.open(self.chatbot.intent_cls_model_path, "rb") as f:
             tfidf, le, clf = cloudpickle.load(f)
-            self.intent_model = clf
-            self.le = le
-            self.tfidf = tfidf
+        self.clf = clf
+        self.le = le
+        self.tfidf = tfidf
 
     def handle_action(self, action, **kwargs):
         """Handle a response action
@@ -115,15 +126,15 @@ class ChatBotAPI():
         bot_responses = list(itertools.chain(*bot_responses))
 
         return bot_responses
-    def predict_intent(message):
+    def predict_intent(self,message):
         inmessage_tokens = [token.text for token in self.chatbot.nlp(message)]
         inmessage_join_tokens = " ".join(inmessage_tokens)
-        inmessage_vector = tfidf.transform([inmessage_join_tokens])
+        inmessage_vector = self.tfidf.transform([inmessage_join_tokens])
         # predict the probabilies
         y_probs = self.clf.predict_proba(inmessage_vector)
 
         # labels of each classes
-        labels = self.le.inverse_transform(clf.classes_)
+        labels = self.le.inverse_transform(self.clf.classes_)
         # print(labels)
         y_probs_with_labels = list(zip(y_probs[0], labels))
         # sort the probabilities retrieving the indices of
@@ -132,7 +143,7 @@ class ChatBotAPI():
         y_probs_with_labels.sort(key=lambda v: -v[0])
 
         return y_probs_with_labels
-    def predict_entity(message):
+    def predict_entity(self,message):
         indoc = self.chatbot.nlp(message)
         insent = [(ii.text, ii.tag_, 'N/A') for ii in indoc]
         insent_features = self.chatbot.sent2features(insent)
@@ -157,21 +168,22 @@ class ChatBotAPI():
 
         return tagged_entities
     def predict_message(self, inmessage):
-        intent_file = open('/data/intent.csv','r',encoding="utf8")
+        intent_file = open('data/intent.csv','r',encoding="utf8")
         csvreader = csv.reader(intent_file,delimiter=',')
         list_command_code=[]
         for row in csvreader:
             list_command_code.append(row)
-    
-        response = bot.handle_message(inmessage)
-        intents = bot.chubot.predict_intent(inmessage)
-        entities = bot.chubot.predict_entity(inmessage)
+        print(list_command_code)
+        response = self.handle_message(inmessage)
+        intents = self.predict_intent(inmessage)
+        entities = self.predict_entity(inmessage)
         (prob,intent) = intents[0]
         command_code = 0
         for command in list_command_code:
-            if(command.get("intent")==intent):
-                print(command.get("command_code"))
-                command_code=command.get("command_code")
+            if(command[1]==intent):
+                print(command[2])
+                command_code=command[2]
         result_json = {"intent":intent,"entities":entities,"command_code":command_code,"response":response}
         return json.dumps(result_json,ensure_ascii=False)
-    
+
+        
