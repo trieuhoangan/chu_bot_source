@@ -8,15 +8,12 @@ import json
 def craete_model(name):
     chubot = ChuBotBrain(name, language='vi')
     chubot.load_data("data/test.json")
-    # chubot.load_data("data/vi_nlu_ask_way.json")
     meta = chubot.train()
-    # print(meta)
-    # print(chubot.entity_synonyms)
 
 
 def test_response():
     botname = "an"
-    action_domain_file = "data/action_domain.json"
+    action_domain_file = "data/new_domain.json"
     chubot = ChuBotAction(botname, language='vi')
     chubot.load_domain(action_domain_file)
     chubot.run_commandline_bot()

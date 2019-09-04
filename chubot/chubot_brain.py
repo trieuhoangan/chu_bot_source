@@ -177,7 +177,9 @@ class ChuBotBrain():
         # TODO Word embedding
         tfidf = TfidfVectorizer()
         x_train = tfidf.fit_transform(x_join_tokens)
-        # print(x_train[0].todense())   ## x_train is in compressed sparse row format
+        # print(x_train[0].todense())
+        # print("", x.shape)
+        # ## x_train is in compressed sparse row format
         # transform y
         le = LabelEncoder()
         y_train = le.fit_transform(y_labels)
@@ -227,7 +229,11 @@ class ChuBotBrain():
         # Vectorize using tfidf
         inmessage_tokens = [token.text for token in self.nlp(inmessage)]
         inmessage_join_tokens = " ".join(inmessage_tokens)
+        # print("inmessage_join_tokens", inmessage_join_tokens)
+
         inmessage_vector = tfidf.transform([inmessage_join_tokens])
+        # print("inmessage_vector", inmessage_vector.shape)
+        # print(inmessage_vector)
         # predict the probabilies
         y_probs = clf.predict_proba(inmessage_vector)
 
