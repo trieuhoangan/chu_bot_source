@@ -167,6 +167,7 @@ class ChatBotAPI():
              'confidence': conf} for ix, label, conf in ent_probs_idx]
 
         return tagged_entities
+
     def predict_message(self, inmessage):
         intent_file = open('data/intent.csv','r',encoding="utf8")
         csvreader = csv.reader(intent_file,delimiter=',')

@@ -73,5 +73,5 @@ if __name__ == "__main__":
     # test_response()
     # test_predict()
     bot.load_model()
-    line = bot.predict_message("aloha")
+    line = bot.predict_message("dẫn đường")
     print(line)
