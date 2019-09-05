@@ -1,0 +1,90 @@
+{
+  "action_domain_data": {
+    "user_intents": [
+      "command_return",
+      "greeting",
+      "introduce",
+      "command_lead_way",
+      "ask_who",
+      "ask_where",
+      "ask_what",
+      "chat",
+      "end_conversation"
+    ],
+    "bot_actions": [
+      "default_fallback",
+      "bot_goodbye",
+      "bot_greeting",
+      "bot_return",
+      "bot_lead_way",
+      "bot_answer",
+      "bot_introduce",
+      "bot_chat",
+      "bot_ask_who",
+      "bot_ask_what",
+      "bot_ask_where"
+    ],
+    "followup_actions": {
+      "chat": ["bot_chat"],
+      "greeting": ["bot_greeting"],
+      "command_return": ["bot_return"],
+      "introduce": ["bot_introduce"],
+      "ask_who": ["bot_ask_who"],
+      "ask_where": ["bot_ask_where"],
+      "ask_what": ["bot_ask_what"],
+      "command_lead_way": ["bot_command_lead_way"],
+      "end_conversation": ["bot_goodbye"]
+    },
+    "action_templates": {
+      "default_fallback": [
+        "I dont know",
+        "Xin lỗi tôi không hiểu ý bạn",
+        "mình không hiểu ý bạn",
+        "i cant hear you, please say again",
+        "please speak louder",
+        "i cant understand"
+      ],
+      "bot_goodbye": [
+        "bye",
+        "bye bye",
+        "see you again",
+        "thank you",
+        "good bye",
+        "hope to see you again"
+      ],
+      "bot_return": ["xin phép về chỗ", "thank you", "thank you for using me"],
+      "bot_greeting": [
+        "xin chào bạn",
+        "Nice to meet you",
+        "It’s nice to meet you",
+        "I’m pleased to meet you.",
+        "I’m glad to see you.",
+        "It’s a pleasure to meet you.",
+        "Good to see you."
+      ],
+      "bot_introduce": ["my name is FUTO", "i am FUSO"],
+      "bot_answer": ["hello"],
+      "bot_command_lead_way": ["follow me", "please follow me", "go with me"],
+      "bot_ask_who": ["đây là bác hồ"],
+      "bot_ask_where": ["đây là phòng truyền thống "],
+      "bot_ask_what": ["this is the picture"],
+      "bot_chat": [
+        "that the funny question",
+        "i confusing",
+        "ummm let me thinking",
+        "i dont know what to say",
+        "do you really need the answer"
+      ]
+    },
+    "action_custom": {
+      "custom_retrieve_image": {
+        "func_name": "retrieve_image",
+        "kwargs": {
+          "entity": "group",
+          "value": "default_value"
+        }
+      }
+    },
+    "slots": [{ "entity": "group", "type": "text" }]
+  }
+}
