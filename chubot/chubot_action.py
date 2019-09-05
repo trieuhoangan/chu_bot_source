@@ -17,7 +17,7 @@ class ChuBotAction():
         self.start_flag = True
         self.active_entities = {}
         # TODO perhaps if folder exists -> load metadata file
-        
+
     def load_domain(self, domain_file):
         """Load domain info to bot
         """

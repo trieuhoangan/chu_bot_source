@@ -6,6 +6,7 @@ import sys
 import csv
 import json
 import codecs
+# from langdetect import detect
 
 
 def create_model(name):
@@ -28,6 +29,7 @@ def test_response():
 def test_predict():
     botname = "an"
     action_domain_file = "data/new_domain.json"
+
     # chubot = ChuBotBrain(botname, language='vi')
     action = ChuBotAction(botname)
     action.load_domain(action_domain_file)
@@ -43,11 +45,9 @@ def test_predict():
         if inmessage == 'stop':
             break
         inmessage = inmessage.lower()
+
         responses = action.chubot.predict_intent(inmessage)
         entities = action.chubot.predict_entity(inmessage)
-        f = open('log.txt','w',encoding='utf-8')
-        
-        
         print(action.chubot.nlp(inmessage))
         print(responses)
         print("\n")
@@ -70,9 +70,12 @@ def test_predict():
 
 if __name__ == "__main__":
     create_model('an')
-    # bot = ChatBotAPI('vi','an')
-    # test_response()
     test_predict()
+
+    # test_response()
+    # bot = ChatBotAPI('vi', 'an')
     # bot.load_model()
-    # line = bot.predict_message("dẫn đường")
+    # line = bot.predict_message("who are you")
     # print(line)
+    # print(detect("War doesn't show who's right, just who's left."))
+    # detect("War doesn't show who's right, just who's left.")

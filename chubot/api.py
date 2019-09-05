@@ -3,8 +3,10 @@ from chubot_brain import ChuBotBrain
 import sklearn_crfsuite
 import io
 import csv
+
+
 class ChatBotAPI():
-    def __init__(self,language,botname):
+    def __init__(self, language, botname):
         self.followup_actions = []
         self.action_templates = []
         self.action_custom = []
@@ -28,6 +30,7 @@ class ChatBotAPI():
         self.action_templates = action_domain["action_domain_data"]["action_templates"]
         self.action_custom = action_domain["action_domain_data"]["action_custom"]
         self.slots = action_domain["action_domain_data"]["slots"]
+
     def load_domain(self, domain_file):
         """Load domain info to bot
         """
@@ -126,7 +129,8 @@ class ChatBotAPI():
         bot_responses = list(itertools.chain(*bot_responses))
 
         return bot_responses
-    def predict_intent(self,message):
+
+    def predict_intent(self, message):
         inmessage_tokens = [token.text for token in self.chatbot.nlp(message)]
         inmessage_join_tokens = " ".join(inmessage_tokens)
         inmessage_vector = self.tfidf.transform([inmessage_join_tokens])
@@ -143,7 +147,8 @@ class ChatBotAPI():
         y_probs_with_labels.sort(key=lambda v: -v[0])
 
         return y_probs_with_labels
-    def predict_entity(self,message):
+
+    def predict_entity(self, message):
         indoc = self.chatbot.nlp(message)
         insent = [(ii.text, ii.tag_, 'N/A') for ii in indoc]
         insent_features = self.chatbot.sent2features(insent)
@@ -169,22 +174,21 @@ class ChatBotAPI():
         return tagged_entities
 
     def predict_message(self, inmessage):
-        intent_file = open('data/intent.csv','r',encoding="utf8")
-        csvreader = csv.reader(intent_file,delimiter=',')
-        list_command_code=[]
+        intent_file = open('data/intent.csv', 'r', encoding="utf8")
+        csvreader = csv.reader(intent_file, delimiter=',')
+        list_command_code = []
         for row in csvreader:
             list_command_code.append(row)
         print(list_command_code)
         response = self.handle_message(inmessage)
         intents = self.predict_intent(inmessage)
         entities = self.predict_entity(inmessage)
-        (prob,intent) = intents[0]
+        (prob, intent) = intents[0]
         command_code = 0
         for command in list_command_code:
-            if(command[1]==intent):
+            if(command[1] == intent):
                 print(command[2])
-                command_code=command[2]
-        result_json = {"intent":intent,"entities":entities,"command_code":command_code,"response":response}
-        return json.dumps(result_json,ensure_ascii=False)
-
-        
+                command_code = command[2]
+        result_json = {"intent": intent, "entities": entities,
+                       "command_code": command_code, "response": response}
+        return json.dumps(result_json, ensure_ascii=False)

@@ -66,9 +66,15 @@
       "bot_answer": ["hello"],
       "bot_command_lead_way": ["follow me", "please follow me", "go with me"],
       "bot_ask_who": ["đây là bác hồ"],
-      "bot_ask_where": ["đây là việt nam"],
-      "bot_ask_what": ["đây là bức tranh"],
-      "bot_chat": ["đang giờ làm việc không nói chuyện riêng"]
+      "bot_ask_where": ["đây là phòng truyền thống "],
+      "bot_ask_what": ["this is the picture"],
+      "bot_chat": [
+        "that the funny question",
+        "i confusing",
+        "ummm let me thinking",
+        "i dont know what to say",
+        "do you really need the answer"
+      ]
     },
     "action_custom": {
       "custom_retrieve_image": {

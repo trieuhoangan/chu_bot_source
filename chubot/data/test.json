@@ -6971,7 +6971,7 @@
             },
             {
                 "text": "bye",
-                "intent": "chat"
+                "intent": "end_conversation"
             },
             {
                 "text": "cá gì bạn yêu thích là ai đó là người như thế",
@@ -15415,7 +15415,7 @@
             },
             {
                 "text": "goodbye",
-                "intent": "greeting"
+                "intent": "end_conversation"
             },
             {
                 "text": "google now",
@@ -15423,19 +15423,19 @@
             },
             {
                 "text": "goodbye",
-                "intent": "chat"
+                "intent": "end_conversation"
             },
             {
                 "text": "goodbye",
-                "intent": "chat"
+                "intent": "end_conversation"
             },
             {
                 "text": "goodbye",
-                "intent": "chat"
+                "intent": "end_conversation"
             },
             {
                 "text": "goodbye",
-                "intent": "chat"
+                "intent": "end_conversation"
             },
             {
                 "text": "hai robot",
@@ -22226,6 +22226,138 @@
                         "value": "question"
                     }
                 ]
+            },
+            {
+                "text": "let have a little chat",
+                "intent": "greeting"
+            },
+            {
+                "text": "bye",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "see you soon",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "see you tomorrow",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "see you later",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "good bye",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "we will talk later",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "that is all",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "thank you",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "bye bye",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "just leave",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "go away",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "get out of my way ",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "get the fuck off",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "thanks",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "what's your name",
+                "intent": "introduce"
+            },
+            {
+                "text": "what is your name",
+                "intent": "introduce"
+            },
+            {
+                "text": "what are you",
+                "intent": "introduce"
+            },
+            {
+                "text": "who are you",
+                "intent": "introduce"
+            },
+            {
+                "text": "who create you",
+                "intent": "introduce"
+            },
+            {
+                "text": "tell me who you are",
+                "intent": "introduce"
+            },
+            {
+                "text": "introduce yourself",
+                "intent": "introduce"
+            },
+            {
+                "text": "tell me about you",
+                "intent": "introduce"
+            },
+            {
+                "text": "show me who you are",
+                "intent": "introduce"
+            },
+            {
+                "text": "introduce to me now",
+                "intent": "introduce"
+            },
+            {
+                "text": "can you introduce yourself",
+                "intent": "introduce"
+            },
+            {
+                "text": "i want to know more about you",
+                "intent": "introduce"
+            },
+            {
+                "text": "i want to know you",
+                "intent": "introduce"
+            },
+            {
+                "text": "tạm biệt",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "chào tạm biệt",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "mình về nhé",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "kết thúc",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "tạm biệt",
+                "intent": "end_conversation"
             }
         ],
         "regex_features": [],
