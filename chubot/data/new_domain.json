@@ -8,7 +8,8 @@
       "ask_who",
       "ask_where",
       "ask_what",
-      "chat"
+      "chat",
+      "end_conversation"
     ],
     "bot_actions": [
       "default_fallback",
@@ -31,17 +32,18 @@
       "ask_who": ["bot_ask_who"],
       "ask_where": ["bot_ask_where"],
       "ask_what": ["bot_ask_what"],
-      "command_lead_way": ["bot_command_lead_way"]
+      "command_lead_way": ["bot_command_lead_way"],
+      "end_conversation" : ["bot_goodbye"]
     },
     "action_templates": {
       "default_fallback": [
         "Xin lỗi tôi không hiểu ý bạn",
         "mình không hiểu ý bạn"
       ],
-      "bot_goodbye": ["bye", "bye bye", "see you"],
+      "bot_goodbye": ["bye", "bye bye", "see you again","thank you","good bye"],
       "bot_return": ["em xin phép về chỗ"],
       "bot_greeting": ["xin chào bạn"],
-      "bot_introduce": ["mình là FUTO", "mình là piggy"],
+      "bot_introduce": ["my name is FUTO", "i am FUSO"],
       "bot_answer": ["xin đơi mình 1 chút"],
       "bot_command_lead_way": ["ok đi theo mình nào"],
       "bot_ask_who": ["đây là bác hồ"],

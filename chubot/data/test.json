@@ -13479,7 +13479,31 @@
             },
             {
                 "text": "goodbye",
-                "intent": "chat"
+                "intent": "end_conversation"
+            },
+            {
+                "text": "see you again",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "see you later",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "thanks",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "thank you",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "we will talk later",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "see you soon",
+                "intent": "end_conversation"
             },
             {
                 "text": "bài",
@@ -15211,7 +15235,7 @@
             },
             {
                 "text": "bye",
-                "intent": "chat"
+                "intent": "end_conversation"
             },
             {
                 "text": "bạn có tiền không",
@@ -15489,7 +15513,7 @@
             },
             {
                 "text": "goodbye",
-                "intent": "chat"
+                "intent": "end_conversation"
             },
             {
                 "text": "bạn có thể đọc sách không",
@@ -15639,7 +15663,7 @@
             },
             {
                 "text": "goodbye",
-                "intent": "chat"
+                "intent": "end_conversation"
             },
             {
                 "text": "bạn thích chơi môn thể thao nào",
@@ -18621,7 +18645,7 @@
             },
             {
                 "text": "goodbye",
-                "intent": "greeting"
+                "intent": "end_conversation"
             },
             {
                 "text": "robot đời",

@@ -69,9 +69,10 @@ def test_predict():
 
 
 if __name__ == "__main__":
-    bot = ChatBotAPI('vi','an')
+    create_model('an')
+    # bot = ChatBotAPI('vi','an')
     # test_response()
-    # test_predict()
-    bot.load_model()
-    line = bot.predict_message("dẫn đường")
-    print(line)
+    test_predict()
+    # bot.load_model()
+    # line = bot.predict_message("dẫn đường")
+    # print(line)
