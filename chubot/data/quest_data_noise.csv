@@ -566,7 +566,7 @@ ask_what,bức tranh này nói về cái gì thế,bức tranh này nói về c�
 ask_what,bức tranh này nói về cái gì thế,bức tranh nói về cái gì
 ask_what,bức tranh này nói về cái gì thế,bức tranh nói về cái gì
 ask_what,bức tranh này nói về cái gì thế,này nói về cái gì
-chat,bye,bye
+end_conversation,bye,bye
 introduce,"ca sĩ bạn yêu thích là ai, đó là người như thế nào",cá gì bạn yêu thích là ai đó là người như thế
 introduce,"ca sĩ bạn yêu thích là ai, đó là người như thế nào",cá gì bạn yêu thích là ai đó là người như thế nào
 chat,"ca sĩ bạn yêu thích là ai, đó là người như thế nào",ca sĩ bạn yêu thích là ai đó là người như thế nào
@@ -1462,12 +1462,12 @@ greeting,good morning,good morning
 greeting,good morning,good morning
 greeting,good morning,good morning
 greeting,good morning,good morning
-greeting,good morning,goodbye
+end_conversation,good morning,goodbye
 greeting,good morning,google now
-chat,goodbye,goodbye
-chat,goodbye,goodbye
-chat,goodbye,goodbye
-chat,goodbye,goodbye
+end_conversation,goodbye,goodbye
+end_conversation,goodbye,goodbye
+end_conversation,goodbye,goodbye
+end_conversation,goodbye,goodbye
 greeting,hai robot,hai robot
 greeting,hai robot,hai robot
 greeting,hai robot,hai robot
@@ -2170,3 +2170,8 @@ introduce,hi,introduce to me now
 introduce,hi,can you introduce yourself
 introduce,hi,i want to know more about you
 introduce,hi,i want to know you
+end_conversation,tạm biệt,tạm biệt
+end_conversation,tạm biệt,chào tạm biệt
+end_conversation,tạm biệt,mình về nhé
+end_conversation,tạm biệt,kết thúc
+end_conversation,tạm biệt,tạm biệt
