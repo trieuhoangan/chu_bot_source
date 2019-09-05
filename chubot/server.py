@@ -3,7 +3,7 @@ from flask import Flask
 import json
 app = Flask(__name__)
 import csv
-
+from flask import request 
 @app.route("/")
 def home():
     return("hello")
@@ -11,8 +11,10 @@ def home():
 class AnAction(ChuBotAction):
     pass
 
-@app.route("/send_message")
-def handle_message(self,inmessage):
+@app.route("/send_text",methods={'POST'})
+def handle_message():
+    inmessage = request.request.get_data()
+    inmessage = inmessage.decode('utf-8')
     botname = 'an'
     bot  = ChuBotAction(botname)
     bot.load_domain("data/new_domain.json")
