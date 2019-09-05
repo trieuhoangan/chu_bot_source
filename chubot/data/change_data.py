@@ -3,7 +3,7 @@ import json
 import csv
 import spacy
 
-intent_file = open('quest_data.csv', newline='', encoding="utf8")
+intent_file = open('quest_data_noise.csv', newline='', encoding="utf8")
 entity_file = open('entity_list.csv', newline='', encoding="utf8")
 json_object = {"nlu_data": {"common_examples": [],
                             "regex_features": [], "lookup_tables": [], "entity_synonyms": []}}
@@ -28,7 +28,7 @@ for row in csv_reader:
     if line_count == 0:
         line_count = line_count+1
         continue
-    text = row[1].lower()
+    text = row[2].lower()
     intent = row[0].lower()
     if text != "":
         entities = []
