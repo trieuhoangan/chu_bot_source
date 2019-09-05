@@ -1,4 +1,5 @@
 # coding=<utf-8>
+from flask import Flask
 from chubot_brain import ChuBotBrain
 from chubot_action import ChuBotAction
 from api import ChatBotAPI
@@ -6,6 +7,8 @@ import sys
 import csv
 import json
 import codecs
+from flask import request
+
 # from langdetect import detect
 
 
@@ -69,9 +72,25 @@ def test_predict():
 
 
 if __name__ == "__main__":
-    create_model('an')
-    test_predict()
 
+    app = Flask(__name__)
+
+    @app.route('/')
+    def hello_world():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+
+            bot = ChatBotAPI('vi', 'an')
+            bot.load_model()
+            line = bot.predict_message(mess)
+            return line
+
+        return "null"
+
+    app.run()
+
+    # create_model('an')
+    # test_predict()
     # test_response()
     # bot = ChatBotAPI('vi', 'an')
     # bot.load_model()
