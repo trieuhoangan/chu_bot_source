@@ -49,7 +49,7 @@
       "bot_ask_who": ["đây là bác hồ"],
       "bot_ask_where": ["đây là việt nam"],
       "bot_ask_what": ["đây là bức tranh"],
-      "bot_chat": ["đang giờ làm việc k nói chuyện riêng"]
+      "bot_chat": ["đang giờ làm việc không nói chuyện riêng"]
     },
     "action_custom": {
       "custom_retrieve_image": {

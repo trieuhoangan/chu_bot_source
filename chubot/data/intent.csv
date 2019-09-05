@@ -7,3 +7,4 @@ STT,intent,command_code
 6,ask_who,6
 7,ask_why,7
 8,chat,8
+9,end_conversation,1
