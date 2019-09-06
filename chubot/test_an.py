@@ -59,12 +59,18 @@ def test_predict():
         # print(prob)
         print(intent)
         command_code = 0
+        mp3 = -1
         for command in list_command_code:
             if(command.get("intent") == intent):
                 print(command.get("command_code"))
                 command_code = command.get("command_code")
         response = action.handle_message(inmessage)
-        result_json = {"intent": intent, "entities": entities,
+
+        if intent=='ask_where' and len(entities)==0:
+            mp3 = 15
+        if intent=='introduce_vnu':
+            mp3 = int(response[0])
+        result_json = {"intent": intent, "entities": entities,"mp3":mp3,
                        "command_code": command_code, "response": response}
         print(json.dumps(result_json, ensure_ascii=False))
         print("bot > "+str(response))
@@ -85,16 +91,16 @@ if __name__ == "__main__":
             line = bot.predict_message(mess)
             return line
 
-        return "null"
+        # return "null"
 
     app.run()
 
     # create_model('an')
     # test_predict()
-    # test_response()
-    # bot = ChatBotAPI('vi', 'an')
-    # bot.load_model()
-    # line = bot.predict_message("who are you")
-    # print(line)
-    # print(detect("War doesn't show who's right, just who's left."))
-    # detect("War doesn't show who's right, just who's left.")
+    # # test_response()
+    # # bot = ChatBotAPI('vi', 'an')
+    # # bot.load_model()
+    # # line = bot.predict_message("who are you")
+    # # print(line)
+    # # print(detect("War doesn't show who's right, just who's left."))
+    # # detect("War doesn't show who's right, just who's left.")

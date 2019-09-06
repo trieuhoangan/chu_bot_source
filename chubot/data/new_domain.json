@@ -9,7 +9,8 @@
       "ask_where",
       "ask_what",
       "chat",
-      "end_conversation"
+      "end_conversation",
+      "introduce_vnu"
     ],
     "bot_actions": [
       "default_fallback",
@@ -22,7 +23,8 @@
       "bot_chat",
       "bot_ask_who",
       "bot_ask_what",
-      "bot_ask_where"
+      "bot_ask_where",
+      "bot_introduce_vnu"
     ],
     "followup_actions": {
       "chat": ["bot_chat"],
@@ -33,7 +35,8 @@
       "ask_where": ["bot_ask_where"],
       "ask_what": ["bot_ask_what"],
       "command_lead_way": ["bot_command_lead_way"],
-      "end_conversation": ["bot_goodbye"]
+      "end_conversation": ["bot_goodbye"],
+      "introduce_vnu" : ["bot_introduce_vnu"]
     },
     "action_templates": {
       "default_fallback": [
@@ -56,19 +59,20 @@
       "bot_greeting": [
         "xin chào bạn",
         "Nice to meet you",
-        "It’s nice to meet you",
-        "I’m pleased to meet you.",
-        "I’m glad to see you.",
-        "It’s a pleasure to meet you.",
+        "It is nice to meet you",
+        "I am pleased to meet you.",
+        "I am glad to see you.",
+        "It is a pleasure to meet you.",
         "Good to see you."
       ],
-      "bot_introduce": ["my name is FUTO", "i am FUSO"],
+      "bot_introduce": ["my name is FUTO, i was made by plastic and metal, and i have three wheels", "i am FUSO, i am created by the researchers of the UET"],
       "bot_answer": ["hello"],
       "bot_command_lead_way": ["follow me", "please follow me", "go with me"],
       "bot_ask_who": ["đây là bác hồ"],
       "bot_ask_where": ["đây là việt nam"],
       "bot_ask_what": ["đây là bức tranh"],
-      "bot_chat": ["đang giờ làm việc không nói chuyện riêng"]
+      "bot_introduce_vnu": ["14","15","16","17","18","19","20","21","22","23","24"],
+      "bot_chat": ["Well, i think so too","wow, that was cool"]
     },
     "action_custom": {
       "custom_retrieve_image": {
@@ -79,6 +83,7 @@
         }
       }
     },
+    
     "slots": [{ "entity": "group", "type": "text" }]
   }
 }

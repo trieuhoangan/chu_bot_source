@@ -124,8 +124,7 @@ class ChatBotAPI():
         if debug:
             print(bot_actions)
 
-        bot_responses = [self.handle_action(
-            action, **active_entities) for action in bot_actions]
+        bot_responses = [self.handle_action(action, **active_entities) for action in bot_actions]
         bot_responses = list(itertools.chain(*bot_responses))
 
         return bot_responses
@@ -185,10 +184,15 @@ class ChatBotAPI():
         entities = self.predict_entity(inmessage)
         (prob, intent) = intents[0]
         command_code = 0
+        mp3 = -1
         for command in list_command_code:
             if(command[1] == intent):
                 print(command[2])
                 command_code = command[2]
+        if intent=='ask_where' and len(entities)==0:
+            mp3 = 15
+        if intent=='introduce_vnu':
+            mp3 = int(response[0])
         result_json = {"intent": intent, "entities": entities,
-                       "command_code": command_code, "response": response}
+                       "command_code": command_code, "response": response,'mp3':mp3}
         return json.dumps(result_json, ensure_ascii=False)
