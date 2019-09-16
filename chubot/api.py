@@ -185,14 +185,16 @@ class ChatBotAPI():
         (prob, intent) = intents[0]
         command_code = 0
         mp3 = -1
+        intent_id = 0
         for command in list_command_code:
             if(command[1] == intent):
                 print(command[2])
                 command_code = command[2]
+                intent_id = command[0]
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
         if intent=='introduce_vnu':
             mp3 = int(response[0])
-        result_json = {"intent": intent, "entities": entities,
+        result_json = {"intent": intent_id, "entities": entities,
                        "command_code": command_code, "response": response,'mp3':mp3}
         return json.dumps(result_json, ensure_ascii=False)
