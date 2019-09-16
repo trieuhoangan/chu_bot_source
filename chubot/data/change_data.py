@@ -27,7 +27,7 @@ def load_entity_data(entity_link):
         line_count = line_count+1
     entity_file.close()
 
-def load_quest_data(quest_link):
+def load_quest_data(quest_link,text_col,intent_col):
     intent_file = open(quest_link, newline='', encoding="utf8")
 
     # nlp = spacy.load('vi_core_news_md')
@@ -38,8 +38,8 @@ def load_quest_data(quest_link):
         if line_count == 0:
             line_count = line_count+1
             continue
-        text = row[2].lower()
-        intent = row[0].lower()
+        text = row[text_col].lower()
+        intent = row[intent_col].lower()
         if text != "":
             entities = []
 
@@ -63,11 +63,52 @@ def load_quest_data(quest_link):
                 json_object.get("nlu_data").get("common_examples").append(
                     {"text": text, "intent": intent, "entities": entities})
     intent_file.close()
+def load_distinc_data(filename,intent_col,entity_col):
+    intent_file = open(filename, newline='', encoding="utf8")
 
+    # nlp = spacy.load('vi_core_news_md')
+    all_entity = json_object.get("nlu_data").get("entity_synonyms")
+    csv_reader = csv.reader(intent_file, delimiter=',')
+    lines = []
+    examples = []
+    line_count = 0
+    for row in csv_reader:
+        if line_count == 0:
+            line_count = line_count+1
+            continue
+        text = row[intent_col].lower()
+        intent = row[entity_col].lower()
+        if text !='':
+            if text not in lines:
+                lines.append(text)
+                examples.append({'text':text,'intent':intent})
+    for example in examples:
+        entities = []
+        for entity in all_entity:
+            for symnonym in entity.get("synonyms"):
+                if symnonym in example.get('text'):
+                    start = example.get('text').index(symnonym)
+                    if start > 1 and example.get('text')[start-1] != ' ':
+                        continue
+
+                    end = start + len(symnonym) - 1
+                    if end+1 != len(example.get('text')):
+                        if example.get('text')[end+1] != ' ':
+                            continue
+                    entities.append({"start": start, "end": end, "entity": entity.get(
+                        "entity"), "value": entity.get("original_value")})
+        if len(entities) == 0:
+            json_object.get("nlu_data").get("common_examples").append(
+                {"text": example.get('text'), "intent": example.get('intent')})
+        else:
+            json_object.get("nlu_data").get("common_examples").append(
+                {"text": example.get('text'), "intent": example.get('intent'), "entities": entities})
+       
+    intent_file.close()
 if __name__=="__main__":
     load_entity_data('entity_list.csv')
-    load_quest_data('quest_data_noise.csv')
-    load_quest_data('Q.csv')
+    load_distinc_data('quest_data_noise.csv',2,0)
+    load_quest_data('Q.csv',2,0)
     with open('test.json', 'w', encoding='utf8') as output:
         output.write(json.dumps(json_object, ensure_ascii=False))
         print('done')
