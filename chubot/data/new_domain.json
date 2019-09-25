@@ -10,6 +10,8 @@
       "ask_what",
       "chat",
       "end_conversation",
+      "ask_number",
+      "ask_when",
       "introduce_vnu"
     ],
     "bot_actions": [
@@ -24,6 +26,8 @@
       "bot_ask_who",
       "bot_ask_what",
       "bot_ask_where",
+      "bot_answer_when",
+      "bot_answer_number",
       "bot_introduce_vnu"
     ],
     "followup_actions": {
@@ -36,6 +40,8 @@
       "ask_what": ["bot_ask_what"],
       "command_lead_way": ["bot_command_lead_way"],
       "end_conversation": ["bot_goodbye"],
+      "ask_when":["bot_answer_when"],
+      "ask_number":["bot_answer_number"],
       "introduce_vnu" : ["bot_introduce_vnu"]
     },
     "action_templates": {
@@ -55,6 +61,8 @@
         "good bye",
         "hope to see you again"
       ],
+      "bot_answer_number":["two"],
+      "bot_answer_when":["today"],
       "bot_return": ["xin phép về chỗ", "thank you", "thank you for using me"],
       "bot_greeting": [
         "xin chào bạn",

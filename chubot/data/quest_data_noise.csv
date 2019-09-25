@@ -1094,15 +1094,9 @@ command_lead_way,dẫn tôi ra chỗ kia,dẫn tôi ra kia
 command_lead_way,dẫn tôi ra chỗ kia,dẫn tôi ra kia
 command_lead_way,dẫn tôi ra chỗ kia,dẫn tôi rocky
 command_lead_way,dẫn tôi ra chỗ kia,tôi ra chỗ kia
-command_lead_way,"dẫn tôi ra kia
-
-",giận thấy tới đó
-command_lead_way,"dẫn tôi ra kia
-
-",giận tôi đi nào
-command_lead_way,"dẫn tôi ra kia
-
-",giận tôi ra kìa
+command_lead_way,dẫn tôi ra kia,giận thấy tới đó
+command_lead_way,dẫn tôi ra kia,giận tôi đi nào
+command_lead_way,dẫn tôi ra kia,giận tôi ra kìa
 ask_who,đây là ai,đây là
 ask_who,đây là ai,đây là ai
 ask_who,đây là ai,đây là ai
@@ -2131,88 +2125,3 @@ command_lead_way,xin hãy đưa mình đi,xin hãy đưa mình đi
 command_lead_way,xin hãy đưa mình đi,xin hãy đưa mình đi
 command_lead_way,xin hãy đưa mình đi,xin hãy đưa mình đi
 command_lead_way,xin hãy đưa mình đi,xin hãy đưa mình đi
-introduce,xin hỏi bạn là ai,xin hỏi bạn ạ
-introduce,xin hỏi bạn là ai,xin hỏi bạn là ai
-introduce,xin hỏi bạn là ai,xin hỏi bạn là ai
-introduce,xin hỏi bạn là ai,xin hỏi bạn là ai
-introduce,xin hỏi bạn là ai,xin hỏi bạn là ai
-introduce,xin hỏi bạn là ai,xin hỏi bạn là ai
-introduce,xin hỏi bạn là ai,xin hỏi bạn là ai
-introduce,xin hỏi bạn là ai,xin hỏi bạn là ai
-introduce,xin hỏi bạn là ai,xin hỏi bạn là ai
-introduce,xin hỏi bạn là ai,xin hỏi bạn là ai
-introduce,xin lỗi bạn là ai,xin lỗi bạn là ai
-greeting,hi,let have a little chat
-end_conversation,bye,bye
-end_conversation,bye,see you soon
-end_conversation,bye,see you tomorrow
-end_conversation,bye,see you later
-end_conversation,bye,good bye
-end_conversation,bye,we will talk later
-end_conversation,bye,that is all
-end_conversation,bye,thank you
-end_conversation,bye,bye bye
-end_conversation,bye,just leave
-end_conversation,bye,go away
-end_conversation,bye,get out of my way 
-end_conversation,bye,get the fuck off
-end_conversation,bye,thanks
-introduce,hi,what's your name
-introduce,hi,what is your name
-introduce,hi,what are you
-introduce,hi,who are you
-introduce,hi,who create you
-introduce,hi,tell me who you are
-introduce,hi,introduce yourself
-introduce,hi,tell me about you
-introduce,hi,show me who you are
-introduce,hi,introduce to me now
-introduce,hi,can you introduce yourself
-introduce,hi,i want to know more about you
-introduce,hi,i want to know you
-end_conversation,tạm biệt,tạm biệt
-end_conversation,tạm biệt,chào tạm biệt
-end_conversation,tạm biệt,mình về nhé
-end_conversation,tạm biệt,kết thúc
-end_conversation,tạm biệt,tạm biệt
-introduce_vnu,VNU,tell me about VNU
-introduce_vnu,VNU,i want to know about VNU
-introduce_vnu,VNU,show me information of VNU
-introduce_vnu,VNU,show me information of UET
-introduce_vnu,VNU,i want to know about UET
-introduce_vnu,VNU,tell me about UET
-introduce_vnu,VNU,where is University of Engineering and Technology
-introduce_vnu,VNU,Tell me about VietNam National University
-introduce_vnu,VNU,Where is UET
-introduce_vnu,VNU,where is University of Engineering and Technology
-introduce_vnu,VNU,What is UET
-introduce_vnu,VNU,What is University of Engineering and Technology
-introduce_vnu,VNU,can you show me about UET
-introduce_vnu,VNU,can you show me about University of Engineering and Technology
-introduce_vnu,VNU,i want to know about University of Engineering and Technology
-introduce_vnu,VNU,UET
-introduce_vnu,VNU,University of Engineering and Technology
-introduce_vnu,VNU,VNU
-introduce_vnu,VNU,VietNam National University
-introduce_vnu,VNU,show me information of University of Engineering and Technology
-introduce_vnu,VNU,show me the location of UET
-introduce_vnu,VNU,show me the location of University of Engineering anf Technology
-introduce_vnu,vnu,tell me about the history of University of Engineering and Technology
-introduce_vnu,vnu,i want to know the history of University of Engineering and Technology
-introduce_vnu,vnu,i want to know the history of UET
-greeting,vnu,hello
-greeting,vnu,how are you today
-greeting,vnu,what 's up
-greeting,vnu,how are you going today
-greeting,vnu,how the business
-greeting,vnu,hey
-greeting,vnu,good morning
-greeting,vnu,good evening
-greeting,vnu,nice to meet you
-greeting,vnu,i am very glad to meet you
-greeting,vnu,i am pleasure to meet you
-greeting,vnu,i am very happy to meet you
-greeting,vnu,such an honor to know you
-greeting,vnu,how are you doing today
-greeting,vnu,how r you doing
-greeting,vnu,how r you
