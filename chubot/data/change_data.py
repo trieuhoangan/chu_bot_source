@@ -123,27 +123,27 @@ class DataObject():
     def split_train_test_dataset(self,list_filename,intent_col,text_col,test_ratio):
         dataset = { 'ask_what':[],
                     'ask_who':[],
-                    'ask_number':[],
                     'ask_where':[],
                     'greeting':[],
-                    'introduce':[],
-                    'chat':[],
+                    'ask_location':[],
+                    'chitchat':[],
                     'command_lead_way':[],
-                    'introduce_vnu':[],
                     'end_conversation':[],
-                    'ask_when':[]
                     }
         intents = []
         lines =[]
         for filename in list_filename:
+            count = 0
+            print("filename",filename)
             with open(filename,'r',encoding='utf-8') as fin:
                 rows = fin.readlines()
             for row in rows:
                 parts = row.split(',')
                 intent = parts[intent_col]
                 # print(parts)
-            
+                print("number",count)
                 text = parts[text_col].lower().replace('\n','')
+                count = count+1
                 if text not in lines:
                     lines.append(text)
                     dataset.get(intent).append({'intent':intent,'text':text})
@@ -154,12 +154,26 @@ class DataObject():
         print(intents)
         train_set = []
         test_set = []
+
+
+
+        # for intent in intents:
+        #     with open(intent+'.csv','w',encoding='utf-8') as f:
+        #         data_intent = dataset[intent]
+        #         for line in data_intent:
+        #             f.write('{},{}\n'.format(line['intent'],line['text']))
+        
+
+
         for intent in intents:
             datalength = len(dataset.get(intent))
             random.shuffle(dataset.get(intent))
             train_set.extend(dataset.get(intent)[int(datalength*test_ratio):])
             test_set.extend(dataset.get(intent)[:int(datalength*test_ratio)])
-        
+        full_train_set = []
+        full_train_set.extend(train_set)
+        full_train_set.extend(test_set)
+        full_train_link = 'full_train.txt'
         test_link = 'test.txt'
         train_link = 'train.txt'
         with open(test_link,'w',encoding='utf-8') as test_out:
@@ -168,16 +182,18 @@ class DataObject():
         with open(train_link,'w',encoding='utf-8') as train_out:
             for train in train_set:
                 train_out.write('{},{}\n'.format(train.get('intent'),train.get('text')))
-    
+        with open(full_train_link,'w',encoding='utf-8') as test_out:
+            for test in full_train_set:
+                test_out.write('{},{}\n'.format(test.get('intent'),test.get('text')))
 if __name__=="__main__":
-    list_filename=['quest_data_noise.csv','Q.csv']
+    list_filename=['chitchat.csv','greeting_end.csv','command_lead_way.csv','ask_robot.csv']
     a = DataObject()
-    a.split_train_test_dataset(list_filename,0,2,0)
+    a.split_train_test_dataset(list_filename,0,2,0.2)
     a.load_entity_data('entity_list.csv')
     # a.load_quest_data('test.txt',1,0)
     # a.load_distinc_data('quest_data_noise.csv',2,0)
     # load_quest_data('Q.csv',2,0)
-    # b = DataObject()
+    
     # b.split_train_test_dataset(list_filename,0,2,0.3)
     # b.load_entity_data('entity_list.csv')
     a.load_quest_data('train.txt',1,0)
@@ -188,4 +204,10 @@ if __name__=="__main__":
     link_ouput = 'train.json'
     with open(link_ouput, 'w', encoding='utf8') as output:
         output.write(json.dumps(a.json_object, ensure_ascii=False))
+        print('done')
+    b = DataObject()
+    b.load_quest_data('full_train.txt',1,0)
+    full_train_output = 'full_train.json'
+    with open(full_train_output, 'w', encoding='utf8') as output:
+        output.write(json.dumps(b.json_object, ensure_ascii=False))
         print('done')

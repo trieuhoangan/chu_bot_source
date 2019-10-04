@@ -8,11 +8,11 @@
       "ask_who",
       "ask_where",
       "ask_what",
-      "chat",
+      "chitchat",
       "end_conversation",
       "ask_number",
       "ask_when",
-      "introduce_vnu"
+      "ask_location"
     ],
     "bot_actions": [
       "default_fallback",
@@ -22,16 +22,16 @@
       "bot_lead_way",
       "bot_answer",
       "bot_introduce",
-      "bot_chat",
+      "bot_chitchat",
       "bot_ask_who",
       "bot_ask_what",
       "bot_ask_where",
       "bot_answer_when",
       "bot_answer_number",
-      "bot_introduce_vnu"
+      "bot_ask_location"
     ],
     "followup_actions": {
-      "chat": ["bot_chat"],
+      "chitchat": ["bot_chitchat"],
       "greeting": ["bot_greeting"],
       "command_return": ["bot_return"],
       "introduce": ["bot_introduce"],
@@ -42,7 +42,7 @@
       "end_conversation": ["bot_goodbye"],
       "ask_when":["bot_answer_when"],
       "ask_number":["bot_answer_number"],
-      "introduce_vnu" : ["bot_introduce_vnu"]
+      "ask_location" : ["bot_ask_location"]
     },
     "action_templates": {
       "default_fallback": [
@@ -79,8 +79,8 @@
       "bot_ask_who": ["đây là bác hồ"],
       "bot_ask_where": ["đây là việt nam"],
       "bot_ask_what": ["đây là bức tranh"],
-      "bot_introduce_vnu": ["14","15","16","17","18","19","20","21","22","23","24"],
-      "bot_chat": ["Well, i think so too","wow, that was cool"]
+      "bot_ask_location": ["14","15","16","17","18","19","20","21","22","23","24"],
+      "bot_chitchat": ["Well, i think so too","wow, that was cool"]
     },
     "action_custom": {
       "custom_retrieve_image": {

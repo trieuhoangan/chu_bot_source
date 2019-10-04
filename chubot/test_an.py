@@ -9,6 +9,7 @@ import json
 import codecs
 from flask import request
 import spacy
+from sklearn.metrics import accuracy_score
 # from langdetect import detect
 
 
@@ -20,6 +21,50 @@ def create_model(name):
     # print(meta)
     # print(chubot.entity_synonyms)
 
+def test_entity_train(name):
+    chubot = ChuBotBrain(name, language='vi')
+    chubot.load_data("data/full_train.json")
+    # chubot.load_data("data/vi_nlu_ask_way.json")
+    meta = chubot.train_nercrf()
+
+def encode_intent(intent):
+    if intent=='greeting':
+        return 1
+    if intent=='chitchat':
+        return 2
+    if intent=='command_lead_way':
+        return 3
+    if intent=='ask_who':
+        return 4    
+    if intent=='ask_what':
+        return 5
+    if intent=='ask_where':
+        return 6
+    if intent=='ask_location':
+        return 7
+    if intent=='end_conversation':
+        return 8
+    
+def test_intent_train(name):
+    chubot = ChuBotBrain(name, language='vi')
+    chubot.load_data("data/train.json")
+    # chubot.load_data("data/vi_nlu_ask_way.json")
+    meta = chubot.train_intent_classification()
+    test_link = "data/test.txt"
+    with open(test_link,'r',encoding='utf=8') as f:
+        rows = f.readlines()
+    intent_list_test = []
+    intent_list_result = []
+    data_list_test = []
+    for row in rows:
+        parts = row.split(',')
+        intent_list_test.append(encode_intent(parts[0]))
+        data_list_test.append(parts[1])
+    for data in data_list_test:
+        responses = chubot.predict_intent(data)
+        (prob, intent) = responses[0]
+        intent_list_result.append(encode_intent(intent))
+    print("accuracy",accuracy_score(intent_list_test,intent_list_result))
 
 def test_response():
     botname = "an"
@@ -28,33 +73,7 @@ def test_response():
     chubot.load_domain(action_domain_file)
     chubot.run_commandline_bot()
 
-def check_similarity(sentence,data,entity):
-    # print("sent entity : ",entity)
-    # print("data entity : ",data.get('entity'))
-    count = 0 
-    N = []
-    NP = []
-    V = []
-    for token in nlp(sentence):
-        if token.tag_=='Np' or token.tag_=='P':
-            NP.append(token.text)
-        if token.tag_=='V':
-            V.append(token.text)
-    for n in NP:
-        for n2 in data.get('tags').get('NP'):
-            if n == n2 : 
-                count = count + 1
-    for n in V:
-        for n2 in data.get('tags').get('V'):
-            if n == n2 : 
-                count = count + 1
-    for ent in entity:
-        for ent2 in data.get('entity'):
-            if ent == ent2:
-                count = count + 1
-    return count
-
-def test_predict(ectracted_questions,answers):
+def test_predict():
     nlp = spacy.load('vi_spacy_model')
     botname = "an"
     action_domain_file = "data/new_domain.json"
@@ -77,7 +96,6 @@ def test_predict(ectracted_questions,answers):
 
         responses = action.chubot.predict_intent(inmessage)
         entities = action.chubot.predict_entity(inmessage)
-        # print(action.chubot.nlp(inmessage))
         
         # print(responses)
         print("\n")
@@ -85,22 +103,6 @@ def test_predict(ectracted_questions,answers):
         (prob, intent) = responses[0]
         # print(prob)
         print(intent)
-        response_line = ''
-        if intent != 'chat' and intent !='greeting' and intent!='introduce' and intent!='introduce_vnu' and intent !='command_lead_way' and intent !='command_return':
-            max = 0
-            
-            for question in ectracted_questions:
-                parts = question['question'].split(',')
-                intent_quest = parts[0]
-                # quest=parts[2]
-                if intent==intent_quest:
-                # print(max)
-                    if check_similarity(inmessage,question,entities) > max :
-                        max = check_similarity(inmessage,question,entities)
-                        if max > 2:
-                            response_line = answers[ectracted_questions.index(question)] + ' '+str(ectracted_questions.index(question))
-        
-        
         command_code = 0
         mp3 = -1
         for command in list_command_code:
@@ -108,8 +110,6 @@ def test_predict(ectracted_questions,answers):
                 print(command.get("command_code"))
                 command_code = command.get("command_code")
         response = action.handle_message(inmessage)
-        if response_line!='':
-            response = response_line
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
         if intent=='introduce_vnu':
@@ -132,31 +132,15 @@ def get_data():
     data = {'question':questions,'answer':answers}
     return data
 if __name__ == "__main__":
-    nlp = spacy.load('vi_spacy_model')
+    test_entity_train('an')
+    test_intent_train('an')
+    # nlp = spacy.load('vi_spacy_model')
     # create_model('an')
-    data = get_data()
-    botname= 'an'
-    action = ChuBotAction(botname)
+    # data = get_data()
+    # botname= 'an'
+    # action = ChuBotAction(botname)
     
     # app = Flask(__name__)
-    questions = data.get('question')
-    extracted_question = []
-    for question in questions:
-        entities = action.chubot.predict_entity(question)
-        # print('entity',entities)
-        N = []
-        NP = []
-        V = []
-        for token in nlp(question):
-            # if token.tag_=='N':
-            #     N.append(token.text)
-            if token.tag_=='Np' or token.tag_=='P':
-                NP.append(token.text)
-            if token.tag_=='V':
-                V.append(token.text)
-        extracted_question.append({'question':question,'entity':entities,'tags':{'N':N,'NP':NP,'V':V}})
-    print('answer num',len(data.get('answer')))
-    print('quest num',len(data.get('question')))
     # @app.route('/')
     # def hello_world():
     #     if request.method == 'GET':
@@ -172,7 +156,7 @@ if __name__ == "__main__":
     # app.run()
 
    
-    test_predict(extracted_question,data.get('answer'))
+    # test_predict(extracted_question,data.get('answer'))
     # test_predict()
     # # test_response()
     # bot = ChatBotAPI('vi', 'an')
@@ -182,3 +166,4 @@ if __name__ == "__main__":
     # print(line)
     # print(detect("War doesn't show who's right, just who's left."))
     # detect("War doesn't show who's right, just who's left.")
+   

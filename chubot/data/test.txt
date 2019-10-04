@@ -1,0 +1,132 @@
+chitchat,bạn thích ăn món gì
+chitchat,bạn có thể hát một bài
+chitchat,bạn có biết làm việc nhà
+chitchat,bạn thích con gì nhất
+chitchat,bạn ăn cơm chưa
+chitchat,1 + 1
+chitchat,kể cho mình nghe về bố mẹ ạ
+chitchat,giới thiệu về bản thân bạn đi
+chitchat,cầu thủ nào bạn yêu thích
+chitchat,ai tạo ra mình
+chitchat,hãy cho tôi biết số đo 3 vòng của bạn
+chitchat,ai làm ra bạn
+chitchat,hãy kể tên một vài món ăn bạn thích
+chitchat,bạn thích trời mới chơi
+chitchat,kể cho mình nghe về bố mẹ bạn
+chitchat,bảng xếp hạng vô địch
+chitchat,bạn có thích xem bóng đá
+chitchat,bạn có bằng cấp gì không
+chitchat,bạn thường làm gì lúc này rồi
+chitchat,ai là người tạo ra bạn
+chitchat,chất liệu tạo ra bạn là thạch
+chitchat,bạn có biết hát
+chitchat,bạn cao bao
+chitchat,mày là ai
+chitchat,bạn ăn cơm
+chitchat,mày nó ai
+chitchat,bạn có thể làm những gì
+chitchat,bạn thích bài hát nào nhất
+chitchat,bạn có thể nấu ăn không
+chitchat,ai là người đặt tên cho bạn
+chitchat,người tạo ra
+chitchat,bạn thích trời mưa hay trời
+chitchat,bạn có người yêu chưa
+chitchat,vậy là
+chitchat,bạn thích môn thể thao
+chitchat,chất liệu để tạo ra bạn là gì
+chitchat,giới thiệu khởi my
+chitchat,bạn được làm từ nguyên liệu gì
+chitchat,bạn có tiền
+chitchat,tết của malaysia
+greeting,mình hỏi một chút
+greeting,robot chị ơi
+greeting,nay robot
+greeting,6 +
+greeting,21
+greeting,trợ thủ môn
+greeting,hi google
+greeting,shin
+greeting,gà tấn hàng được làm quen
+greeting,ủa robot
+greeting,hi girl
+greeting,xe robot
+greeting,tôi muốn ở
+greeting,chào bạn
+greeting,robot kia ơi
+greeting,kính chào bạn
+end_conversation,thank you
+end_conversation,go away
+end_conversation,mình có việc rồi để sau nhé
+end_conversation,thôi nhỉ
+end_conversation,mình đi trước nhé
+end_conversation,gặp lại sau
+end_conversation,xin lỗi nhé mình phải đi có chút việc
+end_conversation,thôi dừng ở đây nhé
+end_conversation,just leave
+end_conversation,ừ thôi làm việc của bạn đi
+command_lead_way,sơn tây đi tham quan nào
+command_lead_way,chậm tôi đi chơi nào
+command_lead_way,đưa bọn mình đấy đó
+command_lead_way,tính tình thì cho số đó
+command_lead_way,cho tôi ra đó
+command_lead_way,tối 1 đi qua nơi này
+command_lead_way,youtube đi nào
+command_lead_way,nào dẫn tôi đi vào xem sao
+command_lead_way,từ từ tượng bác hồ
+command_lead_way,bạn có thể dẫn tôi đi qua chỗ này được
+command_lead_way,chỉ tôi ra chỗ đó
+command_lead_way,từng đi quanh nơi này
+command_lead_way,đưa thầy tế đó
+command_lead_way,đưa tôi tới chợ đó
+command_lead_way,đưa tôi đi tới khác chỗ giải thưởng
+command_lead_way,chỉ cho tôi
+command_lead_way,dân cố tai nạn
+command_lead_way,tôi đi tham quan nào
+command_lead_way,tôi đi tới tượng bác hồ
+command_lead_way,hai đứa tuổi đi tham quan nơi này
+command_lead_way,cho tôi đi một vòng xem nào
+command_lead_way,đưa tôi đi tham quan nào
+command_lead_way,dẫn đường đi tới khu trưng bày huân chương của đảng quốc gia
+command_lead_way,cho tôi xem súng
+command_lead_way,dẫn tôi đi tham quan nào
+command_lead_way,dẫn tao đi chơi nào
+command_lead_way,làm ơn dẫn mình đi
+command_lead_way,đưa tôi đã nói
+command_lead_way,đưa tôi đi tới về bác hồ
+command_lead_way,chị tôi đang cho nó
+command_lead_way,cho tôi coi chị bí đỏ
+command_lead_way,đồng minh ra cái ảnh đó
+command_lead_way,nàng dâu tôi đi một vòng xem sao
+command_lead_way,tôi muốn đi quanh nơi này
+command_lead_way,xem sao
+command_lead_way,đưa bạn mình ra cái ảnh
+command_lead_way,dân ta đi chơi nào
+command_lead_way,đưa tối đến nỗi ra
+command_lead_way,đội mình ra cái ảnh đó
+command_lead_way,đưa tôi đến nhà vệ sinh bạn ơi
+command_lead_way,tấn công từ đó
+command_lead_way,cho tôi đi tới tượng bác hồ
+command_lead_way,tôi thapki
+command_lead_way,dân mình đi tới khu sinh thái nguyên chương của đại học quốc gia
+command_lead_way,tôi muốn đi qua nơi này
+command_lead_way,dẫn tôi đi tham quan
+command_lead_way,đường đi tới khu trưng bay của đại học quốc gia
+ask_who,người trong ảnh kia là ai
+ask_who,ai là người đông anh
+ask_who,ai là người đóng băng
+ask_who,người chết là ai
+ask_who,người trên ảnh là ai
+ask_who,gia lai
+ask_what,bến xe này nói về cái gì
+ask_what,bạn có thể giải thích cho tôi những bức ảnh này được không
+ask_what,bật ở đó là cái gì
+ask_what,bức ảnh này nói về cái
+ask_what,ảnh này nói về vấn đề gì vậy
+ask_what,bức tranh này nói về cái gì thế
+ask_what,những người trong tranh đang làm gì thế
+ask_what,những người trong tay đang làm gì
+ask_where,bức ảnh được chụp
+ask_where,đại tướng võ nguyên giáp từng học ở đâu
+ask_location,nhà vệ sinh ở hướng nào
+ask_location,tòa nhà điều hành nằm ở vị trí nào
+ask_location,tòa nhà điều hành ở đâu

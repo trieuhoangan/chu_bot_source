@@ -2184,6 +2184,534 @@
             {
                 "text": "nhà vệ sinh ở hướng",
                 "intent": "ask_location"
+            },
+            {
+                "text": "bạn thích ăn món gì",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn có thể hát một bài",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn có biết làm việc nhà",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn thích con gì nhất",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn ăn cơm chưa",
+                "intent": "chitchat"
+            },
+            {
+                "text": "1 + 1",
+                "intent": "chitchat"
+            },
+            {
+                "text": "kể cho mình nghe về bố mẹ ạ",
+                "intent": "chitchat"
+            },
+            {
+                "text": "giới thiệu về bản thân bạn đi",
+                "intent": "chitchat"
+            },
+            {
+                "text": "cầu thủ nào bạn yêu thích",
+                "intent": "chitchat"
+            },
+            {
+                "text": "ai tạo ra mình",
+                "intent": "chitchat"
+            },
+            {
+                "text": "hãy cho tôi biết số đo 3 vòng của bạn",
+                "intent": "chitchat"
+            },
+            {
+                "text": "ai làm ra bạn",
+                "intent": "chitchat"
+            },
+            {
+                "text": "hãy kể tên một vài món ăn bạn thích",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn thích trời mới chơi",
+                "intent": "chitchat"
+            },
+            {
+                "text": "kể cho mình nghe về bố mẹ bạn",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bảng xếp hạng vô địch",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn có thích xem bóng đá",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn có bằng cấp gì không",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn thường làm gì lúc này rồi",
+                "intent": "chitchat"
+            },
+            {
+                "text": "ai là người tạo ra bạn",
+                "intent": "chitchat"
+            },
+            {
+                "text": "chất liệu tạo ra bạn là thạch",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn có biết hát",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn cao bao",
+                "intent": "chitchat"
+            },
+            {
+                "text": "mày là ai",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn ăn cơm",
+                "intent": "chitchat"
+            },
+            {
+                "text": "mày nó ai",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn có thể làm những gì",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn thích bài hát nào nhất",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn có thể nấu ăn không",
+                "intent": "chitchat"
+            },
+            {
+                "text": "ai là người đặt tên cho bạn",
+                "intent": "chitchat"
+            },
+            {
+                "text": "người tạo ra",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn thích trời mưa hay trời",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn có người yêu chưa",
+                "intent": "chitchat"
+            },
+            {
+                "text": "vậy là",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn thích môn thể thao",
+                "intent": "chitchat"
+            },
+            {
+                "text": "chất liệu để tạo ra bạn là gì",
+                "intent": "chitchat"
+            },
+            {
+                "text": "giới thiệu khởi my",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn được làm từ nguyên liệu gì",
+                "intent": "chitchat"
+            },
+            {
+                "text": "bạn có tiền",
+                "intent": "chitchat"
+            },
+            {
+                "text": "tết của malaysia",
+                "intent": "chitchat"
+            },
+            {
+                "text": "mình hỏi một chút",
+                "intent": "greeting"
+            },
+            {
+                "text": "robot chị ơi",
+                "intent": "greeting"
+            },
+            {
+                "text": "nay robot",
+                "intent": "greeting"
+            },
+            {
+                "text": "6 +",
+                "intent": "greeting"
+            },
+            {
+                "text": "21",
+                "intent": "greeting"
+            },
+            {
+                "text": "trợ thủ môn",
+                "intent": "greeting"
+            },
+            {
+                "text": "hi google",
+                "intent": "greeting"
+            },
+            {
+                "text": "shin",
+                "intent": "greeting"
+            },
+            {
+                "text": "gà tấn hàng được làm quen",
+                "intent": "greeting"
+            },
+            {
+                "text": "ủa robot",
+                "intent": "greeting"
+            },
+            {
+                "text": "hi girl",
+                "intent": "greeting"
+            },
+            {
+                "text": "xe robot",
+                "intent": "greeting"
+            },
+            {
+                "text": "tôi muốn ở",
+                "intent": "greeting"
+            },
+            {
+                "text": "chào bạn",
+                "intent": "greeting"
+            },
+            {
+                "text": "robot kia ơi",
+                "intent": "greeting"
+            },
+            {
+                "text": "kính chào bạn",
+                "intent": "greeting"
+            },
+            {
+                "text": "thank you",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "go away",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "mình có việc rồi để sau nhé",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "thôi nhỉ",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "mình đi trước nhé",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "gặp lại sau",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "xin lỗi nhé mình phải đi có chút việc",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "thôi dừng ở đây nhé",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "just leave",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "ừ thôi làm việc của bạn đi",
+                "intent": "end_conversation"
+            },
+            {
+                "text": "sơn tây đi tham quan nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "chậm tôi đi chơi nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa bọn mình đấy đó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "tính tình thì cho số đó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "cho tôi ra đó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "tối 1 đi qua nơi này",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "youtube đi nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "nào dẫn tôi đi vào xem sao",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "từ từ tượng bác hồ",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "bạn có thể dẫn tôi đi qua chỗ này được",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "chỉ tôi ra chỗ đó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "từng đi quanh nơi này",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa thầy tế đó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tôi tới chợ đó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tôi đi tới khác chỗ giải thưởng",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "chỉ cho tôi",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "dân cố tai nạn",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "tôi đi tham quan nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "tôi đi tới tượng bác hồ",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "hai đứa tuổi đi tham quan nơi này",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "cho tôi đi một vòng xem nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tôi đi tham quan nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "dẫn đường đi tới khu trưng bày huân chương của đảng quốc gia",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "cho tôi xem súng",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "dẫn tôi đi tham quan nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "dẫn tao đi chơi nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "làm ơn dẫn mình đi",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tôi đã nói",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tôi đi tới về bác hồ",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "chị tôi đang cho nó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "cho tôi coi chị bí đỏ",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đồng minh ra cái ảnh đó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "nàng dâu tôi đi một vòng xem sao",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "tôi muốn đi quanh nơi này",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "xem sao",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa bạn mình ra cái ảnh",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "dân ta đi chơi nào",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tối đến nỗi ra",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đội mình ra cái ảnh đó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đưa tôi đến nhà vệ sinh bạn ơi",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "tấn công từ đó",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "cho tôi đi tới tượng bác hồ",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "tôi thapki",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "dân mình đi tới khu sinh thái nguyên chương của đại học quốc gia",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "tôi muốn đi qua nơi này",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "dẫn tôi đi tham quan",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "đường đi tới khu trưng bay của đại học quốc gia",
+                "intent": "command_lead_way"
+            },
+            {
+                "text": "người trong ảnh kia là ai",
+                "intent": "ask_who"
+            },
+            {
+                "text": "ai là người đông anh",
+                "intent": "ask_who"
+            },
+            {
+                "text": "ai là người đóng băng",
+                "intent": "ask_who"
+            },
+            {
+                "text": "người chết là ai",
+                "intent": "ask_who"
+            },
+            {
+                "text": "người trên ảnh là ai",
+                "intent": "ask_who"
+            },
+            {
+                "text": "gia lai",
+                "intent": "ask_who"
+            },
+            {
+                "text": "bến xe này nói về cái gì",
+                "intent": "ask_what"
+            },
+            {
+                "text": "bạn có thể giải thích cho tôi những bức ảnh này được không",
+                "intent": "ask_what"
+            },
+            {
+                "text": "bật ở đó là cái gì",
+                "intent": "ask_what"
+            },
+            {
+                "text": "bức ảnh này nói về cái",
+                "intent": "ask_what"
+            },
+            {
+                "text": "ảnh này nói về vấn đề gì vậy",
+                "intent": "ask_what"
+            },
+            {
+                "text": "bức tranh này nói về cái gì thế",
+                "intent": "ask_what"
+            },
+            {
+                "text": "những người trong tranh đang làm gì thế",
+                "intent": "ask_what"
+            },
+            {
+                "text": "những người trong tay đang làm gì",
+                "intent": "ask_what"
+            },
+            {
+                "text": "bức ảnh được chụp",
+                "intent": "ask_where"
+            },
+            {
+                "text": "đại tướng võ nguyên giáp từng học ở đâu",
+                "intent": "ask_where"
+            },
+            {
+                "text": "nhà vệ sinh ở hướng nào",
+                "intent": "ask_location"
+            },
+            {
+                "text": "tòa nhà điều hành nằm ở vị trí nào",
+                "intent": "ask_location"
+            },
+            {
+                "text": "tòa nhà điều hành ở đâu",
+                "intent": "ask_location"
             }
         ],
         "regex_features": [],
