@@ -31,7 +31,9 @@ class ChitChat:
         '''
         idoc = nlp(question)
         distances = [idoc.similarity(t) for t in self.targets]
-        if((np.amax(distances)<0.85):
+        print(np.amax(distances))
+        print(np.argmax(distances))
+        if np.amax(distances)<0.8:
             id=0
         else:
             id = np.argmax(distances)
