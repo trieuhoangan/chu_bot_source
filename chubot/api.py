@@ -195,7 +195,7 @@ class ChatBotAPI():
                 intent_id = command[0]
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
-        if intent='chitchat':
+        if intent=='chitchat':
             most_similar_question, answer = chitchat.retrieve_answer(inmessage)
             print(most_similar_question)
             response = answer
