@@ -236,7 +236,7 @@ class ChuBotBrain():
         inmessage_vector = tfidf.transform([inmessage_join_tokens])
         # predict the probabilies
         y_probs = clf.predict_proba(inmessage_vector)
-
+        
         # labels of each classes
         labels = le.inverse_transform(clf.classes_)
         # print(labels)
@@ -245,7 +245,7 @@ class ChuBotBrain():
         # the elements in sorted order
         # TODO, try this method: sorted_indices = np.fliplr(np.argsort(pred_result, axis=1))
         y_probs_with_labels.sort(key=lambda v: -v[0])
-
+        #print(y_probs_with_labels)
         return y_probs_with_labels
 
     @staticmethod

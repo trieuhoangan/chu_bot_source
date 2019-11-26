@@ -31,7 +31,10 @@ class ChitChat:
         '''
         idoc = nlp(question)
         distances = [idoc.similarity(t) for t in self.targets]
-        id = np.argmax(distances)
+        if((np.amax(distances)<0.85):
+            id=0
+        else:
+            id = np.argmax(distances)
 
         #return most similar q & a
         return self.qa_list[id]
