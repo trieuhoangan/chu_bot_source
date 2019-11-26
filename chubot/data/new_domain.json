@@ -54,24 +54,20 @@
         "i cant understand"
       ],
       "bot_goodbye": [
-        "bye",
-        "bye bye",
-        "see you again",
-        "thank you",
-        "good bye",
-        "hope to see you again"
+        "tạm biệt",
+        "Hẹn gặp lại",
+        "xin chào bạn",
+        "tạm biệt nhé"
       ],
       "bot_answer_number":["two"],
       "bot_answer_when":["today"],
       "bot_return": ["xin phép về chỗ", "thank you", "thank you for using me"],
       "bot_greeting": [
         "xin chào bạn",
-        "Nice to meet you",
-        "It is nice to meet you",
-        "I am pleased to meet you.",
-        "I am glad to see you.",
-        "It is a pleasure to meet you.",
-        "Good to see you."
+        "chào bạn, chúc bạn một ngày tốt lành",
+        "xin chào bạn, rất hân hạnh được làm quen",
+        "mình rất vui khi được gặp bạn",
+        "rất vui được gặp bạn"
       ],
       "bot_introduce": ["my name is FUTO, i was made by plastic and metal, and i have three wheels", "i am FUSO, i am created by the researchers of the UET"],
       "bot_answer": ["hello"],

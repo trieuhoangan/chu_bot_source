@@ -3,7 +3,7 @@ import json
 import csv
 import spacy
 import random
-
+import pandas as pd
 
 # for entity in  json_object.get("nlu_data").get("entity_synonyms"):
 #     new_synonyms = []
@@ -120,7 +120,7 @@ class DataObject():
     # split test-train dataset from a list of files 
     #
     ###
-    def split_train_test_dataset(self,list_filename,intent_col,text_col,test_ratio):
+    def split_train_test_dataset(self,list_filename,intent_col,text_col,test_ratio,test_output,train_output):
         dataset = { 'ask_what':[],
                     'ask_who':[],
                     'ask_where':[],
@@ -146,7 +146,7 @@ class DataObject():
                 count = count+1
                 if text not in lines:
                     lines.append(text)
-                    dataset.get(intent).append({'intent':intent,'text':text})
+                    dataset.get(intent).append({'intent':intent,'text':text,'a':parts[3]})
                 if intent not in intents:
                     intents.append(intent)
             with open("line.txt",'a',encoding='utf-8') as fline:
@@ -173,41 +173,91 @@ class DataObject():
         full_train_set = []
         full_train_set.extend(train_set)
         full_train_set.extend(test_set)
-        full_train_link = 'full_train.txt'
-        test_link = 'test.txt'
-        train_link = 'train.txt'
+        # full_train_link = 'full_train.txt'
+        test_link = test_output
+        train_link = train_output
         with open(test_link,'w',encoding='utf-8') as test_out:
             for test in test_set:
-                test_out.write('{},{}\n'.format(test.get('intent'),test.get('text')))
+                test_out.write('{},{},{}'.format(test.get('intent'),test.get('text'),test['a']))
         with open(train_link,'w',encoding='utf-8') as train_out:
             for train in train_set:
-                train_out.write('{},{}\n'.format(train.get('intent'),train.get('text')))
-        with open(full_train_link,'w',encoding='utf-8') as test_out:
-            for test in full_train_set:
-                test_out.write('{},{}\n'.format(test.get('intent'),test.get('text')))
+                train_out.write('{},{},{}'.format(train.get('intent'),train.get('text'),train['a']))
+        # with open(full_train_link,'w',encoding='utf-8') as test_out:
+        #     for test in full_train_set:
+        #         test_out.write('{},{}\n'.format(test.get('intent'),test.get('text')))
+
+    def split_train_test_chitchat(self,list_filename,origin_col,noice_col,test_output,train_output):
+        dataset = []
+        test = []
+        lines =[]
+        test_line=[]
+        for filename in list_filename:
+            count = 0
+            print("filename",filename)
+            with open(filename,'r',encoding='utf-8') as fin:
+                rows = fin.readlines()
+            for row in rows:
+                parts = row.split(',')
+                origin = parts[origin_col]
+                # print(parts)
+                print("number",count)
+                noice = parts[noice_col].lower().replace('\n','')
+                a = parts[3].lower().replace('\n','')
+                count = count+1
+                if origin not in lines:
+                    lines.append(origin)
+                    dataset.append({'q':origin,'a':a})
+                if noice not in lines and noice not in test_line:
+                    test_line.append(noice)
+                    test.append({'o':origin,'q':noice,'a':a})
+            with open("line.txt",'a',encoding='utf-8') as fline:
+                fline.writelines(lines)
+        train_set = dataset
+        test_set = test
+
+        test_link = test_output
+        train_link = train_output
+        with open(test_link,'w',encoding='utf-8') as test_out:
+            for test in test_set:
+                test_out.write('{},{},{}\n'.format(test['o'],test['q'],test['a']))
+        i = 0
+        with open(train_link,'w',encoding='utf-8') as train_out:
+            for train in train_set:
+                i = i +1
+                train_out.write('{},{},a,{}\n'.format(i,train['q'],train['a']))
+                
+        
+    def make_chit_chat_train_test(self,filename,intent_col):
+        df = pd.read_csv(filename, header=None, names=['intent', 'q', 'noisyq', 'a'])
+
+
+
+
+
 if __name__=="__main__":
-    list_filename=['chitchat.csv','greeting_end.csv','command_lead_way.csv','ask_robot.csv']
+    # list_filename=['chitchat.csv','greeting_end.csv','command_lead_way.csv','ask_robot.csv']
+    list_filename=['../chitchat.csv']
     a = DataObject()
-    a.split_train_test_dataset(list_filename,0,2,0.2)
-    a.load_entity_data('entity_list.csv')
+    a.split_train_test_chitchat(list_filename,1,2,'../chitchat_test.csv','../chitchat_train.csv')
+    # a.load_entity_data('entity_list.csv')
     # a.load_quest_data('test.txt',1,0)
     # a.load_distinc_data('quest_data_noise.csv',2,0)
     # load_quest_data('Q.csv',2,0)
     
     # b.split_train_test_dataset(list_filename,0,2,0.3)
     # b.load_entity_data('entity_list.csv')
-    a.load_quest_data('train.txt',1,0)
+    # a.load_quest_data('train.txt',1,0)
     # link_ouput = 'test.json'
     # with open(link_ouput, 'w', encoding='utf8') as output:
     #     output.write(json.dumps(a.json_object, ensure_ascii=False))
     #     print('done')
-    link_ouput = 'train.json'
-    with open(link_ouput, 'w', encoding='utf8') as output:
-        output.write(json.dumps(a.json_object, ensure_ascii=False))
-        print('done')
-    b = DataObject()
-    b.load_quest_data('full_train.txt',1,0)
-    full_train_output = 'full_train.json'
-    with open(full_train_output, 'w', encoding='utf8') as output:
-        output.write(json.dumps(b.json_object, ensure_ascii=False))
-        print('done')
+    # link_ouput = 'chitchat.json'
+    # with open(link_ouput, 'w', encoding='utf8') as output:
+    #     output.write(json.dumps(a.json_object, ensure_ascii=False))
+    #     print('done')
+    # b = DataObject()
+    # b.load_quest_data('full_train.txt',1,0)
+    # full_train_output = 'full_train.json'
+    # with open(full_train_output, 'w', encoding='utf8') as output:
+    #     output.write(json.dumps(b.json_object, ensure_ascii=False))
+    #     print('done')

@@ -31,7 +31,7 @@ def handle_message():
     list_command_code = []
     for row in csvreader:
         list_command_code.append(row)
-
+    
     response = bot.handle_message(inmessage)
     intents = bot.chubot.predict_intent(inmessage)
     entities = bot.chubot.predict_entity(inmessage)

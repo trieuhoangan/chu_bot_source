@@ -1,20 +1,30 @@
+import pandas as pd
 import csv
 def create_form_csv():
-    Q_link = 'Q.csv'
-    A_link = 'A.txt'
+    Q_link = '../Q.csv'
+    A_link = '../A.csv'
+    Qrows =[]
+    Arows =[]
     rows =[]
     with open(Q_link,'r',encoding='utf-8') as Qin:
-        reader = csv.reader(Qin, delimiter=',')
-        for row in reader:
-            rows.append(row)
-    print('row',rows)
-    # real_row = []
-    # for row in rows:
-    #     small_row = row.split('\r')
-    #     real_row.extend(small_row)
-    with open('Q_mod.csv','w',encoding='utf-8') as Qout:
-        for row in rows:
-            Qout.write(row[2])
+        Qreader = csv.reader(Qin, delimiter=',')
+        for row in Qreader:
+            Qrows.append(row)
+    with open(A_link,'r',encoding='utf-8') as Ain:
+        Areader = csv.reader(Ain, delimiter=',')
+        for row in Areader:
+            Arows.append(row)
+    print("Qlen",len(Qrows))
+    print("Alen",len(Arows))
+
+    for i in range(len(Qrows)):
+        Qrows[i].extend("b")
+        Qrows[i].extend(Arows[i])
+    print(Qrows)
+    with open("../QA.csv",'w',encoding='utf-8') as QAout:
+        for row in Qrows:
+            QAout.write(str(row)+"\n")
+
 def sort_dict(dictionary):
     print('sorting')
     sorted_dict = []
@@ -30,7 +40,7 @@ def sort_dict(dictionary):
 def count_popular_word():
     import spacy 
     nlp = spacy.load('vi_spacy_model')
-    Q_link = 'Q.csv'
+    Q_link = '../Q.csv'
     total_quest = []
     dictionary = []
     with open(Q_link,'r',encoding='utf-8') as Qin:
@@ -56,7 +66,13 @@ def count_popular_word():
         for word in dictionary:
             f.write('{},{}\n'.format(word['word'],word['number']))
     print('dic:',dictionary)
-
+def join_Q_A(datafile):
+    df = pd.read_csv(datafile, header=None, names=['intent', 'mid', 'q'])
+    af = pd.read_csv("../A.txt",header=None,names=['a'])
+    a = af[['a']].copy()
+    qa = df[['intent','q']].copy()
+    print(qa[['intent','q']].values+a[['a']].values)
+   
 if __name__=='__main__':
-    count_popular_word()
+    create_form_csv()
                     

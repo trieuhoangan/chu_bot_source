@@ -25,7 +25,6 @@ class ChitChat:
 
         self.targets = targets
         self.qa_list = qa_list
-
     def retrieve_answer(self, question):
         '''
         Question:: String
@@ -37,15 +36,24 @@ class ChitChat:
         #return most similar q & a
         return self.qa_list[id]
 
-
+    def add_more_data(self,datafile):
+        df = pd.read_csv(datafile, header=None, names=['intent', 'middle', 'q', 'a'])
+        qa = df[['q', 'a']].copy()
+        qa_list = qa[['q', 'a']].values
+        targets = [
+            nlp(q) for q, a in qa_list
+        ]
+        self.targets.extend(targets)
+        self.qa_list.extend(qa_list)
 if __name__ == '__main__':
     chitchat_file = 'data/chitchat.csv'
     chitchat = ChitChat(chitchat_file)
-
+    
     # input_question = 'bạn thích gì nhất?'
-    input_question = 'ngoài điện ra thì bạn còn ăn những gì?'
+    input_question = 'hiệu trưởng trường đại học công nghệ là ai'
     most_similar_question, answer = chitchat.retrieve_answer(input_question)
-
+    
     print("inputquestion: ", input_question)
     print("most similar question found: ", most_similar_question)
     print("answer: ", answer)
+    
