@@ -186,6 +186,8 @@ class ChatBotAPI():
         command_code = 0
         mp3 = -1
         intent_id = 0
+        chitchat_file = 'data/chitchat.csv'
+        chitchat = ChitChat(chitchat_file)
         for command in list_command_code:
             if(command[1] == intent):
                 print(command[2])
@@ -193,6 +195,10 @@ class ChatBotAPI():
                 intent_id = command[0]
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
+        if intent='chitchat':
+            most_similar_question, answer = chitchat.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
         if intent=='introduce_vnu':
             mp3 = int(response[0])
         result_json = {"intent": intent_id, "entities": entities,
