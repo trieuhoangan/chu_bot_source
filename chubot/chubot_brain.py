@@ -75,7 +75,7 @@ class ChuBotBrain():
         # Using ** [double star] is a shortcut that allows you to pass multiple arguments to a function directly using a dictionary.
         return {**crf_meta, **clf_meta}
 
-    def train_nercrf(self, train_test_ratio=0.8, **kwargs):
+    def train_nercrf(self, train_test_ratio=1.0, **kwargs):
         """
         *kwargs for future arguments of CRF and learning algorithm
         train_test_ratio= 1 if using all data for training

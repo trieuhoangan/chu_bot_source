@@ -129,6 +129,8 @@ class DataObject():
                     'chitchat':[],
                     'command_lead_way':[],
                     'end_conversation':[],
+                    'ask_number':[],
+                    'ask_when':[]
                     }
         intents = []
         lines =[]
@@ -239,18 +241,18 @@ if __name__=="__main__":
     list_filename=['../chitchat.csv']
     a = DataObject()
     a.split_train_test_chitchat(list_filename,1,2,'../chitchat_test.csv','../chitchat_train.csv')
-    # a.load_entity_data('entity_list.csv')
-    # a.load_quest_data('test.txt',1,0)
+    a.load_entity_data('entity_list.csv')
+    a.load_quest_data('../oldata/quest_data.csv',2,0)
     # a.load_distinc_data('quest_data_noise.csv',2,0)
     # load_quest_data('Q.csv',2,0)
     
     # b.split_train_test_dataset(list_filename,0,2,0.3)
     # b.load_entity_data('entity_list.csv')
     # a.load_quest_data('train.txt',1,0)
-    # link_ouput = 'test.json'
-    # with open(link_ouput, 'w', encoding='utf8') as output:
-    #     output.write(json.dumps(a.json_object, ensure_ascii=False))
-    #     print('done')
+    link_ouput = 'test.json'
+    with open(link_ouput, 'w', encoding='utf8') as output:
+        output.write(json.dumps(a.json_object, ensure_ascii=False))
+        print('done')
     # link_ouput = 'chitchat.json'
     # with open(link_ouput, 'w', encoding='utf8') as output:
     #     output.write(json.dumps(a.json_object, ensure_ascii=False))

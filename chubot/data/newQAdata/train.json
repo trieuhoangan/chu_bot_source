@@ -1,42 +1,12 @@
 {
     "nlu_data": {
         "common_examples": [
-            {
-                "text": " đó là người như thế nào",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có chỉ số eq không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "ngoài điện ra thì bạn thích ăn món gì",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích",
-                "intent": "chitchat"
-            },
+
             {
                 "text": "ai là người tạo ra bạn thế",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn có thích xem đá bóng",
-                "intent": "chitchat"
-            },
-            {
-                "text": "hãy kể tên một vài loại món ăn bạn",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích gà rán không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có sở thích gì không",
-                "intent": "chitchat"
-            },
+           
             {
                 "text": "ai tạo ra mày",
                 "intent": "chitchat"
@@ -45,64 +15,29 @@
                 "text": "nhiệm vụ của bạn là gì",
                 "intent": "chitchat"
             },
-            {
-                "text": "cầu thủ nào bạn yêu thích nhất",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích xem bóng đá không",
-                "intent": "chitchat"
-            },
+ 
             {
                 "text": "ai làm ra bán",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn có sợ ma",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích gà không",
-                "intent": "chitchat"
-            },
+ 
             {
                 "text": "ngoài ra bạn còn làm được gì khác không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "gia đình bạn có mấy người",
                 "intent": "chitchat"
             },
             {
                 "text": "bạn có thể làm được những gì",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn thích chơi thể thao nào",
-                "intent": "chitchat"
-            },
-            {
-                "text": "cầu thủ nào bạn thích",
-                "intent": "chitchat"
-            },
+           
             {
                 "text": "tên của bác lavie",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn thử kể một câu chuyện ma",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích chơi game không",
-                "intent": "chitchat"
-            },
+           
+            
             {
                 "text": "thời tiết hôm nay thế nào",
-                "intent": "chitchat"
-            },
-            {
-                "text": "ai là người đầu tiên cho",
                 "intent": "chitchat"
             },
             {
@@ -114,75 +49,22 @@
                 "intent": "chitchat"
             },
             {
-                "text": "bạn thích bài hát chèo",
-                "intent": "chitchat"
-            },
-            {
-                "text": "hãy kể tên một vài bạn của năm mà bạn yêu",
-                "intent": "chitchat"
-            },
-            {
                 "text": "bạn có sợ cái gì không",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn có thể đọc",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích rán không",
-                "intent": "chitchat"
-            },
+            
             {
                 "text": "bạn có thể đọc sách không",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn đến từ đâu",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích bóng đá",
-                "intent": "chitchat"
-            },
+           
             {
                 "text": "tôi xem phiên bản thân bạn đi",
                 "intent": "chitchat"
             },
-            {
-                "text": "báo thức",
-                "intent": "chitchat"
-            },
-            {
-                "text": "hôm nay bạn thế",
-                "intent": "chitchat"
-            },
-            {
-                "text": "hãy cho tôi biết số đo bảo bạn",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn biết ai không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có chỉ số eq",
-                "intent": "chitchat"
-            },
-            {
-                "text": "kể cho mình nghe thêm một vài loại điện thoại bạn thường dùng",
-                "intent": "chitchat"
-            },
+            
             {
                 "text": "hai người tạo ra bạn",
-                "intent": "chitchat"
-            },
-            {
-                "text": "cho mình nghe tên một vài loại mỹ phẩm bạn thường",
-                "intent": "chitchat"
-            },
-            {
-                "text": "1 + 1 =",
                 "intent": "chitchat"
             },
             {
@@ -193,10 +75,7 @@
                 "text": "bạn là cái gì",
                 "intent": "chitchat"
             },
-            {
-                "text": "bán còn sở cái gì",
-                "intent": "chitchat"
-            },
+           
             {
                 "text": "bạn có anh chị em gì",
                 "intent": "chitchat"
@@ -214,31 +93,7 @@
                 "intent": "chitchat"
             },
             {
-                "text": "bạn có biết viết không",
-                "intent": "chitchat"
-            },
-            {
                 "text": "bạn lại cái gì thế",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bán cỏ sử dụng facebook không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "thường làm gì lúc rảnh rỗi",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn thích bài hát nào",
-                "intent": "chitchat"
-            },
-            {
-                "text": "hãy kể tên một vài món ăn mà bà",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn thích trời mưa hay trời nắng",
                 "intent": "chitchat"
             },
             {
@@ -258,10 +113,6 @@
                 "intent": "chitchat"
             },
             {
-                "text": "tên của bạn là gì",
-                "intent": "chitchat"
-            },
-            {
                 "text": "bạn có biết làm việc nhà không",
                 "intent": "chitchat"
             },
@@ -271,38 +122,6 @@
             },
             {
                 "text": "giải thích môn thể thao nào",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có sử dụng facebook không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn con smart",
-                "intent": "chitchat"
-            },
-            {
-                "text": "gia đình bạn có mấy",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có bay được không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "hôm nay bạn thế nào",
-                "intent": "chitchat"
-            },
-            {
-                "text": "sở thích",
-                "intent": "chitchat"
-            },
-            {
-                "text": "cầu thủ nào",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn thích làm gì",
                 "intent": "chitchat"
             },
             {
@@ -318,10 +137,6 @@
                 "intent": "chitchat"
             },
             {
-                "text": "một cộng một bằng mấy",
-                "intent": "chitchat"
-            },
-            {
                 "text": "bạn có thể làm được gì",
                 "intent": "chitchat"
             },
@@ -330,47 +145,7 @@
                 "intent": "chitchat"
             },
             {
-                "text": "hãy cho tôi biết rồi đó ba vòng của bạn đi",
-                "intent": "chitchat"
-            },
-            {
                 "text": "kể cho mình nghe với bố mẹ bạn",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn thư kể một câu chuyện mà em đi",
-                "intent": "chitchat"
-            },
-            {
-                "text": "ai là người đầu tiên cho bạn",
-                "intent": "chitchat"
-            },
-            {
-                "text": "anh đang ra bạn",
-                "intent": "chitchat"
-            },
-            {
-                "text": "số đo 3 vòng của bạn là bao",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn thích chơi môn thể thao",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn đi ngủ lúc mấy giờ",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có tập thể dục không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "kể cho mình nghe tên một loài một vài loại biết và bạn thân",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn thích con gì",
                 "intent": "chitchat"
             },
             {
@@ -378,23 +153,7 @@
                 "intent": "chitchat"
             },
             {
-                "text": "ai tạo ra máy",
-                "intent": "chitchat"
-            },
-            {
-                "text": "ê bà là ai",
-                "intent": "chitchat"
-            },
-            {
                 "text": "ai tạo ra",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thì đọc sách không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có yêu tôi không",
                 "intent": "chitchat"
             },
             {
@@ -402,53 +161,9 @@
                 "intent": "chitchat"
             },
             {
-                "text": "ngoài điện ra bạn có thích ăn món gì",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có biết tiết không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "giải thích con gì nhất",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn thích chơi môn thể thao nào",
-                "intent": "chitchat"
-            },
-            {
-                "text": "chỉ số iq của bạn là bao",
-                "intent": "chitchat"
-            },
-            {
                 "text": "giới thiệu về bạn đi",
                 "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thể hạ bài không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích sơn tùng không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "báo thức làm được những gì",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có bay được",
-                "intent": "chitchat"
-            },
-            {
-                "text": "vụ là gì",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bán cò bay",
-                "intent": "chitchat"
-            },
+            },       
             {
                 "text": "chất liệu để tạo ra bạn là",
                 "intent": "chitchat"
@@ -457,22 +172,13 @@
                 "text": "bạn cao bao nhiêu",
                 "intent": "chitchat"
             },
-            {
-                "text": "ngoài điện ra thì bạn thích ăn món gì khác",
-                "intent": "chitchat"
-            },
+
             {
                 "text": "bạn di chuyển như thế nào",
                 "intent": "chitchat"
             },
-            {
-                "text": "ngoài nói ra bạn có thể là một thứ gì khác không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thể nấu ăn",
-                "intent": "chitchat"
-            },
+            
+           
             {
                 "text": "giới thiệu về bạn",
                 "intent": "chitchat"
@@ -481,54 +187,29 @@
                 "text": "bạn có thích chơi",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn có tiền không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích sơn tùng",
-                "intent": "chitchat"
-            },
+           
             {
                 "text": "giới thiệu bạn đi",
                 "intent": "chitchat"
             },
-            {
-                "text": "7m",
-                "intent": "chitchat"
-            },
-            {
-                "text": "ngoài điện ra bạn có thích ăn món gì khác",
-                "intent": "chitchat"
-            },
-            {
-                "text": "ngoài điện cho thì bạn thích ăn món gì khác",
-                "intent": "chitchat"
-            },
+            
+            
+            
             {
                 "text": "bạn là cái gì thế",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn còn tiền không",
-                "intent": "chitchat"
-            },
+           
             {
                 "text": "bạn là ai vậy",
                 "intent": "chitchat"
             },
-            {
-                "text": "chỉ số iq của bạn là bao nhiêu",
-                "intent": "chitchat"
-            },
+            
             {
                 "text": "bạn là ai",
                 "intent": "chitchat"
             },
-            {
-                "text": "hãy cho tôi biết số đo 3 vòng của bạn đi",
-                "intent": "chitchat"
-            },
+           
             {
                 "text": "thời tiết hôm nay thế",
                 "intent": "chitchat"
@@ -541,10 +222,7 @@
                 "text": "chất liệu da bán là gì",
                 "intent": "chitchat"
             },
-            {
-                "text": "ngoài ra bạn có làm được thứ gì khác không",
-                "intent": "chitchat"
-            },
+          
             {
                 "text": "tên của bạn là",
                 "intent": "chitchat"
@@ -553,58 +231,27 @@
                 "text": "ai tạo ra mà",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn có thể nói",
-                "intent": "chitchat"
-            },
+            
             {
                 "text": "bạn là gì",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn đi ngủ lúc mấy",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn thích môn thể thao nào",
-                "intent": "chitchat"
-            },
-            {
-                "text": "số đo 3 vòng của bạn là",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thích tập thể dục không",
-                "intent": "chitchat"
-            },
+  
+           
             {
                 "text": "bạn có anh chị em gì không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "sở thích của bạn là gì",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn còn sợ cái gì không",
                 "intent": "chitchat"
             },
             {
                 "text": "gia đình của bạn có mấy người",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn làm cái gì thế",
-                "intent": "chitchat"
-            },
+          
             {
                 "text": "ngoài đó ra bạn có làm được thứ gì khác không",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn có thích tập thể dục",
-                "intent": "chitchat"
-            },
+            
             {
                 "text": "bạn di chuyển như thế",
                 "intent": "chitchat"
@@ -613,34 +260,16 @@
                 "text": "giới thiệu về bản thân đi",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn có sợ ma không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "hãy kể tên một vài món ăn mà bạn thích",
-                "intent": "chitchat"
-            },
-            {
-                "text": "chất liệu đoạn là gì",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn có thể hát một bài không",
-                "intent": "chitchat"
-            },
-            {
-                "text": "bạn biết bay không",
-                "intent": "chitchat"
-            },
+            
+            
+            
+           
+            
             {
                 "text": "bạn bao nhiêu tuổi",
                 "intent": "chitchat"
             },
-            {
-                "text": "bạn thường làm gì lúc rảnh rỗi",
-                "intent": "chitchat"
-            },
+           
             {
                 "text": "chất liệu để bán",
                 "intent": "chitchat"

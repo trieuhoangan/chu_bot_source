@@ -1160,8 +1160,12 @@ ask_what, Môn thi được sử dụng tài liệu thì sinh viên  Đại họ
 ask_what, Ngoài các Đoàn Trường/Khoa trực thuộc  Đoàn  Đại học quốc gia Hà Nội còn có gì, b, Ngoài trường và khoa trực thuộc còn có các Chi đoàn cơ sở.
 ask_when, Đoàn Thanh niên  Đại học quốc gia Hà Nội cũng tổ chức Chiến dịch Mùa hè thanh niên tình nguyện khi nào, b, Mùa hè hằng năm.
 ask_what, Mỗi khóa học tập kiến thức giáo dục quốc phòng – an ninh tại Trung tâm Giáo dục Quốc phòng và An ninh của  Đại học quốc gia Hà Nội  sinh viên được trang bị kiến thức về, b, Nhận thức về quốc phòng an ninh  Tác phong quân đội  Kỹ năng sống
-ask_who,ai là hiệu trưởng đầu tiên của đại học quốc gia hà nội từ năm 1993 đến năm 2001,a,Giáo sư viện sĩ Nguyễn Văn Đạo
-ask_who, ai là hiệu trưởng thứ hai của đại học quốc gia từ năm 2001 đến 2007,a, giáo sư viện sĩ Đào Trọng Thi
-ask_who, ai là hiệu trưởng thứ 3 của đại học quốc gia từ năm 2007 đến 2013, a, giáo sư Mai Trọng Nhuận
-ask_who, ai là hiệu trưởng thứ 4 của đại học quốc gia từ năm 2013 đến 2016, a, giáo sư Phùng Xuân Nhạ
-ask_who, hiện tại ai đang là hiệu trưởng của đại học quốc gia từ 2016 đến nay, a, Phó giáo sư Nguyễn Kim Sơn
+ask_who,ai là giám đốc đầu tiên của đại học quốc gia hà nội từ năm 1993 đến năm 2001,a,Giáo sư viện sĩ Nguyễn Văn Đạo
+ask_who, ai là giám đốc thứ hai của đại học quốc gia từ năm 2001 đến 2007,a, giáo sư viện sĩ Đào Trọng Thi
+ask_who, ai là giám đốc thứ 3 của đại học quốc gia từ năm 2007 đến 2013, a, giáo sư Mai Trọng Nhuận
+ask_who, ai là giám đốc thứ 4 của đại học quốc gia từ năm 2013 đến 2016, a, giáo sư Phùng Xuân Nhạ
+ask_who, hiện tại ai đang là giám đốc của đại học quốc gia từ 2016 đến nay, a, Phó giáo sư Nguyễn Kim sơn
+ask_what, kể cho tôi nghe về đại học công nghệ đi, a, đại học công nghệ là một trường thành viên của đại học quốc gia chuyên giảng dạy đào tạo các cử nhân kỹ sư công nghệ cao
+ask_what, tôi muốn biết về đại học công nghệ, a, đại học công nghệ là một trường thành viên của đại học quốc gia chuyên giảng dạy đào tạo các cử nhân kỹ sư công nghệ cao
+ask_what, nói sơ qua về đại học công nghệ đi, a, đại học công nghệ là một trường thành viên của đại học quốc gia chuyên giảng dạy đào tạo các cử nhân kỹ sư công nghệ cao
+ask_what, đại học công nghệ đi là nơi như thế nào, a, đại học công nghệ là một trường thành viên của đại học quốc gia chuyên giảng dạy đào tạo các cử nhân kỹ sư công nghệ cao

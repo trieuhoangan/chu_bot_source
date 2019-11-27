@@ -3,7 +3,7 @@
     "user_intents": [
       "command_return",
       "greeting",
-      "introduce",
+      "introduce_vnu",
       "command_lead_way",
       "ask_who",
       "ask_where",
@@ -21,7 +21,7 @@
       "bot_return",
       "bot_lead_way",
       "bot_answer",
-      "bot_introduce",
+      "bot_introduce_vnu",
       "bot_chitchat",
       "bot_ask_who",
       "bot_ask_what",
@@ -34,7 +34,7 @@
       "chitchat": ["bot_chitchat"],
       "greeting": ["bot_greeting"],
       "command_return": ["bot_return"],
-      "introduce": ["bot_introduce"],
+      "introduce_vnu": ["bot_introduce_vnu"],
       "ask_who": ["bot_ask_who"],
       "ask_where": ["bot_ask_where"],
       "ask_what": ["bot_ask_what"],
@@ -59,8 +59,8 @@
         "xin chào bạn",
         "tạm biệt nhé"
       ],
-      "bot_answer_number":["two"],
-      "bot_answer_when":["today"],
+      "bot_answer_number":["tôi không biết"],
+      "bot_answer_when":["tôi không biết"],
       "bot_return": ["xin phép về chỗ", "thank you", "thank you for using me"],
       "bot_greeting": [
         "xin chào bạn",
@@ -75,7 +75,7 @@
       "bot_ask_who": ["đây là bác hồ"],
       "bot_ask_where": ["đây là việt nam"],
       "bot_ask_what": ["đây là bức tranh"],
-      "bot_ask_location": ["14","15","16","17","18","19","20","21","22","23","24"],
+      "bot_introduce_vnu": ["14","15","16","17","18","19","20","21","22","23","24"],
       "bot_chitchat": ["Well, i think so too","wow, that was cool"]
     },
     "action_custom": {

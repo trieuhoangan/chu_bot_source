@@ -136,7 +136,7 @@ class ChatBotAPI():
         inmessage_vector = self.tfidf.transform([inmessage_join_tokens])
         # predict the probabilies
         y_probs = self.clf.predict_proba(inmessage_vector)
-
+        
         # labels of each classes
         labels = self.le.inverse_transform(self.clf.classes_)
         # print(labels)
@@ -188,7 +188,11 @@ class ChatBotAPI():
         mp3 = -1
         intent_id = 0
         chitchat_file = 'data/chitchat.csv'
+        ask_what_file = 'data/ask_what.csv'
+        ask_robot_file= 'data/QA.csv'
         chitchat = ChitChat(chitchat_file)
+        ask_what = ChitChat(ask_what_file)
+        ask_robot=ChitChat(ask_robot_file)
         for command in list_command_code:
             if(command[1] == intent):
                 print(command[2])
@@ -196,8 +200,16 @@ class ChatBotAPI():
                 intent_id = command[0]
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
+        if intent=='ask_what':
+            most_similar_question, answer = ask_what.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
         if intent=='chitchat':
             most_similar_question, answer = chitchat.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
+        if intent=='ask_where' or intent=='ask_who':
+            most_similar_question, answer = ask_robot.retrieve_answer(inmessage)
             print(most_similar_question)
             response = answer
         if intent=='introduce_vnu':
