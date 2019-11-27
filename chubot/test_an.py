@@ -183,7 +183,7 @@ def test_input_predict():
     ask_who_file = 'data/ask_who.csv'
     ask_where_file = 'data/ask_where.csv'
     ask_number_file = 'data/ask_number.csv'
-    ask_when_file = 'data/QA.csv'
+    ask_when_file = 'data/ask_when.csv'
     chitchat = ChitChat(chitchat_file)
     ask_what = ChitChat(ask_what_file)
     ask_who = ChitChat(ask_who_file)

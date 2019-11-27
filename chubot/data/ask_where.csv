@@ -1,10 +1,18 @@
-unknown,không biết,a,tôi không biết
-ask_where, Trụ sở của Đại học Đông Dương ở đâu, b, Số 19 phố Lê Thánh Tông  quận Hoàn Kiếm  thành phố Hà Nội
-ask_where, Trụ sở của Đại học Quốc gia Việt Nam ở đâu, b, Số 19 phố Lê Thánh Tông  quận Hoàn Kiếm  thành phố Hà Nội
-ask_where, Ngày 20/12/2003  Thủ tướng Chính phủ Phan Văn Khải đã chính thức động thổ xây dựng  Đại học quốc gia Hà Nội tại đâu, b, Xã Thạch Hòa  huyện Thạch Thất  Hà Nội
-ask_where, Khoa Các khoa học Liên ngành –  Đại học quốc gia Hà Nội có địa chỉ tại, b, 144 Xuân Thuỷ  Cầu Giấy  Hà Nội
-ask_where, Trụ sở Bệnh viện  Đại học quốc gia Hà Nội nằm ở đâu, b, 182  đường Lương Thế Vinh  quận Thanh Xuân  thành phố Hà Nội
-ask_where, Thực hiện chủ trương của  Đại học quốc gia Hà Nội về chuyên môn hóa các đơn vị đào tạo  Bộ môn Giáo dục thể chất được chuyển về đâu, b, Trung tâm Giáo dục Thể chất và Thể thao trực thuộc ĐHQGHN
-ask_where, Đại học Quốc gia Hà Nội là một trong hai hệ thống Đại học quốc gia của Việt Nam được đặt tại đâu, b, được đặt tại Hà Nội.
-ask_where, Lễ ra quân Chiến dịch Mùa hè thanh niên tình nguyện 2017 do Đoàn Thanh niên - Hội Sinh viên  Đại học quốc gia Hà Nội được tổ chức tại đâu, b, Huyện Chợ Mới  tỉnh Bắc Kạn
-ask_where, Sinh viên  Đại học quốc gia Hà Nội học giáo dục an ninh - quốc phòng ở đâu , b, Khu quân sự Hòa Lạc
+unknown,không biết,a,tôi không biết thông tin này
+unknown,không biết,a,tôi không biết bạn có thể đặt câu hỏi chi tiết hơn không
+ask_where, trụ sở của đại học đông dương ở đâu, b, số 19 phố lê thánh tông  quận hoàn kiếm  thành phố hà nội
+ask_where, trụ sở của đại học quốc gia việt nam ở đâu, b, số 19 phố lê thánh tông  quận hoàn kiếm  thành phố hà nội
+ask_where, ngày 20/12/2003  thủ tướng chính phủ phan văn khải đã chính thức động thổ xây dựng  đại học quốc gia hà nội tại đâu, b, xã thạch hòa  huyện thạch thất  hà nội
+ask_where, khoa các khoa học liên ngành –  đại học quốc gia hà nội có địa chỉ tại, b, 144 xuân thuỷ  cầu giấy  hà nội
+ask_where, trụ sở bệnh viện  đại học quốc gia hà nội nằm ở đâu, b, 182  đường lương thế vinh  quận thanh xuân  thành phố hà nội
+ask_where, thực hiện chủ trương của  đại học quốc gia hà nội về chuyên môn hóa các đơn vị đào tạo  bộ môn giáo dục thể chất được chuyển về đâu, b, trung tâm giáo dục thể chất và thể thao trực thuộc đhqghn
+ask_where, đại học quốc gia hà nội là một trong hai hệ thống đại học quốc gia của việt nam được đặt tại đâu, b, được đặt tại hà nội.
+ask_where, lễ ra quân chiến dịch mùa hè thanh niên tình nguyện 2017 do đoàn thanh niên - hội sinh viên  đại học quốc gia hà nội được tổ chức tại đâu, b, huyện chợ mới  tỉnh bắc kạn
+ask_where, sinh viên  đại học quốc gia hà nội học giáo dục an ninh - quốc phòng ở đâu , b, khu quân sự hòa lạc
+ask_where, trụ sở của đại học công nghệ ở đâu, b, ở số 144 Xuân Thủy, Cầu Giấy.
+ask_where, trụ sở của đại học ngoại ngữ ở đâu, b, ở số 144 Xuân Thủy, Cầu Giấy.
+ask_where, trụ sở của đại học kinh tế ở đâu, b, ở số 144 Xuân Thủy, Cầu Giấy.
+ask_where, trụ sở của đại học giáo dục ở đâu, b, ở số 144 Xuân Thủy, Cầu Giấy.
+ask_where, trụ sở của trường đại học luật ở đâu, b, ở số 144 Xuân Thủy, Cầu Giấy.
+ask_where, trụ sở của đại học khoa học tự nhiên ở đâu, b, ở số 334 Nguyễn Trãi, Thanh Xuân Trung, Thanh Xuân, Hà Nội
+ask_where, trụ sở của đại học khoa học xã hội và nhân văn ở đâu, b, ở số 336 Nguyễn Trãi, Thanh Xuân Trung, Thanh Xuân, Hà Nội

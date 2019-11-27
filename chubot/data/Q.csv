@@ -1,566 +1,566 @@
-ask_what,a,Trường Đại học nào được tách thành hai trường là Đại học Tổng hợp Hà Nội và Đại học Sư phạm Hà Nội
-ask_what,a,Ban đầu  trường Đại học Tổng hợp Hà Nội có hai khoa là:
-ask_what,a,Năm 1961  theo quyết định của Bộ Giáo dục  Khoa Tự nhiên  trường Đại học Tổng hợp được tách ra thành hai khoa là:
-ask_what,a,Đến năm 1965  Khoa Toán – Lý của trường Đại học Tổng hợp Hà Nội được chia tách để thành lập 2 khoa là
-ask_when,a, Một lượng lớn cán bộ của Bộ môn Tin học – Đại học Tổng hợp Hà Nội được điều động sang công tác tại khoa Công nghệ Thông tin – Đại học Tổng hợp Hà Nội vào năm nào
-ask_what,a,Tên tiếng Anh của  Đại học quốc gia Hà Nội là gì
-ask_what,a,Tên viết tắt của  Đại học quốc gia Hà Nội là gì
-ask_who,a,Giám đốc và các Phó Giám đốc  Đại học quốc gia Hà Nội do ai bổ nhiệm  miễn nhiệm
-ask_what,a,Tiền thân của  Đại học quốc gia Hà Nội là trường nào
-ask_what,a,Đâu không phải là tiền thân của  Đại học quốc gia Hà Nội
-ask_where,a,Trụ sở của Đại học Đông Dương ở đâu
-ask_when,a,Đại học Đông Dương được thành lập vào thời gian nào
-ask_what,a,Trên cơ sở Đại học Đông Dương  trường đại học nào được thành lập:
-ask_when,a,Khóa đầu tiên của Trường Đại học Quốc gia Việt Nam được khai giảng vào:
-ask_who,a,Khai giảng khóa đầu tiên của Đại học Quốc gia Việt Nam dưới sự chủ tọa của ai
-ask_where,a,Trụ sở của Đại học Quốc gia Việt Nam ở đâu
-ask_when,a, Đại học quốc gia Hà Nội được thành lập chính thức vào thời gian nào
-ask_what,a,Theo Nghị định số 97/CP ngày 10/12/1993   Đại học quốc gia Hà Nội được thành lập trên cơ sở tổ chức  sắp xếp lại 3 trường đại học nào:
-ask_number,a,Tính đến năm 2000   Đại học quốc gia Hà Nội có bao nhiêu trường đại học thành viên
-ask_number,a,Tính đến năm 2000   Đại học quốc gia Hà Nội có bao nhiêu viện nghiên cứu
-ask_what,a,Tính đến năm 2000  trường nào sau đây không phải là đơn vị trực thuộc Đại học Quốc gia Hà Nội
-ask_when,a,Trường Đại học Sư phạm tách khỏi cơ cấu tổ chức  Đại học quốc gia Hà Nội năm nào
-ask_what,a,Cho đến năm 2000  những trường nào sau đây thuộc  Đại học quốc gia Hà Nội :
-ask_number,a,Theo Quyết định số 14/2001/QĐ–TTg   Đại học quốc gia Hà Nội có mấy trường đại học thành viên
-ask_what,a,Theo Quyết định số 14/2001/QĐ–TTg   Đại học quốc gia Hà Nội gồm những trường đại học thành viên nào
-ask_where,a,Ngày 20/12/2003  Thủ tướng Chính phủ Phan Văn Khải đã chính thức động thổ xây dựng  Đại học quốc gia Hà Nội tại đâu
-ask_who,a,Ngày 20/12/2003  ai là người đã chính thức động thổ xây dựng  Đại học quốc gia Hà Nội
-ask_when,a,Thủ tướng Chính phủ Phan Văn Khải đã chính thức động thổ xây dựng  Đại học quốc gia Hà Nội vào thời gian nào
-ask_when,a,Viện Việt Nam học và Khoa học phát triển trực thuộc  Đại học quốc gia Hà Nội được thành lập vào thời gian nào
-ask_who,a,Ai là người ký sắc lệnh thành lập Đại học Quốc gia Việt Nam – nay là Đại học Quốc gia Hà Nội 
-ask_number,a,Tính đến năm 2018   Đại học quốc gia Hà Nội gồm bao nhiêu trường đại học thành viên
-ask_number,a,Tính đến năm 2018   Đại học quốc gia Hà Nội có bao nhiêu khoa trực thuộc
-ask_number,a,Tính đến năm 2018   Đại học quốc gia Hà Nội có bao nhiêu trung tâm đào tạo
-ask_number,a,Tính đến năm 2018   Đại học quốc gia Hà Nội có bao nhiêu viện NCKH
-ask_number,a,Tính đến năm 2011   Đại học quốc gia Hà Nội có bao nhiêu trường đại học thành viên
-ask_number,a,Tính đến năm 2011   Đại học quốc gia Hà Nội có bao nhiêu Viện nghiên cứu thành viên
-ask_number,a,Tính đến năm 2011   Đại học quốc gia Hà Nội có bao nhiêu Khoa đào tạo trực thuộc
-ask_when,a,Chủ tịch Hồ Chí Minh về thăm trường Đại học Tổng hợp Hà Nội lần đầu tiên vào thời gian nào
-ask_when,a,Chủ tịch Hồ Chí Minh về thăm Đại học Tổng hợp Hà Nội lần thứ hai vào năm nào
-ask_when,a,Trung tâm Nghiên cứu Tài nguyên và Môi trường CRES được thành lập vào thời gian nào
-ask_when,a,Đại học Tổng hợp Hà Nội được thành lập thời gian nào
-ask_who,a,Ai đã kí quyết định thành lập Đại học Tổng hợp Hà Nội
-ask_number,a,Mặc dù mới được thành lập nhưng từ năm 1956 – 1959  trường Đại học Tổng hợp đã biên soạn được bao nhiêu giáo trình mới
-ask_number,a,Đến năm 1965  trong hoàn cảnh chiến tranh và khó khăn  hệ thống đào tạo trường Đại học Tổng hợp đã có bao nhiêu giáo trình cơ sở và chuyên đề
-ask_number,a,Đến năm 1965  Đại học Tổng hợp đã có bao nhiêu cán bộ giảng dạy
-ask_number,a,Đến năm 1965  Đại học Tổng hợp đã có bao nhiêu cán bộ giảng dạy có trình độ Tiến sĩ và Phó tiến sĩ
-ask_number,a,Trong năm học 1975 –1976  có bao nhiêu tập thể lớp tại Đại học Tổng hợp Hà Nội được Thành đoàn Hà Nội công nhận danh hiệu tập thể sinh viên XHCN
-ask_number,a,Những năm học đầu tiên  Trường Đại học Tổng hợp Hà Nội chia các lĩnh vực đào tạo chuyên môn thành bao nhiêu ban
-ask_number,a,Trong ngày đầu khai giảng  trường Đại học Tổng hợp Hà Nội có bao nhiêu sinh viên tựu trường
-ask_number,a,Ngày đầu mới thành lập  Đại học Tổng hợp Hà Nội có bao nhiêu cán bộ giảng dạy
-ask_when,a,Trường Đại học Tổng hợp Hà Nội được Chính phủ tặng thưởng Huân chương Lao động hạng III vào năm nào
-ask_when,a,Trường Đại học Tổng hợp Hà Nội lập thêm khoa Địa lý – Địa chất vào năm nào
-ask_number,a,Đến năm học 1968 – 1969  trường Đại học Tổng hợp Hà Nội có bao nhiêu khoa trực thuộc
-ask_number,a,Đến năm học 1965 – 1966  trường Đại học Tổng hợp Hà Nội có bao nhiêu khoa trực thuộc
-ask_when,a,Khoa Triết học thuộc Đại học Tổng hợp Hà Nội được thành lập năm nào
-ask_when,a,Khoa Pháp lý thuộc Đại học Tổng hợp Hà Nội được thành lập năm nào
-ask_when,a,Trường Đại học Tổng hợp Hà Nội bắt đầu đào tạo nghiên cứu sinh vào năm nào
-ask_what,a,Ngày 23/3/979  hơn 1300 cán bộ và sinh viên của Đại học Tổng hợp Hà Nội tham gia xây dựng Phòng tuyến bảo vệ thủ đô với phiên hiệu là:
-ask_when,a,Trường Đại học Tổng hợp Hà Nội đón nhận Huân chương Lao động hạng Nhất vào dịp nào
-ask_who,a,Hiệu trưởng đầu tiên của Đại học Tổng hợp Hà Nội là ai
-ask_number,a,Sau 30 năm thành lập  đội ngũ cán bộ khoa học của trường Đại học Tổng hợp Hà Nội đã có bao nhiêu đề tài nghiên cứu khoa học cấp nhà nước và cấp bộ
-ask_when,a,Khoa Vật lý Hạt nhân thuộc Đại học Tổng hợp Hà Nội được thành lập vào năm nào
-ask_number,a,Đến năm 1986  Trường Đại học Tổng hợp Hà Nội có bao nhiêu khoa trực thuộc
-ask_number,a,Đến năm 1986  Trường Đại học Tổng hợp Hà Nội có bao nhiêu trung tâm nghiên cứu khoa học
-ask_number,a,Đến năm 1986  Trường Đại học Tổng hợp Hà Nội có bao nhiêu Giáo sư và Phó giáo sư
-ask_number,a,Đến năm 1986  Trường Đại học Tổng hợp Hà Nội có bao nhiêu Tiến sĩ và Phó tiến sĩ
-ask_when,a,Trường Đại học Tổng hợp Hà Nội đón nhận Huân chương Độc lập hạng Ba vào dịp nào
-ask_number,a,Riêng trong 2 năm 1988 – 1989  đội ngũ cán bộ trường Đại học Tổng hợp đã triển khai bao nhiêu đề tài nghiên cứu các cấp
-ask_when,a,Khoa Nâng cao Trình độ – Đại học Tổng hợp Hà Nội được thành lập vào năm nào
-ask_when,a,Viện Tin học – Điện tử thuộc Đại học Tổng hợp Hà Nội được thành lập vào năm nào
-ask_when,a,Trung tâm Mác – Lênin thuộc Đại học Tổng hợp Hà Nội được thành lập vào năm nào
-ask_when,a,Đại học Tổng hợp Hà Nội chính thức mở lại chuyên ngành Ngữ văn Trung Quốc vào thời gian nào
-ask_when,a,Khoa Báo chí – Trường Đại học Tổng hợp Hà Nội chính thức đi vào hoạt động từ năm nào
-ask_when,a,Tạp chí khoa học – Đại học Tổng hợp Hà Nội được Bộ Văn hóa cấp phép hoạt động vào thời gian nào
-ask_when,a,Trường Đại học Tổng hợp Hà Nội thành lập thêm khoa Xã hội học – Tâm lý học vào năm nào
-ask_number,a,Tính đến năm học 1992 – 1993  trường Đại học Tổng hợp đã có bao nhiêu khoa trực thuộc
-ask_when,a,Năm học nào được gọi là  'năm giáo trình ' của Đại học Tổng hợp
-ask_number,a,'Năm giáo trình ' của Đại học Tổng hợp có bao nhiêu đầu sách giáo trình được in
-ask_what,a,Khoa trực thuộc đầu tiên của  Đại học quốc gia Hà Nội là:
-ask_when,a,Khoa trực thuộc đầu tiên của  Đại học quốc gia Hà Nội được thành lập vào năm nào
-ask_what,a,Sau khi  Đại học quốc gia Hà Nội được thành lập  Khoa Kinh tế – Chính trị thuộc Đại học Tổng hợp Hà Nội trở thành khoa đào tạo của trường thành viên nào
-ask_what,a,Năm 1999  Khoa Kinh tế –  Đại học quốc gia Hà Nội được thành lập dựa trên cơ sở nào
-ask_when,a,Khoa Sau đại học –  Đại học quốc gia Hà Nội chính thức ra đời vào thời gian nào
-ask_when,a,Viện Công nghệ thông tin –  Đại học quốc gia Hà Nội được thành lập vào thời gian nào
-ask_number,a,Cơ cấu tổ chức của Trung tâm Giáo dục Quốc phòng –  Đại học quốc gia Hà Nội gồm bao nhiêu khoa
-ask_what,a,Cơ cấu tổ chức của Trung tâm Giáo dục Quốc phòng –  Đại học quốc gia Hà Nội gồm 02 khoa  đó là:
-ask_when,a,Nội quy của Đại học Đông Dương tiền thân  Đại học quốc gia Hà Nội được ban hành vào thời gian nào
-ask_number,a,Từ sau năm 1917 đến trước thế chiến thứ hai  Đại học Đông Dương tiền thân  Đại học quốc gia Hà Nội có bao nhiêu trường đại học thành viên
-ask_number,a,Trong năm học đầu tiên  Đại học Quốc gia Việt Nam có bao nhiêu sinh viên đăng kí học
-ask_what,a,Môn học nào của Đại học Quốc gia Việt Nam do Bộ Giáo dục trực tiếp chỉ đạo về nội dung  hình thức  thời gian học tập
-ask_what,a,Trường Đại học Sư phạm Ngoại ngữ Hà Nội được phát triển trên cơ sở Khoa nào của trường Đại học Sư phạm Hà Nội '
-ask_when,a,Trường Đại học Sư phạm Ngoại ngữ Hà Nội được phát triển trên cơ sở Khoa Ngoại ngữ của trường Đại học Sư phạm Hà Nội vào năm nào
-ask_when,a,Thủ tướng chính phủ Phan Văn Khải đã chính thức động thổ xây dựng  Đại học quốc gia Hà Nội tại Hòa Lạc vào thời gian nào
-ask_when,a,Viện Việt Nam học và Khoa học phát triển –  Đại học quốc gia Hà Nội được chính thức thành lâp năm nào
-ask_when,a,Thủ tướng Chính phủ đã ký Quyết định thành lập Viện Trần Nhân Tông vào thời gian nào
-ask_who,a,Ai là người đã ký Quyết định thành lập Viện Trần Nhân Tông vào ngày 01/09/2016
-ask_what,a,Viện Tài nguyên và Môi trường –  Đại học quốc gia Hà Nội được thành lập trên cơ sở nào
-ask_what,a,Ngày 17/11/2016  Thủ tướng chính phủ ký quyết định thành lập…
-ask_when,a,Thủ tướng chính phủ ký quyết định thành lập Viện Tài nguyên và Môi trường trên cơ sở nâng cấp Trung tâm Nghiên cứu Tài nguyên và Môi trường vào thời gian nào
-ask_number,a, Đại học quốc gia Hà Nội có bao nhiêu đơn vị hỗ trợ/dịch vụ
-ask_when,a,Trường Luật và Pháp chính trực thuộc Đại học Đông Dương được thành lập năm nào
-ask_when,a,Trường Cao đẳng Y khoa trở thành một thành viên của Đại học Đông Dương vào năm nào
-ask_when,a,Trường Cao đẳng Y khoa thuộc Đại học Đông Dương được xây dựng trên cơ sở trường Trung cấp Y khoa Hà Nội vào năm nào
-ask_what,a,Khoa Các khoa học liên ngành –  Đại học quốc gia Hà Nội có tên viết tắt là:
-ask_what,a,Khoa Các khoa học liên ngành –  Đại học quốc gia Hà Nội tiền thân là:
-ask_number,a,Tính đến nay  Khoa Các khoa học liên ngành –  Đại học quốc gia Hà Nội có bao nhiêu chương trình đào tạo
-ask_when,a,Chương trình đào tạo Thạc sĩ Biến đổi khí hậu của Khoa Các khoa học liên ngành –  Đại học quốc gia Hà Nội được đưa vào đào tạo khi nào
-ask_when,a,Chương trình đào tạo Thạc sĩ Khoa học bền vững của Khoa Các khoa học liên ngành –  Đại học quốc gia Hà Nội được đưa vào đào tạo khi nào
-ask_where,a,Khoa Các khoa học Liên ngành –  Đại học quốc gia Hà Nội có địa chỉ tại:
-ask_who,a,Bệnh viện  Đại học quốc gia Hà Nội được thành lập theo quyết định của ai
-ask_when,a,Bệnh viện  Đại học quốc gia Hà Nội được thành lập vào thời gian nào
-ask_what,a,Cơ quan chủ quản của Bệnh viện  Đại học quốc gia Hà Nội là:
-ask_when,a,Bệnh viện  Đại học quốc gia Hà Nội trực thuộc  Đại học quốc gia Hà Nội được thành lập vào năm nào
-ask_where,a,Trụ sở Bệnh viện  Đại học quốc gia Hà Nội nằm ở đâu
-ask_number,a,Bệnh viện  Đại học quốc gia Hà Nội có quy mô bao nhiêu giường bệnh tại nội thành Hà Nội
-ask_where,a,Thực hiện chủ trương của  Đại học quốc gia Hà Nội về chuyên môn hóa các đơn vị đào tạo  Bộ môn Giáo dục thể chất được chuyển về đâu
-ask_who,a,Thủ tướng Chính phủ Nước Việt Nam Dân chủ Cộng hòa nguời mà đã ký Quyết định số 128/CP ngày 14/8/1967 chia trường Đại học Sư phạm Hà Nội thành 3 trường Đại học Sư phạm thuộc Bộ Giáo dục là ai
-ask_what,a,Thủ tướng Chính phủ Nước Việt Nam Dân chủ Cộng hòa đã ký Quyết định số 128/CP ngày 14/8/1967 chia trường Đại học Sư phạm Hà Nội thành 3 trường đại học Sư phạm thuộc Bộ Giáo dục là:
-ask_what,a,Năm 1999  Trung tâm nghiên cứu Vi sinh ứng dụng và Trung tâm Nghiên cứu Nấm ăn thuộc Đại học Khoa học Tự nhiên được tổ chức lại thành gi
-ask_what,a,Những trường đại học nào sau đây có trường THPT trực thuộc
-ask_what,a,Tên gọi của lớp chuyên đầu tiên của Trường ĐH Tổng hợp Hà Nội và là lớp năng khiếu đầu tiên trong cả nước là gì
-ask_number,a,Hiện tại   Đại học quốc gia Hà Nội đang triển khai bao nhiêu chương trình đào tạo đại học
-ask_number,a,Năm 2017   giáo sư Phan Huy Lê nhận Giải thưởng Hồ Chí Minh về KH&CN lần thứ mấy với công trình  'Lịch sử và Văn hóa Việt Nam – Tiếp cận bộ phận '
-ask_number,a,Trong năm 2017   giáo sư Thân Đức Hiền nhận Giải thưởng Nhà nước về KH&CN lần thứ mấy với cụm công trình  'Nghiên cứu cơ bản và định hướng ứng dụng các vật liệu từ liên kim loại đất hiếm – kim loại chuyển tiếp '
-ask_number,a,Năm học 2018 - 2019  trường Đại học Khoa học Xã hội và Nhân văn   Đại học quốc gia Hà Nội tuyển sinh tại bao nhiêu ngành học
-ask_number,a,Tính đến năm 2018   Đại học quốc gia Hà Nội đã áp dụng phương thức đào tạo theo tín chỉ được bao nhiêu năm
-ask_what,a,Trong các đơn vị của  Đại học quốc gia Hà Nội  đơn vị đầu tiên áp dụng phương thức đào tạo theo tín chỉ do sinh viên được đăng ký lớp môn học ngay từ đầu năm học 2007 - 2008 là:
-ask_number,a,Có bao nhiêu đơn vị thuộc  Đại học quốc gia Hà Nội đang triển khai đào tạo bằng kép bậc đại học chính quy
-ask_number,a,Trong giai đoạn 2014 – 2020   Đại học quốc gia Hà Nội có bao nhiêu ngành đào tạo cử nhân tài năng
-ask_number,a,Trong giai đoạn 2014 – 2020   Đại học quốc gia Hà Nội có bao nhiêu chuyên ngành đào tạo cử nhân đạt chuẩn quốc tế
-ask_number,a,Trong giai đoạn 2014 – 2020   Đại học quốc gia Hà Nội có bao nhiêu chuyên ngành đào đào cử nhân trọng điểm
-ask_what,a,Trong giai đoạn 2014 – 2020  những đơn vị trong  Đại học quốc gia Hà Nội áp dụng chuyên ngành đào tạo cử nhân liên ngành là:
-ask_number,a,Trong giai đoạn 2014 – 2020   Đại học quốc gia Hà Nội có bao nhiêu chuyên ngành đào đào thạc sĩ
-ask_number,a,Trong giai đoạn 2014 – 2020   Đại học quốc gia Hà Nội có bao nhiêu chuyên ngành đào đào Tiến sĩ
-ask_number,a,Tính đến nay   Đại học quốc gia Hà Nội có tổng cộng bao nhiêu chương trình liên kết đào tạo Quốc tế
-ask_what,a,Từ năm 1993 đến nay   Đại học quốc gia Hà Nội đã đào tạo thí điểm 25 ngành  chuyên ngành  cụ thể gồm:
-ask_who,a,Trưởng Ban Đào tạo của  Đại học quốc gia Hà Nội hiện này là ai
-ask_when,a, Đại học quốc gia Hà Nội thực hiện đổi mới tuyển sinh theo phương thức đánh giá năng lực bắt đầu từ năm nào
-ask_when,a, Đại học quốc gia Hà Nội bắt đầu triển khai xây dựng và hoàn thiện Chương trình đào tạo theo Chuẩn đầu ra từ năm nào
-ask_number,a,Theo Quy chế đào tạo  Chương trình đào tạo chuẩn được thiết kế có bao nhiêu tín chỉ
-ask_when,a,Chương trình đào tạo cử nhân chất lượng cao hiện hành của  Đại học quốc gia Hà Nội được triển khai ở hầu hết các đơn vị đào tạo bắt đầu từ năm học nào
-ask_what,a,Cả hai trường THPT chuyên là Trường Trung học phổ thông chuyên thuộc trường Đại học Khoa học Tự nhiên và Trường Trung học phổ thông chuyên Ngoại ngữ thuộc trường Đại học Ngoại ngữ   Đại học quốc gia Hà Nội được tuyển sinh với những khu vực nào
-ask_what,a,Ngày 22/12/2017  Thủ tướng Chính phủ đã ban hành Quyết định số 2079/QĐ-TTg về việc phê duyệt Nhiệm vụ khoa học và công nghệ đặc biệt cấp quốc gia  'Xây dựng bộ Địa chí Quốc gia Việt Nam ' và giao  Đại học quốc gia Hà Nội là cơ quan chủ trì Thời gian thực hiện nhiệm vụ là
-ask_what,a,'Vật liệu tiên tiến trong bảo vệ môi trường và Phát triển xanh ' do  Phó giáo sư Tiến sĩ Nguyễn Văn Nội làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  Đại học quốc gia Hà Nội năm 2017
-ask_what,a,'Nghiên cứu lịch sử và quan hệ thương mại châu Á ' do  Phó giáo sư Tiến sĩ Nguyễn Văn Kim làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  Đại học quốc gia Hà Nội năm 2017
-ask_what,a,'Vật lý và công nghệ tổ hợp nano hữu cơ ' do  giáo sư Tiến sĩ Nguyễn Năng Định làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  Đại học quốc gia Hà Nội năm 2017
-ask_what,a,'Tâm lý học Lâm sàng ' do  Phó giáo sư Tiến sĩ Đặng Hoàng Minh làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  Đại học quốc gia Hà Nội năm 2017
-ask_what,a,'Nghiên cứu về năng suất chất lượng trong các doanh nghiệp Việt Nam ' do  Tiến sĩ Phan Chí Anh làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  Đại học quốc gia Hà Nội năm 2017
-ask_what,a,Viện Công nghệ Hàng không Vũ trụ School of Aerospace Engineering – SAE vừa là đơn vị phối thuộc của Tập đoàn Viễn thông Quân đội Viettel vừa trực thuộc đơn vị đào tào nào của  Đại học quốc gia Hà Nội
-ask_number,a,Theo bảng xếp hạng QS năm 2017   Đại học quốc gia Hà Nội được xếp thứ bao nhiêu trong top 150 đại học hàng đầu Châu Á
-ask_what,a,Đâu không phải là tiêu chí trong Bảng xếp hạng QS châu Á năm 2017
-ask_what,a,Ngày 19/12/2017  đại diện Mạng lưới các trường đại học Đông Nam Á AUN đã công bố quyết định và trao chứng nhận đạt chuẩn chất lượng cấp trường của Mạng lưới các trường đại học Đông Nam Á cho đơn vị đào tạo nào thuộc  Đại học quốc gia Hà Nội
-ask_who,a,Ai là người đã ký Quyết định số 2068/QĐ-TTg ngày 21/12/2017 về việc chuyển giao chủ Dự án Xây dựng  Đại học quốc gia Hà Nội tại Hòa Lạc từ Bộ Xây dựng sang  Đại học quốc gia Hà Nội
-ask_what,a,Lần đầu tiên một mã ngành đào tạo nghiên cứu Phật học được mở chính thức ở Việt Nam tại đơn vị nào của  Đại học quốc gia Hà Nội
-ask_number,a,Thông thường  thời gian đào tạo đối với chương trình đào tạo hệ đại học hệ chuẩn trong các đơn vị đào tạo tại  Đại học quốc gia Hà Nội là bao lâu
-ask_number,a,Tại các đơn vị đào tạo tại  Đại học quốc gia Hà Nội  mỗi kì học  sinh viên phải đăng ký tối thiểu bao nhiêu tín chỉ đối với chương trình đào tạo chất lượng cao
-ask_what,a,Năm 2017   Đại học quốc gia Hà Nội tổ chức tuyển sinh đại học theo hình thức nào
-ask_what,a,Trọng tâm của hoạt động đào tạo tại  Đại học quốc gia Hà Nội là:
-ask_what,a,Đâu là chuyên ngành  Đại học quốc gia Hà Nội không đào tạo
-ask_who,a,Ai là người đầu tiên đề xuất việc thành lập các lớp đào tạo học sinh năng khiếu hiện nay là 02 Trường Trung học Phổ thông chuyên 
-ask_number,a,Số tín chỉ tối thiểu để tham gia xét học bổng theo ngân sách đối với hệ chất lượng cao của  Đại học quốc gia Hà Nội là bao nhiêu
-ask_what,a,Người được nhận Giải thưởng Tạ Quang Bửu dành cho nhà khoa học trẻ dưới 35 tuổi vào 18/5/2018 là giảng viên trường nào trong  Đại học quốc gia Hà Nội
-ask_number,a,Thỏa thuận hợp tác giữa  Đại học quốc gia Hà Nội và UBND tỉnh Quảng Ninh diễn ra trong bao nhiêu lĩnh vực
-ask_number,a, Đại học quốc gia Hà Nội có bao nhiêu chuyên ngành đào tạo Cử nhân 
-ask_what,a,Đâu không phải là một trong những đơn vị hỗ trợ đào tạo tại  Đại học quốc gia Hà Nội
-ask_number,a,Có bao nhiêu chương trình đào tạo Đại học chính quy bằng tiếng Anh do Đại học Quốc gia Hà Nội cấp bằng của Khoa quốc tế –  Đại học quốc gia Hà Nội
-ask_number,a,Đến nay  Đại học quốc gia Hà Nội đã thiết lập quan hệ hợp tác với bao nhiêu trường đại học và tổ chức giáo dục  Khoa học công nghệ quốc tế
-ask_what,a,Tháng 8/2013   Đại học quốc gia Hà Nội đã ký kết với Ngân hàng nào để thoả thuận hợp tác và hỗ trợ phát triển học bổng cho sinh viên  học viên và nhà ở cho cán bộ giảng viên trẻ của  Đại học quốc gia Hà Nội
-ask_what,a,'Uông Bí đất và người ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  Đại học quốc gia Hà Nội hợp tác cùng với Tỉnh Quảng Ninh
-ask_what,a,'Vương triều Lê sơ ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  Đại học quốc gia Hà Nội hợp tác cùng với Thành phố Hà Nội
-ask_what,a,Cùng với Đài Tiếng nói Việt Nam và Cổng Thông tin điện tử Chính phủ  cơ quan nào là cơ quan thứ 3 thuộc lĩnh vực báo chí – truyền thông của Việt Nam mà  Đại học quốc gia Hà Nội chính thức thiết lập quan hệ hợp tác
-ask_when,a, Đại học quốc gia Hà Nội và Tập đoàn BRG đã ký kết Biên bản ghi nhớ về việc hợp tác giữa hai bên vào thời gian nào
-ask_what,a,'Nghiên cứu phát triển phần mềm Nhúng trên nền tảng di động ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị đào tạo nào của  Đại học quốc gia Hà Nội hợp tác cùng với Toshiba
-ask_what,a,'Giáo dục giới tính cho học sinh trung học cơ sở Hà Nội phù hợp với đặc điểm tuổi dậy thì hiện nay/  Phó giáo sư Tiến sĩ Mai Văn Hưng ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị đào tạo nào của  Đại học quốc gia Hà Nội hợp tác cùng với TP Hà Nội
-ask_what,a,'Nghiên cứu xây dựng mô hình Chứng thực văn bản pháp lý để thúc đẩy triển khai dịch vụ công trên địa bàn TP Hà Nội ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  Đại học quốc gia Hà Nội hợp tác cùng với TP Hà Nội
-ask_what,a,'Nghiên cứu các di sản tự nhiên và văn hóa nhằm xây dựng công viên địa chất Geopark tại vùng Ba Vì – Sơn Tây  Hà Nội  phục vụ phát triển du lịch bền vững ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  Đại học quốc gia Hà Nội hợp tác cùng với TP Hà Nội
-ask_what,a,'Từ điển Địa danh hành chính Thăng Long – Hà Nội truyền thống ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  Đại học quốc gia Hà Nội hợp tác cùng với Nhà xuất bản Hà Nội
-ask_when,a, Đại học quốc gia Hà Nội chính thức vinh dự là một trong những trường đại học nhận được sự hỗ trợ một triệu đô la Mỹ của Quỹ Nippon Nhật Bản làm quỹ học bổng bồi dưỡng các tài năng trẻ đáp ứng nhu cầu phát triển của đất nước từ năm bao nhiêu
-ask_what,a,'Phát triển và tối ưu hóa các giải pháp loại bỏ ô nhiễm Asen trong nước ngầm cho các hộ nông dân vùng châu thổ sông Hồng  Việt Nam ' là một trong các chương trình hợp tác quốc tế của  Đại học quốc gia Hà Nội và CHLB Đức Cơ quan chủ trì là đơn vị nào của  Đại học quốc gia Hà Nội
-ask_what,a,'Nghiên cứu các cấu trúc nano có tính chất từ – quang nhờ cộng hưởng plasmon bề mặt ' là một trong các chương trình hợp tác quốc tế của  Đại học quốc gia Hà Nội Cơ quan chủ trì thực hiện là đơn vị nào của  Đại học quốc gia Hà Nội
-ask_what,a,'Nghiên cứu phát triển công nghệ bãi lọc trồng cây ứng dụng vào xử lý nước thải từ chế biến thủy sản xuất khẩu ' là một trong các chương trình hợp tác quốc tế của  Đại học quốc gia Hà Nội với quốc gia nào
-ask_what,a, Đại học quốc gia Hà Nội có đối tác là một trong những trường đại học hàng đầu tại Ấn Độ Trường đại học đó là
-ask_what,a,Đại học nào  cùng với Đại học Quốc gia Hà Nội  Đại học Tokyo – Nhật Bản và Đại học Quốc gia Seoul – Hàn Quốc nằm trong mạng lưới BESETOHA – Diễn đàn của Giám đốc 4 Đại học chủ chốt Đông Á '
-ask_when,a, Đại học quốc gia Hà Nội đã ký kết Bản thỏa thuận hợp tác toàn diện với Tập đoàn Dầu khí Quốc gia Việt Nam PetroVietnam vào thời gian nào sau đây
-ask_what,a,' Đại học quốc gia Hà Nội là một trong các thành viên của Hiệp hội các trường đại học Đông Nam Á – ASAIHL là một tổ chức '
-ask_what,a,'Nghiên cứu chế tạo và thử nghiệm ứng dụng linh kiện phát quang hữu cơ – OLED ' là một trong các chương trình hợp tác quốc tế của  Đại học quốc gia Hà Nội Đó là sự hợp tác KHCN Việt Nam – Hàn Quốc Cơ quan chủ trì thực hiện là đơn vị nào của  Đại học quốc gia Hà Nội
-ask_what,a,Trường đại học nào sau đây trực thuộc  Đại học quốc gia Hà Nội là thành viên hiệp hội giáo viên Châu Á – Thái Bình Dương
-ask_what,a,Đầu năm học   Đại học quốc gia Hà Nội áp dụng thi khảo sát năng lực tiếng anh đối với sinh viên năm nhất với mục đích
-ask_number,a,'Nghiên cứu Hệ sinh thái rừng ngập mặn ' là Giải thưởng Quốc tế Cosmos lần thứ bao nhiêu Cosmos Prize  2008 do  giáo sư Tiến sĩ Phan Nguyên Hồng  Trung tâm Nghiên cứu Tài nguyên và Môi trường –  Đại học quốc gia Hà Nội tiến hành từ năm 1987
-ask_what,a,Tiến sĩ Đỗ Quốc Tuấn – người được nhận Giải thưởng Tạ Quang Bửu dành cho nhà khoa học trẻ dưới 35 tuổi vào 18/05/2018 là giảng viên trường nào trong  Đại học quốc gia Hà Nội
-ask_what,a,'Quản trị tinh gọn  'Made in Vietnam ' ' do  Tiến sĩ Nguyễn Đăng Minh làm trưởng nhóm  là một trong những nhóm nghiên cứu tiềm năng thuộc đơn vị đào tạo nào của  Đại học quốc gia Hà Nội năm 2017
-ask_what,a,'Nghiên cứu Khu vực học ' do  giáo sư  Tiến sĩ Nguyễn Quang Ngọc làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị nào của  Đại học quốc gia Hà Nội năm 2017
-ask_what,a,'Ứng dụng dược chất thiên nhiên và tổng hợp định hướng hóa dược ' do  Tiến sĩ Mạc Đình Hùng làm trưởng nhóm là một trong những nhóm nghiên cứu tiềm năng thuộc đơn vị đào tạo nào của  Đại học quốc gia Hà Nội năm 2017
-ask_number,a,Có bao nhiêu đơn vị trực thuộc  Đại học quốc gia Hà Nội có chương trình giảng dạy chính quy bằng tiếng Anh
-ask_what,a,205 đến 225 tín chỉ là số tin chỉ ứng với chương trình đào tạo dành cho đối tượng nào sau đây thuộc  Đại học quốc gia Hà Nội
-ask_number,a,Mỗi năm  Đại học Quốc gia Hà Nội có bao nhiêu học kỳ
-ask_number,a,Mỗi học kỳ phụ của  Đại học quốc gia Hà Nội có ít nhất bao nhiêu tuần học và thi
-ask_when,a,Học kỳ phụ của  Đại học quốc gia Hà Nội được tổ chức trong thời gian nào
-ask_number,a,Mỗi học kỳ chính của  Đại học quốc gia Hà Nội có ít nhất bao nhiêu tuần học và thi
-ask_number,a,Thời gian của khóa học do  Đại học quốc gia Hà Nội quy định đối với đào tạo bác sĩ là bao lâu
-ask_what,a,Chương trình đào tạo có 2 phần kiên thức đó là
-ask_what,a,Sinh viên đang học tập tại các đơn vị đào tạo của Đại học Quốc gia Hà Nội được đăng ký học bằng kép nếu có đủ các điều kiện sau:
-ask_when,a,Bộ tiêu chuẩn kiểm định chất lượng đơn vị đào tạo của  Đại học quốc gia Hà Nội  được ban hành vào năm
-ask_what,a,Hệ thống tổ chức và quản lý đào tạo đại học gồm hai cấp là:
-ask_number,a,Khóa luận  đồ án tốt nghiệp có khối lượng kiến thức ' khoảng bao nhiêu tín chỉ
-ask_what,a,Viện Việt Nam học và Khoa học phát triển  Đại học quốc gia Hà Nội đã làm đầu mối tổ chức thực hiện thành công lập hồ sơ khoa học đề nghị UNESCO công nhận di sản nào là di sản văn hóa thế giới
-ask_when,a,Giám đốc  Đại học quốc gia Hà Nội đã ra quyết định thành lập Trung tâm Đảm bảo chất lượng đào tạo và Nghiên cứu phát triển giáo dục ĐBCLĐT & NCPTGD nay là Viện Đảm bảo chất lượng giáo dục vào năm bao nhiêu
-ask_what,a,Khẩu hiệu hành động của  Đại học quốc gia Hà Nội là
-ask_what,a,Giá trị cốt lõi và khẩu hiệu hành động của Trường Đại học Khoa học Xã hội và Nhân văn   Đại học quốc gia Hà Nội là
-ask_what,a,Điều kiện để sinh viên  Đại học quốc gia Hà Nội có thể tham gia làm khóa luận tốt nghiệp là gì
-ask_number,a,Thời gian đào tạo thạc sĩ tại  Đại học quốc gia Hà Nội là bao nhiêu năm
-ask_what,a,Chương trình đào tạo tài năng của  Đại học quốc gia Hà Nội đào tạo các sinh viên xuất sắc thuộc các ngành Toán học  Cơ học  Vật lý  Khí tượng – Thuỷ văn – Hải dương học  Địa lý  Địa chất  Hoá học  Sinh học  Khoa học môi trường tại trường nào
-ask_what,a,Khẩu hiệu hành động của  Đại học quốc gia Hà Nội là
-ask_what,a,Ngành Đông phương học là một trong những ngành học thuộc đơn vị đào tạo nào của  Đại học quốc gia Hà Nội
-ask_when,a,'Trở thành đại học định hướng nghiên cứu  đa ngành  đa lĩnh vực có tính hội nhập cao  trong đó  một số trường đại học  viện nghiên cứu thành viên thuộc các lĩnh vực khoa học cơ bản  công nghệ cao và kinh tế – xã hội mũi nhọn đạt trình độ tiên tiến châu Á '  là tầm nhìn đến năm bao nhiêu của  Đại học quốc gia Hà Nội
-ask_who,a,Bài hát truyền thống của  Đại học quốc gia Hà Nội do ai sáng tác
-ask_where,a,Đại học Quốc gia Hà Nội là một trong hai hệ thống Đại học quốc gia của Việt Nam được đặt tại đâu
-ask_what,a,Khi mới thành lập  Khoa Các khoa học liên ngành –  Đại học quốc gia Hà Nội có 02 chương trình đào tạo là:
-ask_what,a,02 Trung tâm Đào tạo trực thuộc  Đại học quốc gia Hà Nội là gì '
-ask_what,a,Những năm học đầu tiên  Trường Đại học Tổng hợp Hà Nội chia các lĩnh vực đào tạo chuyên môn thành 02 ban là:
-ask_what,a,Trung tâm Giáo dục Quốc phòng –  Đại học quốc gia Hà Nội được thành lập dựa trên cơ sở sắp xếp lại các khoa Giáo dục Quốc phòng của các trường đại học nào
-ask_what,a,Trường Đại học Tổng hợp Hà Nội trực tiếp kế thừa truyền thống và cơ sở vật chất  kĩ thuật của các trường tiền thân nào
-ask_when,a, Đại học quốc gia Hà Nội tổ chức thi tuyển bằng hình thức Đánh giá năng lực vào năm
-ask_who,a,Nguồn nhân lực thực hiện các hoạt động nghiên cứu Khoa học công nghệ ở  Đại học quốc gia Hà Nội không chỉ có nghiên cứu viên mà bao gồm:
-ask_what,a,Thủ tướng Chính phủ đã ký Quyết định số 1186/QĐ–TTg ngày 21/7/2014 về việc thành lập Trường Đại học Việt Nhật – trường đại học thành viên thứ 7 thuộc  Đại học quốc gia Hà Nội Trường được xây dựng theo mô hình đại học xuất sắc vì kết hợp được những yếu tố nào sau đây
-ask_what,a,Học bổng cho của sinh viên thuộc  Đại học quốc gia Hà Nội do cơ quan nào cấp 
-ask_what,a,Chương trình đào tạo cử nhân  thạc sĩ có liên kết với đối tác nước ngoài của trường Đại học Kinh tế   Đại học quốc gia Hà Nội thuộc ngành nào sau đây
-ask_what,a,Trường Đại học Tổng hợp Hà Nội trực tiếp kế thừa truyền thống và cơ sở vật chất  kĩ thuật của các trường tiền thân nào
-ask_what,a,Trường THPT nào sau đây trực thuộc Đại học Quốc Gia Hà Nội
-ask_what,a,Đơn vị tiên phong trong triển khai hoạt động đào tạo tại Hòa Lạc là
-ask_what,a, Đại học quốc gia Hà Nội có các mục tiêu cụ thể là
-ask_what,a,Đi đầu luôn được coi là tiêu chí nhận dạng của các hoạt động và đội ngũ cán bộ của  Đại học quốc gia Hà Nội trong hệ thống các trường đại học ở Việt Nam Nó được thể hiện trong việc
-ask_what,a,Nhiệm vụ trọng tâm của  Đại học quốc gia Hà Nội là
-ask_what,a, Đại học quốc gia Hà Nội là thành viên ban điều hành  tham gia cơ cấu lãnh đạo của nhiều tổ chức  hiệp hội  mạng lưới giáo dục đại học như:
-ask_when,a, Đại học quốc gia Hà Nội bắt đầu xây dựng và triển khai dự án  'Đào tạo cử nhân khoa học tài năng ' từ năm nào
-ask_what,a,Đại học Quốc gia Hà Nội có các loại chương trình đào tạo sau:
-ask_what,a,Kinh phí cho hoạt động đào tạo của  Đại học quốc gia Hà Nội có nguồn là
-ask_what,a,Chương trình đào tạo chất lượng cao tại  Đại học quốc gia Hà Nội dành cho những sinh viên khá giỏi hệ chính quy của một số ngành nào sau đây
-ask_what,a,Chương trình đào tạo chất lượng cao tại  Đại học quốc gia Hà Nội dành cho những sinh viên khá giỏi hệ chính quy của một số ngành nào sau đây
-ask_what,a,Bộ trưởng Bộ Khoa học và Công nghệ Chu Ngọc Anh và Giám đốc  Đại học quốc gia Hà Nội Nguyễn Kim Sơn kí kết văn bản thỏa thuận phối hợp hoạt động song phương giữa hai đơn vị 16/5/2017 nhằm phối hợp triển khai:
-ask_what,a,Cụm công trình lịch sử và văn hóa Việt Nam của Giáo sư Đào Duy Anh – tác phẩm được tặng Giải thưởng Hồ Chí Minh gồm:
-ask_what,a,Đâu là nội dung của cụm công trình  'Tìm về cội nguồn ' của Giáo sư Phan Huy Lê – công trình được Nhà nước trao tặng giải thưởng Hồ Chí Minh năm 2000
-ask_what,a,'Nghiên cứu Hệ sinh thái rừng ngập mặn ' – Giải thưởng Quốc tế Cosmos lần thứ 16 Cosmos Prize  2008 do  giáo sư Tiến sĩ Phan Nguyên Hồng  Trung tâm Nghiên cứu Tài nguyên và Môi trường –  Đại học quốc gia Hà Nội tiến hành từ năm 1987 có ý nghĩa như thế nào
-ask_what,a,Sau mỗi học kỳ sinh viên  Đại học quốc gia Hà Nội bị buộc thôi học đối với các trường hợp là
-ask_what,a,Để nâng cao chất lượng đào tạo đại học tại  Đại học quốc gia Hà Nội cần phải có
-ask_what,a,Sinh viên tốt nghiệp ngành Quản trị du lịch - khách sạn tại trường Đại học Khoa học Xã hội và Nhân văn –  Đại học quốc gia Hà Nội có thể đảm nhiệm các vị trí nào sau đây
-ask_when,a,Giáo sư Trần Văn Giàu đã được Nhà nước trao tặng giải thưởng Hồ Chí Minh với công trình về Lịch sử Việt Nam gồm 5 bộ  18 tập 1956-1978 vào năm nào sau đây
-ask_number,a,'Tìm về cội nguồn' là một cụm công trình nghiên cứu về lịch sử Việt Nam thời trung đại của Giáo sư Phan Huy Lê được Nhà nước trao tặng giải thưởng Hồ Chí Minh gồm bao nhiêu tập
-ask_when,a,Câu lạc bộ Nhà Khoa học  Đại học quốc gia Hà Nội VNU- giáo sưL được thành lập vào thời gian nào
-ask_when,a,Tuyến đường mới mang tên cố Giáo sư Trần Quốc Vượng được đặt vào thời gian nào sau đây
-ask_when,a,Câu lạc bộ Cựu sinh viên  Đại học quốc gia Hà Nội được ra mắt năm nào
-ask_who,a,Giám đốc  Đại học quốc gia Hà Nội hiện nay là ai
-ask_what,a,Nhóm tác giả của  Phó giáo sư Tiến sĩ Phạm Bảo Sơn thuộc đơn vị đào tạo nào của  Đại học quốc gia Hà Nội đã giành giải Nhì tại Giải thưởng Nhân tài Đất Việt 2017 với sản phẩm 'DoIT – Hệ thống hỗ trợ nâng cao chất lượng văn bản một công cụ phụ trợ để phát hiện các lỗi chính tả có thể gặp phải'  ngày 16/11/2017
-ask_who,a,Nguyên Phó Giám đốc Đại học Quốc gia Hà Nội hiện đang giữ chức Thứ trưởng Bộ Lao động Thương binh và Xã hội là ai
-ask_what,a,Giám đốc  Đại học quốc gia Hà Nội phụ trách trách những lĩnh vực công tác nào sau đây
-ask_who,a,Bí thư Đảng ủy  Đại học quốc gia Hà Nội hiện nay là ai
-ask_what,a,Tính đến thời điểm hiện tại  Trường trực thuộc  Đại học quốc gia Hà Nội có số lượng Giáo sư nhiều nhất
-ask_who,a,'Tứ trụ' của ngành sử học Việt Nam đương đại gồm những ai
-ask_who,a,Hiện nay  ai là Hiệu trưởng Trường Đại học Khoa học Xã hội và Nhân văn
-ask_what,a,Bộ trưởng Bộ giáo Dục và Đào tạo  giáo sư Tiến sĩ Phùng Xuân Nhạ hiện nay đã từng giữ chức vụ gì trong  Đại học quốc gia Hà Nội
-ask_who,a,Chủ tịch Công đoàn  Đại học quốc gia Hà Nội hiện nay là ai
-ask_what,a,Hiệu trưởng đầu tiên của Trường Đại học Việt Nhật -  Đại học quốc gia Hà Nội là người nước nào
-ask_who,a,Ai hiện đang chức Chủ tịch Hội đồng Đảm bảo chất lượng  Đại học quốc gia Hà Nội
-ask_what,a,Đơn vị đào tạo nào của  Đại học quốc gia Hà Nội là trường Đại học duy nhất của cả nước trong 5 năm liền đều có nhà khoa học là giảng viên và cựu sinh viên  học viên sau đại học giành Giải thưởng Tạ Quang Bửu
-ask_what,a,Giải thưởng Tạ Quang Bửu năm 2016 được trao cho nhà khoa học nào của  Đại học quốc gia Hà Nội
-ask_what,a,Giải thưởng Tạ Quang Bửu năm 2014 được trao cho nhà khoa học nào của  Đại học quốc gia Hà Nội
-ask_who,a,Nữ Phó Giáo sư trẻ nhất năm 2016 là một giảng viên của  Đại học quốc gia Hà Nội  cô là ai
-ask_what,a,Ở tuổi 33  giảng viên Bùi Thị Hồng Thái   Đại học quốc gia Hà Nội trở thành nữ phó giáo sư trẻ nhất Việt Nam năm 2016 Cô đang công tác tại đơn vị nào
-ask_what,a,Giảng viên Nguyễn Ngọc Lưu Ly   Đại học quốc gia Hà Nội trở thành nữ phó giáo sư trẻ nhất Việt Nam năm 2013 Cô đang công tác tại đơn vị nào
-ask_who,a,Giáo sư trẻ nhất năm 2006 là một giảng viên của  Đại học quốc gia Hà Nội  là ai
-ask_when,a, Phó giáo sư Tiến sĩ Lê Anh Vinh  là Phó Giáo sư trẻ nhất Việt Nam  được phong Phó giáo sư năm 30 tuổi  là năm nào
-ask_who,a,Hiện nay  ai đang giữ chức Chủ tịch Hội đồng Khoa học và Đào tạo  Đại học quốc gia Hà Nội
-ask_number,a,Năm 2017  Đại học  Đại học quốc gia Hà Nội có bao nhiêu Nhà giáo được phong tặng danh hiệu Nhà giáo Ưu tú 
-ask_number,a,Năm 2017  Đại học  Đại học quốc gia Hà Nội có bao nhiêu Nhà giáo được phong tặng danh hiệu Nhà giáo Nhân dân 
-ask_who,a,Hiệu trưởng Trường Đại học Ngoại ngữ   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Hiệu trưởng Trường Đại học Công nghệ   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Hiệu trưởng Trường Đại học Kinh tế   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Hiệu trưởng Trường Đại học Giáo dục   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Viện trưởng Viện Trần Nhân Tông   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Viện trưởng Viện Công nghệ Thông tin   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Viện trưởng Viện Việt Nam học và Khoa học Phát triển   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Giám đốc Trung tâm Giáo dục Thể chất và Thể thao   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Viện trưởng Viện Tài nguyên và Môi trường   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Viện trưởng Viện Quốc tế Pháp ngữ   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Hiệu Trưởng đầu tiên của Trường Đại học Tổng hợp Hà Nội là ai
-ask_who,a,Giám đốc đầu tiên của Đại học Quốc gia Hà Nội là ai
-ask_who,a,Ai là Nhà Toán học Việt Nam đương đại đầu tiên được đặt tên đường
-ask_who,a,Năm 2017  Nhà giáo nào của  Đại học quốc gia Hà Nội đã nhận Giải thưởng Hồ Chí Minh về Khoa học và Công nghệ lần thứ V với công trình 'Lịch sử và Văn hóa Việt Nam - Tiếp cận bộ phận'
-ask_who,a,Năm 2017  Nhà giáo nào của  Đại học quốc gia Hà Nội đã nhận Giải thưởng Nhà nước về Khoa học và Công nghệ lần thứ V với cụm công trình 'Nghiên cứu cơ bản và định hướng ứng dụng các vật liệu từ liên kim loại đất hiếm - kim loại chuyển tiếp'
-ask_what,a,Nhóm tác giả của đơn vị đào tạo nào trong  Đại học quốc gia Hà Nội giành giải Nhì tại Giải thưởng Nhân tài Đất Việt 2017
-ask_number,a,Năm 2016   Đại học quốc gia Hà Nội có bao nhiêu cán bộ khoa học được công nhận đạt chuẩn chức danh Phó Giáo sư
-ask_number,a,Năm 2016   Đại học quốc gia Hà Nội có bao nhiêu cán bộ khoa học được công nhận đạt chuẩn chức danh Giáo sư
-ask_who,a,Hiệu trưởng trường Đại học Khoa học Tự nhiên   Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Ai là đại biểu Quốc hội Việt Nam khóa 3 1964-1971 và 4 1971-1975 trong những người sau đây
-ask_who,a,Nhóm tác giả Trường Đại học Công nghệ   Đại học quốc gia Hà Nội đã đạt giải nhì Giải thưởng Nhân tài Đất Việt năm 2017 với sản phẩm mang tên gì
-ask_number,a,Công Đoàn  Đại học quốc gia Hà Nội gồm bao nhiêu Phó chủ tịch và Phó chủ tịch thường trực
-ask_number,a,Ban Thường vụ Công đoàn  Đại học quốc gia Hà Nội  nhiệm kỳ 2017 - 2022 gồm bao nhiêu thành viên
-ask_who,a,Chánh Văn phòng  Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Trưởng Ban Tổ chức Cán bộ  Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Trưởng ban Đào tạo  Đại học quốc gia Hà Nội hiện nay là ai
-ask_who,a,Trưởng ban Chính trị và Công tác học sinh  sinh viên của  Đại học quốc gia Hà Nội hiện nay là ai
-ask_what,a,Giám đốc  Đại học quốc gia Hà Nội hiện nay nguyên là Bí thư Đoàn Trường nào
-ask_who,a,Ai là tác giả của cụm công trình lịch sử và văn hóa Việt Nam gồm 4 cuốn: Lịch sử Việt Nam từ nguồn gốc đến cuối thế kỉ XIX  Lịch sử cổ đại Việt Nam  Việt Nam văn hóa sử đại cương  Đất nước Việt Nam qua các đời
-ask_who,a,Ai là Hiệu trưởng đầu tiên của Trường Đại học Văn Khoa 1954-1956
-ask_who,a,Ai là người vinh dự nhận giải thưởng dành cho các nhà khoa học nữ có nhiều cống hiến  giải thưởng Kovale giáo sưkaia lần đầu tiên được trao tại Việt Nam năm 1988
-ask_who,a,Ai là nữ giáo sư đầu tiên của ngành Ngôn ngữ học Việt Nam
-ask_what,a, giáo sư Đào Duy Anh   giáo sư Hoàng Xuân Hãn   giáo sư Nguyễn Tài Cẩn là bộ ba nhà khoa học chuyên nghiên cứu về
-ask_who,a,Ông nguyên là Bộ trưởng Bộ Giáo dục  tên ông nay đã trở thành tên một con phố dài 700m của quận Tây Hồ  Hà Nội Ông là ai
-ask_what,a, giáo sư Tiến sĩKH Vũ Minh Giang - chuyên gia lĩnh vực gì  Chủ tịch Hội đồng Khoa học và Đào tạo  Đại học quốc gia Hà Nội
-ask_who,a,Tác giả của bộ giáo trình 'Giải tích' 3 tập là ai
-ask_who,a,Vị giám đốc đầu tiên của Trường Đại học Văn Khoa Hà Nội là ai
-ask_when,a,Tiến sĩ Lê Hoàng Sơn  trường ĐH Khoa học Tự nhiên đã được Vinh danh 10 Gương mặt trẻ Thủ đô tiêu biểu năm nào
-ask_when,a, giáo sư Đào Duy Anh - Nhà sử học và văn hóa lớn sinh năm bao nhiêu
-ask_who,a,Tác giả hai bộ từ điển 'Hán - Việt từ điển' 1932 và 'Pháp – Việt từ điển' 1936 là ai
-ask_who,a,Cách đây 40 năm  vị Hiệu trưởng Trường Đại học Tổng hợp Hà Nội - tiền thân cơ bản của Đại học Quốc gia hôm nay là ai
-ask_who,a,Ai là một trong những người là nhà khảo cổ học đầu tiên tại Nước Việt Nam Dân chủ Cộng hòa
-ask_who,a,MC Lê Anh là giảng viên của Trường nào
-ask_what,a, giáo sư Phan Tống Sơn giảng dạy ngành nào tại Trường Đại học Khoa học Tự nhiên
-ask_what,a,Năm 2003   giáo sư Võ Quý vinh dự là nhà khoa học Việt Nam đầu tiên và là người châu Á thứ hai được nhận Giải thưởng Hành tinh xanh  giáo sư Võ Quý công tác tại đơn vị nào
-ask_what,a, giáo sưNGƯT Trần Quốc Vượng  cây đại thụ của nền sử học Việt Nam công tác tại đơn vị nào
-ask_what,a, Tiến sĩ Hồ Đức Việt nguyên là giảng viên của đơn vị nào
-ask_what,a, giáo sư viện sĩ Nguyễn Văn Hiệu như một 'tượng đài khoa học'  thuộc thế hệ các nhà khoa học đầu đàn của nền khoa học Việt Nam Ông nguyên Hiệu trưởng đầu tiên đơn vị nào
-ask_what,a, Phó giáo sư Tiến sĩ Bùi Hiền  nguyên là giảng viên của đơn vị đào tạo nào
-ask_who,a,Ngày 27/12/2017  lễ trao giải Giải thưởng Khoa học công nghệ Thanh niên Quả Cầu Vàng đã diễn ra tại tại Bộ Khoa học và Công nghệ Trường Đại học Công nghệ vinh dự có 02 cá nhân trong đó có 1 giảng viên  là ai
-ask_what,a,Hai giảng viên của  Đại học quốc gia Hà Nội tham gia tổ trọng tài quốc tế tại ASIAD 2018 là cán bộ của đơn vị nào
-ask_who,a, Đại học quốc gia Hà Nội có một giảng viên đạt Huy chương vàng Đông nam Á năm 2017  hiện là thành viên Đội tuyển Bóng bàn Việt Đây là ai
-ask_what,a,Giảng viên Nguyễn Thị Nga  Trung tâm Giáo dục Thể chất và Thể thao đã đạt Huy chương vàng Sea game 19 năm 1997  môn thể thao nào
-ask_what,a,Hoa hậu Việt Nam năm 1998 Bùi Bích Phương là sinh viên Trường nào:
-ask_who,a,Đồng chí nào Nguyên là Bí thư thứ nhất BCH Trung ương Đoàn  Nguyên là Bí thư Đoàn Đại học Quốc Gia Hà Nội
-ask_what,a,Nghệ sĩ violon Hoàng Rob là cựu sinh viên của cơ sở đào tạo nào trong Đại học Quốc gia Hà Nội
-ask_what,a,MC Thảo Vân là cựu sinh viên của cơ sở đào tạo nào trong Đại học Quốc gia Hà Nội
-ask_what,a,MC Trần Ngọc là cựu sinh viên của cơ sở đào tạo nào trong Đại học Quốc gia Hà Nội
-ask_what,a,MC Nguyễn Hữu Việt Khuê là cựu sinh viên của cơ sở đào tạo nào trong Đại học Quốc gia Hà Nội
-ask_what,a, Phó giáo sư Tiến sĩ Nguyễn Kim Sơn Giám đốc  Đại học quốc gia Hà Nội hiện nay là cựu sinh viên chuyên ngành gì của trường Đại học Tổng hợp Hà Nội
-ask_what,a,Giáo sư Ngô Bảo Châu là cựu học sinh trường nào
-ask_what,a,Liệt sỹ Lê Anh Xuân từng học Khoa nào tại Trường Đại học Tổng hợp
-ask_what,a, Tiến sĩ Đàm Quang Minh được mệnh danh là 'Hiệu trưởng trẻ nhất Việt Nam hiện nay' là cựu sinh viên của trường /khoa nào 
-ask_what,a,Ông Nguyễn Phú Trọng - Tổng Bí thư Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam hiện nay là cựu sinh viên chuyên ngành gì của Đại học Tổng hợp Hà Nội
-ask_what,a, Phó giáo sư Tiến sĩ Nguyễn Quang Điển là cựu sinh viên Khoa gì của Đại học Tổng hợp Hà Nội
-ask_who,a,Chủ tịch danh dự Câu lạc bộ Cựu sinh viên  Đại học quốc gia Hà Nội
-ask_what,a,Giáo sư Phùng Xuân Nhạ - nguyên là Giám đốc Đại học Quốc gia Hà Nội đã từng theo học chuyên ngành gì của Đại học Tổng hợp Hà Nội
-ask_what,a, Tiến sĩ Trần Đình Phong  người được nhận giải thưởng Tạ Quang Bửu năm 2018 là cựu sinh viên đơn vị nào của  Đại học quốc gia Hà Nội
-ask_what,a, Tiến sĩ Lưu Quang Hưng  người được nhận Giải thưởng 'Mãi mãi tuổi 20' năm 2006 học tập tại đơn vị nào của  Đại học quốc gia Hà Nội
-ask_what,a, Phó giáo sư Tiến sĩ Toán học Nguyễn Sum Trường Đại học Quy Nhơn là một trong hai chủ nhân của Giải thưởng Tạ Quang Bửu năm 2017 Ông là cựu sinh viên của đơn vị nào
-ask_what,a,Đinh Thị Hương Thảo  1 trong 10 gương mặt trẻ tiêu biêu năm 2016  2 Huy chương vàng Quốc tế là sinh viên của đơn vị nào
-ask_what,a,Nguyễn Thị Phương Dung là gương mặt nữ duy nhất được lọt vào danh sách 10 Gương mặt trẻ tiêu biểu Việt Nam năm 2005 do TW Đoàn và Quỹ hỗ trợ Tài năng trẻ Việt Nam bầu chọn và trao giải Phương Dung là sinh viên của đơn vị nào
-ask_what,a,Năm 2011   Đại học quốc gia Hà Nội có một gương mặt trẻ nhận giải Quả cầu vàng Giải thưởng do Trung ương Đoàn TNCS Hồ Chí Minh  Bộ Khoa học và Công nghệ phối hợp tổ chức là sinh viên Nguyễn Vương Linh Vương Linh là Sinh viên đơn vị nào
-ask_when,a,Chàng trai vàng Olympic Hóa học Đinh Quang Hiếu  sinh viên ĐH Khoa học Tự nhiên  ĐHQG Hà Nội  từng giành 'cú đúp' huy chương vàng Olympic Hóa học quốc tế trong 2 năm liên tiếp 2016  2017 đã được Vinh danh 10 Gương mặt trẻ Thủ đô tiêu biểu năm nào
-ask_number,a,ĐHGHN có mấy KTX dành cho sinh viên 
-ask_what,a,Đâu không phải là tiêu chuẩn sinh viên 5 tốt của  Đại học quốc gia Hà Nội
-ask_what,a,Đâu là một trong những tiêu chuẩn để đạt được danh hiệu tập thể 'Sinh viên 5 tốt' cấp Trung ương
-ask_what,a,Trong quá trình thi kết thúc học phần  sinh viên sẽ bị Khiển trách khi nào
-ask_what,a, Đại học quốc gia Hà Nội hỗ trợ học bổng như thế nào đối với các nghiên cứu sinh chuyển tiếp từ Cử nhân
-ask_what,a,Hiện nay  trong các trường đại học của ĐHGQHN  sinh viên đăng ký lớp học phần bằng cách
-ask_number,a,Tại các đơn vị đào tạo tại  Đại học quốc gia Hà Nội  mỗi kì học  sinh viên phải đăng ký tối thiểu bao nhiêu tín chỉ đối với chương trình đào tạo chuẩn
-ask_what,a,Trong quá trình thi kết thúc học phần  sau khi đã bóc đề thi  phát hiện sinh viên mang trong người những vật dụng không được phép  sinh viên sẽ phải nhận hình thức kỷ luật nào sau đây
-ask_what,a,Sinh viên sẽ bị cảnh cáo học vụ khi nào
-ask_what,a,Sinh viên cử nhân khoa học tài năng được đào tạo tại đơn vị nào của  Đại học quốc gia Hà Nội
-ask_what,a,Sinh viên  Đại học quốc gia Hà Nội được trang bị những kĩ năng bổ trợ tại đơn vị nào thuộc  Đại học quốc gia Hà Nội
-ask_what,a,Hình thức đăng ký môn học của sinh viên thuộc  Đại học quốc gia Hà Nội là
-ask_what,a,Sau khi đăng ký môn học xong  sinh viên tại  Đại học quốc gia Hà Nội có được phép thay đổi hoặc hủy học phần đã đăng ký hay không
-ask_what,a,Khi chép bài của người khác trong giờ thi kết thúc học phần  sinh viên sẽ bị hình thức kỉ luật nào sau đây
-ask_what,a,Chuẩn đầu ra Tiếng Anh của sinh viên theo học tại các đơn vị đào tạo thuộc  Đại học quốc gia Hà Nội là
-ask_number,a,Trong chương trình học  sinh viên  Đại học quốc gia Hà Nội phải hoàn thành bao nhiêu tín chỉ về giáo dục thể chất
-ask_what,a,Thời gian đăng ký học phần của sinh viên thuộc  Đại học quốc gia Hà Nội được quy định như thế nào
-ask_what,a,Điều kiện để đăng kí học cải thiện là gì
-ask_what,a,Sinh viên không  Đại học quốc gia Hà Nội đủ điều kiện làm khóa luận hoặc đồ án tốt nghiệp thì
-ask_who,a,Sinh viên được chuyển đi học tại cơ sở đào tạo đại học khác ngoài Đại học Quốc gia Hà Nội khi được sự đồng ý của ai
-ask_what,a,Trường hợp bị cảnh cáo học vụ theo quy định của  Đại học quốc gia Hà Nội
-ask_what,a,Sinh viên  Đại học quốc gia Hà Nội bị buộc thôi học khi nào
-ask_number,a,Có mấy loại bảng điểm mà nhà trường cấp cho sinh viên
-ask_what,a,Đâu là tên một phần thi của Cuộc thi 'Lớp tôi là số 1'
-ask_number,a,Cuộc vận động 'Xây dựng phong cách sinh viên  Đại học quốc gia Hà Nội' do Hội Sinh viên  Đại học quốc gia Hà Nội phát động gồm mấy tiêu chí:
-ask_what,a,Đề án 'Ba thực hiện' do đơn vị nào thực hiện
-ask_number,a,Hội Sinh viên  Đại học quốc gia Hà Nội hiện có bao nhiêu Câu lạc bộ sinh viên
-ask_number,a,Trong giai đoạn 2013 - 2018  Đoàn Thanh niên  Hội Sinh viên  Đại học quốc gia Hà Nội đã xây dựng thành công bao nhiêu công trình thanh niên 
-ask_number,a,Trong hai ngày 02-03/6/2017 Đoàn TNCS Hồ Chí Minh  Đại học quốc gia Hà Nội đã tổ chức Đại hội đại biểu lần thứ mấy
-ask_number,a,Trong hai ngày 09-10/6/2018 Hội Sinh viên Việt Nam  Đại học quốc gia Hà Nội đã tiến hành tổ chức Đại hội khóa mấy 
-ask_number,a,Trong nhiệm kì 2013-2018  có bao nhiêu sinh viên  Đại học quốc gia Hà Nội được trao danh hiệu 'Sinh viên 5 tốt' cấp Trung ương
-ask_what,a,Cuộc thi Olympic tiếng Anh không chuyên toàn quốc lần thứ 9 do Đoàn Trường Đại học Ngoại ngữ   Đại học quốc gia Hà Nội đã tổ chức với chủ đề là gì 
-ask_what,a,Quỹ học bổng K-T là tên gọi tắt của Quỹ Hỗ trợ tài năng trẻ của  Đại học quốc gia Hà Nội mang tên
-ask_what,a,Học bổng 'Tiếp sức đến trường' là học bổng do tổ chức  đơn vị nào tài trợ
-ask_what,a,Đơn vị đăng cai tổ chức cuộc thi tìm hiểu tư tưởng Hồ Chí Minh 'Con đường ánh sáng lần thứ III' năm 2018 là đơn vị nào 
-ask_what,a,Đội thi nào giành giải Nhất cuộc thi Tìm hiểu tư tưởng Hồ Chí Minh 'Con đường ánh sáng lần thứ III' do Đoàn Thanh niên  Đại học quốc gia Hà Nội tổ chức năm 2018 
-ask_what,a,Nữ sinh giành được giải thưởng Gương mặt trẻ Việt Nam tiêu biểu năm 2016 là sinh viên của Trường nào
-ask_what,a,Trong cuộc thi Olympic Vật lý Châu Á lần thứ 18  em Tạ Bá Dũng đã đoạt huy chương gì 
-ask_what,a,Giáo sư Đàm Thanh Sơn là cựu học sinh khối chuyên Toán-Tin trường nào
-ask_what,a,Sinh viên Trường Đại học Công nghệ Đại học Quốc gia Hà Nội tham dự kỳ thi Olympic Toán sinh viên toàn quốc năm 2018 đã đạt được thành tích gì
-ask_what,a,Quán quân cuộc thi 'Tìm kiếm tài năng học sinh - sinh viên  Đại học quốc gia Hà Nội' năm 2017 đến từ trường nào 
-ask_number,a,2013-2018 của Hội Sinh viên  Đại học quốc gia Hà Nội  có bao nhiêu sinh viên  Đại học quốc gia Hà Nội đạt được giải thưởng Sao Tháng Giêng
-ask_what,a,Giải thưởng Sao Tháng Giêng là giải thưởng của đơn vị  tổ chức nào
-ask_who,a,Giải thưởng Sao Tháng Giêng của Hội Sinh viên Việt Nam là giải thưởng dành cho đối tượng nào
-ask_number,a,Trong năm học 2017 - 2018   Đại học quốc gia Hà Nội có bao nhiêu tập thể  cá nhân được tuyên dương danh hiệu 'Sinh viên 5 tốt' cấp Trung ương
-ask_number,a,Trong năm học 2017 – 2018   Đại học quốc gia Hà Nội có bao nhiêu tập thể  cá nhân được tuyên dương danh hiệu 'Sinh viên 5 tốt' cấp thành phố 
-ask_what,a,Đề án 'Ba thực hiện' của Hội Sinh viên Trường Đại học Ngoại ngữ triển khai gồm những nội dung gì
-ask_where,a,Lễ ra quân Chiến dịch Mùa hè thanh niên tình nguyện 2017 do Đoàn Thanh niên - Hội Sinh viên  Đại học quốc gia Hà Nội được tổ chức tại đâu
-ask_what,a,Hàng năm  Đoàn Thanh niên - Hội Sinh viên  Đại học quốc gia Hà Nội tổ chức  triển khai hoạt động tình nguyện quyên góp  hỗ trợ  tặng quần áo ấm  sách vở cho các em nhỏ vùng cao vào mùa đông  đây là chương trình gì
-ask_what,a,Anh Chử Đức Liêm – người được xem là 'Chú lính chì dũng cảm' trên chương trình Điều ước thứ 7 là cựu sinh viên của Trường nào 
-ask_what,a,Ngày hội hiến máu toàn trường của Trường Đại học Khoa học Xã hội và Nhân văn còn có tên gọi là gì
-ask_what,a,Ngày hội hiến máu toàn trường của Trường Đại học Công nghệ còn có tên gọi là gì
-ask_what,a,Ngày hội hiến máu toàn trường của Trường Đại học Ngoại ngữ còn có tên gọi là gì
-ask_what,a,Ngày hội hiến máu toàn trường của Khoa Luật còn có tên gọi là gì
-ask_what,a,Ngày hội hiến máu toàn trường của trường Đại học Khoa học Tự nhiên có tên là gì
-ask_number,a,Sinh viên bị cảnh báo học vụ tối đa bao nhiêu lần thì sẽ bị buộc thôi học
-ask_what,a,Đâu là một trong những tiêu chuẩn để đạt được danh hiệu 'Tập thể tiên tiến'
-ask_what,a,Hình thức kỉ luật được áp dụng đối với 'Sinh viên có hành vi vi phạm lần đầu nhưng ở mức nhẹ' là gì
-ask_what,a,Hình thức kỉ luật được áp dụng với 'sinh viên đã bị khiển trách mà tái phạm hoặc vi phạm ở mức độ nhẹ nhưng hành vi có tính chất thường xuyên hoặc mới vi phạm lần đầu nhưng mức độ tương đối nghiêm trọng' là gì
-ask_what,a,Hình thức kỉ luật được áp dụng với những 'Sinh viên đang trong thời gian bị cảnh cáo mà vẫn vi phạm kỉ luật hoặc vi phạm nghiêm trọng các hành vi cấm với sinh viên' là gì
-ask_what,a,Sinh viên vi phạm pháp luật bị phạt tù kể cả trường hợp bị phạt tù được hưởng án treo  sẽ phải chịu hình thức kỉ luật nào sau đây
-ask_what,a,Sinh viên năm thứ nhất có khả năng bị cảnh cáo học vụ khi:
-ask_what,a,Sinh viên năm thứ hai có khả năng bị cảnh cáo học vụ khi nào
-ask_what,a,Sinh viên năm thứ ba có khả năng bị cảnh cáo học vụ khi nào
-ask_what,a,Sinh viên năm thứ tư có khả năng bị cảnh cáo học vụ khi nào
-ask_who,a,Đối tượng nào sau đây được miễn học toàn bộ học phần giáo dục quốc phòng - an ninh
-ask_who,a,Đối tượng được miễn học các nội dung thực hành kỹ năng Quân sự trong học phần giáo dục quốc phòng – an ninh
-ask_who,a,Đối tượng được miễn học các nội dung thực hành kỹ năng Quân sự trong học phần giáo dục quốc phòng – an ninh
-ask_who,a,Đối tượng được miễn học các nội dung thực hành kỹ năng Quân sự trong học phần giáo dục quốc phòng – an ninh
-ask_who,a,Đối tượng nào sau đây được miễn học toàn bộ học phần giáo dục thể chất
-ask_what,a,'Sinh viên học chương trình đào tạo chất lượng cao bị chuyển sang chương trình chất lượng chuẩn khi điểm trung bình chung các học phần tính tới thời điểm xét dưới 2 0'  Đúng hay sai 
-ask_number,a,Sinh viên bị khiển trách trong phòng thi khi thi thì sẽ bị trừ bao nhiêu % số điểm của học phần đó
-ask_what,a,Trong phòng thi sinh viên mang theo những vật dụng không được phép khi đã bóc đề thi thì sẽ phải chịu hình thức kỉ luật nào sau đây
-ask_what,a,Sinh viên thi hộ hoặc nhờ người thi hộ nếu vi phạm lần thứ nhất sẽ bị kỉ luật ở mức nào sau đây
-ask_what,a,'Sinh viên được trao tặng danh hiệu ' Sinh viên giỏi' khi nào
-ask_what,a,Sinh viên có những hành vi như viết bài  lưu giữ hoặc tuyên truyền phản ánh thiếu trung thực dưới mọi hình thức ảnh hưởng đến uy tín và thương hiệu của  Đại học quốc gia Hà Nội với vi phạm lần đầu tiên sẽ phải chịu hình thức kỉ luật nào 
-ask_what,a,Sinh viên có được đăng kí học ở trường khác trong  Đại học quốc gia Hà Nội không 
-ask_what,a,Theo quy chế đào tạo của  Đại học quốc gia Hà Nội 'sinh viên bị điểm F được thi lại'  Đúng hay sai 
-ask_number,a,Hằng năm  tại các cơ sở đào tạo của  Đại học quốc gia Hà Nội có mấy lần xét tốt nghiệp
-ask_what,a,Sinh viên được học cải thiện đối với các học phần đạt điểm:
-ask_when,a,Sinh viên phải hoàn thành việc đăng kí các học phần của mỗi kì học vào khoảng thời gian nào sau đây:
-ask_when,a,Sinh viên được phép đăng ký những học phần muốn học hoặc đăng ký đổi sang lớp học phần khác trong khoảng thời gian nào
-ask_what,a,Các học phần ngoại ngữ do đơn vị nào trong  Đại học quốc gia Hà Nội phụ trách giảng dạy
-ask_what,a,Các học phần lý luận chính trị do đơn vị nào trong  Đại học quốc gia Hà Nội phụ trách giảng dạy
-ask_what,a,Học phần giáo dục thể chất có tính vào điểm tích lũy hay không
-ask_number,a,Chương trình đào tạo kỹ sư theo chương trình đào tạo chuẩn được thiết kế bao nhiêu tín chỉ
-ask_number,a,Chương trình đào tạo dược sĩ theo chương trình đào tạo chuẩn được thiết kế bao nhiêu tín chỉ
-ask_number,a,Chương trình đào tạo bác sĩ theo chương trình đào tạo chuẩn được thiết kế bao nhiêu tín chỉ
-ask_what,a,'Sinh viên nghỉ học không có lý do trên 1 kỳ học hoặc trên 4 tháng sẽ bị như thế nào
-ask_what,a,Sinh viên có bắt buộc phải đăng kí học học phần ngoại ngữ ở trường hay không
-ask_number,a,'Sinh viên có điểm trung bình chung học kì dưới 2 0 được đăng kí bao nhiêu tín chỉ mỗi học kì 
-ask_what,a,Sinh viên có được rút bớt học phần khi đã đăng ký học phần hay không
-ask_what,a,'Nữ sinh đang mang thai hoặc trong thời kỳ thai sản được miễn học học phần giáo dục thể chất'  đúng hay sai 
-ask_what,a,'Học sinh THPT Chuyên Khoa học Tự nhiên được tuyển thằng vào trường Đại học Khoa học Tự nhiên'  đúng hay sai 
-ask_when,a,Cuộc thi 'Lớp tôi là số 1' được tổ chức bắt đầu từ năm nào
-ask_what,a,Đơn vị đào tạo nào của  Đại học quốc gia Hà Nội được coi là trường Đại học có số lần tham gia Kì thi lập trình sinh viên quốc tế vòng chung kết toàn cầu ACM ICPC world final nhiều nhất 7 lần Việt Nam
-ask_what,a,Kết quả của học phần giáo dục thể chất có tính vào điểm tích lũy của sinh viên không
-ask_number,a,Khóa luận tốt nghiệp có khối lượng kiến thức là bao nhiêu tín
-ask_what,a,Học phần điều kiện để xét tốt nghiệp là:
-ask_what,a, Đại học quốc gia Hà Nội có Chương trình đào tạo tài năng không
-ask_when,a,Đại hội Đại biểu Hội Sinh viên  Đại học quốc gia Hà Nội nhiệm kì 2018-2023 diễn ra vào thời gian nào
-ask_what,a,Đại hội Đại biểu Hội sinh viên  Đại học quốc gia Hà Nội nhiệm kì 2018-2023 diễn ra với tinh thần gì
-ask_who,a,Đối tượng nào sau đây được ưu tiên vào Kí túc xá theo chính sách của  Đại học quốc gia Hà Nội
-ask_number,a,Chương trình đào tạo bằng kép được áp dụng cho đối tượng sinh viên năm thứ mấy trong hệ đào tạo chuẩn của  Đại học quốc gia Hà Nội
-ask_what,a,Sinh viên đăng ký học chương trình đào tạo bằng kép cần thỏa mãn những điều kiện nào sau đây
-ask_what,a,Đâu là một trong những tiêu chí của cuộc vận động 'Xây dựng phong cách sinh viên  Đại học quốc gia Hà Nội'
-ask_number,a,Số tín chỉ tối thiểu để có thể tham gia xét học bổng theo ngân sách đối với hệ đào tạo chính quy của  Đại học quốc gia Hà Nội là
-ask_what,a,Nội dung nào sau đây là nội dung đánh giá kết quả rèn luyện đối với sinh viên đại học hệ chính quy
-ask_number,a,Sinh viên đạt kết quả rèn luyện loại xuất sắc có điểm rèn luyện trong khoảng nào
-ask_number,a,Sinh viên đạt kết quả rèn luyện loại kém có điểm rèn luyện trong khoảng nào
-ask_number,a,Thời gian khiếu nại về kết quả đánh giá rèn luyện là bao lâu kể từ ngày công bố
-ask_when,a, Đại học quốc gia Hà Nội thí điểm tuyển sinh theo phương thức đánh giá năng lực từ năm nào
-ask_number,a,Trong quy chế sinh viên quy định quyền của sinh viên gồm bao nhiêu điều
-ask_number,a,Trong quy chế sinh viên quy định nghĩa vụ của sinh viên gồm bao nhiêu điều
-ask_number,a,'Sinh viên khi nhập trường phải nộp đầy đủ hồ sơ theo quy định Trường hợp đặc biệt  sinh viên được phép nộp bổ sung nhưng không vượt quá bao nhiêu ngày kể từ ngày nhập học'
-ask_what,a,Cách tính điểm đánh giá bộ phận  điểm môn học quy định: 9 0 - 10 tương ứng với
-ask_what,a,Cách tính điểm đánh giá bộ phận  điểm môn học quy định: 8 0 - 8 4 tương ứng với
-ask_what,a,Cách tính điểm đánh giá bộ phận  điểm môn học quy định: điểm C+ tương đương với
-ask_what,a,Cách tính điểm đánh giá bộ phận  điểm môn học quy định: điểm D tương đương với
-ask_what,a,Cách tính điểm đánh giá bộ phận  điểm môn học gồm những loại nào
-ask_number,a,Điểm trung bình chung học kỳ và điểm trung bình chung tích lũy được tính theo công thức và được làm tròn đến mấy chữ số thập phân
-ask_what,a,'Điểm trung bình chung tích lũy được dùng để xét buộc thôi học  xếp loại học lực và gì '
-ask_what,a,sSau mỗi học kỳ  sinh viên bị buộc thôi học nếu thuộc trong trường hợp nào
-ask_what,a,Sau mỗi học kỳ  sinh viên bị buộc thôi học nếu thuộc trong các trường hợp nào
-ask_what,a,Sau mỗi học kỳ  sinh viên bị buộc thôi học nếu thuộc trong các trường hợp nào
-ask_number,a,Chậm nhất bao lâu sau khi sinh viên có quyết định buộc thôi học  đơn vị đào tạo phải thông báo trả về địa phương nơi sinh viên có hộ khẩu thường trú
-ask_what,a,Sau mỗi học kỳ  căn cứ vào điểm trung bình chung tích lũy  học lực của sinh viên được xếp thành các loại nào
-ask_what,a,Trong Quy chế đào tạo của  Đại học quốc gia Hà Nội quy định: Chuẩn đầu ra về trình độ ngoại ngữ đối với các sinh viên theo học  các chương trình đào tạo chuẩn  ngành chính - ngành phụ  ngành kép  như thế nào 
-ask_number,a,Trong quy chế đào tạo của  Đại học quốc gia Hà Nội quy định: Chương trình đào tạo chất lượng cao được thiết kế nhiều hơn chương trình đào tạo chuẩn tương ứng ít nhất là bao nhiêu tín chỉ
-ask_number,a,Trong quy chế Đào tạo của  Đại học quốc gia Hà Nội quy định: Mỗi năm có mấy kì học chính và mấy kì học phụ 
-ask_number,a,Quy chế Đào tạo của  Đại học quốc gia Hà Nội quy định  mỗi học kỳ phụ có ít nhất mấy tuần 
-ask_number,a,Hiệu lực của quyết định kỉ luật được chấm dứt đối với trường hợp bị khiển trách là
-ask_number,a,Hiệu lực của quyết định kỉ luật được chấm dứt đối với trường hợp bị cảnh cáo là
-ask_number,a,Số tín chỉ đăng ký học tối thiểu đối với chương trình đào tạo chuẩn của mỗi kỳ không bao gồm các học phần ngoại ngữ  giáo dục thể chất  giáo dục quốc phòng - an ninh  kỹ năng bổ trợ  tự chọn tự do
-ask_number,a,Số tín chỉ đăng ký học tối thiểu đối với chương trình đào tạo chất lượng cao của mỗi kỳ học  không bao gồm các học phần ngoại ngữ  giáo dục thể chất  giáo dục quốc phòng – an ninh  kỹ năng bổ trợ  tự chọn tự do  
-ask_number,a,Số tín chỉ đăng ký học tối thiểu đối với chương trình đào tạo quốc tế của mỗi kỳ học  không bao gồm các học phần ngoại ngữ  giáo dục thể chất  giáo dục quốc phòng – an ninh  kỹ năng bổ trợ  tự chọn tự do  
-ask_number,a,Thời gian hoạt động giảng dạy và học tập của đơn vị đào tạo là
-ask_number,a,Thời gian của một tiết hoc là bao nhiêu phút
-ask_number,a,Thời gian thiết kế của khóa học đào tạo chính quy đối với chương trình đào tạo cử nhân là
-ask_number,a,Thời gian thiết kế của khóa học đào tạo chính quy đối với chương trình đào tạo kĩ sư là
-ask_number,a,Thời gian thiết kế của khóa học đào tạo chính quy đối với chương trình đào tạo dược sĩ là
-ask_number,a,Thời gian thiết kế của khóa học đào tạo chính quy đối với chương trình đào tạo bác sĩ là
-ask_where,a,Sinh viên  Đại học quốc gia Hà Nội học giáo dục an ninh - quốc phòng ở đâu 
-ask_number,a,Sinh viên phải hoàn thành bao nhiêu tín chỉ của học phần giáo dục thể chất
-ask_what,a,Môn học nào sau đây không phải là môn học có trong học phần giáo dục thể chất của  Đại học quốc gia Hà Nội 
-ask_number,a,Thời gian học học phần giáo dục an ninh quốc phòng của sinh viên là
-ask_number,a,Đối với những sinh viên học bằng kép  thời gian kết thúc cả 2 chương trình đào tạo tối đa là
-ask_what,a,Trường hợp nào sau đây sinh viên không được xét tốt nghiệp
-ask_what,a,Sinh viên được xét tốt nghiệp khi có điểm tích lũy của khóa học:
-ask_what,a,Kết quả của học phần giáo dục thể chất  giáo dục an ninh - quốc phòng có được dùng để xét học bổng không
-ask_number,a,Điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên Đạt giải nhất cấp Đại học Quốc gia Hà Nội hoặc cấp Bộ Giáo dục và Đào tạo là:
-ask_number,a,Điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên Đạt giải nhì cấp Đại học Quốc gia Hà Nội hoặc cấp Bộ Giáo dục và Đào tạo là:
-ask_number,a,Điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên Đạt giải ba cấp Đại học Quốc gia Hà Nội hoặc cấp Bộ Giáo dục và Đào tạo là:
-ask_number,a,Điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên Đạt giải khuyến khích cấp Đại học Quốc gia Hà Nội hoặc cấp Bộ Giáo dục và Đào tạo là:
-ask_what,a,'Sinh viên không trung thực và có hành vi gian lận trong nghiên cứu khoa học  làm tiểu luận  khóa luận  đồ án tốt nghiệp' sẽ bị kỷ luật từ mức:
-ask_who,a,Sinh viên được xét tuyển bổ sung sinh viên vào chương trình đào tạo tài năng  chuẩn quốc tế  chất lượng cao là:
-ask_when,a, giáo sư Ngô Bảo Châu – cựu học sinh của  Đại học quốc gia Hà Nội đã đạt giải thưởng cao quý nhất cho những người làm Toán trên thế giới đó là Huy chương Fields vào năm
-ask_what,a,Sinh viên bị cảnh cáo trong phòng thi khi thi học phần thì sẽ bị:
-ask_what,a,Câu lạc bộ Khiếm thính là CLB của Trường/Khoa nào
-ask_number,a,Tiêu chuẩn tình nguyện tốt trong nhóm tiêu chuẩn của danh hiệu Sinh viên 5 tốt cấp Trung ương quy định sinh viên phải tham gia ít nhất mấy ngày tình nguyện/năm
-ask_what,a,Sứ mệnh của Trung tâm Hỗ trợ sinh viên   Đại học quốc gia Hà Nội là gì 
-ask_what,a,Sứ mệnh của Trung tâm Hỗ trợ sinh viên   Đại học quốc gia Hà Nội là gì 
-ask_what,a,Sứ mệnh của Trung tâm Hỗ trợ sinh viên   Đại học quốc gia Hà Nội là gì 
-ask_what,a,Chủ đề Tháng Thanh niên năm 2018 được Trung ương Đoàn lựa chọn là
-ask_what,a,Biểu trưng của Hội Sinh viên Việt Nam là
-ask_what,a,Cuộc vận động nào do Hội Sinh viên  Đại học quốc gia Hà Nội phát động trong giai đoạn hiện nay
-ask_what,a,Vai trò  mối quan hệ của Đoàn Thanh niên đối với Hội Sinh viên là:
-ask_what,a,Tiêu chuẩn đạt Danh hiệu sinh viên 5 tốt gồm các tiêu chí
-ask_what,a,Giải thưởng cao quý của Trung ương Hội Sinh viên Việt Nam tuyên dương  khen thưởng sinh viên  học viên là cán bộ Đoàn Thanh niên  Hội Sinh viên có thành tích tốt trong học tập  nghiên cứu  và rèn luyện trong công tác Đoàn  công tác Hội
-ask_when,a,Đoàn TNCS Hồ Chí Minh Đại học Quốc gia Hà Nội được Ban Thường vụ Thành đoàn Hà Nội ký quyết định thành lập vào ngày  tháng  năm nào
-ask_who,a,Bí thư Đoàn Đại học Quốc gia Hà Nội hiện nay là đồng chí
-ask_who,a,Tuổi trẻ Đại học Quốc gia Hà Nội có một gương mặt được Trung ương Đoàn vinh danh giải thưởng' Gương mặt trẻ Việt Nam tiêu biểu năm 2017'  đó là
-ask_who,a,Phó Chủ tịch Hội Sinh viên Đại học Quốc gia Hà Nội khóa IV  là sinh viên là ai
-ask_what,a,Một trong 2 trang chính thức của Đoàn Thanh niên - Hội Sinh viên  Đại học quốc gia Hà Nội trên mạng xã hội facebook là gì
-ask_what,a,Các cấp bộ Đoàn trong  Đại học quốc gia Hà Nội hiện nay gồm có
-ask_when,a,Đoàn TNCS Hồ Chí Minh  Đại học quốc gia Hà Nội Kỷ niệm 20 năm thành lập vào năm nào
-ask_when,a,Đoàn TNCS Hồ Chí Minh  Đại học quốc gia Hà Nội đón nhận Huân chương lao động hạng nhì vào năm nào
-ask_what,a,Cuộc thi 'Tìm kiếm đại sứ truyền thông khoa học Famelab' do đơn vị nào tổ chức
-ask_what,a,hai tiêu chí của cuộc vận động 'Xây dựng phong cách sinh viên  Đại học quốc gia Hà Nội' do hội sinh viên  Đại học quốc gia Hà Nội phát động thực hiện
-ask_what,a,Sinh viên  Đại học quốc gia Hà Nội có thể học song song giữa chương trình chính quy và chương trình liên kết quốc tế Đúng hay sai
-ask_what,a,Sinh viên  Đại học quốc gia Hà Nội có được phép phúc khảo bài thi nếu có nghi ngờ không
-ask_what,a,'Sinh viên không tham gia đánh giá điểm rèn luyện tại học kỳ nào thì bị xếp kết quả rèn luyện như nào ở học kỳ đó
-ask_what,a,Trong quy chế sinh viên quy định quyền của sinh viên  sử dụng tài liệu liên quan đến môn học trong thi cử không
-ask_what,a,Sinh viên được hưởng các quyền công dân cư trú trên địa bàn như nào
-ask_what,a,Sinh viên có quyền gì về chỗ ở
-ask_what,a,Nghĩa vụ của sinh viên trong Đóng học phí  bảo hiểm y tế và các khoản lệ phí khác là gì
-ask_what,a,Trong quy chế sinh viên quy định nghĩa vụ của sinh viên là 
-ask_what,a,'Điểm môn học là tổng của điểm đánh giá bộ phận và điểm thi kết thúc môn học sau khi đã tính trọng số được quy định trong đề cương môn học và được làm tròn đến một chữ số thập phân  sau đó được chuyển như thế nào
-ask_what,a,Trong cách tính điểm thì điểm F là điểm gì
-ask_what,a,Một trong những tiêu chí đánh giá kết quả học tập của sinh viên là: 
-ask_what,a,'Kết quả đánh giá môn học giáo dục quốc phòng - an ninh  giáo dục thể chất  kỹ năng mềm có được tính vào điểm trung bình chung học kỳ và điểm trung bình chung tích lũy không
-ask_what,a,Trường hợp loại học lực của sinh viên được xác định vào thời điểm sau khi sinh viên đã đăng ký môn học bị vượt quá tiêu chuẩn thì sinh viên phải làm gì 
-ask_number,a,'Sinh viên xếp loại Xuất sắc khi nào
-ask_number,a,'Sinh viên xếp loại Yếu có điểm trung bình chung khi nào
-ask_number,a,Quy chế Đào tạo của  Đại học quốc gia Hà Nội quy định mỗi kì gồm bao nhiêu tuần
-ask_what,a, Phó giáo sư Tiến sĩ Toán học Nguyễn Sum Trường Đại học Quy Nhơn đã trở thành một trong hai chủ nhân mới của Giải thưởng Tạ Quang Bửu năm 2017  là nghiên cứu sinh từ năm 1992 của trường nào
-ask_what,a,Việc đạt đầu ra chuẩn B1 trở lên về ngoại ngữ có áp dụng với sinh viên thuộc  Đại học quốc gia Hà Nội không
-ask_what,a,Tuần học về Công tác chính trị đầu năm cho sinh viên có nằm trong Khung chương trình đào tạo cho sinh viên của  Đại học quốc gia Hà Nội không
-ask_what,a,Sinh viên người dân tộc Kinh có được đăng kí ở KTX hay không
-ask_number,a,'Sinh viên xếp loại khá có điểm trung bình chung tích lũy là bao nhiêu
-ask_what,a,'Sinh viên tàng trữ  lưu hành  phát tán văn hóa phẩm đồ trụy sẽ bị xử phạt như nào
-ask_what,a,Việc sinh viên tham gia sinh hoạt tại các Câu lạc bộ dựa trên cơ sở gì
-ask_who,a,Chủ tịch Hội Sinh viên  Đại học quốc gia Hà Nội là ai
-ask_what,a,Danh hiệu 'Sinh viên 5 tốt' là danh hiệu do đơn vị nào trao tặng
-ask_what,a,Phong trào 'Tuổi trẻ sáng tạo' là một trong những phong trào chính của đơn vị nào
-ask_what,a,'Sinh viên học chương trình đào tạo chất lượng cao chưa bị buộc thôi học phải chuyển sang chương trình đào tạo chuẩn chính quy của ngành học tương ứng khi nào
-ask_what,a,Nếu sinh viên trong các đơn vị đào tạo tại  Đại học quốc gia Hà Nội chưa hoàn thành một trong ba học phần là: giáo dục quốc phòng – an ninh  giáo dục thể chất và kĩ năng bổ trợ thì sinh viên có được xét tốt nghiệp hay không
-ask_what,a,Trong thời gian xét tốt nghiệp theo quy định của đơn vị đào tạo  nếu sinh viên không đủ điều kiện tốt nghiệp chương trình đào tạo chất lượng cao thì sao
-ask_when,a,Sinh viên  Đại học quốc gia Hà Nội được cấp thẻ sinh viên trong thời gian nào
-ask_what,a,Sinh viên 5 tốt gồm bao nhiêu tiêu chuẩn
-ask_what,a,Những nguyên lý cơ bản của chủ nghĩa Mác – Lê-nin  Tư tưởng Hồ Chí Minh  Đường lối cách mạng của Đảng Cộng sản là những môn học có bắt buộc tại  Đại học quốc gia Hà Nội không
-ask_what,a,Khi đã học một học kì của chương trình đào tạo thứ nhất  sinh viên có được đăng ký học bằng kép hay không
-ask_what,a,Nếu sinh viên đang theo học tại trường Đại học Khoa học Xã hội và Nhân văn thì có thể đăng ký học thể dục tại trường Đại học Ngoại ngữ hay không
-ask_what,a,Trong quá trình học  sinh viên được chuyển trường  chuyển ngành học giữa các đơn vị đào tạo trong  Đại học quốc gia Hà Nội hoặc giữa  Đại học quốc gia Hà Nội với các cơ sở đào tạo khác khi nào
-ask_what,a,Môn thi được sử dụng tài liệu thì sinh viên  Đại học quốc gia Hà Nội được phép mang điện thoại di động vào phòng thi không
-ask_what,a,Ngoài các Đoàn Trường/Khoa trực thuộc  Đoàn  Đại học quốc gia Hà Nội còn có gì
-ask_when,a,Đoàn Thanh niên  Đại học quốc gia Hà Nội cũng tổ chức Chiến dịch Mùa hè thanh niên tình nguyện khi nào
-ask_what,a,Mỗi khóa học tập kiến thức giáo dục quốc phòng – an ninh tại Trung tâm Giáo dục Quốc phòng và An ninh của  Đại học quốc gia Hà Nội  sinh viên được trang bị kiến thức về
+ask_what,a,trường đại học nào được tách thành hai trường là đại học tổng hợp hà nội và đại học sư phạm hà nội
+ask_what,a,ban đầu  trường đại học tổng hợp hà nội có hai khoa là:
+ask_what,a,năm 1961  theo quyết định của bộ giáo dục  khoa tự nhiên  trường đại học tổng hợp được tách ra thành hai khoa là:
+ask_what,a,đến năm 1965  khoa toán – lý của trường đại học tổng hợp hà nội được chia tách để thành lập 2 khoa là
+ask_when,a, một lượng lớn cán bộ của bộ môn tin học – đại học tổng hợp hà nội được điều động sang công tác tại khoa công nghệ thông tin – đại học tổng hợp hà nội vào năm nào
+ask_what,a,tên tiếng anh của  đại học quốc gia hà nội là gì
+ask_what,a,tên viết tắt của  đại học quốc gia hà nội là gì
+ask_who,a,giám đốc và các phó giám đốc  đại học quốc gia hà nội do ai bổ nhiệm  miễn nhiệm
+ask_what,a,tiền thân của  đại học quốc gia hà nội là trường nào
+ask_what,a,đâu không phải là tiền thân của  đại học quốc gia hà nội
+ask_where,a,trụ sở của đại học đông dương ở đâu
+ask_when,a,đại học đông dương được thành lập vào thời gian nào
+ask_what,a,trên cơ sở đại học đông dương  trường đại học nào được thành lập:
+ask_when,a,khóa đầu tiên của trường đại học quốc gia việt nam được khai giảng vào:
+ask_who,a,khai giảng khóa đầu tiên của đại học quốc gia việt nam dưới sự chủ tọa của ai
+ask_where,a,trụ sở của đại học quốc gia việt nam ở đâu
+ask_when,a, đại học quốc gia hà nội được thành lập chính thức vào thời gian nào
+ask_what,a,theo nghị định số 97/cp ngày 10/12/1993   đại học quốc gia hà nội được thành lập trên cơ sở tổ chức  sắp xếp lại 3 trường đại học nào:
+ask_number,a,tính đến năm 2000   đại học quốc gia hà nội có bao nhiêu trường đại học thành viên
+ask_number,a,tính đến năm 2000   đại học quốc gia hà nội có bao nhiêu viện nghiên cứu
+ask_what,a,tính đến năm 2000  trường nào sau đây không phải là đơn vị trực thuộc đại học quốc gia hà nội
+ask_when,a,trường đại học sư phạm tách khỏi cơ cấu tổ chức  đại học quốc gia hà nội năm nào
+ask_what,a,cho đến năm 2000  những trường nào sau đây thuộc  đại học quốc gia hà nội :
+ask_number,a,theo quyết định số 14/2001/qđ–ttg   đại học quốc gia hà nội có mấy trường đại học thành viên
+ask_what,a,theo quyết định số 14/2001/qđ–ttg   đại học quốc gia hà nội gồm những trường đại học thành viên nào
+ask_where,a,ngày 20/12/2003  thủ tướng chính phủ phan văn khải đã chính thức động thổ xây dựng  đại học quốc gia hà nội tại đâu
+ask_who,a,ngày 20/12/2003  ai là người đã chính thức động thổ xây dựng  đại học quốc gia hà nội
+ask_when,a,thủ tướng chính phủ phan văn khải đã chính thức động thổ xây dựng  đại học quốc gia hà nội vào thời gian nào
+ask_when,a,viện việt nam học và khoa học phát triển trực thuộc  đại học quốc gia hà nội được thành lập vào thời gian nào
+ask_who,a,ai là người ký sắc lệnh thành lập đại học quốc gia việt nam – nay là đại học quốc gia hà nội 
+ask_number,a,tính đến năm 2018   đại học quốc gia hà nội gồm bao nhiêu trường đại học thành viên
+ask_number,a,tính đến năm 2018   đại học quốc gia hà nội có bao nhiêu khoa trực thuộc
+ask_number,a,tính đến năm 2018   đại học quốc gia hà nội có bao nhiêu trung tâm đào tạo
+ask_number,a,tính đến năm 2018   đại học quốc gia hà nội có bao nhiêu viện nckh
+ask_number,a,tính đến năm 2011   đại học quốc gia hà nội có bao nhiêu trường đại học thành viên
+ask_number,a,tính đến năm 2011   đại học quốc gia hà nội có bao nhiêu viện nghiên cứu thành viên
+ask_number,a,tính đến năm 2011   đại học quốc gia hà nội có bao nhiêu khoa đào tạo trực thuộc
+ask_when,a,chủ tịch hồ chí minh về thăm trường đại học tổng hợp hà nội lần đầu tiên vào thời gian nào
+ask_when,a,chủ tịch hồ chí minh về thăm đại học tổng hợp hà nội lần thứ hai vào năm nào
+ask_when,a,trung tâm nghiên cứu tài nguyên và môi trường cres được thành lập vào thời gian nào
+ask_when,a,đại học tổng hợp hà nội được thành lập thời gian nào
+ask_who,a,ai đã kí quyết định thành lập đại học tổng hợp hà nội
+ask_number,a,mặc dù mới được thành lập nhưng từ năm 1956 – 1959  trường đại học tổng hợp đã biên soạn được bao nhiêu giáo trình mới
+ask_number,a,đến năm 1965  trong hoàn cảnh chiến tranh và khó khăn  hệ thống đào tạo trường đại học tổng hợp đã có bao nhiêu giáo trình cơ sở và chuyên đề
+ask_number,a,đến năm 1965  đại học tổng hợp đã có bao nhiêu cán bộ giảng dạy
+ask_number,a,đến năm 1965  đại học tổng hợp đã có bao nhiêu cán bộ giảng dạy có trình độ tiến sĩ và phó tiến sĩ
+ask_number,a,trong năm học 1975 –1976  có bao nhiêu tập thể lớp tại đại học tổng hợp hà nội được thành đoàn hà nội công nhận danh hiệu tập thể sinh viên xhcn
+ask_number,a,những năm học đầu tiên  trường đại học tổng hợp hà nội chia các lĩnh vực đào tạo chuyên môn thành bao nhiêu ban
+ask_number,a,trong ngày đầu khai giảng  trường đại học tổng hợp hà nội có bao nhiêu sinh viên tựu trường
+ask_number,a,ngày đầu mới thành lập  đại học tổng hợp hà nội có bao nhiêu cán bộ giảng dạy
+ask_when,a,trường đại học tổng hợp hà nội được chính phủ tặng thưởng huân chương lao động hạng iii vào năm nào
+ask_when,a,trường đại học tổng hợp hà nội lập thêm khoa địa lý – địa chất vào năm nào
+ask_number,a,đến năm học 1968 – 1969  trường đại học tổng hợp hà nội có bao nhiêu khoa trực thuộc
+ask_number,a,đến năm học 1965 – 1966  trường đại học tổng hợp hà nội có bao nhiêu khoa trực thuộc
+ask_when,a,khoa triết học thuộc đại học tổng hợp hà nội được thành lập năm nào
+ask_when,a,khoa pháp lý thuộc đại học tổng hợp hà nội được thành lập năm nào
+ask_when,a,trường đại học tổng hợp hà nội bắt đầu đào tạo nghiên cứu sinh vào năm nào
+ask_what,a,ngày 23/3/979  hơn 1300 cán bộ và sinh viên của đại học tổng hợp hà nội tham gia xây dựng phòng tuyến bảo vệ thủ đô với phiên hiệu là:
+ask_when,a,trường đại học tổng hợp hà nội đón nhận huân chương lao động hạng nhất vào dịp nào
+ask_who,a,hiệu trưởng đầu tiên của đại học tổng hợp hà nội là ai
+ask_number,a,sau 30 năm thành lập  đội ngũ cán bộ khoa học của trường đại học tổng hợp hà nội đã có bao nhiêu đề tài nghiên cứu khoa học cấp nhà nước và cấp bộ
+ask_when,a,khoa vật lý hạt nhân thuộc đại học tổng hợp hà nội được thành lập vào năm nào
+ask_number,a,đến năm 1986  trường đại học tổng hợp hà nội có bao nhiêu khoa trực thuộc
+ask_number,a,đến năm 1986  trường đại học tổng hợp hà nội có bao nhiêu trung tâm nghiên cứu khoa học
+ask_number,a,đến năm 1986  trường đại học tổng hợp hà nội có bao nhiêu giáo sư và phó giáo sư
+ask_number,a,đến năm 1986  trường đại học tổng hợp hà nội có bao nhiêu tiến sĩ và phó tiến sĩ
+ask_when,a,trường đại học tổng hợp hà nội đón nhận huân chương độc lập hạng ba vào dịp nào
+ask_number,a,riêng trong 2 năm 1988 – 1989  đội ngũ cán bộ trường đại học tổng hợp đã triển khai bao nhiêu đề tài nghiên cứu các cấp
+ask_when,a,khoa nâng cao trình độ – đại học tổng hợp hà nội được thành lập vào năm nào
+ask_when,a,viện tin học – điện tử thuộc đại học tổng hợp hà nội được thành lập vào năm nào
+ask_when,a,trung tâm mác – lênin thuộc đại học tổng hợp hà nội được thành lập vào năm nào
+ask_when,a,đại học tổng hợp hà nội chính thức mở lại chuyên ngành ngữ văn trung quốc vào thời gian nào
+ask_when,a,khoa báo chí – trường đại học tổng hợp hà nội chính thức đi vào hoạt động từ năm nào
+ask_when,a,tạp chí khoa học – đại học tổng hợp hà nội được bộ văn hóa cấp phép hoạt động vào thời gian nào
+ask_when,a,trường đại học tổng hợp hà nội thành lập thêm khoa xã hội học – tâm lý học vào năm nào
+ask_number,a,tính đến năm học 1992 – 1993  trường đại học tổng hợp đã có bao nhiêu khoa trực thuộc
+ask_when,a,năm học nào được gọi là  'năm giáo trình ' của đại học tổng hợp
+ask_number,a,'năm giáo trình ' của đại học tổng hợp có bao nhiêu đầu sách giáo trình được in
+ask_what,a,khoa trực thuộc đầu tiên của  đại học quốc gia hà nội là:
+ask_when,a,khoa trực thuộc đầu tiên của  đại học quốc gia hà nội được thành lập vào năm nào
+ask_what,a,sau khi  đại học quốc gia hà nội được thành lập  khoa kinh tế – chính trị thuộc đại học tổng hợp hà nội trở thành khoa đào tạo của trường thành viên nào
+ask_what,a,năm 1999  khoa kinh tế –  đại học quốc gia hà nội được thành lập dựa trên cơ sở nào
+ask_when,a,khoa sau đại học –  đại học quốc gia hà nội chính thức ra đời vào thời gian nào
+ask_when,a,viện công nghệ thông tin –  đại học quốc gia hà nội được thành lập vào thời gian nào
+ask_number,a,cơ cấu tổ chức của trung tâm giáo dục quốc phòng –  đại học quốc gia hà nội gồm bao nhiêu khoa
+ask_what,a,cơ cấu tổ chức của trung tâm giáo dục quốc phòng –  đại học quốc gia hà nội gồm 02 khoa  đó là:
+ask_when,a,nội quy của đại học đông dương tiền thân  đại học quốc gia hà nội được ban hành vào thời gian nào
+ask_number,a,từ sau năm 1917 đến trước thế chiến thứ hai  đại học đông dương tiền thân  đại học quốc gia hà nội có bao nhiêu trường đại học thành viên
+ask_number,a,trong năm học đầu tiên  đại học quốc gia việt nam có bao nhiêu sinh viên đăng kí học
+ask_what,a,môn học nào của đại học quốc gia việt nam do bộ giáo dục trực tiếp chỉ đạo về nội dung  hình thức  thời gian học tập
+ask_what,a,trường đại học sư phạm ngoại ngữ hà nội được phát triển trên cơ sở khoa nào của trường đại học sư phạm hà nội '
+ask_when,a,trường đại học sư phạm ngoại ngữ hà nội được phát triển trên cơ sở khoa ngoại ngữ của trường đại học sư phạm hà nội vào năm nào
+ask_when,a,thủ tướng chính phủ phan văn khải đã chính thức động thổ xây dựng  đại học quốc gia hà nội tại hòa lạc vào thời gian nào
+ask_when,a,viện việt nam học và khoa học phát triển –  đại học quốc gia hà nội được chính thức thành lâp năm nào
+ask_when,a,thủ tướng chính phủ đã ký quyết định thành lập viện trần nhân tông vào thời gian nào
+ask_who,a,ai là người đã ký quyết định thành lập viện trần nhân tông vào ngày 01/09/2016
+ask_what,a,viện tài nguyên và môi trường –  đại học quốc gia hà nội được thành lập trên cơ sở nào
+ask_what,a,ngày 17/11/2016  thủ tướng chính phủ ký quyết định thành lập…
+ask_when,a,thủ tướng chính phủ ký quyết định thành lập viện tài nguyên và môi trường trên cơ sở nâng cấp trung tâm nghiên cứu tài nguyên và môi trường vào thời gian nào
+ask_number,a, đại học quốc gia hà nội có bao nhiêu đơn vị hỗ trợ/dịch vụ
+ask_when,a,trường luật và pháp chính trực thuộc đại học đông dương được thành lập năm nào
+ask_when,a,trường cao đẳng y khoa trở thành một thành viên của đại học đông dương vào năm nào
+ask_when,a,trường cao đẳng y khoa thuộc đại học đông dương được xây dựng trên cơ sở trường trung cấp y khoa hà nội vào năm nào
+ask_what,a,khoa các khoa học liên ngành –  đại học quốc gia hà nội có tên viết tắt là:
+ask_what,a,khoa các khoa học liên ngành –  đại học quốc gia hà nội tiền thân là:
+ask_number,a,tính đến nay  khoa các khoa học liên ngành –  đại học quốc gia hà nội có bao nhiêu chương trình đào tạo
+ask_when,a,chương trình đào tạo thạc sĩ biến đổi khí hậu của khoa các khoa học liên ngành –  đại học quốc gia hà nội được đưa vào đào tạo khi nào
+ask_when,a,chương trình đào tạo thạc sĩ khoa học bền vững của khoa các khoa học liên ngành –  đại học quốc gia hà nội được đưa vào đào tạo khi nào
+ask_where,a,khoa các khoa học liên ngành –  đại học quốc gia hà nội có địa chỉ tại:
+ask_who,a,bệnh viện  đại học quốc gia hà nội được thành lập theo quyết định của ai
+ask_when,a,bệnh viện  đại học quốc gia hà nội được thành lập vào thời gian nào
+ask_what,a,cơ quan chủ quản của bệnh viện  đại học quốc gia hà nội là:
+ask_when,a,bệnh viện  đại học quốc gia hà nội trực thuộc  đại học quốc gia hà nội được thành lập vào năm nào
+ask_where,a,trụ sở bệnh viện  đại học quốc gia hà nội nằm ở đâu
+ask_number,a,bệnh viện  đại học quốc gia hà nội có quy mô bao nhiêu giường bệnh tại nội thành hà nội
+ask_where,a,thực hiện chủ trương của  đại học quốc gia hà nội về chuyên môn hóa các đơn vị đào tạo  bộ môn giáo dục thể chất được chuyển về đâu
+ask_who,a,thủ tướng chính phủ nước việt nam dân chủ cộng hòa nguời mà đã ký quyết định số 128/cp ngày 14/8/1967 chia trường đại học sư phạm hà nội thành 3 trường đại học sư phạm thuộc bộ giáo dục là ai
+ask_what,a,thủ tướng chính phủ nước việt nam dân chủ cộng hòa đã ký quyết định số 128/cp ngày 14/8/1967 chia trường đại học sư phạm hà nội thành 3 trường đại học sư phạm thuộc bộ giáo dục là:
+ask_what,a,năm 1999  trung tâm nghiên cứu vi sinh ứng dụng và trung tâm nghiên cứu nấm ăn thuộc đại học khoa học tự nhiên được tổ chức lại thành gi
+ask_what,a,những trường đại học nào sau đây có trường thpt trực thuộc
+ask_what,a,tên gọi của lớp chuyên đầu tiên của trường đh tổng hợp hà nội và là lớp năng khiếu đầu tiên trong cả nước là gì
+ask_number,a,hiện tại   đại học quốc gia hà nội đang triển khai bao nhiêu chương trình đào tạo đại học
+ask_number,a,năm 2017   giáo sư phan huy lê nhận giải thưởng hồ chí minh về kh&cn lần thứ mấy với công trình  'lịch sử và văn hóa việt nam – tiếp cận bộ phận '
+ask_number,a,trong năm 2017   giáo sư thân đức hiền nhận giải thưởng nhà nước về kh&cn lần thứ mấy với cụm công trình  'nghiên cứu cơ bản và định hướng ứng dụng các vật liệu từ liên kim loại đất hiếm – kim loại chuyển tiếp '
+ask_number,a,năm học 2018 - 2019  trường đại học khoa học xã hội và nhân văn   đại học quốc gia hà nội tuyển sinh tại bao nhiêu ngành học
+ask_number,a,tính đến năm 2018   đại học quốc gia hà nội đã áp dụng phương thức đào tạo theo tín chỉ được bao nhiêu năm
+ask_what,a,trong các đơn vị của  đại học quốc gia hà nội  đơn vị đầu tiên áp dụng phương thức đào tạo theo tín chỉ do sinh viên được đăng ký lớp môn học ngay từ đầu năm học 2007 - 2008 là:
+ask_number,a,có bao nhiêu đơn vị thuộc  đại học quốc gia hà nội đang triển khai đào tạo bằng kép bậc đại học chính quy
+ask_number,a,trong giai đoạn 2014 – 2020   đại học quốc gia hà nội có bao nhiêu ngành đào tạo cử nhân tài năng
+ask_number,a,trong giai đoạn 2014 – 2020   đại học quốc gia hà nội có bao nhiêu chuyên ngành đào tạo cử nhân đạt chuẩn quốc tế
+ask_number,a,trong giai đoạn 2014 – 2020   đại học quốc gia hà nội có bao nhiêu chuyên ngành đào đào cử nhân trọng điểm
+ask_what,a,trong giai đoạn 2014 – 2020  những đơn vị trong  đại học quốc gia hà nội áp dụng chuyên ngành đào tạo cử nhân liên ngành là:
+ask_number,a,trong giai đoạn 2014 – 2020   đại học quốc gia hà nội có bao nhiêu chuyên ngành đào đào thạc sĩ
+ask_number,a,trong giai đoạn 2014 – 2020   đại học quốc gia hà nội có bao nhiêu chuyên ngành đào đào tiến sĩ
+ask_number,a,tính đến nay   đại học quốc gia hà nội có tổng cộng bao nhiêu chương trình liên kết đào tạo quốc tế
+ask_what,a,từ năm 1993 đến nay   đại học quốc gia hà nội đã đào tạo thí điểm 25 ngành  chuyên ngành  cụ thể gồm:
+ask_who,a,trưởng ban đào tạo của  đại học quốc gia hà nội hiện này là ai
+ask_when,a, đại học quốc gia hà nội thực hiện đổi mới tuyển sinh theo phương thức đánh giá năng lực bắt đầu từ năm nào
+ask_when,a, đại học quốc gia hà nội bắt đầu triển khai xây dựng và hoàn thiện chương trình đào tạo theo chuẩn đầu ra từ năm nào
+ask_number,a,theo quy chế đào tạo  chương trình đào tạo chuẩn được thiết kế có bao nhiêu tín chỉ
+ask_when,a,chương trình đào tạo cử nhân chất lượng cao hiện hành của  đại học quốc gia hà nội được triển khai ở hầu hết các đơn vị đào tạo bắt đầu từ năm học nào
+ask_what,a,cả hai trường thpt chuyên là trường trung học phổ thông chuyên thuộc trường đại học khoa học tự nhiên và trường trung học phổ thông chuyên ngoại ngữ thuộc trường đại học ngoại ngữ   đại học quốc gia hà nội được tuyển sinh với những khu vực nào
+ask_what,a,ngày 22/12/2017  thủ tướng chính phủ đã ban hành quyết định số 2079/qđ-ttg về việc phê duyệt nhiệm vụ khoa học và công nghệ đặc biệt cấp quốc gia  'xây dựng bộ địa chí quốc gia việt nam ' và giao  đại học quốc gia hà nội là cơ quan chủ trì thời gian thực hiện nhiệm vụ là
+ask_what,a,'vật liệu tiên tiến trong bảo vệ môi trường và phát triển xanh ' do  phó giáo sư tiến sĩ nguyễn văn nội làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  đại học quốc gia hà nội năm 2017
+ask_what,a,'nghiên cứu lịch sử và quan hệ thương mại châu á ' do  phó giáo sư tiến sĩ nguyễn văn kim làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  đại học quốc gia hà nội năm 2017
+ask_what,a,'vật lý và công nghệ tổ hợp nano hữu cơ ' do  giáo sư tiến sĩ nguyễn năng định làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  đại học quốc gia hà nội năm 2017
+ask_what,a,'tâm lý học lâm sàng ' do  phó giáo sư tiến sĩ đặng hoàng minh làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  đại học quốc gia hà nội năm 2017
+ask_what,a,'nghiên cứu về năng suất chất lượng trong các doanh nghiệp việt nam ' do  tiến sĩ phan chí anh làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị đào tạo nào của  đại học quốc gia hà nội năm 2017
+ask_what,a,viện công nghệ hàng không vũ trụ school of aerospace engineering – sae vừa là đơn vị phối thuộc của tập đoàn viễn thông quân đội viettel vừa trực thuộc đơn vị đào tào nào của  đại học quốc gia hà nội
+ask_number,a,theo bảng xếp hạng qs năm 2017   đại học quốc gia hà nội được xếp thứ bao nhiêu trong top 150 đại học hàng đầu châu á
+ask_what,a,đâu không phải là tiêu chí trong bảng xếp hạng qs châu á năm 2017
+ask_what,a,ngày 19/12/2017  đại diện mạng lưới các trường đại học đông nam á aun đã công bố quyết định và trao chứng nhận đạt chuẩn chất lượng cấp trường của mạng lưới các trường đại học đông nam á cho đơn vị đào tạo nào thuộc  đại học quốc gia hà nội
+ask_who,a,ai là người đã ký quyết định số 2068/qđ-ttg ngày 21/12/2017 về việc chuyển giao chủ dự án xây dựng  đại học quốc gia hà nội tại hòa lạc từ bộ xây dựng sang  đại học quốc gia hà nội
+ask_what,a,lần đầu tiên một mã ngành đào tạo nghiên cứu phật học được mở chính thức ở việt nam tại đơn vị nào của  đại học quốc gia hà nội
+ask_number,a,thông thường  thời gian đào tạo đối với chương trình đào tạo hệ đại học hệ chuẩn trong các đơn vị đào tạo tại  đại học quốc gia hà nội là bao lâu
+ask_number,a,tại các đơn vị đào tạo tại  đại học quốc gia hà nội  mỗi kì học  sinh viên phải đăng ký tối thiểu bao nhiêu tín chỉ đối với chương trình đào tạo chất lượng cao
+ask_what,a,năm 2017   đại học quốc gia hà nội tổ chức tuyển sinh đại học theo hình thức nào
+ask_what,a,trọng tâm của hoạt động đào tạo tại  đại học quốc gia hà nội là:
+ask_what,a,đâu là chuyên ngành  đại học quốc gia hà nội không đào tạo
+ask_who,a,ai là người đầu tiên đề xuất việc thành lập các lớp đào tạo học sinh năng khiếu hiện nay là 02 trường trung học phổ thông chuyên 
+ask_number,a,số tín chỉ tối thiểu để tham gia xét học bổng theo ngân sách đối với hệ chất lượng cao của  đại học quốc gia hà nội là bao nhiêu
+ask_what,a,người được nhận giải thưởng tạ quang bửu dành cho nhà khoa học trẻ dưới 35 tuổi vào 18/5/2018 là giảng viên trường nào trong  đại học quốc gia hà nội
+ask_number,a,thỏa thuận hợp tác giữa  đại học quốc gia hà nội và ubnd tỉnh quảng ninh diễn ra trong bao nhiêu lĩnh vực
+ask_number,a, đại học quốc gia hà nội có bao nhiêu chuyên ngành đào tạo cử nhân 
+ask_what,a,đâu không phải là một trong những đơn vị hỗ trợ đào tạo tại  đại học quốc gia hà nội
+ask_number,a,có bao nhiêu chương trình đào tạo đại học chính quy bằng tiếng anh do đại học quốc gia hà nội cấp bằng của khoa quốc tế –  đại học quốc gia hà nội
+ask_number,a,đến nay  đại học quốc gia hà nội đã thiết lập quan hệ hợp tác với bao nhiêu trường đại học và tổ chức giáo dục  khoa học công nghệ quốc tế
+ask_what,a,tháng 8/2013   đại học quốc gia hà nội đã ký kết với ngân hàng nào để thoả thuận hợp tác và hỗ trợ phát triển học bổng cho sinh viên  học viên và nhà ở cho cán bộ giảng viên trẻ của  đại học quốc gia hà nội
+ask_what,a,'uông bí đất và người ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  đại học quốc gia hà nội hợp tác cùng với tỉnh quảng ninh
+ask_what,a,'vương triều lê sơ ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  đại học quốc gia hà nội hợp tác cùng với thành phố hà nội
+ask_what,a,cùng với đài tiếng nói việt nam và cổng thông tin điện tử chính phủ  cơ quan nào là cơ quan thứ 3 thuộc lĩnh vực báo chí – truyền thông của việt nam mà  đại học quốc gia hà nội chính thức thiết lập quan hệ hợp tác
+ask_when,a, đại học quốc gia hà nội và tập đoàn brg đã ký kết biên bản ghi nhớ về việc hợp tác giữa hai bên vào thời gian nào
+ask_what,a,'nghiên cứu phát triển phần mềm nhúng trên nền tảng di động ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị đào tạo nào của  đại học quốc gia hà nội hợp tác cùng với toshiba
+ask_what,a,'giáo dục giới tính cho học sinh trung học cơ sở hà nội phù hợp với đặc điểm tuổi dậy thì hiện nay/  phó giáo sư tiến sĩ mai văn hưng ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị đào tạo nào của  đại học quốc gia hà nội hợp tác cùng với tp hà nội
+ask_what,a,'nghiên cứu xây dựng mô hình chứng thực văn bản pháp lý để thúc đẩy triển khai dịch vụ công trên địa bàn tp hà nội ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  đại học quốc gia hà nội hợp tác cùng với tp hà nội
+ask_what,a,'nghiên cứu các di sản tự nhiên và văn hóa nhằm xây dựng công viên địa chất geopark tại vùng ba vì – sơn tây  hà nội  phục vụ phát triển du lịch bền vững ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  đại học quốc gia hà nội hợp tác cùng với tp hà nội
+ask_what,a,'từ điển địa danh hành chính thăng long – hà nội truyền thống ' là một trong những nhiệm vụ khoa học công nghệ do đơn vị nào của  đại học quốc gia hà nội hợp tác cùng với nhà xuất bản hà nội
+ask_when,a, đại học quốc gia hà nội chính thức vinh dự là một trong những trường đại học nhận được sự hỗ trợ một triệu đô la mỹ của quỹ nippon nhật bản làm quỹ học bổng bồi dưỡng các tài năng trẻ đáp ứng nhu cầu phát triển của đất nước từ năm bao nhiêu
+ask_what,a,'phát triển và tối ưu hóa các giải pháp loại bỏ ô nhiễm asen trong nước ngầm cho các hộ nông dân vùng châu thổ sông hồng  việt nam ' là một trong các chương trình hợp tác quốc tế của  đại học quốc gia hà nội và chlb đức cơ quan chủ trì là đơn vị nào của  đại học quốc gia hà nội
+ask_what,a,'nghiên cứu các cấu trúc nano có tính chất từ – quang nhờ cộng hưởng plasmon bề mặt ' là một trong các chương trình hợp tác quốc tế của  đại học quốc gia hà nội cơ quan chủ trì thực hiện là đơn vị nào của  đại học quốc gia hà nội
+ask_what,a,'nghiên cứu phát triển công nghệ bãi lọc trồng cây ứng dụng vào xử lý nước thải từ chế biến thủy sản xuất khẩu ' là một trong các chương trình hợp tác quốc tế của  đại học quốc gia hà nội với quốc gia nào
+ask_what,a, đại học quốc gia hà nội có đối tác là một trong những trường đại học hàng đầu tại ấn độ trường đại học đó là
+ask_what,a,đại học nào  cùng với đại học quốc gia hà nội  đại học tokyo – nhật bản và đại học quốc gia seoul – hàn quốc nằm trong mạng lưới besetoha – diễn đàn của giám đốc 4 đại học chủ chốt đông á '
+ask_when,a, đại học quốc gia hà nội đã ký kết bản thỏa thuận hợp tác toàn diện với tập đoàn dầu khí quốc gia việt nam petrovietnam vào thời gian nào sau đây
+ask_what,a,' đại học quốc gia hà nội là một trong các thành viên của hiệp hội các trường đại học đông nam á – asaihl là một tổ chức '
+ask_what,a,'nghiên cứu chế tạo và thử nghiệm ứng dụng linh kiện phát quang hữu cơ – oled ' là một trong các chương trình hợp tác quốc tế của  đại học quốc gia hà nội đó là sự hợp tác khcn việt nam – hàn quốc cơ quan chủ trì thực hiện là đơn vị nào của  đại học quốc gia hà nội
+ask_what,a,trường đại học nào sau đây trực thuộc  đại học quốc gia hà nội là thành viên hiệp hội giáo viên châu á – thái bình dương
+ask_what,a,đầu năm học   đại học quốc gia hà nội áp dụng thi khảo sát năng lực tiếng anh đối với sinh viên năm nhất với mục đích
+ask_number,a,'nghiên cứu hệ sinh thái rừng ngập mặn ' là giải thưởng quốc tế cosmos lần thứ bao nhiêu cosmos prize  2008 do  giáo sư tiến sĩ phan nguyên hồng  trung tâm nghiên cứu tài nguyên và môi trường –  đại học quốc gia hà nội tiến hành từ năm 1987
+ask_what,a,tiến sĩ đỗ quốc tuấn – người được nhận giải thưởng tạ quang bửu dành cho nhà khoa học trẻ dưới 35 tuổi vào 18/05/2018 là giảng viên trường nào trong  đại học quốc gia hà nội
+ask_what,a,'quản trị tinh gọn  'made in vietnam ' ' do  tiến sĩ nguyễn đăng minh làm trưởng nhóm  là một trong những nhóm nghiên cứu tiềm năng thuộc đơn vị đào tạo nào của  đại học quốc gia hà nội năm 2017
+ask_what,a,'nghiên cứu khu vực học ' do  giáo sư  tiến sĩ nguyễn quang ngọc làm trưởng nhóm  là một trong những nhóm nghiên cứu mạnh thuộc đơn vị nào của  đại học quốc gia hà nội năm 2017
+ask_what,a,'ứng dụng dược chất thiên nhiên và tổng hợp định hướng hóa dược ' do  tiến sĩ mạc đình hùng làm trưởng nhóm là một trong những nhóm nghiên cứu tiềm năng thuộc đơn vị đào tạo nào của  đại học quốc gia hà nội năm 2017
+ask_number,a,có bao nhiêu đơn vị trực thuộc  đại học quốc gia hà nội có chương trình giảng dạy chính quy bằng tiếng anh
+ask_what,a,205 đến 225 tín chỉ là số tin chỉ ứng với chương trình đào tạo dành cho đối tượng nào sau đây thuộc  đại học quốc gia hà nội
+ask_number,a,mỗi năm  đại học quốc gia hà nội có bao nhiêu học kỳ
+ask_number,a,mỗi học kỳ phụ của  đại học quốc gia hà nội có ít nhất bao nhiêu tuần học và thi
+ask_when,a,học kỳ phụ của  đại học quốc gia hà nội được tổ chức trong thời gian nào
+ask_number,a,mỗi học kỳ chính của  đại học quốc gia hà nội có ít nhất bao nhiêu tuần học và thi
+ask_number,a,thời gian của khóa học do  đại học quốc gia hà nội quy định đối với đào tạo bác sĩ là bao lâu
+ask_what,a,chương trình đào tạo có 2 phần kiên thức đó là
+ask_what,a,sinh viên đang học tập tại các đơn vị đào tạo của đại học quốc gia hà nội được đăng ký học bằng kép nếu có đủ các điều kiện sau:
+ask_when,a,bộ tiêu chuẩn kiểm định chất lượng đơn vị đào tạo của  đại học quốc gia hà nội  được ban hành vào năm
+ask_what,a,hệ thống tổ chức và quản lý đào tạo đại học gồm hai cấp là:
+ask_number,a,khóa luận  đồ án tốt nghiệp có khối lượng kiến thức ' khoảng bao nhiêu tín chỉ
+ask_what,a,viện việt nam học và khoa học phát triển  đại học quốc gia hà nội đã làm đầu mối tổ chức thực hiện thành công lập hồ sơ khoa học đề nghị unesco công nhận di sản nào là di sản văn hóa thế giới
+ask_when,a,giám đốc  đại học quốc gia hà nội đã ra quyết định thành lập trung tâm đảm bảo chất lượng đào tạo và nghiên cứu phát triển giáo dục đbclđt & ncptgd nay là viện đảm bảo chất lượng giáo dục vào năm bao nhiêu
+ask_what,a,khẩu hiệu hành động của  đại học quốc gia hà nội là
+ask_what,a,giá trị cốt lõi và khẩu hiệu hành động của trường đại học khoa học xã hội và nhân văn   đại học quốc gia hà nội là
+ask_what,a,điều kiện để sinh viên  đại học quốc gia hà nội có thể tham gia làm khóa luận tốt nghiệp là gì
+ask_number,a,thời gian đào tạo thạc sĩ tại  đại học quốc gia hà nội là bao nhiêu năm
+ask_what,a,chương trình đào tạo tài năng của  đại học quốc gia hà nội đào tạo các sinh viên xuất sắc thuộc các ngành toán học  cơ học  vật lý  khí tượng – thuỷ văn – hải dương học  địa lý  địa chất  hoá học  sinh học  khoa học môi trường tại trường nào
+ask_what,a,khẩu hiệu hành động của  đại học quốc gia hà nội là
+ask_what,a,ngành đông phương học là một trong những ngành học thuộc đơn vị đào tạo nào của  đại học quốc gia hà nội
+ask_when,a,'trở thành đại học định hướng nghiên cứu  đa ngành  đa lĩnh vực có tính hội nhập cao  trong đó  một số trường đại học  viện nghiên cứu thành viên thuộc các lĩnh vực khoa học cơ bản  công nghệ cao và kinh tế – xã hội mũi nhọn đạt trình độ tiên tiến châu á '  là tầm nhìn đến năm bao nhiêu của  đại học quốc gia hà nội
+ask_who,a,bài hát truyền thống của  đại học quốc gia hà nội do ai sáng tác
+ask_where,a,đại học quốc gia hà nội là một trong hai hệ thống đại học quốc gia của việt nam được đặt tại đâu
+ask_what,a,khi mới thành lập  khoa các khoa học liên ngành –  đại học quốc gia hà nội có 02 chương trình đào tạo là:
+ask_what,a,02 trung tâm đào tạo trực thuộc  đại học quốc gia hà nội là gì '
+ask_what,a,những năm học đầu tiên  trường đại học tổng hợp hà nội chia các lĩnh vực đào tạo chuyên môn thành 02 ban là:
+ask_what,a,trung tâm giáo dục quốc phòng –  đại học quốc gia hà nội được thành lập dựa trên cơ sở sắp xếp lại các khoa giáo dục quốc phòng của các trường đại học nào
+ask_what,a,trường đại học tổng hợp hà nội trực tiếp kế thừa truyền thống và cơ sở vật chất  kĩ thuật của các trường tiền thân nào
+ask_when,a, đại học quốc gia hà nội tổ chức thi tuyển bằng hình thức đánh giá năng lực vào năm
+ask_who,a,nguồn nhân lực thực hiện các hoạt động nghiên cứu khoa học công nghệ ở  đại học quốc gia hà nội không chỉ có nghiên cứu viên mà bao gồm:
+ask_what,a,thủ tướng chính phủ đã ký quyết định số 1186/qđ–ttg ngày 21/7/2014 về việc thành lập trường đại học việt nhật – trường đại học thành viên thứ 7 thuộc  đại học quốc gia hà nội trường được xây dựng theo mô hình đại học xuất sắc vì kết hợp được những yếu tố nào sau đây
+ask_what,a,học bổng cho của sinh viên thuộc  đại học quốc gia hà nội do cơ quan nào cấp 
+ask_what,a,chương trình đào tạo cử nhân  thạc sĩ có liên kết với đối tác nước ngoài của trường đại học kinh tế   đại học quốc gia hà nội thuộc ngành nào sau đây
+ask_what,a,trường đại học tổng hợp hà nội trực tiếp kế thừa truyền thống và cơ sở vật chất  kĩ thuật của các trường tiền thân nào
+ask_what,a,trường thpt nào sau đây trực thuộc đại học quốc gia hà nội
+ask_what,a,đơn vị tiên phong trong triển khai hoạt động đào tạo tại hòa lạc là
+ask_what,a, đại học quốc gia hà nội có các mục tiêu cụ thể là
+ask_what,a,đi đầu luôn được coi là tiêu chí nhận dạng của các hoạt động và đội ngũ cán bộ của  đại học quốc gia hà nội trong hệ thống các trường đại học ở việt nam nó được thể hiện trong việc
+ask_what,a,nhiệm vụ trọng tâm của  đại học quốc gia hà nội là
+ask_what,a, đại học quốc gia hà nội là thành viên ban điều hành  tham gia cơ cấu lãnh đạo của nhiều tổ chức  hiệp hội  mạng lưới giáo dục đại học như:
+ask_when,a, đại học quốc gia hà nội bắt đầu xây dựng và triển khai dự án  'đào tạo cử nhân khoa học tài năng ' từ năm nào
+ask_what,a,đại học quốc gia hà nội có các loại chương trình đào tạo sau:
+ask_what,a,kinh phí cho hoạt động đào tạo của  đại học quốc gia hà nội có nguồn là
+ask_what,a,chương trình đào tạo chất lượng cao tại  đại học quốc gia hà nội dành cho những sinh viên khá giỏi hệ chính quy của một số ngành nào sau đây
+ask_what,a,chương trình đào tạo chất lượng cao tại  đại học quốc gia hà nội dành cho những sinh viên khá giỏi hệ chính quy của một số ngành nào sau đây
+ask_what,a,bộ trưởng bộ khoa học và công nghệ chu ngọc anh và giám đốc  đại học quốc gia hà nội nguyễn kim sơn kí kết văn bản thỏa thuận phối hợp hoạt động song phương giữa hai đơn vị 16/5/2017 nhằm phối hợp triển khai:
+ask_what,a,cụm công trình lịch sử và văn hóa việt nam của giáo sư đào duy anh – tác phẩm được tặng giải thưởng hồ chí minh gồm:
+ask_what,a,đâu là nội dung của cụm công trình  'tìm về cội nguồn ' của giáo sư phan huy lê – công trình được nhà nước trao tặng giải thưởng hồ chí minh năm 2000
+ask_what,a,'nghiên cứu hệ sinh thái rừng ngập mặn ' – giải thưởng quốc tế cosmos lần thứ 16 cosmos prize  2008 do  giáo sư tiến sĩ phan nguyên hồng  trung tâm nghiên cứu tài nguyên và môi trường –  đại học quốc gia hà nội tiến hành từ năm 1987 có ý nghĩa như thế nào
+ask_what,a,sau mỗi học kỳ sinh viên  đại học quốc gia hà nội bị buộc thôi học đối với các trường hợp là
+ask_what,a,để nâng cao chất lượng đào tạo đại học tại  đại học quốc gia hà nội cần phải có
+ask_what,a,sinh viên tốt nghiệp ngành quản trị du lịch - khách sạn tại trường đại học khoa học xã hội và nhân văn –  đại học quốc gia hà nội có thể đảm nhiệm các vị trí nào sau đây
+ask_when,a,giáo sư trần văn giàu đã được nhà nước trao tặng giải thưởng hồ chí minh với công trình về lịch sử việt nam gồm 5 bộ  18 tập 1956-1978 vào năm nào sau đây
+ask_number,a,'tìm về cội nguồn' là một cụm công trình nghiên cứu về lịch sử việt nam thời trung đại của giáo sư phan huy lê được nhà nước trao tặng giải thưởng hồ chí minh gồm bao nhiêu tập
+ask_when,a,câu lạc bộ nhà khoa học  đại học quốc gia hà nội vnu- giáo sưl được thành lập vào thời gian nào
+ask_when,a,tuyến đường mới mang tên cố giáo sư trần quốc vượng được đặt vào thời gian nào sau đây
+ask_when,a,câu lạc bộ cựu sinh viên  đại học quốc gia hà nội được ra mắt năm nào
+ask_who,a,giám đốc  đại học quốc gia hà nội hiện nay là ai
+ask_what,a,nhóm tác giả của  phó giáo sư tiến sĩ phạm bảo sơn thuộc đơn vị đào tạo nào của  đại học quốc gia hà nội đã giành giải nhì tại giải thưởng nhân tài đất việt 2017 với sản phẩm 'doit – hệ thống hỗ trợ nâng cao chất lượng văn bản một công cụ phụ trợ để phát hiện các lỗi chính tả có thể gặp phải'  ngày 16/11/2017
+ask_who,a,nguyên phó giám đốc đại học quốc gia hà nội hiện đang giữ chức thứ trưởng bộ lao động thương binh và xã hội là ai
+ask_what,a,giám đốc  đại học quốc gia hà nội phụ trách trách những lĩnh vực công tác nào sau đây
+ask_who,a,bí thư đảng ủy  đại học quốc gia hà nội hiện nay là ai
+ask_what,a,tính đến thời điểm hiện tại  trường trực thuộc  đại học quốc gia hà nội có số lượng giáo sư nhiều nhất
+ask_who,a,'tứ trụ' của ngành sử học việt nam đương đại gồm những ai
+ask_who,a,hiện nay  ai là hiệu trưởng trường đại học khoa học xã hội và nhân văn
+ask_what,a,bộ trưởng bộ giáo dục và đào tạo  giáo sư tiến sĩ phùng xuân nhạ hiện nay đã từng giữ chức vụ gì trong  đại học quốc gia hà nội
+ask_who,a,chủ tịch công đoàn  đại học quốc gia hà nội hiện nay là ai
+ask_what,a,hiệu trưởng đầu tiên của trường đại học việt nhật -  đại học quốc gia hà nội là người nước nào
+ask_who,a,ai hiện đang chức chủ tịch hội đồng đảm bảo chất lượng  đại học quốc gia hà nội
+ask_what,a,đơn vị đào tạo nào của  đại học quốc gia hà nội là trường đại học duy nhất của cả nước trong 5 năm liền đều có nhà khoa học là giảng viên và cựu sinh viên  học viên sau đại học giành giải thưởng tạ quang bửu
+ask_what,a,giải thưởng tạ quang bửu năm 2016 được trao cho nhà khoa học nào của  đại học quốc gia hà nội
+ask_what,a,giải thưởng tạ quang bửu năm 2014 được trao cho nhà khoa học nào của  đại học quốc gia hà nội
+ask_who,a,nữ phó giáo sư trẻ nhất năm 2016 là một giảng viên của  đại học quốc gia hà nội  cô là ai
+ask_what,a,ở tuổi 33  giảng viên bùi thị hồng thái   đại học quốc gia hà nội trở thành nữ phó giáo sư trẻ nhất việt nam năm 2016 cô đang công tác tại đơn vị nào
+ask_what,a,giảng viên nguyễn ngọc lưu ly   đại học quốc gia hà nội trở thành nữ phó giáo sư trẻ nhất việt nam năm 2013 cô đang công tác tại đơn vị nào
+ask_who,a,giáo sư trẻ nhất năm 2006 là một giảng viên của  đại học quốc gia hà nội  là ai
+ask_when,a, phó giáo sư tiến sĩ lê anh vinh  là phó giáo sư trẻ nhất việt nam  được phong phó giáo sư năm 30 tuổi  là năm nào
+ask_who,a,hiện nay  ai đang giữ chức chủ tịch hội đồng khoa học và đào tạo  đại học quốc gia hà nội
+ask_number,a,năm 2017  đại học  đại học quốc gia hà nội có bao nhiêu nhà giáo được phong tặng danh hiệu nhà giáo ưu tú 
+ask_number,a,năm 2017  đại học  đại học quốc gia hà nội có bao nhiêu nhà giáo được phong tặng danh hiệu nhà giáo nhân dân 
+ask_who,a,hiệu trưởng trường đại học ngoại ngữ   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,hiệu trưởng trường đại học công nghệ   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,hiệu trưởng trường đại học kinh tế   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,hiệu trưởng trường đại học giáo dục   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,viện trưởng viện trần nhân tông   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,viện trưởng viện công nghệ thông tin   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,viện trưởng viện việt nam học và khoa học phát triển   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,giám đốc trung tâm giáo dục thể chất và thể thao   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,viện trưởng viện tài nguyên và môi trường   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,viện trưởng viện quốc tế pháp ngữ   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,hiệu trưởng đầu tiên của trường đại học tổng hợp hà nội là ai
+ask_who,a,giám đốc đầu tiên của đại học quốc gia hà nội là ai
+ask_who,a,ai là nhà toán học việt nam đương đại đầu tiên được đặt tên đường
+ask_who,a,năm 2017  nhà giáo nào của  đại học quốc gia hà nội đã nhận giải thưởng hồ chí minh về khoa học và công nghệ lần thứ v với công trình 'lịch sử và văn hóa việt nam - tiếp cận bộ phận'
+ask_who,a,năm 2017  nhà giáo nào của  đại học quốc gia hà nội đã nhận giải thưởng nhà nước về khoa học và công nghệ lần thứ v với cụm công trình 'nghiên cứu cơ bản và định hướng ứng dụng các vật liệu từ liên kim loại đất hiếm - kim loại chuyển tiếp'
+ask_what,a,nhóm tác giả của đơn vị đào tạo nào trong  đại học quốc gia hà nội giành giải nhì tại giải thưởng nhân tài đất việt 2017
+ask_number,a,năm 2016   đại học quốc gia hà nội có bao nhiêu cán bộ khoa học được công nhận đạt chuẩn chức danh phó giáo sư
+ask_number,a,năm 2016   đại học quốc gia hà nội có bao nhiêu cán bộ khoa học được công nhận đạt chuẩn chức danh giáo sư
+ask_who,a,hiệu trưởng trường đại học khoa học tự nhiên   đại học quốc gia hà nội hiện nay là ai
+ask_who,a,ai là đại biểu quốc hội việt nam khóa 3 1964-1971 và 4 1971-1975 trong những người sau đây
+ask_who,a,nhóm tác giả trường đại học công nghệ   đại học quốc gia hà nội đã đạt giải nhì giải thưởng nhân tài đất việt năm 2017 với sản phẩm mang tên gì
+ask_number,a,công đoàn  đại học quốc gia hà nội gồm bao nhiêu phó chủ tịch và phó chủ tịch thường trực
+ask_number,a,ban thường vụ công đoàn  đại học quốc gia hà nội  nhiệm kỳ 2017 - 2022 gồm bao nhiêu thành viên
+ask_who,a,chánh văn phòng  đại học quốc gia hà nội hiện nay là ai
+ask_who,a,trưởng ban tổ chức cán bộ  đại học quốc gia hà nội hiện nay là ai
+ask_who,a,trưởng ban đào tạo  đại học quốc gia hà nội hiện nay là ai
+ask_who,a,trưởng ban chính trị và công tác học sinh  sinh viên của  đại học quốc gia hà nội hiện nay là ai
+ask_what,a,giám đốc  đại học quốc gia hà nội hiện nay nguyên là bí thư đoàn trường nào
+ask_who,a,ai là tác giả của cụm công trình lịch sử và văn hóa việt nam gồm 4 cuốn: lịch sử việt nam từ nguồn gốc đến cuối thế kỉ xix  lịch sử cổ đại việt nam  việt nam văn hóa sử đại cương  đất nước việt nam qua các đời
+ask_who,a,ai là hiệu trưởng đầu tiên của trường đại học văn khoa 1954-1956
+ask_who,a,ai là người vinh dự nhận giải thưởng dành cho các nhà khoa học nữ có nhiều cống hiến  giải thưởng kovale giáo sưkaia lần đầu tiên được trao tại việt nam năm 1988
+ask_who,a,ai là nữ giáo sư đầu tiên của ngành ngôn ngữ học việt nam
+ask_what,a, giáo sư đào duy anh   giáo sư hoàng xuân hãn   giáo sư nguyễn tài cẩn là bộ ba nhà khoa học chuyên nghiên cứu về
+ask_who,a,ông nguyên là bộ trưởng bộ giáo dục  tên ông nay đã trở thành tên một con phố dài 700m của quận tây hồ  hà nội ông là ai
+ask_what,a, giáo sư tiến sĩkh vũ minh giang - chuyên gia lĩnh vực gì  chủ tịch hội đồng khoa học và đào tạo  đại học quốc gia hà nội
+ask_who,a,tác giả của bộ giáo trình 'giải tích' 3 tập là ai
+ask_who,a,vị giám đốc đầu tiên của trường đại học văn khoa hà nội là ai
+ask_when,a,tiến sĩ lê hoàng sơn  trường đh khoa học tự nhiên đã được vinh danh 10 gương mặt trẻ thủ đô tiêu biểu năm nào
+ask_when,a, giáo sư đào duy anh - nhà sử học và văn hóa lớn sinh năm bao nhiêu
+ask_who,a,tác giả hai bộ từ điển 'hán - việt từ điển' 1932 và 'pháp – việt từ điển' 1936 là ai
+ask_who,a,cách đây 40 năm  vị hiệu trưởng trường đại học tổng hợp hà nội - tiền thân cơ bản của đại học quốc gia hôm nay là ai
+ask_who,a,ai là một trong những người là nhà khảo cổ học đầu tiên tại nước việt nam dân chủ cộng hòa
+ask_who,a,mc lê anh là giảng viên của trường nào
+ask_what,a, giáo sư phan tống sơn giảng dạy ngành nào tại trường đại học khoa học tự nhiên
+ask_what,a,năm 2003   giáo sư võ quý vinh dự là nhà khoa học việt nam đầu tiên và là người châu á thứ hai được nhận giải thưởng hành tinh xanh  giáo sư võ quý công tác tại đơn vị nào
+ask_what,a, giáo sưngưt trần quốc vượng  cây đại thụ của nền sử học việt nam công tác tại đơn vị nào
+ask_what,a, tiến sĩ hồ đức việt nguyên là giảng viên của đơn vị nào
+ask_what,a, giáo sư viện sĩ nguyễn văn hiệu như một 'tượng đài khoa học'  thuộc thế hệ các nhà khoa học đầu đàn của nền khoa học việt nam ông nguyên hiệu trưởng đầu tiên đơn vị nào
+ask_what,a, phó giáo sư tiến sĩ bùi hiền  nguyên là giảng viên của đơn vị đào tạo nào
+ask_who,a,ngày 27/12/2017  lễ trao giải giải thưởng khoa học công nghệ thanh niên quả cầu vàng đã diễn ra tại tại bộ khoa học và công nghệ trường đại học công nghệ vinh dự có 02 cá nhân trong đó có 1 giảng viên  là ai
+ask_what,a,hai giảng viên của  đại học quốc gia hà nội tham gia tổ trọng tài quốc tế tại asiad 2018 là cán bộ của đơn vị nào
+ask_who,a, đại học quốc gia hà nội có một giảng viên đạt huy chương vàng đông nam á năm 2017  hiện là thành viên đội tuyển bóng bàn việt đây là ai
+ask_what,a,giảng viên nguyễn thị nga  trung tâm giáo dục thể chất và thể thao đã đạt huy chương vàng sea game 19 năm 1997  môn thể thao nào
+ask_what,a,hoa hậu việt nam năm 1998 bùi bích phương là sinh viên trường nào:
+ask_who,a,đồng chí nào nguyên là bí thư thứ nhất bch trung ương đoàn  nguyên là bí thư đoàn đại học quốc gia hà nội
+ask_what,a,nghệ sĩ violon hoàng rob là cựu sinh viên của cơ sở đào tạo nào trong đại học quốc gia hà nội
+ask_what,a,mc thảo vân là cựu sinh viên của cơ sở đào tạo nào trong đại học quốc gia hà nội
+ask_what,a,mc trần ngọc là cựu sinh viên của cơ sở đào tạo nào trong đại học quốc gia hà nội
+ask_what,a,mc nguyễn hữu việt khuê là cựu sinh viên của cơ sở đào tạo nào trong đại học quốc gia hà nội
+ask_what,a, phó giáo sư tiến sĩ nguyễn kim sơn giám đốc  đại học quốc gia hà nội hiện nay là cựu sinh viên chuyên ngành gì của trường đại học tổng hợp hà nội
+ask_what,a,giáo sư ngô bảo châu là cựu học sinh trường nào
+ask_what,a,liệt sỹ lê anh xuân từng học khoa nào tại trường đại học tổng hợp
+ask_what,a, tiến sĩ đàm quang minh được mệnh danh là 'hiệu trưởng trẻ nhất việt nam hiện nay' là cựu sinh viên của trường /khoa nào 
+ask_what,a,ông nguyễn phú trọng - tổng bí thư ban chấp hành trung ương đảng cộng sản việt nam hiện nay là cựu sinh viên chuyên ngành gì của đại học tổng hợp hà nội
+ask_what,a, phó giáo sư tiến sĩ nguyễn quang điển là cựu sinh viên khoa gì của đại học tổng hợp hà nội
+ask_who,a,chủ tịch danh dự câu lạc bộ cựu sinh viên  đại học quốc gia hà nội
+ask_what,a,giáo sư phùng xuân nhạ - nguyên là giám đốc đại học quốc gia hà nội đã từng theo học chuyên ngành gì của đại học tổng hợp hà nội
+ask_what,a, tiến sĩ trần đình phong  người được nhận giải thưởng tạ quang bửu năm 2018 là cựu sinh viên đơn vị nào của  đại học quốc gia hà nội
+ask_what,a, tiến sĩ lưu quang hưng  người được nhận giải thưởng 'mãi mãi tuổi 20' năm 2006 học tập tại đơn vị nào của  đại học quốc gia hà nội
+ask_what,a, phó giáo sư tiến sĩ toán học nguyễn sum trường đại học quy nhơn là một trong hai chủ nhân của giải thưởng tạ quang bửu năm 2017 ông là cựu sinh viên của đơn vị nào
+ask_what,a,đinh thị hương thảo  1 trong 10 gương mặt trẻ tiêu biêu năm 2016  2 huy chương vàng quốc tế là sinh viên của đơn vị nào
+ask_what,a,nguyễn thị phương dung là gương mặt nữ duy nhất được lọt vào danh sách 10 gương mặt trẻ tiêu biểu việt nam năm 2005 do tw đoàn và quỹ hỗ trợ tài năng trẻ việt nam bầu chọn và trao giải phương dung là sinh viên của đơn vị nào
+ask_what,a,năm 2011   đại học quốc gia hà nội có một gương mặt trẻ nhận giải quả cầu vàng giải thưởng do trung ương đoàn tncs hồ chí minh  bộ khoa học và công nghệ phối hợp tổ chức là sinh viên nguyễn vương linh vương linh là sinh viên đơn vị nào
+ask_when,a,chàng trai vàng olympic hóa học đinh quang hiếu  sinh viên đh khoa học tự nhiên  đhqg hà nội  từng giành 'cú đúp' huy chương vàng olympic hóa học quốc tế trong 2 năm liên tiếp 2016  2017 đã được vinh danh 10 gương mặt trẻ thủ đô tiêu biểu năm nào
+ask_number,a,đhghn có mấy ktx dành cho sinh viên 
+ask_what,a,đâu không phải là tiêu chuẩn sinh viên 5 tốt của  đại học quốc gia hà nội
+ask_what,a,đâu là một trong những tiêu chuẩn để đạt được danh hiệu tập thể 'sinh viên 5 tốt' cấp trung ương
+ask_what,a,trong quá trình thi kết thúc học phần  sinh viên sẽ bị khiển trách khi nào
+ask_what,a, đại học quốc gia hà nội hỗ trợ học bổng như thế nào đối với các nghiên cứu sinh chuyển tiếp từ cử nhân
+ask_what,a,hiện nay  trong các trường đại học của đhgqhn  sinh viên đăng ký lớp học phần bằng cách
+ask_number,a,tại các đơn vị đào tạo tại  đại học quốc gia hà nội  mỗi kì học  sinh viên phải đăng ký tối thiểu bao nhiêu tín chỉ đối với chương trình đào tạo chuẩn
+ask_what,a,trong quá trình thi kết thúc học phần  sau khi đã bóc đề thi  phát hiện sinh viên mang trong người những vật dụng không được phép  sinh viên sẽ phải nhận hình thức kỷ luật nào sau đây
+ask_what,a,sinh viên sẽ bị cảnh cáo học vụ khi nào
+ask_what,a,sinh viên cử nhân khoa học tài năng được đào tạo tại đơn vị nào của  đại học quốc gia hà nội
+ask_what,a,sinh viên  đại học quốc gia hà nội được trang bị những kĩ năng bổ trợ tại đơn vị nào thuộc  đại học quốc gia hà nội
+ask_what,a,hình thức đăng ký môn học của sinh viên thuộc  đại học quốc gia hà nội là
+ask_what,a,sau khi đăng ký môn học xong  sinh viên tại  đại học quốc gia hà nội có được phép thay đổi hoặc hủy học phần đã đăng ký hay không
+ask_what,a,khi chép bài của người khác trong giờ thi kết thúc học phần  sinh viên sẽ bị hình thức kỉ luật nào sau đây
+ask_what,a,chuẩn đầu ra tiếng anh của sinh viên theo học tại các đơn vị đào tạo thuộc  đại học quốc gia hà nội là
+ask_number,a,trong chương trình học  sinh viên  đại học quốc gia hà nội phải hoàn thành bao nhiêu tín chỉ về giáo dục thể chất
+ask_what,a,thời gian đăng ký học phần của sinh viên thuộc  đại học quốc gia hà nội được quy định như thế nào
+ask_what,a,điều kiện để đăng kí học cải thiện là gì
+ask_what,a,sinh viên không  đại học quốc gia hà nội đủ điều kiện làm khóa luận hoặc đồ án tốt nghiệp thì
+ask_who,a,sinh viên được chuyển đi học tại cơ sở đào tạo đại học khác ngoài đại học quốc gia hà nội khi được sự đồng ý của ai
+ask_what,a,trường hợp bị cảnh cáo học vụ theo quy định của  đại học quốc gia hà nội
+ask_what,a,sinh viên  đại học quốc gia hà nội bị buộc thôi học khi nào
+ask_number,a,có mấy loại bảng điểm mà nhà trường cấp cho sinh viên
+ask_what,a,đâu là tên một phần thi của cuộc thi 'lớp tôi là số 1'
+ask_number,a,cuộc vận động 'xây dựng phong cách sinh viên  đại học quốc gia hà nội' do hội sinh viên  đại học quốc gia hà nội phát động gồm mấy tiêu chí:
+ask_what,a,đề án 'ba thực hiện' do đơn vị nào thực hiện
+ask_number,a,hội sinh viên  đại học quốc gia hà nội hiện có bao nhiêu câu lạc bộ sinh viên
+ask_number,a,trong giai đoạn 2013 - 2018  đoàn thanh niên  hội sinh viên  đại học quốc gia hà nội đã xây dựng thành công bao nhiêu công trình thanh niên 
+ask_number,a,trong hai ngày 02-03/6/2017 đoàn tncs hồ chí minh  đại học quốc gia hà nội đã tổ chức đại hội đại biểu lần thứ mấy
+ask_number,a,trong hai ngày 09-10/6/2018 hội sinh viên việt nam  đại học quốc gia hà nội đã tiến hành tổ chức đại hội khóa mấy 
+ask_number,a,trong nhiệm kì 2013-2018  có bao nhiêu sinh viên  đại học quốc gia hà nội được trao danh hiệu 'sinh viên 5 tốt' cấp trung ương
+ask_what,a,cuộc thi olympic tiếng anh không chuyên toàn quốc lần thứ 9 do đoàn trường đại học ngoại ngữ   đại học quốc gia hà nội đã tổ chức với chủ đề là gì 
+ask_what,a,quỹ học bổng k-t là tên gọi tắt của quỹ hỗ trợ tài năng trẻ của  đại học quốc gia hà nội mang tên
+ask_what,a,học bổng 'tiếp sức đến trường' là học bổng do tổ chức  đơn vị nào tài trợ
+ask_what,a,đơn vị đăng cai tổ chức cuộc thi tìm hiểu tư tưởng hồ chí minh 'con đường ánh sáng lần thứ iii' năm 2018 là đơn vị nào 
+ask_what,a,đội thi nào giành giải nhất cuộc thi tìm hiểu tư tưởng hồ chí minh 'con đường ánh sáng lần thứ iii' do đoàn thanh niên  đại học quốc gia hà nội tổ chức năm 2018 
+ask_what,a,nữ sinh giành được giải thưởng gương mặt trẻ việt nam tiêu biểu năm 2016 là sinh viên của trường nào
+ask_what,a,trong cuộc thi olympic vật lý châu á lần thứ 18  em tạ bá dũng đã đoạt huy chương gì 
+ask_what,a,giáo sư đàm thanh sơn là cựu học sinh khối chuyên toán-tin trường nào
+ask_what,a,sinh viên trường đại học công nghệ đại học quốc gia hà nội tham dự kỳ thi olympic toán sinh viên toàn quốc năm 2018 đã đạt được thành tích gì
+ask_what,a,quán quân cuộc thi 'tìm kiếm tài năng học sinh - sinh viên  đại học quốc gia hà nội' năm 2017 đến từ trường nào 
+ask_number,a,2013-2018 của hội sinh viên  đại học quốc gia hà nội  có bao nhiêu sinh viên  đại học quốc gia hà nội đạt được giải thưởng sao tháng giêng
+ask_what,a,giải thưởng sao tháng giêng là giải thưởng của đơn vị  tổ chức nào
+ask_who,a,giải thưởng sao tháng giêng của hội sinh viên việt nam là giải thưởng dành cho đối tượng nào
+ask_number,a,trong năm học 2017 - 2018   đại học quốc gia hà nội có bao nhiêu tập thể  cá nhân được tuyên dương danh hiệu 'sinh viên 5 tốt' cấp trung ương
+ask_number,a,trong năm học 2017 – 2018   đại học quốc gia hà nội có bao nhiêu tập thể  cá nhân được tuyên dương danh hiệu 'sinh viên 5 tốt' cấp thành phố 
+ask_what,a,đề án 'ba thực hiện' của hội sinh viên trường đại học ngoại ngữ triển khai gồm những nội dung gì
+ask_where,a,lễ ra quân chiến dịch mùa hè thanh niên tình nguyện 2017 do đoàn thanh niên - hội sinh viên  đại học quốc gia hà nội được tổ chức tại đâu
+ask_what,a,hàng năm  đoàn thanh niên - hội sinh viên  đại học quốc gia hà nội tổ chức  triển khai hoạt động tình nguyện quyên góp  hỗ trợ  tặng quần áo ấm  sách vở cho các em nhỏ vùng cao vào mùa đông  đây là chương trình gì
+ask_what,a,anh chử đức liêm – người được xem là 'chú lính chì dũng cảm' trên chương trình điều ước thứ 7 là cựu sinh viên của trường nào 
+ask_what,a,ngày hội hiến máu toàn trường của trường đại học khoa học xã hội và nhân văn còn có tên gọi là gì
+ask_what,a,ngày hội hiến máu toàn trường của trường đại học công nghệ còn có tên gọi là gì
+ask_what,a,ngày hội hiến máu toàn trường của trường đại học ngoại ngữ còn có tên gọi là gì
+ask_what,a,ngày hội hiến máu toàn trường của khoa luật còn có tên gọi là gì
+ask_what,a,ngày hội hiến máu toàn trường của trường đại học khoa học tự nhiên có tên là gì
+ask_number,a,sinh viên bị cảnh báo học vụ tối đa bao nhiêu lần thì sẽ bị buộc thôi học
+ask_what,a,đâu là một trong những tiêu chuẩn để đạt được danh hiệu 'tập thể tiên tiến'
+ask_what,a,hình thức kỉ luật được áp dụng đối với 'sinh viên có hành vi vi phạm lần đầu nhưng ở mức nhẹ' là gì
+ask_what,a,hình thức kỉ luật được áp dụng với 'sinh viên đã bị khiển trách mà tái phạm hoặc vi phạm ở mức độ nhẹ nhưng hành vi có tính chất thường xuyên hoặc mới vi phạm lần đầu nhưng mức độ tương đối nghiêm trọng' là gì
+ask_what,a,hình thức kỉ luật được áp dụng với những 'sinh viên đang trong thời gian bị cảnh cáo mà vẫn vi phạm kỉ luật hoặc vi phạm nghiêm trọng các hành vi cấm với sinh viên' là gì
+ask_what,a,sinh viên vi phạm pháp luật bị phạt tù kể cả trường hợp bị phạt tù được hưởng án treo  sẽ phải chịu hình thức kỉ luật nào sau đây
+ask_what,a,sinh viên năm thứ nhất có khả năng bị cảnh cáo học vụ khi:
+ask_what,a,sinh viên năm thứ hai có khả năng bị cảnh cáo học vụ khi nào
+ask_what,a,sinh viên năm thứ ba có khả năng bị cảnh cáo học vụ khi nào
+ask_what,a,sinh viên năm thứ tư có khả năng bị cảnh cáo học vụ khi nào
+ask_who,a,đối tượng nào sau đây được miễn học toàn bộ học phần giáo dục quốc phòng - an ninh
+ask_who,a,đối tượng được miễn học các nội dung thực hành kỹ năng quân sự trong học phần giáo dục quốc phòng – an ninh
+ask_who,a,đối tượng được miễn học các nội dung thực hành kỹ năng quân sự trong học phần giáo dục quốc phòng – an ninh
+ask_who,a,đối tượng được miễn học các nội dung thực hành kỹ năng quân sự trong học phần giáo dục quốc phòng – an ninh
+ask_who,a,đối tượng nào sau đây được miễn học toàn bộ học phần giáo dục thể chất
+ask_what,a,'sinh viên học chương trình đào tạo chất lượng cao bị chuyển sang chương trình chất lượng chuẩn khi điểm trung bình chung các học phần tính tới thời điểm xét dưới 2 0'  đúng hay sai 
+ask_number,a,sinh viên bị khiển trách trong phòng thi khi thi thì sẽ bị trừ bao nhiêu % số điểm của học phần đó
+ask_what,a,trong phòng thi sinh viên mang theo những vật dụng không được phép khi đã bóc đề thi thì sẽ phải chịu hình thức kỉ luật nào sau đây
+ask_what,a,sinh viên thi hộ hoặc nhờ người thi hộ nếu vi phạm lần thứ nhất sẽ bị kỉ luật ở mức nào sau đây
+ask_what,a,'sinh viên được trao tặng danh hiệu ' sinh viên giỏi' khi nào
+ask_what,a,sinh viên có những hành vi như viết bài  lưu giữ hoặc tuyên truyền phản ánh thiếu trung thực dưới mọi hình thức ảnh hưởng đến uy tín và thương hiệu của  đại học quốc gia hà nội với vi phạm lần đầu tiên sẽ phải chịu hình thức kỉ luật nào 
+ask_what,a,sinh viên có được đăng kí học ở trường khác trong  đại học quốc gia hà nội không 
+ask_what,a,theo quy chế đào tạo của  đại học quốc gia hà nội 'sinh viên bị điểm f được thi lại'  đúng hay sai 
+ask_number,a,hằng năm  tại các cơ sở đào tạo của  đại học quốc gia hà nội có mấy lần xét tốt nghiệp
+ask_what,a,sinh viên được học cải thiện đối với các học phần đạt điểm:
+ask_when,a,sinh viên phải hoàn thành việc đăng kí các học phần của mỗi kì học vào khoảng thời gian nào sau đây:
+ask_when,a,sinh viên được phép đăng ký những học phần muốn học hoặc đăng ký đổi sang lớp học phần khác trong khoảng thời gian nào
+ask_what,a,các học phần ngoại ngữ do đơn vị nào trong  đại học quốc gia hà nội phụ trách giảng dạy
+ask_what,a,các học phần lý luận chính trị do đơn vị nào trong  đại học quốc gia hà nội phụ trách giảng dạy
+ask_what,a,học phần giáo dục thể chất có tính vào điểm tích lũy hay không
+ask_number,a,chương trình đào tạo kỹ sư theo chương trình đào tạo chuẩn được thiết kế bao nhiêu tín chỉ
+ask_number,a,chương trình đào tạo dược sĩ theo chương trình đào tạo chuẩn được thiết kế bao nhiêu tín chỉ
+ask_number,a,chương trình đào tạo bác sĩ theo chương trình đào tạo chuẩn được thiết kế bao nhiêu tín chỉ
+ask_what,a,'sinh viên nghỉ học không có lý do trên 1 kỳ học hoặc trên 4 tháng sẽ bị như thế nào
+ask_what,a,sinh viên có bắt buộc phải đăng kí học học phần ngoại ngữ ở trường hay không
+ask_number,a,'sinh viên có điểm trung bình chung học kì dưới 2 0 được đăng kí bao nhiêu tín chỉ mỗi học kì 
+ask_what,a,sinh viên có được rút bớt học phần khi đã đăng ký học phần hay không
+ask_what,a,'nữ sinh đang mang thai hoặc trong thời kỳ thai sản được miễn học học phần giáo dục thể chất'  đúng hay sai 
+ask_what,a,'học sinh thpt chuyên khoa học tự nhiên được tuyển thằng vào trường đại học khoa học tự nhiên'  đúng hay sai 
+ask_when,a,cuộc thi 'lớp tôi là số 1' được tổ chức bắt đầu từ năm nào
+ask_what,a,đơn vị đào tạo nào của  đại học quốc gia hà nội được coi là trường đại học có số lần tham gia kì thi lập trình sinh viên quốc tế vòng chung kết toàn cầu acm icpc world final nhiều nhất 7 lần việt nam
+ask_what,a,kết quả của học phần giáo dục thể chất có tính vào điểm tích lũy của sinh viên không
+ask_number,a,khóa luận tốt nghiệp có khối lượng kiến thức là bao nhiêu tín
+ask_what,a,học phần điều kiện để xét tốt nghiệp là:
+ask_what,a, đại học quốc gia hà nội có chương trình đào tạo tài năng không
+ask_when,a,đại hội đại biểu hội sinh viên  đại học quốc gia hà nội nhiệm kì 2018-2023 diễn ra vào thời gian nào
+ask_what,a,đại hội đại biểu hội sinh viên  đại học quốc gia hà nội nhiệm kì 2018-2023 diễn ra với tinh thần gì
+ask_who,a,đối tượng nào sau đây được ưu tiên vào kí túc xá theo chính sách của  đại học quốc gia hà nội
+ask_number,a,chương trình đào tạo bằng kép được áp dụng cho đối tượng sinh viên năm thứ mấy trong hệ đào tạo chuẩn của  đại học quốc gia hà nội
+ask_what,a,sinh viên đăng ký học chương trình đào tạo bằng kép cần thỏa mãn những điều kiện nào sau đây
+ask_what,a,đâu là một trong những tiêu chí của cuộc vận động 'xây dựng phong cách sinh viên  đại học quốc gia hà nội'
+ask_number,a,số tín chỉ tối thiểu để có thể tham gia xét học bổng theo ngân sách đối với hệ đào tạo chính quy của  đại học quốc gia hà nội là
+ask_what,a,nội dung nào sau đây là nội dung đánh giá kết quả rèn luyện đối với sinh viên đại học hệ chính quy
+ask_number,a,sinh viên đạt kết quả rèn luyện loại xuất sắc có điểm rèn luyện trong khoảng nào
+ask_number,a,sinh viên đạt kết quả rèn luyện loại kém có điểm rèn luyện trong khoảng nào
+ask_number,a,thời gian khiếu nại về kết quả đánh giá rèn luyện là bao lâu kể từ ngày công bố
+ask_when,a, đại học quốc gia hà nội thí điểm tuyển sinh theo phương thức đánh giá năng lực từ năm nào
+ask_number,a,trong quy chế sinh viên quy định quyền của sinh viên gồm bao nhiêu điều
+ask_number,a,trong quy chế sinh viên quy định nghĩa vụ của sinh viên gồm bao nhiêu điều
+ask_number,a,'sinh viên khi nhập trường phải nộp đầy đủ hồ sơ theo quy định trường hợp đặc biệt  sinh viên được phép nộp bổ sung nhưng không vượt quá bao nhiêu ngày kể từ ngày nhập học'
+ask_what,a,cách tính điểm đánh giá bộ phận  điểm môn học quy định: 9 0 - 10 tương ứng với
+ask_what,a,cách tính điểm đánh giá bộ phận  điểm môn học quy định: 8 0 - 8 4 tương ứng với
+ask_what,a,cách tính điểm đánh giá bộ phận  điểm môn học quy định: điểm c+ tương đương với
+ask_what,a,cách tính điểm đánh giá bộ phận  điểm môn học quy định: điểm d tương đương với
+ask_what,a,cách tính điểm đánh giá bộ phận  điểm môn học gồm những loại nào
+ask_number,a,điểm trung bình chung học kỳ và điểm trung bình chung tích lũy được tính theo công thức và được làm tròn đến mấy chữ số thập phân
+ask_what,a,'điểm trung bình chung tích lũy được dùng để xét buộc thôi học  xếp loại học lực và gì '
+ask_what,a,ssau mỗi học kỳ  sinh viên bị buộc thôi học nếu thuộc trong trường hợp nào
+ask_what,a,sau mỗi học kỳ  sinh viên bị buộc thôi học nếu thuộc trong các trường hợp nào
+ask_what,a,sau mỗi học kỳ  sinh viên bị buộc thôi học nếu thuộc trong các trường hợp nào
+ask_number,a,chậm nhất bao lâu sau khi sinh viên có quyết định buộc thôi học  đơn vị đào tạo phải thông báo trả về địa phương nơi sinh viên có hộ khẩu thường trú
+ask_what,a,sau mỗi học kỳ  căn cứ vào điểm trung bình chung tích lũy  học lực của sinh viên được xếp thành các loại nào
+ask_what,a,trong quy chế đào tạo của  đại học quốc gia hà nội quy định: chuẩn đầu ra về trình độ ngoại ngữ đối với các sinh viên theo học  các chương trình đào tạo chuẩn  ngành chính - ngành phụ  ngành kép  như thế nào 
+ask_number,a,trong quy chế đào tạo của  đại học quốc gia hà nội quy định: chương trình đào tạo chất lượng cao được thiết kế nhiều hơn chương trình đào tạo chuẩn tương ứng ít nhất là bao nhiêu tín chỉ
+ask_number,a,trong quy chế đào tạo của  đại học quốc gia hà nội quy định: mỗi năm có mấy kì học chính và mấy kì học phụ 
+ask_number,a,quy chế đào tạo của  đại học quốc gia hà nội quy định  mỗi học kỳ phụ có ít nhất mấy tuần 
+ask_number,a,hiệu lực của quyết định kỉ luật được chấm dứt đối với trường hợp bị khiển trách là
+ask_number,a,hiệu lực của quyết định kỉ luật được chấm dứt đối với trường hợp bị cảnh cáo là
+ask_number,a,số tín chỉ đăng ký học tối thiểu đối với chương trình đào tạo chuẩn của mỗi kỳ không bao gồm các học phần ngoại ngữ  giáo dục thể chất  giáo dục quốc phòng - an ninh  kỹ năng bổ trợ  tự chọn tự do
+ask_number,a,số tín chỉ đăng ký học tối thiểu đối với chương trình đào tạo chất lượng cao của mỗi kỳ học  không bao gồm các học phần ngoại ngữ  giáo dục thể chất  giáo dục quốc phòng – an ninh  kỹ năng bổ trợ  tự chọn tự do  
+ask_number,a,số tín chỉ đăng ký học tối thiểu đối với chương trình đào tạo quốc tế của mỗi kỳ học  không bao gồm các học phần ngoại ngữ  giáo dục thể chất  giáo dục quốc phòng – an ninh  kỹ năng bổ trợ  tự chọn tự do  
+ask_number,a,thời gian hoạt động giảng dạy và học tập của đơn vị đào tạo là
+ask_number,a,thời gian của một tiết hoc là bao nhiêu phút
+ask_number,a,thời gian thiết kế của khóa học đào tạo chính quy đối với chương trình đào tạo cử nhân là
+ask_number,a,thời gian thiết kế của khóa học đào tạo chính quy đối với chương trình đào tạo kĩ sư là
+ask_number,a,thời gian thiết kế của khóa học đào tạo chính quy đối với chương trình đào tạo dược sĩ là
+ask_number,a,thời gian thiết kế của khóa học đào tạo chính quy đối với chương trình đào tạo bác sĩ là
+ask_where,a,sinh viên  đại học quốc gia hà nội học giáo dục an ninh - quốc phòng ở đâu 
+ask_number,a,sinh viên phải hoàn thành bao nhiêu tín chỉ của học phần giáo dục thể chất
+ask_what,a,môn học nào sau đây không phải là môn học có trong học phần giáo dục thể chất của  đại học quốc gia hà nội 
+ask_number,a,thời gian học học phần giáo dục an ninh quốc phòng của sinh viên là
+ask_number,a,đối với những sinh viên học bằng kép  thời gian kết thúc cả 2 chương trình đào tạo tối đa là
+ask_what,a,trường hợp nào sau đây sinh viên không được xét tốt nghiệp
+ask_what,a,sinh viên được xét tốt nghiệp khi có điểm tích lũy của khóa học:
+ask_what,a,kết quả của học phần giáo dục thể chất  giáo dục an ninh - quốc phòng có được dùng để xét học bổng không
+ask_number,a,điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải nhất cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là:
+ask_number,a,điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải nhì cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là:
+ask_number,a,điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải ba cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là:
+ask_number,a,điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải khuyến khích cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là:
+ask_what,a,'sinh viên không trung thực và có hành vi gian lận trong nghiên cứu khoa học  làm tiểu luận  khóa luận  đồ án tốt nghiệp' sẽ bị kỷ luật từ mức:
+ask_who,a,sinh viên được xét tuyển bổ sung sinh viên vào chương trình đào tạo tài năng  chuẩn quốc tế  chất lượng cao là:
+ask_when,a, giáo sư ngô bảo châu – cựu học sinh của  đại học quốc gia hà nội đã đạt giải thưởng cao quý nhất cho những người làm toán trên thế giới đó là huy chương fields vào năm
+ask_what,a,sinh viên bị cảnh cáo trong phòng thi khi thi học phần thì sẽ bị:
+ask_what,a,câu lạc bộ khiếm thính là clb của trường/khoa nào
+ask_number,a,tiêu chuẩn tình nguyện tốt trong nhóm tiêu chuẩn của danh hiệu sinh viên 5 tốt cấp trung ương quy định sinh viên phải tham gia ít nhất mấy ngày tình nguyện/năm
+ask_what,a,sứ mệnh của trung tâm hỗ trợ sinh viên   đại học quốc gia hà nội là gì 
+ask_what,a,sứ mệnh của trung tâm hỗ trợ sinh viên   đại học quốc gia hà nội là gì 
+ask_what,a,sứ mệnh của trung tâm hỗ trợ sinh viên   đại học quốc gia hà nội là gì 
+ask_what,a,chủ đề tháng thanh niên năm 2018 được trung ương đoàn lựa chọn là
+ask_what,a,biểu trưng của hội sinh viên việt nam là
+ask_what,a,cuộc vận động nào do hội sinh viên  đại học quốc gia hà nội phát động trong giai đoạn hiện nay
+ask_what,a,vai trò  mối quan hệ của đoàn thanh niên đối với hội sinh viên là:
+ask_what,a,tiêu chuẩn đạt danh hiệu sinh viên 5 tốt gồm các tiêu chí
+ask_what,a,giải thưởng cao quý của trung ương hội sinh viên việt nam tuyên dương  khen thưởng sinh viên  học viên là cán bộ đoàn thanh niên  hội sinh viên có thành tích tốt trong học tập  nghiên cứu  và rèn luyện trong công tác đoàn  công tác hội
+ask_when,a,đoàn tncs hồ chí minh đại học quốc gia hà nội được ban thường vụ thành đoàn hà nội ký quyết định thành lập vào ngày  tháng  năm nào
+ask_who,a,bí thư đoàn đại học quốc gia hà nội hiện nay là đồng chí
+ask_who,a,tuổi trẻ đại học quốc gia hà nội có một gương mặt được trung ương đoàn vinh danh giải thưởng' gương mặt trẻ việt nam tiêu biểu năm 2017'  đó là
+ask_who,a,phó chủ tịch hội sinh viên đại học quốc gia hà nội khóa iv  là sinh viên là ai
+ask_what,a,một trong 2 trang chính thức của đoàn thanh niên - hội sinh viên  đại học quốc gia hà nội trên mạng xã hội facebook là gì
+ask_what,a,các cấp bộ đoàn trong  đại học quốc gia hà nội hiện nay gồm có
+ask_when,a,đoàn tncs hồ chí minh  đại học quốc gia hà nội kỷ niệm 20 năm thành lập vào năm nào
+ask_when,a,đoàn tncs hồ chí minh  đại học quốc gia hà nội đón nhận huân chương lao động hạng nhì vào năm nào
+ask_what,a,cuộc thi 'tìm kiếm đại sứ truyền thông khoa học famelab' do đơn vị nào tổ chức
+ask_what,a,hai tiêu chí của cuộc vận động 'xây dựng phong cách sinh viên  đại học quốc gia hà nội' do hội sinh viên  đại học quốc gia hà nội phát động thực hiện
+ask_what,a,sinh viên  đại học quốc gia hà nội có thể học song song giữa chương trình chính quy và chương trình liên kết quốc tế đúng hay sai
+ask_what,a,sinh viên  đại học quốc gia hà nội có được phép phúc khảo bài thi nếu có nghi ngờ không
+ask_what,a,'sinh viên không tham gia đánh giá điểm rèn luyện tại học kỳ nào thì bị xếp kết quả rèn luyện như nào ở học kỳ đó
+ask_what,a,trong quy chế sinh viên quy định quyền của sinh viên  sử dụng tài liệu liên quan đến môn học trong thi cử không
+ask_what,a,sinh viên được hưởng các quyền công dân cư trú trên địa bàn như nào
+ask_what,a,sinh viên có quyền gì về chỗ ở
+ask_what,a,nghĩa vụ của sinh viên trong đóng học phí  bảo hiểm y tế và các khoản lệ phí khác là gì
+ask_what,a,trong quy chế sinh viên quy định nghĩa vụ của sinh viên là 
+ask_what,a,'điểm môn học là tổng của điểm đánh giá bộ phận và điểm thi kết thúc môn học sau khi đã tính trọng số được quy định trong đề cương môn học và được làm tròn đến một chữ số thập phân  sau đó được chuyển như thế nào
+ask_what,a,trong cách tính điểm thì điểm f là điểm gì
+ask_what,a,một trong những tiêu chí đánh giá kết quả học tập của sinh viên là: 
+ask_what,a,'kết quả đánh giá môn học giáo dục quốc phòng - an ninh  giáo dục thể chất  kỹ năng mềm có được tính vào điểm trung bình chung học kỳ và điểm trung bình chung tích lũy không
+ask_what,a,trường hợp loại học lực của sinh viên được xác định vào thời điểm sau khi sinh viên đã đăng ký môn học bị vượt quá tiêu chuẩn thì sinh viên phải làm gì 
+ask_number,a,'sinh viên xếp loại xuất sắc khi nào
+ask_number,a,'sinh viên xếp loại yếu có điểm trung bình chung khi nào
+ask_number,a,quy chế đào tạo của  đại học quốc gia hà nội quy định mỗi kì gồm bao nhiêu tuần
+ask_what,a, phó giáo sư tiến sĩ toán học nguyễn sum trường đại học quy nhơn đã trở thành một trong hai chủ nhân mới của giải thưởng tạ quang bửu năm 2017  là nghiên cứu sinh từ năm 1992 của trường nào
+ask_what,a,việc đạt đầu ra chuẩn b1 trở lên về ngoại ngữ có áp dụng với sinh viên thuộc  đại học quốc gia hà nội không
+ask_what,a,tuần học về công tác chính trị đầu năm cho sinh viên có nằm trong khung chương trình đào tạo cho sinh viên của  đại học quốc gia hà nội không
+ask_what,a,sinh viên người dân tộc kinh có được đăng kí ở ktx hay không
+ask_number,a,'sinh viên xếp loại khá có điểm trung bình chung tích lũy là bao nhiêu
+ask_what,a,'sinh viên tàng trữ  lưu hành  phát tán văn hóa phẩm đồ trụy sẽ bị xử phạt như nào
+ask_what,a,việc sinh viên tham gia sinh hoạt tại các câu lạc bộ dựa trên cơ sở gì
+ask_who,a,chủ tịch hội sinh viên  đại học quốc gia hà nội là ai
+ask_what,a,danh hiệu 'sinh viên 5 tốt' là danh hiệu do đơn vị nào trao tặng
+ask_what,a,phong trào 'tuổi trẻ sáng tạo' là một trong những phong trào chính của đơn vị nào
+ask_what,a,'sinh viên học chương trình đào tạo chất lượng cao chưa bị buộc thôi học phải chuyển sang chương trình đào tạo chuẩn chính quy của ngành học tương ứng khi nào
+ask_what,a,nếu sinh viên trong các đơn vị đào tạo tại  đại học quốc gia hà nội chưa hoàn thành một trong ba học phần là: giáo dục quốc phòng – an ninh  giáo dục thể chất và kĩ năng bổ trợ thì sinh viên có được xét tốt nghiệp hay không
+ask_what,a,trong thời gian xét tốt nghiệp theo quy định của đơn vị đào tạo  nếu sinh viên không đủ điều kiện tốt nghiệp chương trình đào tạo chất lượng cao thì sao
+ask_when,a,sinh viên  đại học quốc gia hà nội được cấp thẻ sinh viên trong thời gian nào
+ask_what,a,sinh viên 5 tốt gồm bao nhiêu tiêu chuẩn
+ask_what,a,những nguyên lý cơ bản của chủ nghĩa mác – lê-nin  tư tưởng hồ chí minh  đường lối cách mạng của đảng cộng sản là những môn học có bắt buộc tại  đại học quốc gia hà nội không
+ask_what,a,khi đã học một học kì của chương trình đào tạo thứ nhất  sinh viên có được đăng ký học bằng kép hay không
+ask_what,a,nếu sinh viên đang theo học tại trường đại học khoa học xã hội và nhân văn thì có thể đăng ký học thể dục tại trường đại học ngoại ngữ hay không
+ask_what,a,trong quá trình học  sinh viên được chuyển trường  chuyển ngành học giữa các đơn vị đào tạo trong  đại học quốc gia hà nội hoặc giữa  đại học quốc gia hà nội với các cơ sở đào tạo khác khi nào
+ask_what,a,môn thi được sử dụng tài liệu thì sinh viên  đại học quốc gia hà nội được phép mang điện thoại di động vào phòng thi không
+ask_what,a,ngoài các đoàn trường/khoa trực thuộc  đoàn  đại học quốc gia hà nội còn có gì
+ask_when,a,đoàn thanh niên  đại học quốc gia hà nội cũng tổ chức chiến dịch mùa hè thanh niên tình nguyện khi nào
+ask_what,a,mỗi khóa học tập kiến thức giáo dục quốc phòng – an ninh tại trung tâm giáo dục quốc phòng và an ninh của  đại học quốc gia hà nội  sinh viên được trang bị kiến thức về
