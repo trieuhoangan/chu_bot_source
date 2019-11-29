@@ -13,6 +13,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
 import speech_recognition as sr
 from answer_retrieval import ChitChat
+from custom_lib import changeUnicode
 # from langdetect import detect
 
 
@@ -125,6 +126,7 @@ def test_predict():
                 if inmessage == 'stop' or inmessage=='bye':
                     break
                 inmessage = inmessage.lower()
+                inmessage = changeUnicode.compound_unicode(inmessage)
                 print(inmessage)
                 responses = action.chubot.predict_intent(inmessage)
                 entities = action.chubot.predict_entity(inmessage)
@@ -275,25 +277,25 @@ if __name__ == "__main__":
     # botname= 'an'
     # action = ChuBotAction(botname)
     
-    # app = Flask(__name__)
-    # @app.route('/')
-    # def hello_world():
-    #     if request.method == 'GET':
-    #         mess = request.args.get('mess', '')
-    #         print(mess)
-    #         bot = ChatBotAPI('vi', 'an')
-    #         bot.load_model()
-    #         line = bot.predict_message(mess)
-    #         return line
+    app = Flask(__name__)
+    @app.route('/')
+    def hello_world():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+            print(mess)
+            bot = ChatBotAPI('vi', 'an')
+            bot.load_model()
+            line = bot.predict_message(mess)
+            return line
 
-    # #     # return "null"
+    #     # return "null"
 
-    # app.run(host= '0.0.0.0')
+    app.run(host= '0.0.0.0')
 
    
     # test_predict(extracted_question,data.get('answer'))
     # test_predict()
-    test_input_predict()
+    # test_input_predict()
     # # test_response()
     # bot = ChatBotAPI('vi', 'an')
     # bot.load_model()

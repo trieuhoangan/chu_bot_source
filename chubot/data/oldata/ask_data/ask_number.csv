@@ -1,4 +1,5 @@
-unknown,không biết,a,tôi không biết bạn có thể đặt câu hỏi chi tiết hơn khônggiam
+unknown,không biết,a,tôi không biết thông tin này
+unknown,không biết,a,tôi không biết bạn có thể đặt câu hỏi chi tiết hơn không
 ask_number, tính đến năm 2000   đại học quốc gia hà nội có bao nhiêu trường đại học thành viên, b, đhqghn có 5 trường thành viên tính đến năm 2000
 ask_number, tính đến năm 2000   đại học quốc gia hà nội có bao nhiêu viện nghiên cứu, b, đhqghn có 1 viện nghiên cứu tính đến năm 2000
 ask_number, theo quyết định số 14/2001/qđ–ttg   đại học quốc gia hà nội có mấy trường đại học thành viên, b, đhqghn có 3 trường thành viên.
@@ -58,7 +59,7 @@ ask_number, nghiên cứu hệ sinh thái rừng ngập mặn  là giải thư�
 ask_number, có bao nhiêu đơn vị trực thuộc  đại học quốc gia hà nội có chương trình giảng dạy chính quy bằng tiếng anh, b, có 4 đơn vị trực thuộc có chương trình giảng dạy bằng tiếng anh.
 ask_number, mỗi năm  đại học quốc gia hà nội có bao nhiêu học kỳ, b, 2 học kỳ chính  một học kỳ phụ
 ask_number, mỗi học kỳ phụ của  đại học quốc gia hà nội có ít nhất bao nhiêu tuần học và thi, b, 5 tuần học và 1 tuần thi
-ask_number, mỗi học kỳ chính của  đại học quốc gia hà nội có ít nhất bao nhiêu tuần học và thi, b, có 15 tuần học và từ 3 đến 4 tuần thi
+ask_number, mỗi học kỳ chính của  đại học quốc gia hà nội có ít nhất bao nhiêu tuần học và thi, b, có 15 tuần học và từ 3 đến 4 tuần thi
 ask_number, thời gian của khóa học do  đại học quốc gia hà nội quy định đối với đào tạo bác sĩ là bao lâu, b, 12 học kỳ chính
 ask_number, khóa luận  đồ án tốt nghiệp có khối lượng kiến thức  khoảng bao nhiêu tín chỉ, b, từ 5 đến 10 tín chỉ tùy theo chương trình đào tạo
 ask_number, thời gian đào tạo thạc sĩ tại  đại học quốc gia hà nội là bao nhiêu năm, b, thời gian đào tạo thạc sĩ là 2 năm
@@ -89,7 +90,7 @@ ask_number, chương trình đào tạo kỹ sư theo chương trình đào tạ
 ask_number, chương trình đào tạo dược sĩ theo chương trình đào tạo chuẩn được thiết kế bao nhiêu tín chỉ, b, từ 155 đến 175 tín chỉ
 ask_number, chương trình đào tạo bác sĩ theo chương trình đào tạo chuẩn được thiết kế bao nhiêu tín chỉ, b, từ 205 đến 225 tín chỉ
 ask_number, sinh viên có điểm trung bình chung học kì dưới 2 0 được đăng kí bao nhiêu tín chỉ mỗi học kì , b, không quá 18 tín chỉ trong mỗi học kỳ chính
-ask_number, khóa luận tốt nghiệp có khối lượng kiến thức là bao nhiêu tín, b, khóa luận tốt nghiệp có khối lượng kiến thức là 7 tín chỉ
+ask_number, khóa luận tốt nghiệp có khối lượng kiến thức là bao nhiêu tín, b, khóa luận tốt nghiệp có khối lượng kiến thức là 7 tín chỉ
 ask_number, chương trình đào tạo bằng kép được áp dụng cho đối tượng sinh viên năm thứ mấy trong hệ đào tạo chuẩn của  đại học quốc gia hà nội, b, sinh viên năm thứ hai
 ask_number, số tín chỉ tối thiểu để có thể tham gia xét học bổng theo ngân sách đối với hệ đào tạo chính quy của  đại học quốc gia hà nội là, b, tối thiểu 15 tín chỉ mới được xét học bổng.
 ask_number, sinh viên đạt kết quả rèn luyện loại xuất sắc có điểm rèn luyện trong khoảng nào, b, điểm rèn luyện đạt từ 90 đến 100 điểm
@@ -100,9 +101,9 @@ ask_number, trong quy chế sinh viên quy định nghĩa vụ của sinh viên 
 ask_number, sinh viên khi nhập trường phải nộp đầy đủ hồ sơ theo quy định trường hợp đặc biệt  sinh viên được phép nộp bổ sung nhưng không vượt quá bao nhiêu ngày kể từ ngày nhập học, b, không quá 15 ngày
 ask_number, điểm trung bình chung học kỳ và điểm trung bình chung tích lũy được tính theo công thức và được làm tròn đến mấy chữ số thập phân, b, điểm trung bình tích lũy được làm trón đến 2 chữ số sau dấu phảy
 ask_number, chậm nhất bao lâu sau khi sinh viên có quyết định buộc thôi học  đơn vị đào tạo phải thông báo trả về địa phương nơi sinh viên có hộ khẩu thường trú, b, chậm nhất 1 tháng sau khi có quyết định.
-ask_number, trong quy chế đào tạo của  đại học quốc gia hà nội quy định chương trình đào tạo chất lượng cao được thiết kế nhiều hơn chương trình đào tạo chuẩn tương ứng ít nhất là bao nhiêu tín chỉ, b, 15 tín chỉ
+ask_number, trong quy chế đào tạo của  đại học quốc gia hà nội quy định chương trình đào tạo chất lượng cao được thiết kế nhiều hơn chương trình đào tạo chuẩn tương ứng ít nhất là bao nhiêu tín chỉ, b, 15 tín chỉ
 ask_number, trong quy chế đào tạo của  đại học quốc gia hà nội quy định mỗi năm có mấy kì học chính và mấy kì học phụ , b, mỗi năm gồm 2 kì học chính  1 kì học phụ
-ask_number, quy chế đào tạo của  đại học quốc gia hà nội quy định  mỗi học kỳ phụ có ít nhất mấy tuần , b, ít nhất 5 tuần học và 1 tuần thi  được tổ chức trong thời gian giữa hai học kỳ chính
+ask_number, quy chế đào tạo của  đại học quốc gia hà nội quy định  mỗi học kỳ phụ có ít nhất mấy tuần , b, ít nhất 5 tuần học và 1 tuần thi  được tổ chức trong thời gian giữa hai học kỳ chính
 ask_number, hiệu lực của quyết định kỉ luật được chấm dứt đối với trường hợp bị khiển trách là, b, 3 tháng kể từ khi có quyết định 
 ask_number, hiệu lực của quyết định kỉ luật được chấm dứt đối với trường hợp bị cảnh cáo là, b, 6 tháng kể từ khi có quyết định
 ask_number, số tín chỉ đăng ký học tối thiểu đối với chương trình đào tạo chuẩn của mỗi kỳ không bao gồm các học phần ngoại ngữ  giáo dục thể chất  giáo dục quốc phòng - an ninh  kỹ năng bổ trợ  tự chọn tự do, b, tối thiểu 14 tín
@@ -117,13 +118,13 @@ ask_number, thời gian thiết kế của khóa học đào tạo chính quy đ
 ask_number, sinh viên phải hoàn thành bao nhiêu tín chỉ của học phần giáo dục thể chất, b, sinh viên phải hoàn thành 4 tín giáo dục thể chất
 ask_number, thời gian học học phần giáo dục an ninh quốc phòng của sinh viên là, b, thời gian học giáo dục an ninh quốc phòng là 1 tháng
 ask_number, đối với những sinh viên học bằng kép  thời gian kết thúc cả 2 chương trình đào tạo tối đa là, b, thời gian kết thúc đào tạo tối bằng kép là 6 năm
-ask_number, điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải nhất cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là, b, 0 20 điểm đối với đạt giải nhất
-ask_number, điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải nhì cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là, b, 0 15 điểm đối với đạt giải nhì
-ask_number, điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải ba cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là, b, 0 10 điểm đối với đạt giải ba
-ask_number, điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải khuyến khích cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là, b, 0 07 điểm
+ask_number, điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải nhất cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là, b, 0 20 điểm đối với đạt giải nhất
+ask_number, điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải nhì cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là, b, 0 15 điểm đối với đạt giải nhì
+ask_number, điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải ba cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là, b, 0 10 điểm đối với đạt giải ba
+ask_number, điểm thưởng cho những công trình nghiên cứu khoa học của sinh viên đạt giải khuyến khích cấp đại học quốc gia hà nội hoặc cấp bộ giáo dục và đào tạo là, b, 0 07 điểm
 ask_number, tiêu chuẩn tình nguyện tốt trong nhóm tiêu chuẩn của danh hiệu sinh viên 5 tốt cấp trung ương quy định sinh viên phải tham gia ít nhất mấy ngày tình nguyện/năm, b, phải tham gia ít nhất 5 ngày
 ask_number, sinh viên xếp loại xuất sắc khi nào, b, có điểm trung bình chung tích lũy từ 3 60 đến 4 00
 ask_number, sinh viên xếp loại yếu có điểm trung bình chung khi nào, b, tích lũy đạt dưới 2 00 nhưng chưa thuộc trường hợp bị buộc thôi học.
-ask_number, quy chế đào tạo của  đại học quốc gia hà nội quy định mỗi kì gồm bao nhiêu tuần, b, mỗi kì học chính có 15 tuần học và từ 3 đến 4 tuần thi 
+ask_number, quy chế đào tạo của  đại học quốc gia hà nội quy định mỗi kì gồm bao nhiêu tuần, b, mỗi kì học chính có 15 tuần học và từ 3 đến 4 tuần thi 
 ask_number, sinh viên xếp loại khá có điểm trung bình chung tích lũy là bao nhiêu, b, điểm trung bình tích lũy từ 2.5 đến 3.19
 

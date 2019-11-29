@@ -189,10 +189,16 @@ class ChatBotAPI():
         intent_id = 0
         chitchat_file = 'data/chitchat.csv'
         ask_what_file = 'data/ask_what.csv'
-        ask_robot_file= 'data/QA.csv'
+        ask_who_file = 'data/ask_who.csv'
+        ask_where_file = 'data/ask_where.csv'
+        ask_number_file = 'data/ask_number.csv'
+        ask_when_file = 'data/ask_when.csv'
         chitchat = ChitChat(chitchat_file)
         ask_what = ChitChat(ask_what_file)
-        ask_robot=ChitChat(ask_robot_file)
+        ask_who = ChitChat(ask_who_file)
+        ask_where = ChitChat(ask_where_file)
+        ask_when = ChitChat(ask_when_file)
+        ask_number = ChitChat(ask_number_file)
         for command in list_command_code:
             if(command[1] == intent):
                 print(command[2])
@@ -200,16 +206,28 @@ class ChatBotAPI():
                 intent_id = command[0]
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
+        if intent=='ask_number':
+            most_similar_question, answer = ask_number.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
+        if intent=='ask_when':
+            most_similar_question, answer = ask_when.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
+        if intent=='ask_who':
+            most_similar_question, answer = ask_who.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
+        if intent=='ask_where':
+            most_similar_question, answer = ask_where.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
         if intent=='ask_what':
             most_similar_question, answer = ask_what.retrieve_answer(inmessage)
             print(most_similar_question)
             response = answer
         if intent=='chitchat':
             most_similar_question, answer = chitchat.retrieve_answer(inmessage)
-            print(most_similar_question)
-            response = answer
-        if intent=='ask_where' or intent=='ask_who':
-            most_similar_question, answer = ask_robot.retrieve_answer(inmessage)
             print(most_similar_question)
             response = answer
         if intent=='introduce_vnu':
