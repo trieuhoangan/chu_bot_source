@@ -107,17 +107,10 @@ def test_predict():
     for row in csvreader:
         list_command_code.append({"intent": row[1], "command_code": row[2]})
     chitchat_file = 'data/chitchat.csv'
-    ask_what_file = 'data/ask_what.csv'
-    ask_who_file = 'data/ask_who.csv'
-    ask_where_file = 'data/ask_where.csv'
-    ask_number_file = 'data/ask_number.csv'
-    ask_when_file = 'data/ask_when.csv'
-    answer_retriever = ChitChat(chitchat_file)
-    answer_retriever.add_more_data(ask_what_file)
-    answer_retriever.add_more_data(ask_who_file)
-    answer_retriever.add_more_data(ask_where_file)
-    answer_retriever.add_more_data(ask_number_file)
-    answer_retriever.add_more_data(ask_when_file)
+    chitchat = ChitChat(chitchat_file)
+    ##chitchat.add_more_data("data/QA.csv")
+
+
     ####Declare Speech Recognition
     r = sr.Recognizer()
     mic = sr.Microphone()
@@ -125,7 +118,7 @@ def test_predict():
         while True:
             r.adjust_for_ambient_noise(source, 1)
             print("ready to record, please speak >> ")
-            audio = r.listen(source,phrase_time_limit=4)
+            audio = r.listen(source,phrase_time_limit=2)
             try:
                 inmessage = r.recognize_google(audio,None,"vi-VN" "en-US")
 
@@ -152,30 +145,9 @@ def test_predict():
                         command_code = command.get("command_code")
                 response = action.handle_message(inmessage)
                 if intent=='chitchat':
-                    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)
+                    most_similar_question, answer = chitchat.retrieve_answer(inmessage)
                     print(most_similar_question)
                     response = answer
-                if intent=='ask_what':
-                    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)
-                    print(most_similar_question)
-                    response = answer
-                if intent=='ask_who':
-                    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,2)
-                    print(most_similar_question)
-                    response = answer
-                if intent=='ask_where':
-                    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,3)
-                    print(most_similar_question)
-                    response = answer
-                if intent=='ask_number':
-                    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,4)
-                    print(most_similar_question)
-                    response = answer
-                if intent=='ask_when':
-                    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,5)
-                    print(most_similar_question)
-                    response = answer
-           
                 if intent=='ask_where' and len(entities)==0:
                     mp3 = 15
                 if intent=='introduce_vnu':
@@ -214,12 +186,13 @@ def test_input_predict():
     ask_where_file = 'data/ask_where.csv'
     ask_number_file = 'data/ask_number.csv'
     ask_when_file = 'data/ask_when.csv'
-    answer_retriever = ChitChat(chitchat_file)
-    answer_retriever.add_more_data(ask_what_file)
-    answer_retriever.add_more_data(ask_who_file)
-    answer_retriever.add_more_data(ask_where_file)
-    answer_retriever.add_more_data(ask_number_file)
-    answer_retriever.add_more_data(ask_when_file)
+    chitchat = ChitChat(chitchat_file)
+    ask_what = ChitChat(ask_what_file)
+    ask_who = ChitChat(ask_who_file)
+    ask_where = ChitChat(ask_where_file)
+    ask_when = ChitChat(ask_when_file)
+    ask_number = ChitChat(ask_number_file)
+    ##chitchat.add_more_data("data/QA.csv")
 
 
     
@@ -247,31 +220,30 @@ def test_input_predict():
                 print(command.get("command_code"))
                 command_code = command.get("command_code")
         response = action.handle_message(inmessage)
-        if intent=='chitchat':
-            most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)
-            print(most_similar_question)
-            response = answer
-        if intent=='ask_what':
-            most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)
-            print(most_similar_question)
-            response = answer
-        if intent=='ask_who':
-            most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,2)
-            print(most_similar_question)
-            response = answer
-        if intent=='ask_where':
-            most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,3)
-            print(most_similar_question)
-            response = answer
         if intent=='ask_number':
-            most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,4)
+            most_similar_question, answer = ask_number.retrieve_answer(inmessage)
             print(most_similar_question)
             response = answer
         if intent=='ask_when':
-            most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,5)
+            most_similar_question, answer = ask_when.retrieve_answer(inmessage)
             print(most_similar_question)
             response = answer
-           
+        if intent=='ask_who':
+            most_similar_question, answer = ask_who.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
+        if intent=='ask_where':
+            most_similar_question, answer = ask_where.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
+        if intent=='ask_what':
+            most_similar_question, answer = ask_what.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
+        if intent=='chitchat':
+            most_similar_question, answer = chitchat.retrieve_answer(inmessage)
+            print(most_similar_question)
+            response = answer
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
         if intent=='introduce_vnu':
@@ -300,28 +272,36 @@ if __name__ == "__main__":
     # test_intent_train('an')
     # test_answer_retrieval('data/chitchat_test.csv')
     # nlp = spacy.load('vi_spacy_model')
-    # create_model('an')
+    create_model('an')
     # data = get_data()
     # botname= 'an'
     # action = ChuBotAction(botname)
     
-    # app = Flask(__name__)
-    # @app.route('/')
-    # def hello_world():
-    #     if request.method == 'GET':
-    #         mess = request.args.get('mess', '')
-    #         print(mess)
-    #         bot = ChatBotAPI('vi', 'an')
-    #         bot.load_model()
-    #         line = bot.predict_message(mess)
-    #         return line
+    app = Flask(__name__)
+    @app.route('/')
+    def hello_world():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+            print(mess)
+            bot = ChatBotAPI('vi', 'an')
+            bot.load_model()
+            line = bot.predict_message(mess)
+            return line
 
-    # #     # return "null"
+    #     # return "null"
 
-    # app.run(host= '0.0.0.0')
+    app.run(host= '0.0.0.0')
 
    
     # test_predict(extracted_question,data.get('answer'))
     # test_predict()
-    test_input_predict()
+    # test_input_predict()
+    # # test_response()
+    # bot = ChatBotAPI('vi', 'an')
+    # bot.load_model()
+    
+    # line = bot.predict_message("who are you")
+    # print(line)
+    # print(detect("War doesn't show who's right, just who's left."))
+    # detect("War doesn't show who's right, just who's left.")
    
