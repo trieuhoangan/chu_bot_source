@@ -1,13 +1,14 @@
 import numpy as np
 import spacy
 import pandas as pd
-
+from gensim.models import KeyedVectors
 #load spacy model
 #Need to install spacy version >2.1
 # and install vi_spacy
 # using: https://github.com/trungtv/vi_spacy
 nlp = spacy.load('vi_spacy_model')
-
+word2vecmodel_link = "D:/Projects/Khoa Luan Tot Nghiep/sourcecode/models_bin/wiki.vi.model.bin"
+word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
 class ChitChat:
     def __init__(self, datafile):
         #read data file
@@ -20,41 +21,35 @@ class ChitChat:
         # print(qa_list)
         # make vectors as spacy.token.doc.Doc type
         targets = [
-                    nlp(q) for q, a in qa_list
+            q for q, a in qa_list
         ]
-
-        self.targets = targets
-        self.qa_list = qa_list
-    def retrieve_answer(self, question):
+        nlp = spacy.load('vi_spacy_model')
+        word2vecmodel_link = "D:/Projects/Khoa Luan Tot Nghiep/sourcecode/models_bin/wiki.vi.model.bin"
+        self.word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
+        self.targets = []
+        self.targets.append(targets)
+        self.qa_list = []
+        self.qa_list.append(qa_list)
+    def retrieve_answer(self, question,ids):
         '''
         Question:: String
         '''
-        idoc = nlp(question.lower())
-        distances = [idoc.similarity(t) for t in self.targets]
-        print(np.argmax(distances))
-        print(np.amax(distances))
-        id=0
-        if np.amax(distances) > 0.8:
-            id = np.argmax(distances)
-        else:
-            if np.amax(distances)<0.6: 
-                id = 0
-            else:
-                id = 1 
-        print(self.qa_list[0])
-        print(self.qa_list[1])
-        #return most similar q & a
-        return self.qa_list[id]
+        distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
+        id=np.argmin(distances)
+        print(distances[id])
+        print(id)
+        return self.qa_list[ids][id]
 
     def add_more_data(self,datafile):
-        df = pd.read_csv(datafile, header=None, names=['intent', 'middle', 'q', 'a'])
+        df = pd.read_csv(datafile, header=None, names=['intent', 'q', 'n', 'a'])
         qa = df[['q', 'a']].copy()
         qa_list = qa[['q', 'a']].values
         targets = [
-            nlp(q) for q, a in qa_list
+            q for q, a in qa_list
         ]
-        self.targets.extend(targets)
-        self.qa_list.extend(qa_list)
+        self.targets.append(targets)
+        self.qa_list.append(qa_list)
+
 if __name__ == '__main__':
     chitchat_file = 'data/chitchat.csv'
     chitchat = ChitChat(chitchat_file)
