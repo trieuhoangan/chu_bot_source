@@ -5,12 +5,6 @@ import spacy
 import random
 import pandas as pd
 
-# for entity in  json_object.get("nlu_data").get("entity_synonyms"):
-#     new_synonyms = []
-#     for synonym in entity.get("synonyms"):
-#         synonym_token = [token.text for token in nlp(synonym)]
-#         new_synonyms.append(" ".join(synonym_token))
-#     entity.__setitem__("synonyms",new_synonyms)
 json_object = {"nlu_data": {"common_examples": [],
                                 "regex_features": [], "lookup_tables": [], "entity_synonyms": []}}
 intent_train_set = []
@@ -19,6 +13,9 @@ class DataObject():
     def __init__(self):
         self.json_object = {"nlu_data": {"common_examples": [],
                                 "regex_features": [], "lookup_tables": [], "entity_synonyms": []}}
+    #####
+    #     use to load all entity that have been confirmed
+    ####
     def load_entity_data(self,entity_link):
         entity_file = open(entity_link, newline='', encoding="utf8")
         csv_reader = csv.reader(entity_file, delimiter=',')
@@ -32,8 +29,7 @@ class DataObject():
             line_count = line_count+1
         entity_file.close()
     ###s
-    # load data from .txt file with data split by ','
-    #
+    #    load data from .txt file with data split by ','
     ###
     def load_quest_data(self,quest_link,text_col,intent_col):
         intent_file = open(quest_link,'r', encoding="utf8")
@@ -83,6 +79,7 @@ class DataObject():
         lines = []
         examples = []
         line_count = 0
+        # read data from *.csv file and ignore duclicated data
         for row in csv_reader:
             if line_count == 0:
                 line_count = line_count+1
@@ -93,6 +90,8 @@ class DataObject():
                 if text not in lines:
                     lines.append(text)
                     examples.append({'text':text,'intent':intent})
+
+        # put data into json object as the format
         for example in examples:
             entities = []
             for entity in all_entity:
@@ -118,7 +117,6 @@ class DataObject():
         intent_file.close()
     ###
     # split test-train dataset from a list of files 
-    #
     ###
     def split_train_test_dataset(self,list_filename,intent_col,text_col,test_ratio,test_output,train_output):
         dataset = { 'ask_what':[],
@@ -134,6 +132,7 @@ class DataObject():
                     }
         intents = []
         lines =[]
+        # read data from csv file
         for filename in list_filename:
             count = 0
             print("filename",filename)
@@ -154,19 +153,10 @@ class DataObject():
             with open("line.txt",'a',encoding='utf-8') as fline:
                 fline.writelines(lines)
         print(intents)
+        #######
         train_set = []
         test_set = []
-
-
-
-        # for intent in intents:
-        #     with open(intent+'.csv','w',encoding='utf-8') as f:
-        #         data_intent = dataset[intent]
-        #         for line in data_intent:
-        #             f.write('{},{}\n'.format(line['intent'],line['text']))
-        
-
-
+        # split dataset
         for intent in intents:
             datalength = len(dataset.get(intent))
             random.shuffle(dataset.get(intent))
@@ -175,7 +165,10 @@ class DataObject():
         full_train_set = []
         full_train_set.extend(train_set)
         full_train_set.extend(test_set)
+
+        ########### write data into .json file
         # full_train_link = 'full_train.txt'
+        
         test_link = test_output
         train_link = train_output
         with open(test_link,'w',encoding='utf-8') as test_out:
@@ -187,12 +180,15 @@ class DataObject():
         # with open(full_train_link,'w',encoding='utf-8') as test_out:
         #     for test in full_train_set:
         #         test_out.write('{},{}\n'.format(test.get('intent'),test.get('text')))
+    
+    # use to write data as the noised data to recognise noise and good data
 
     def split_train_test_chitchat(self,list_filename,origin_col,noice_col,test_output,train_output):
         dataset = []
         test = []
         lines =[]
         test_line=[]
+        #read data
         for filename in list_filename:
             count = 0
             print("filename",filename)
@@ -214,6 +210,8 @@ class DataObject():
                     test.append({'o':origin,'q':noice,'a':a})
             with open("line.txt",'a',encoding='utf-8') as fline:
                 fline.writelines(lines)
+
+
         train_set = dataset
         test_set = test
 
@@ -241,7 +239,7 @@ if __name__=="__main__":
     list_filename=['../chitchat.csv']
     a = DataObject()
     a.split_train_test_chitchat(list_filename,1,2,'../chitchat_test.csv','../chitchat_train.csv')
-    a.load_entity_data('entity_list.csv')
+    a.load_entity_data('../entity_list.csv')
     a.load_quest_data('../oldata/quest_data.csv',2,0)
     # a.load_distinc_data('quest_data_noise.csv',2,0)
     # load_quest_data('Q.csv',2,0)
@@ -249,10 +247,12 @@ if __name__=="__main__":
     # b.split_train_test_dataset(list_filename,0,2,0.3)
     # b.load_entity_data('entity_list.csv')
     # a.load_quest_data('train.txt',1,0)
+
     link_ouput = 'test.json'
     with open(link_ouput, 'w', encoding='utf8') as output:
         output.write(json.dumps(a.json_object, ensure_ascii=False))
         print('done')
+
     # link_ouput = 'chitchat.json'
     # with open(link_ouput, 'w', encoding='utf8') as output:
     #     output.write(json.dumps(a.json_object, ensure_ascii=False))

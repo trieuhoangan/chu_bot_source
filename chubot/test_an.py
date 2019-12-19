@@ -319,5 +319,3 @@ if __name__ == "__main__":
 
     # test_predict()
     test_input_predict()
-
-   
