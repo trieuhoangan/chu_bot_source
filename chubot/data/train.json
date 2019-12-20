@@ -177,6 +177,27 @@
                 "text": "hai người tạo ra bạn",
                 "intent": "chitchat"
             },
+            
+            {
+                "text": "Nói qua về phòng này",
+                "intent": "chitchat"
+            },
+            {
+                "text": "Nói qua về phòng truyền thống",
+                "intent": "chitchat"
+            },
+            {
+                "text": "nói cho tôi về phòng truyền thống đi",
+                "intent": "chitchat"
+            },
+            {
+                "text": "giới thiệu phòng truyền thống đi",
+                "intent": "chitchat"
+            },
+            {
+                "text": "giới thiệu đi",
+                "intent": "chitchat"
+            },
             {
                 "text": "cho mình nghe tên một vài loại mỹ phẩm bạn thường",
                 "intent": "chitchat"

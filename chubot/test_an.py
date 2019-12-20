@@ -201,7 +201,7 @@ def test_input_predict():
     nlp = spacy.load('vi_spacy_model')
     botname = "an"
     action_domain_file = "data/new_domain.json"
-
+    speak_code = 0
     # chubot = ChuBotBrain(botname, language='vi')
     action = ChuBotAction(botname)
     action.load_domain(action_domain_file)
@@ -252,6 +252,10 @@ def test_input_predict():
             most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)
             print(most_similar_question)
             response = answer
+            ## open mp3 file to introduce the room
+            if str(response) == "100.mp3":
+                mp3 = 100
+                command_code = speak_code
         if intent=='ask_what':
             most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)
             print(most_similar_question)
@@ -294,7 +298,7 @@ if __name__ == "__main__":
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    # create_model('an')
+    create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################
