@@ -46,12 +46,10 @@
     },
     "action_templates": {
       "default_fallback": [
-        "I dont know",
         "Xin lỗi tôi không hiểu ý bạn",
         "mình không hiểu ý bạn",
-        "i cant hear you, please say again",
-        "please speak louder",
-        "i cant understand"
+        "bạn có thể nói to hơn được không",
+        "tôi không nghe rõ, bạn nói lại được không"
       ],
       "bot_goodbye": [
         "tạm biệt",
@@ -61,7 +59,7 @@
       ],
       "bot_answer_number":["tôi không biết"],
       "bot_answer_when":["tôi không biết"],
-      "bot_return": ["xin phép về chỗ", "thank you", "thank you for using me"],
+      "bot_return": ["xin phép về chỗ", "cảm ơn bạn"],
       "bot_greeting": [
         "xin chào bạn",
         "chào bạn, chúc bạn một ngày tốt lành",
@@ -69,9 +67,9 @@
         "mình rất vui khi được gặp bạn",
         "rất vui được gặp bạn"
       ],
-      "bot_introduce": ["my name is FUTO, i was made by plastic and metal, and i have three wheels", "i am FUSO, i am created by the researchers of the UET"],
-      "bot_answer": ["hello"],
-      "bot_command_lead_way": ["follow me", "please follow me", "go with me"],
+      "bot_introduce": ["tên mình là FUTO, tôi được làm từ nhựa và sắt, và tôi có 3 bánh xe", "i am FUSO, i am created by the researchers of the UET"],
+      "bot_answer": ["xin chào"],
+      "bot_command_lead_way": ["đi theo mình nào", "xin hãy đi theo tôi", "hãy để tôi dẫn đường cho bạn"],
       "bot_ask_who": ["đây là bác hồ"],
       "bot_ask_where": ["đây là việt nam"],
       "bot_ask_what": ["đây là bức tranh"],
