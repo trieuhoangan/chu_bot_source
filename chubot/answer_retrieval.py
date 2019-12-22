@@ -6,9 +6,9 @@ from gensim.models import KeyedVectors
 #Need to install spacy version >2.1
 # and install vi_spacy
 # using: https://github.com/trungtv/vi_spacy
-nlp = spacy.load('vi_spacy_model')
-word2vecmodel_link = "D:/Projects/Khoa Luan Tot Nghiep/sourcecode/models_bin/wiki.vi.model.bin"
-word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
+# nlp = spacy.load('vi_spacy_model')
+# word2vecmodel_link = "models/wiki.vi.model.bin"
+# word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
 class ChitChat:
     def __init__(self, datafile):
         #read data file
@@ -24,7 +24,7 @@ class ChitChat:
             q for q, a in qa_list
         ]
         nlp = spacy.load('vi_spacy_model')
-        word2vecmodel_link = "D:/Projects/Khoa Luan Tot Nghiep/sourcecode/models_bin/wiki.vi.model.bin"
+        word2vecmodel_link = "models/wiki.vi.model.bin"
         self.word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
         self.targets = []
         self.targets.append(targets)

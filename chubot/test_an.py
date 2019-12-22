@@ -15,11 +15,39 @@ import speech_recognition as sr
 from answer_retrieval import ChitChat
 from custom_lib import changeUnicode
 # from langdetect import detect
+botname = "an"
+action_domain_file = "data/new_domain.json"
+action = ChuBotAction(botname)
+action.load_domain(action_domain_file)
+
+speak_code = 0
+go_around_code = 1
+lead_to_section_code = 2
+use_mp3_code = 3
+code = 0
+mp3 = -1
+section_id = -1
+##load data to retrieve answer
+chitchat_file = 'data/chitchat.csv'
+ask_what_file = 'data/ask_what.csv'
+ask_who_file = 'data/ask_who.csv'
+ask_where_file = 'data/ask_where.csv'
+ask_number_file = 'data/ask_number.csv'
+ask_when_file = 'data/ask_when.csv'
+lead_to_section_file = 'data/lead_to_section.csv'
+answer_retriever = ChitChat(chitchat_file)
+answer_retriever.add_more_data(ask_what_file)
+answer_retriever.add_more_data(ask_who_file)
+answer_retriever.add_more_data(ask_where_file)
+answer_retriever.add_more_data(ask_number_file)
+answer_retriever.add_more_data(ask_when_file)
+answer_retriever.add_more_data(lead_to_section_file)
 
 
+nlp = spacy.load('vi_spacy_model')
 def create_model(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data("data/newQAdata/train.json")
+    chubot.load_data("data/full_train.json")
     # chubot.load_data("data/vi_nlu_ask_way.json")
     meta = chubot.train()
     # print(meta)
@@ -44,10 +72,14 @@ def encode_intent(intent):
         return 5
     if intent=='ask_where':
         return 6
-    if intent=='ask_location':
+    if intent=='ask_number':
         return 7
-    if intent=='end_conversation':
+    if intent=='ask_when':
         return 8
+    if intent=='ask_location':
+        return 9
+    if intent=='end_conversation':
+        return 10
     
 def test_intent_train(name):
     chubot = ChuBotBrain(name, language='vi')
@@ -92,7 +124,9 @@ def test_answer_retrieval(filename):
         results.append(most_similar_question)
         origins.append(origin)
     print('answer retriver precision ',precision_score(origins,results,average='weighted'))
-
+##
+# use to demo chatbot
+##
 def test_predict():
     nlp = spacy.load('vi_spacy_model')
     botname = "an"
@@ -178,6 +212,14 @@ def test_predict():
                     most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,5)
                     print(most_similar_question)
                     response = answer
+                if intent =='command_lead_way' and len(entities)!=0:
+                    for entity in entities:
+                        if entity["entity"] =="section":
+                            most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)
+                            print(most_similar_question)
+                            response = answer
+                            code = lead_to_section_code
+                    print(1)
                 if intent=='ask_where' and len(entities)==0:
                     mp3 = 15
                 if intent=='introduce_vnu':
@@ -196,12 +238,15 @@ def test_predict():
                 print(text)
             except sr.RequestError as e:
                 print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
-
+##
+## use to test chatbot
+##
 def test_input_predict():
     nlp = spacy.load('vi_spacy_model')
     botname = "an"
     action_domain_file = "data/new_domain.json"
     speak_code = 0
+    lead_to_section_code = 1
     # chubot = ChuBotBrain(botname, language='vi')
     action = ChuBotAction(botname)
     action.load_domain(action_domain_file)
@@ -217,12 +262,14 @@ def test_input_predict():
     ask_where_file = 'data/ask_where.csv'
     ask_number_file = 'data/ask_number.csv'
     ask_when_file = 'data/ask_when.csv'
+    lead_to_section_file = 'data/lead_to_section.csv'
     answer_retriever = ChitChat(chitchat_file)
     answer_retriever.add_more_data(ask_what_file)
     answer_retriever.add_more_data(ask_who_file)
     answer_retriever.add_more_data(ask_where_file)
     answer_retriever.add_more_data(ask_number_file)
     answer_retriever.add_more_data(ask_when_file)
+    answer_retriever.add_more_data(lead_to_section_file)
     ##chitchat.add_more_data("data/QA.csv")
 
 
@@ -276,7 +323,14 @@ def test_input_predict():
             most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,5)
             print(most_similar_question)
             response = answer
-        
+        if intent =='command_lead_way' and len(entities)!=0:
+            for entity in entities:
+                if entity["entity"] =="section":
+                    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)
+                    print(most_similar_question)
+                    response = answer
+                    code = lead_to_section_code
+            print(1)
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
         if intent=='introduce_vnu':
@@ -288,9 +342,95 @@ def test_input_predict():
             if token.tag_ =='P' or token.tag_=='Np':
                 print(token.text)
         print("bot > "+str(response))
+#
+#use to demo on web
+#
+def predict(inmessage):
+    #prepare for chatbot
+    
+    # botname = "an"
+    # action_domain_file = "data/new_domain.json"
+    # action = ChuBotAction(botname)
+    # action.load_domain(action_domain_file)
 
+    speak_code = 0
+    go_around_code = 1
+    lead_to_section_code = 2
+    use_mp3_code = 3
+    code = 0
+    mp3 = -1
+    section_id = -1
+    # ##load data to retrieve answer
+    # chitchat_file = 'data/chitchat.csv'
+    # ask_what_file = 'data/ask_what.csv'
+    # ask_who_file = 'data/ask_who.csv'
+    # ask_where_file = 'data/ask_where.csv'
+    # ask_number_file = 'data/ask_number.csv'
+    # ask_when_file = 'data/ask_when.csv'
+    # lead_to_section_file = 'data/lead_to_section.csv'
+    # answer_retriever = ChitChat(chitchat_file)
+    # answer_retriever.add_more_data(ask_what_file)
+    # answer_retriever.add_more_data(ask_who_file)
+    # answer_retriever.add_more_data(ask_where_file)
+    # answer_retriever.add_more_data(ask_number_file)
+    # answer_retriever.add_more_data(ask_when_file)
+    # answer_retriever.add_more_data(lead_to_section_file)
+
+
+    inmessage = inmessage.lower()
+    print(inmessage)
+    responses = action.chubot.predict_intent(inmessage)
+    entities = action.chubot.predict_entity(inmessage)
+    (prob, intent) = responses[0]
+
+    response = action.handle_message(inmessage)[0]
+
+    if intent=='chitchat':
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)
+        print(most_similar_question)
+        response = answer
+        ## open mp3 file to introduce the room
+        if str(response) == "100.mp3":
+            mp3 = 100
+            code = use_mp3_code
+    if intent=='ask_what':
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)
+        print(most_similar_question)
+        response = answer
+    if intent=='ask_who':
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,2)
+        print(most_similar_question)
+        response = answer
+    if intent=='ask_where':
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,3)
+        print(most_similar_question)
+        response = answer
+    if intent=='ask_number':
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,4)
+        print(most_similar_question)
+        response = answer
+    if intent=='ask_when':
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,5)
+        print(most_similar_question)
+        response = answer
+    if intent =='command_lead_way' and len(entities)!=0:
+        for entity in entities:
+            if entity["entity"] =="section":
+                most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)
+                print(most_similar_question)
+                section_id = answer
+                code = lead_to_section_code
+            if entity["entity"] =="area":
+                code = go_around_code
         
-            # print(result_json)
+    if intent=='ask_where' and len(entities)==0:
+        mp3 = 15
+        code = use_mp3_code
+    result_json = {"mp3":mp3,"section_id":section_id,
+                "code": code, "response": response}
+    print(json.dumps(result_json, ensure_ascii=False))
+    return result_json
+
 if __name__ == "__main__":
     # test_entity_train('an')
     # test_intent_train('an')
@@ -302,24 +442,21 @@ if __name__ == "__main__":
     ###############Retrain code################
 
     ##########Server Code#################
-    # botname= 'an'
-    # action = ChuBotAction(botname)
+
     
-    # app = Flask(__name__)
-    # @app.route('/')
-    # def hello_world():
-    #     if request.method == 'GET':
-    #         mess = request.args.get('mess', '')
-    #         print(mess)
-    #         bot = ChatBotAPI('vi', 'an')
-    #         bot.load_model()
-    #         line = bot.predict_message(mess)
-    #         return line
+    app = Flask(__name__)
+    @app.route('/')
+    def hello_world():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+            print(mess)
+            line = predict(mess)
+            return str(line)
 
-    # #     # return "null"
+    #     # return "null"
 
-    # app.run(host= '0.0.0.0')
+    app.run(host= '0.0.0.0')
     ##########Server Code#################
 
     # test_predict()
-    test_input_predict()
+    # test_input_predict()

@@ -9,6 +9,12 @@ json_object = {"nlu_data": {"common_examples": [],
                                 "regex_features": [], "lookup_tables": [], "entity_synonyms": []}}
 intent_train_set = []
 usable_set = []
+###
+#
+#
+#
+#
+###
 class DataObject():
     def __init__(self):
         self.json_object = {"nlu_data": {"common_examples": [],
@@ -128,7 +134,8 @@ class DataObject():
                     'command_lead_way':[],
                     'end_conversation':[],
                     'ask_number':[],
-                    'ask_when':[]
+                    'ask_when':[],
+                    'unknown':[]
                     }
         intents = []
         lines =[]
@@ -147,7 +154,7 @@ class DataObject():
                 count = count+1
                 if text not in lines:
                     lines.append(text)
-                    dataset.get(intent).append({'intent':intent,'text':text,'a':parts[3]})
+                    dataset.get(intent).append({'intent':intent,'text':text,'a':parts[1]})
                 if intent not in intents:
                     intents.append(intent)
             with open("line.txt",'a',encoding='utf-8') as fline:
@@ -173,10 +180,10 @@ class DataObject():
         train_link = train_output
         with open(test_link,'w',encoding='utf-8') as test_out:
             for test in test_set:
-                test_out.write('{},{},{}'.format(test.get('intent'),test.get('text'),test['a']))
+                test_out.write('{},{},{}\n'.format(test.get('intent'),test.get('text'),test['a']))
         with open(train_link,'w',encoding='utf-8') as train_out:
             for train in train_set:
-                train_out.write('{},{},{}'.format(train.get('intent'),train.get('text'),train['a']))
+                train_out.write('{},{},{}\n'.format(train.get('intent'),train.get('text'),train['a']))
         # with open(full_train_link,'w',encoding='utf-8') as test_out:
         #     for test in full_train_set:
         #         test_out.write('{},{}\n'.format(test.get('intent'),test.get('text')))
@@ -236,11 +243,17 @@ class DataObject():
 
 if __name__=="__main__":
     # list_filename=['chitchat.csv','greeting_end.csv','command_lead_way.csv','ask_robot.csv']
-    list_filename=['../chitchat.csv']
+    train_link = 'train.json'
+    test_link = 'test.json'
+    # list_filename=['../chitchat.csv','../command_lead_way.csv',"../ask_robot.csv",'../greeting_end.csv']
     a = DataObject()
-    a.split_train_test_chitchat(list_filename,1,2,'../chitchat_test.csv','../chitchat_train.csv')
+    # a.split_train_test_dataset(list_filename,0,2,1,train_link,test_link)
     a.load_entity_data('../entity_list.csv')
-    a.load_quest_data('../oldata/quest_data.csv',2,0)
+    a.load_distinc_data('../chitchat.csv',2,0)
+    a.load_distinc_data('../command_lead_way.csv',2,0)
+    a.load_distinc_data('../ask_robot.csv',2,0)
+    a.load_distinc_data('../greeting_end.csv',2,0)
+    # a.load_quest_data('../oldata/quest_data.csv',2,0)
     # a.load_distinc_data('quest_data_noise.csv',2,0)
     # load_quest_data('Q.csv',2,0)
     
@@ -248,10 +261,10 @@ if __name__=="__main__":
     # b.load_entity_data('entity_list.csv')
     # a.load_quest_data('train.txt',1,0)
 
-    link_ouput = 'test.json'
-    with open(link_ouput, 'w', encoding='utf8') as output:
-        output.write(json.dumps(a.json_object, ensure_ascii=False))
-        print('done')
+    # link_ouput = 'test.json'
+    # with open(link_ouput, 'w', encoding='utf8') as output:
+    #     output.write(json.dumps(a.json_object, ensure_ascii=False))
+    #     print('done')
 
     # link_ouput = 'chitchat.json'
     # with open(link_ouput, 'w', encoding='utf8') as output:
@@ -259,7 +272,7 @@ if __name__=="__main__":
     #     print('done')
     # b = DataObject()
     # b.load_quest_data('full_train.txt',1,0)
-    # full_train_output = 'full_train.json'
-    # with open(full_train_output, 'w', encoding='utf8') as output:
-    #     output.write(json.dumps(b.json_object, ensure_ascii=False))
-    #     print('done')
+    full_train_output = 'full_train.json'
+    with open(full_train_output, 'w', encoding='utf8') as output:
+        output.write(json.dumps(a.json_object, ensure_ascii=False))
+        print('done')

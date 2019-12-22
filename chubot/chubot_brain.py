@@ -6,7 +6,7 @@ import sklearn_crfsuite
 import random
 import io
 import codecs
-
+from spacy.gold import biluo_tags_from_offsets
 class ChuBotBrain():
     # TODO maybe init models folder here instead of handling in train*
     def __init__(self, name, language='vi'):
@@ -142,12 +142,15 @@ class ChuBotBrain():
         # max of probability of each token
         ent_probs_sorted = [sorted(eprob.items(), key=lambda kv:(
             kv[1], kv[0]))[-1] for eprob in ent_probs]
+        # for eprob in ent_probs:
+        #     print("item ",eprob.items())
         # TODO NOTE must handle entity with multiple tokens --> B,L, I tags not only U
         # TODO should change bilou to bio tag?
 
         ent_probs_idx = [(i, label, conf) for i, (label, conf)
                          in enumerate(ent_probs_sorted) if label != "O"]
-
+        # for i, (label, conf) in enumerate(ent_probs_sorted):
+            # print("first label ",label)
         # also get the default value of the entity based on the entity_synonyms
         # TODO handle synonyms here!
         tagged_entities = [
@@ -156,7 +159,8 @@ class ChuBotBrain():
              'value': indoc[ix].text,
              'entity': label[2:],
              'confidence': conf} for ix, label, conf in ent_probs_idx]
-
+        for ix, label, conf in ent_probs_idx:
+            print("second label",label)
         return tagged_entities
 
     def train_intent_classification(self, **kwargs):
@@ -272,30 +276,34 @@ class ChuBotBrain():
         dataset = []
         with open('log.txt','w',encoding='utf-8') as f:
             f.write(str(self.common_examples))
-        
+        example_count = 0
         for example in self.common_examples:
             #  List[(start_index, end_index, entity)]
             # if example.get('text')==None:
             #     continue
-            entity_offsets = [(e["start"], e["end"], e["entity"])
+            entity_offsets = [(e["start"], e["end"], e["value"])
                               for e in example.get("entities", [])
                               ]
-
+            # if len(entity_offsets) >0:
+            #     print("entities ",entity_offsets[0][2])
             # tokenize each example and get pos_tag
             # print(example["text"])
 
             doc = self.nlp(example["text"])
-
+            # print("doc ",doc)
             # bilou tags :: a list of tags
             # for example
             # tokens :: [show, me, a, mexican, place, in, the, centre]
             # BILOU  :: [O,    O,  O,'U-cuisine', O,   O, O, 'U-location']
-            bilou_tags = spacy.gold.biluo_tags_from_offsets(
-                doc, entity_offsets)
+            # bilou_tags = biluo_tags_from_offsets(
+            #     doc, entity_offsets)
+            bilou_tags = self.custom_bilou_tag(doc,entity_offsets)
             example_data = [(token.text, token.tag_, bilou_tags[i])
                             for i, token in enumerate(doc)]
+            # print("important ",list(enumerate(doc)))
+            print("entity_tag {}".format(example_count),bilou_tags)
             dataset.append(example_data)
-
+            example_count +=1
         return dataset
 
     def word2features(self, sent, i):
@@ -350,3 +358,27 @@ class ChuBotBrain():
     def sent2tokens(self, sent):
         # token is the word!
         return [token for token, postag, label in sent]
+    def custom_bilou_tag(self,doc,entity_offset):
+        bilou_tags = []
+        entity_count = len(entity_offset)
+        entity_pos = 0
+        current_pos = 0
+        end_pos = 0
+        for token in doc:
+            if entity_count==0:
+                bilou_tags.append("O")
+            else:
+                is_entity = 0
+                end_pos = current_pos+len(token.text)-1
+                for entity in entity_offset:
+                    if entity[0]==current_pos:
+                        is_entity = 1
+                        bilou_tags.append("B-{}".format(entity[2]))
+                        break
+                    if entity[1]==end_pos:
+                        is_entity = 1
+                        bilou_tags.append("E-{}".format(entity[2]))
+                if is_entity ==0:
+                    bilou_tags.append("O")
+            current_pos= current_pos+len(token.text)+1
+        return bilou_tags
