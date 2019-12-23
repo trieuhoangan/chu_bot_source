@@ -67,7 +67,7 @@
         "mình rất vui khi được gặp bạn",
         "rất vui được gặp bạn"
       ],
-      "bot_introduce": ["tên mình là FUTO, tôi được làm từ nhựa và sắt, và tôi có 3 bánh xe", "i am FUSO, i am created by the researchers of the UET"],
+      "bot_introduce": ["tên mình là FUTO, tôi được làm từ nhựa và sắt, và tôi có 3 bánh xe", "tôi là FUSO, tôi được tạo ra từ các sinh viên đại học công nghệ"],
       "bot_answer": ["xin chào"],
       "bot_command_lead_way": ["đi theo mình nào", "xin hãy đi theo tôi", "hãy để tôi dẫn đường cho bạn"],
       "bot_ask_who": ["đây là bác hồ"],

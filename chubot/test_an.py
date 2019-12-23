@@ -131,27 +131,24 @@ def test_predict():
     nlp = spacy.load('vi_spacy_model')
     botname = "an"
     action_domain_file = "data/new_domain.json"
-
+    
     # chubot = ChuBotBrain(botname, language='vi')
     action = ChuBotAction(botname)
     action.load_domain(action_domain_file)
-    intent_file = open('data/intent.csv', 'r', encoding="utf-8")
-    csvreader = csv.reader(intent_file, delimiter=',')
-    list_command_code = []
-    for row in csvreader:
-        list_command_code.append({"intent": row[1], "command_code": row[2]})
-    chitchat_file = 'data/chitchat.csv'
-    ask_what_file = 'data/ask_what.csv'
-    ask_who_file = 'data/ask_who.csv'
-    ask_where_file = 'data/ask_where.csv'
-    ask_number_file = 'data/ask_number.csv'
-    ask_when_file = 'data/ask_when.csv'
-    answer_retriever = ChitChat(chitchat_file)
-    answer_retriever.add_more_data(ask_what_file)
-    answer_retriever.add_more_data(ask_who_file)
-    answer_retriever.add_more_data(ask_where_file)
-    answer_retriever.add_more_data(ask_number_file)
-    answer_retriever.add_more_data(ask_when_file)
+    # chitchat_file = 'data/chitchat.csv'
+    # ask_what_file = 'data/ask_what.csv'
+    # ask_who_file = 'data/ask_who.csv'
+    # ask_where_file = 'data/ask_where.csv'
+    # ask_number_file = 'data/ask_number.csv'
+    # ask_when_file = 'data/ask_when.csv'
+    # answer_retriever = ChitChat(chitchat_file)
+    # answer_retriever.add_more_data(ask_what_file)
+    # answer_retriever.add_more_data(ask_who_file)
+    # answer_retriever.add_more_data(ask_where_file)
+    # answer_retriever.add_more_data(ask_number_file)
+    # answer_retriever.add_more_data(ask_when_file)
+    # lead_to_section_file = 'data/lead_to_section.csv'
+    # answer_retriever.add_more_data(lead_to_section_file)
     ##chitchat.add_more_data("data/QA.csv")
 
 
@@ -160,9 +157,16 @@ def test_predict():
     mic = sr.Microphone()
     with mic as source:
         while True:
+            speak_code = 0
+            go_around_code = 1
+            lead_to_section_code = 2
+            use_mp3_code = 3
+            code = 0
+            mp3 = -1
+            section_id = -1
             r.adjust_for_ambient_noise(source, 1)
             print("ready to record, please speak >> ")
-            audio = r.listen(source,phrase_time_limit=2)
+            audio = r.listen(source,phrase_time_limit=4)
             try:
                 inmessage = r.recognize_google(audio,None,"vi-VN" "en-US")
 
@@ -183,19 +187,22 @@ def test_predict():
                 print(intent)
                 command_code = 0
                 mp3 = -1
-                for command in list_command_code:
-                    if(command.get("intent") == intent):
-                        print(command.get("command_code"))
-                        command_code = command.get("command_code")
                 response = action.handle_message(inmessage)
                 if intent=='chitchat':
                     most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)
                     print(most_similar_question)
                     response = answer
+                    ## open mp3 file to introduce the room
+                    if str(response) == "100.mp3":
+                        mp3 = 100
+                        code = use_mp3_code
                 if intent=='ask_what':
                     most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)
                     print(most_similar_question)
                     response = answer
+                    if str(response) == "100.mp3":
+                        mp3 = 100
+                        code = use_mp3_code
                 if intent=='ask_who':
                     most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,2)
                     print(most_similar_question)
@@ -217,25 +224,23 @@ def test_predict():
                         if entity["entity"] =="section":
                             most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)
                             print(most_similar_question)
-                            response = answer
+                            section_id = answer
                             code = lead_to_section_code
-                    print(1)
+                        if entity["entity"] =="area":
+                            code = go_around_code
+                    
                 if intent=='ask_where' and len(entities)==0:
                     mp3 = 15
-                if intent=='introduce_vnu':
-                    mp3 = int(response[0])
-                result_json = {"intent": intent, "entities": entities,"mp3":mp3,
-                            "command_code": command_code, "response": response}
+                    code = use_mp3_code
+                result_json = {"mp3":mp3,"section_id":section_id,
+                            "code": code, "response": response}
+                print("bot response >> ")
                 print(json.dumps(result_json, ensure_ascii=False))
-                for token in nlp(inmessage):
-                    if token.tag_ =='P' or token.tag_=='Np':
-                        print(token.text)
-                print("bot > "+str(response))
                     
             except sr.UnknownValueError:
-                text = r.recognize_google(audio,None,"vi-VN" "en-US",show_all=True)
-                # print("Oops! Didn't catch that ")
-                print(text)
+                # text = r.recognize_google(audio,None,"vi-VN" "en-US",show_all=True)
+                print("Oops! Didn't catch that ")
+                # print(text)
             except sr.RequestError as e:
                 print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
 ##
@@ -246,7 +251,12 @@ def test_input_predict():
     botname = "an"
     action_domain_file = "data/new_domain.json"
     speak_code = 0
-    lead_to_section_code = 1
+    go_around_code = 1
+    lead_to_section_code = 2
+    use_mp3_code = 3
+    code = 0
+    mp3 = -1
+    section_id = -1
     # chubot = ChuBotBrain(botname, language='vi')
     action = ChuBotAction(botname)
     action.load_domain(action_domain_file)
@@ -307,6 +317,9 @@ def test_input_predict():
             most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)
             print(most_similar_question)
             response = answer
+            if str(response) == "100.mp3":
+                mp3 = 100
+                code = use_mp3_code
         if intent=='ask_who':
             most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,2)
             print(most_similar_question)
@@ -329,18 +342,19 @@ def test_input_predict():
                     most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)
                     print(most_similar_question)
                     response = answer
+                    section_id = answer
                     code = lead_to_section_code
             print(1)
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
         if intent=='introduce_vnu':
             mp3 = int(response[0])
-        result_json = {"intent": intent, "entities": entities,"mp3":mp3,
-                    "command_code": command_code, "response": response}
+        result_json = {"mp3":mp3,"section_id":section_id,
+                "code": code, "response": response}
         print(json.dumps(result_json, ensure_ascii=False))
-        for token in nlp(inmessage):
-            if token.tag_ =='P' or token.tag_=='Np':
-                print(token.text)
+        # for token in nlp(inmessage):
+        #     if token.tag_ =='P' or token.tag_=='Np':
+        #         print(token.text)
         print("bot > "+str(response))
 #
 #use to demo on web
@@ -397,6 +411,9 @@ def predict(inmessage):
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)
         print(most_similar_question)
         response = answer
+        if str(response) == "100.mp3":
+            mp3 = 100
+            code = use_mp3_code
     if intent=='ask_who':
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,2)
         print(most_similar_question)
@@ -428,6 +445,10 @@ def predict(inmessage):
         code = use_mp3_code
     result_json = {"mp3":mp3,"section_id":section_id,
                 "code": code, "response": response}
+    
+    print(intent)
+    print(entities)
+    
     print(json.dumps(result_json, ensure_ascii=False))
     return result_json
 
@@ -444,19 +465,20 @@ if __name__ == "__main__":
     ##########Server Code#################
 
     
-    app = Flask(__name__)
-    @app.route('/')
-    def hello_world():
-        if request.method == 'GET':
-            mess = request.args.get('mess', '')
-            print(mess)
-            line = predict(mess)
-            return str(line)
+    # app = Flask(__name__)
+    # @app.route('/')
+    # def hello_world():
+    #     if request.method == 'GET':
+    #         mess = request.args.get('mess', '')
+    #         print(mess)
+    #         line = predict(mess)
+    #         # print(str(line))
+    #         return str(line).replace("'",'"')
 
-    #     # return "null"
+    # #     # return "null"
 
-    app.run(host= '0.0.0.0')
+    # app.run(host= '0.0.0.0')
     ##########Server Code#################
 
     # test_predict()
-    # test_input_predict()
+    test_input_predict()

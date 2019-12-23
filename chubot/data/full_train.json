@@ -1154,6 +1154,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 17,
+                        "end": 19,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 31,
                         "end": 41,
                         "entity": "location",
@@ -1163,12 +1169,26 @@
             },
             {
                 "text": "dẫn đường đi tới khu trước mà vẫn chưa của đại quốc gia",
-                "intent": "command_lead_way"
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 17,
+                        "end": 19,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
             },
             {
                 "text": "dân mình đi tới khu sinh thái nguyên chương của đại học quốc gia",
                 "intent": "command_lead_way",
                 "entities": [
+                    {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
                     {
                         "start": 48,
                         "end": 63,
@@ -1182,6 +1202,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 30,
                         "end": 40,
                         "entity": "location",
@@ -1194,6 +1220,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 30,
                         "end": 40,
                         "entity": "location",
@@ -1205,6 +1237,12 @@
                 "text": "dân mình đi tới khu trưng bày huân chương của đại học quốc gia",
                 "intent": "command_lead_way",
                 "entities": [
+                    {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
                     {
                         "start": 46,
                         "end": 61,
@@ -1224,6 +1262,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 46,
                         "end": 61,
                         "entity": "location",
@@ -1241,6 +1285,12 @@
                 "text": "dẫn mình đi tới khu trưng bày huân chương của đại học quốc gia hà nội xem",
                 "intent": "command_lead_way",
                 "entities": [
+                    {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
                     {
                         "start": 46,
                         "end": 61,
@@ -1260,6 +1310,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 13,
+                        "end": 15,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 43,
                         "end": 58,
                         "entity": "location",
@@ -1278,6 +1334,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 13,
+                        "end": 15,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 31,
                         "end": 46,
                         "entity": "location",
@@ -1289,6 +1351,12 @@
                 "text": "liên minh tới khu trưng bày huân chương đại học quốc gia đi",
                 "intent": "command_lead_way",
                 "entities": [
+                    {
+                        "start": 14,
+                        "end": 16,
+                        "entity": "location",
+                        "value": "section"
+                    },
                     {
                         "start": 40,
                         "end": 55,
@@ -1308,6 +1376,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 46,
                         "end": 61,
                         "entity": "location",
@@ -1326,6 +1400,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 17,
+                        "end": 19,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 47,
                         "end": 62,
                         "entity": "location",
@@ -1343,6 +1423,12 @@
                 "text": "giật mình đi tới khu trưng bày huân chương của đại học quốc gia",
                 "intent": "command_lead_way",
                 "entities": [
+                    {
+                        "start": 17,
+                        "end": 19,
+                        "entity": "location",
+                        "value": "section"
+                    },
                     {
                         "start": 47,
                         "end": 62,
@@ -2143,7 +2229,229 @@
                 "entities": [
                     {
                         "start": 13,
+                        "end": 15,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 13,
                         "end": 19,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực số hai",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực số ba",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "đưa tôi tới khu vực bốn",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 14,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 12,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực năm",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "đưa cho tôi tới khu vực sáu",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 16,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 16,
+                        "end": 22,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực bảy",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "chỉ đường cho tôi tới khu vực tám",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực chín",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực mười",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực mười một",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực mười hai",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực mười ba",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
                         "entity": "location",
                         "value": "section"
                     }
@@ -2153,6 +2461,12 @@
                 "text": "đưa mình tới khu trưng bày ảnh các đời giám đốc và phó giám đốc của đại học quốc gia",
                 "intent": "command_lead_way",
                 "entities": [
+                    {
+                        "start": 13,
+                        "end": 15,
+                        "entity": "location",
+                        "value": "section"
+                    },
                     {
                         "start": 39,
                         "end": 46,
@@ -2192,30 +2506,6 @@
                 ]
             },
             {
-                "text": "đưa tôi tới khu vực bốn",
-                "intent": "command_lead_way",
-                "entities": [
-                    {
-                        "start": 12,
-                        "end": 18,
-                        "entity": "location",
-                        "value": "section"
-                    }
-                ]
-            },
-            {
-                "text": "dẫn đường cho tôi tới khu vực năm",
-                "intent": "command_lead_way",
-                "entities": [
-                    {
-                        "start": 22,
-                        "end": 28,
-                        "entity": "location",
-                        "value": "section"
-                    }
-                ]
-            },
-            {
                 "text": "chỉ dẫn cho mình tời vị thế của đại học quốc gia trên trường quốc tế",
                 "intent": "command_lead_way",
                 "entities": [
@@ -2238,6 +2528,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 15,
+                        "end": 17,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 33,
                         "end": 48,
                         "entity": "location",
@@ -2257,6 +2553,12 @@
                 "entities": [
                     {
                         "start": 23,
+                        "end": 25,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 23,
                         "end": 29,
                         "entity": "location",
                         "value": "section"
@@ -2273,6 +2575,12 @@
                 "text": "dẫn tôi tới khu đại học tổng hợp",
                 "intent": "command_lead_way",
                 "entities": [
+                    {
+                        "start": 12,
+                        "end": 14,
+                        "entity": "location",
+                        "value": "section"
+                    },
                     {
                         "start": 16,
                         "end": 31,
@@ -2328,6 +2636,12 @@
                 "intent": "command_lead_way",
                 "entities": [
                     {
+                        "start": 12,
+                        "end": 14,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
                         "start": 42,
                         "end": 57,
                         "entity": "location",
@@ -2336,6 +2650,162 @@
                     {
                         "start": 30,
                         "end": 36,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn tôi tới khu sự quan tâm của đảng dành cho đại học quốc gia",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 14,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 46,
+                        "end": 61,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 16,
+                        "end": 26,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn tôi tới khu vực các công trình nghiên cứu tiêu biểu của đại học quốc gia",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 14,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 12,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 60,
+                        "end": 75,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn tôi tới khu vực đại học quốc gia việt nam",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 14,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 12,
+                        "end": 18,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 20,
+                        "end": 35,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "chỉ cho tôi khu các giải thưởng trong nước của đại học quốc gia",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 12,
+                        "end": 14,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 47,
+                        "end": 62,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 20,
+                        "end": 30,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "dẫn đường cho tôi tới khu vực giải thưởng quốc tế của đại học quốc gia",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 22,
+                        "end": 24,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 22,
+                        "end": 28,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 54,
+                        "end": 69,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 30,
+                        "end": 40,
+                        "entity": "location",
+                        "value": "section"
+                    }
+                ]
+            },
+            {
+                "text": "vị thế của đại học quốc gia ở đâu nhỉ",
+                "intent": "command_lead_way",
+                "entities": [
+                    {
+                        "start": 30,
+                        "end": 32,
+                        "entity": "location",
+                        "value": "question"
+                    },
+                    {
+                        "start": 28,
+                        "end": 32,
+                        "entity": "location",
+                        "value": "question"
+                    },
+                    {
+                        "start": 11,
+                        "end": 26,
+                        "entity": "location",
+                        "value": "section"
+                    },
+                    {
+                        "start": 0,
+                        "end": 5,
                         "entity": "location",
                         "value": "section"
                     }
@@ -3600,6 +4070,13 @@
             },
             {
                 "entity": "location",
+                "original_value": "room",
+                "synonyms": [
+                    "phòng truyền thống"
+                ]
+            },
+            {
+                "entity": "location",
                 "original_value": "question",
                 "synonyms": [
                     "đâu",
@@ -3621,6 +4098,7 @@
                 "entity": "location",
                 "original_value": "section",
                 "synonyms": [
+                    "khu",
                     "khu vực",
                     "đại học đông dương",
                     "đại học tổng hợp",
