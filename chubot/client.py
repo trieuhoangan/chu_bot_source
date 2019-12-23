@@ -11,7 +11,7 @@ from flask import request
 import spacy
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
-import speech_recognition as sr
+# import speech_recognition as sr
 from answer_retrieval import ChitChat
 from custom_lib import changeUnicode
 # from langdetect import detect
@@ -127,91 +127,91 @@ class ChatbotServer:
     ##
     # use to demo chatbot
     ##
-    def test_predict(self):
+    # def test_predict(self):
 
-        ####Declare Speech Recognition
-        r = sr.Recognizer()
-        mic = sr.Microphone()
-        with mic as source:
-            while True:
-                r.adjust_for_ambient_noise(source, 1)
-                print("ready to record, please speak >> ")
-                audio = r.listen(source,phrase_time_limit=5)
-                try:
-                    inmessage = r.recognize_google(audio,None,"vi-VN" "en-US")
+    #     ####Declare Speech Recognition
+    #     r = sr.Recognizer()
+    #     mic = sr.Microphone()
+    #     with mic as source:
+    #         while True:
+    #             r.adjust_for_ambient_noise(source, 1)
+    #             print("ready to record, please speak >> ")
+    #             audio = r.listen(source,phrase_time_limit=5)
+    #             try:
+    #                 inmessage = r.recognize_google(audio,None,"vi-VN" "en-US")
 
-                    #inmessage = input()
-                    if inmessage == 'stop' or inmessage=='bye':
-                        break
-                    inmessage = inmessage.lower()
-                    inmessage = changeUnicode.compound_unicode(inmessage)
-                    print(inmessage)
-                    responses = self.action.chubot.predict_intent(inmessage)
-                    entities = self.action.chubot.predict_entity(inmessage)
+    #                 #inmessage = input()
+    #                 if inmessage == 'stop' or inmessage=='bye':
+    #                     break
+    #                 inmessage = inmessage.lower()
+    #                 inmessage = changeUnicode.compound_unicode(inmessage)
+    #                 print(inmessage)
+    #                 responses = self.action.chubot.predict_intent(inmessage)
+    #                 entities = self.action.chubot.predict_entity(inmessage)
                     
-                    # print(responses)
-                    print("\n")
-                    print(entities)
-                    (prob, intent) = responses[0]
-                    # print(prob)
-                    print(intent)
-                    self.command_code = 0
-                    self.section_id = -1
-                    self.mp3 = -1
-                    response = self.action.handle_message(inmessage)
-                    if intent=='chitchat':
-                        most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,0)
-                        print(most_similar_question)
-                        response = answer
-                        ## open mp3 file to introduce the room
-                        if str(response) == "100.mp3":
-                            self.mp3 = 100
-                            self.code = self.use_mp3_code
-                            self.section_id=-1
-                    if intent=='ask_what':
-                        most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,1)
-                        print(most_similar_question)
-                        response = answer
-                    if intent=='ask_who':
-                        most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,2)
-                        print(most_similar_question)
-                        response = answer
-                    if intent=='ask_where':
-                        most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,3)
-                        print(most_similar_question)
-                        response = answer
-                    if intent=='ask_number':
-                        most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,4)
-                        print(most_similar_question)
-                        response = answer
-                    if intent=='ask_when':
-                        most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,5)
-                        print(most_similar_question)
-                        response = answer
-                    if intent =='command_lead_way' and len(entities)!=0:
-                        for entity in entities:
-                            if entity["entity"] =="section":
-                                most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,6)
-                                print(most_similar_question)
-                                self.section_id = answer
-                                code = self.lead_to_section_code
-                            if entity["entity"] =="area":
-                                code = self.go_around_code
+    #                 # print(responses)
+    #                 print("\n")
+    #                 print(entities)
+    #                 (prob, intent) = responses[0]
+    #                 # print(prob)
+    #                 print(intent)
+    #                 self.command_code = 0
+    #                 self.section_id = -1
+    #                 self.mp3 = -1
+    #                 response = self.action.handle_message(inmessage)
+    #                 if intent=='chitchat':
+    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,0)
+    #                     print(most_similar_question)
+    #                     response = answer
+    #                     ## open mp3 file to introduce the room
+    #                     if str(response) == "100.mp3":
+    #                         self.mp3 = 100
+    #                         self.code = self.use_mp3_code
+    #                         self.section_id=-1
+    #                 if intent=='ask_what':
+    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,1)
+    #                     print(most_similar_question)
+    #                     response = answer
+    #                 if intent=='ask_who':
+    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,2)
+    #                     print(most_similar_question)
+    #                     response = answer
+    #                 if intent=='ask_where':
+    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,3)
+    #                     print(most_similar_question)
+    #                     response = answer
+    #                 if intent=='ask_number':
+    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,4)
+    #                     print(most_similar_question)
+    #                     response = answer
+    #                 if intent=='ask_when':
+    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,5)
+    #                     print(most_similar_question)
+    #                     response = answer
+    #                 if intent =='command_lead_way' and len(entities)!=0:
+    #                     for entity in entities:
+    #                         if entity["entity"] =="section":
+    #                             most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,6)
+    #                             print(most_similar_question)
+    #                             self.section_id = answer
+    #                             code = self.lead_to_section_code
+    #                         if entity["entity"] =="area":
+    #                             code = self.go_around_code
                         
-                    if intent=='ask_where' and len(entities)==0:
-                        mp3 = 15
-                        code = self.use_mp3_code
-                    result_json = {"mp3":self.mp3,"section_id":self.section_id,
-                                "code": code, "response": response}
-                    print("bot response >> ")
-                    print(json.dumps(result_json, ensure_ascii=False))
+    #                 if intent=='ask_where' and len(entities)==0:
+    #                     mp3 = 15
+    #                     code = self.use_mp3_code
+    #                 result_json = {"mp3":self.mp3,"section_id":self.section_id,
+    #                             "code": code, "response": response}
+    #                 print("bot response >> ")
+    #                 print(json.dumps(result_json, ensure_ascii=False))
                         
-                except sr.UnknownValueError:
-                    # text = r.recognize_google(audio,None,"vi-VN" "en-US",show_all=True)
-                    print("Oops! Didn't catch that ")
-                    # print(text)
-                except sr.RequestError as e:
-                    print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
+    #             except sr.UnknownValueError:
+    #                 # text = r.recognize_google(audio,None,"vi-VN" "en-US",show_all=True)
+    #                 print("Oops! Didn't catch that ")
+    #                 # print(text)
+    #             except sr.RequestError as e:
+    #                 print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
     ##
     ## use to test chatbot
     ##
