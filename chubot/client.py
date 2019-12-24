@@ -290,17 +290,17 @@ if __name__ == "__main__":
     ##########Server Code#################
 
     
-    test.test_input_predict()
-    # app = Flask(__name__)
-    # @app.route('/')
-    # def hello_world():
-    #     if request.method == 'GET':
-    #         mess = request.args.get('mess', '')
-    #         print(mess)
-    #         line = test.predict(mess)
-    #         return str(line).replace("'",'"')
+    # test.test_input_predict()
+    app = Flask(__name__)
+    @app.route('/')
+    def hello_world():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+            print(mess)
+            line = test.predict(mess)
+            return str(line).replace("'",'"')
 
-    # #     # return "null"
+    #     # return "null"
 
     # app.run(host= '0.0.0.0')
     #########Server Code#################
