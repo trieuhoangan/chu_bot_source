@@ -46,13 +46,14 @@ class ChatbotServer:
         self.answer_retriever.add_more_data(lead_to_section_file)
         self.nlp = spacy.load('vi_spacy_model')
     def create_model(self,name):
-        self.chubot = ChuBotBrain(name, language='vi')
-        self.chubot.load_data("data/full_train.json")
-        # chubot.load_data("data/vi_nlu_ask_way.json")
-        meta = chubot.train()
+        # self.chubot = ChuBotBrain(name, language='vi')
+        # self.chubot.load_data("data/full_train.json")
+        # # chubot.load_data("data/vi_nlu_ask_way.json")
+        # self.meta = self.chubot.train()
         # print(meta)
         # print(chubot.entity_synonyms)
-
+        self.action.chubot.load_data("data/full_train.json")
+        self.meta = self.action.chubot.train()
     def test_entity_train(self,name):
         chubot = ChuBotBrain(name, language='vi')
         chubot.load_data("data/full_train.json")
@@ -146,72 +147,7 @@ class ChatbotServer:
     #                 inmessage = inmessage.lower()
     #                 inmessage = changeUnicode.compound_unicode(inmessage)
     #                 print(inmessage)
-    #                 responses = self.action.chubot.predict_intent(inmessage)
-    #                 entities = self.action.chubot.predict_entity(inmessage)
-                    
-    #                 # print(responses)
-    #                 print("\n")
-    #                 print(entities)
-    #                 (prob, intent) = responses[0]
-    #                 # print(prob)
-    #                 print(intent)
-    #                 self.command_code = 0
-    #                 self.section_id = -1
-    #                 self.mp3 = -1
-    #                 response = self.action.handle_message(inmessage)
-    #                 if intent=='chitchat':
-    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,0)
-    #                     print(most_similar_question)
-    #                     response = answer
-    #                     ## open mp3 file to introduce the room
-    #                     if str(response) == "100.mp3":
-    #                         self.mp3 = 100
-    #                         self.code = self.use_mp3_code
-    #                         self.section_id=-1
-    #                 if intent=='ask_what':
-    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,1)
-    #                     print(most_similar_question)
-    #                     response = answer
-    #                 if intent=='ask_who':
-    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,2)
-    #                     print(most_similar_question)
-    #                     response = answer
-    #                 if intent=='ask_where':
-    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,3)
-    #                     print(most_similar_question)
-    #                     response = answer
-    #                 if intent=='ask_number':
-    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,4)
-    #                     print(most_similar_question)
-    #                     response = answer
-    #                 if intent=='ask_when':
-    #                     most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,5)
-    #                     print(most_similar_question)
-    #                     response = answer
-    #                 if intent =='command_lead_way' and len(entities)!=0:
-    #                     for entity in entities:
-    #                         if entity["entity"] =="section":
-    #                             most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,6)
-    #                             print(most_similar_question)
-    #                             self.section_id = answer
-    #                             code = self.lead_to_section_code
-    #                         if entity["entity"] =="area":
-    #                             code = self.go_around_code
-                        
-    #                 if intent=='ask_where' and len(entities)==0:
-    #                     mp3 = 15
-    #                     code = self.use_mp3_code
-    #                 result_json = {"mp3":self.mp3,"section_id":self.section_id,
-    #                             "code": code, "response": response}
-    #                 print("bot response >> ")
-    #                 print(json.dumps(result_json, ensure_ascii=False))
-                        
-    #             except sr.UnknownValueError:
-    #                 # text = r.recognize_google(audio,None,"vi-VN" "en-US",show_all=True)
-    #                 print("Oops! Didn't catch that ")
-    #                 # print(text)
-    #             except sr.RequestError as e:
-    #                 print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
+                    # self.predict(inmessage)
     ##
     ## use to test chatbot
     ##
@@ -219,6 +155,8 @@ class ChatbotServer:
         nlp = spacy.load('vi_spacy_model')
         botname = "an"
         action_domain_file = "data/new_domain.json"
+        section_id=-1
+        response=""
         speak_code = 0
         lead_to_section_code = 1
         # chubot = ChuBotBrain(botname, language='vi')
@@ -237,69 +175,10 @@ class ChatbotServer:
                 break
             inmessage = inmessage.lower()
             print(inmessage)
-            responses = action.chubot.predict_intent(inmessage)
-            entities = action.chubot.predict_entity(inmessage)
-            
-            print("\n")
-            print(entities)
-            (prob, intent) = responses[0]
-            print(intent)
-            command_code = 0
-            mp3 = -1
-            for command in list_command_code:
-                if(command.get("intent") == intent):
-                    print(command.get("command_code"))
-                    command_code = command.get("command_code")
-            response = action.handle_message(inmessage)
-            if intent=='chitchat':
-                most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,0)
-                print(most_similar_question)
-                response = answer
-                ## open mp3 file to introduce the room
-                if str(response) == "100.mp3":
-                    mp3 = 100
-                    command_code = speak_code
-            if intent=='ask_what':
-                most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,1)
-                print(most_similar_question)
-                response = answer
-            if intent=='ask_who':
-                most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,2)
-                print(most_similar_question)
-                response = answer
-            if intent=='ask_where':
-                most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,3)
-                print(most_similar_question)
-                response = answer
-            if intent=='ask_number':
-                most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,4)
-                print(most_similar_question)
-                response = answer
-            if intent=='ask_when':
-                most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,5)
-                print(most_similar_question)
-                response = answer
-            if intent =='command_lead_way' and len(entities)!=0:
-                for entity in entities:
-                    if entity["entity"] =="section":
-                        most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,6)
-                        print(most_similar_question)
-                        response = answer
-                        code = self.lead_to_section_code
-                print(1)
-            if intent=='ask_where' and len(entities)==0:
-                mp3 = 15
-            if intent=='introduce_vnu':
-                mp3 = int(response[0])
-            result_json = {"intent": intent, "entities": entities,"mp3":mp3,
-                        "command_code": command_code, "response": response}
-            print(json.dumps(result_json, ensure_ascii=False))
-            for token in nlp(inmessage):
-                if token.tag_ =='P' or token.tag_=='Np':
-                    print(token.text)
-            print("bot > "+str(response))
+            self.predict(inmessage)
+           
     #
-    #use to demo on web
+    #use to demo on web and main predict, if fix format ouput or input, fix in here
     #
     def predict(self,inmessage):
         #prepare for chatbot
@@ -338,9 +217,12 @@ class ChatbotServer:
         responses = self.action.chubot.predict_intent(inmessage)
         entities = self.action.chubot.predict_entity(inmessage)
         (prob, intent) = responses[0]
-
-        response = self.action.handle_message(inmessage)[0]
-
+        
+        response = self.action.handle_message(inmessage)
+        if(len(response)>0):
+            response = response[0]
+        else:
+            response ="bạn hỏi lại được không"
         if intent=='chitchat':
             most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,0)
             print(most_similar_question)
@@ -385,6 +267,8 @@ class ChatbotServer:
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
             code = use_mp3_code
+        if response == None:
+            response = "bạn nói lại có được không"
         result_json = {"mp3":mp3,"section_id":section_id,
                     "code": code, "response": response}
         print(intent)
@@ -393,31 +277,32 @@ class ChatbotServer:
         return result_json
 
 if __name__ == "__main__":
+    test = ChatbotServer()
     # test_entity_train('an')
     # test_intent_train('an')
     # test_answer_retrieval('data/chitchat_test.csv')
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    # create_model('an')
+    test.create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################
 
-    test = ChatbotServer()
-    # test.test_predict()
-    app = Flask(__name__)
-    @app.route('/')
-    def hello_world():
-        if request.method == 'GET':
-            mess = request.args.get('mess', '')
-            print(mess)
-            line = test.predict(mess)
-            return str(line).replace("'",'"')
+    
+    test.test_input_predict()
+    # app = Flask(__name__)
+    # @app.route('/')
+    # def hello_world():
+    #     if request.method == 'GET':
+    #         mess = request.args.get('mess', '')
+    #         print(mess)
+    #         line = test.predict(mess)
+    #         return str(line).replace("'",'"')
 
-    #     # return "null"
+    # #     # return "null"
 
-    app.run(host= '0.0.0.0')
+    # app.run(host= '0.0.0.0')
     #########Server Code#################
 
     

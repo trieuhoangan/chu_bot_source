@@ -272,7 +272,7 @@ if __name__=="__main__":
     #     print('done')
     # b = DataObject()
     # b.load_quest_data('full_train.txt',1,0)
-    full_train_output = 'full_train.json'
+    full_train_output = '../full_train.json'
     with open(full_train_output, 'w', encoding='utf8') as output:
         output.write(json.dumps(a.json_object, ensure_ascii=False))
         print('done')

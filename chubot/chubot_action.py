@@ -42,6 +42,7 @@ class ChuBotAction():
         import random
         import re
         # TODO Handle KeyError dictionary
+        response=""
         if action in self.action_templates:
             # if action is a template
             templates = self.action_templates.get(action)
@@ -64,7 +65,7 @@ class ChuBotAction():
                     if ent['entity'] == entity:
                         value = ent['value']
                 return [template.replace(template_entity.group(), value)]
-
+        
         elif action in self.action_custom:
             import custom_actions
             func = getattr(

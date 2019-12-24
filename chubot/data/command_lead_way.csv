@@ -554,19 +554,6 @@ command_lead_way,xin hãy đưa mình đi,xin hãy đưa mình đi
 command_lead_way,xin hãy đưa mình đi,xin hãy đưa mình đi
 command_lead_way,xin hãy đưa mình đi,xin hãy đưa mình đi
 command_lead_way,xin hãy đưa mình đi,xin hãy đưa mình đi
-command_lead_way,a,đưa mình tới khu vực số một
-command_lead_way,a,dẫn đường cho tôi tới khu vực số hai
-command_lead_way,a,dẫn đường cho tôi tới khu vực số ba
-command_lead_way,a,đưa tôi tới khu vực bốn
-command_lead_way,a,dẫn đường cho tôi tới khu vực năm
-command_lead_way,a,đưa cho tôi tới khu vực sáu
-command_lead_way,a,dẫn đường cho tôi tới khu vực bảy
-command_lead_way,a,chỉ đường cho tôi tới khu vực tám
-command_lead_way,a,dẫn đường cho tôi tới khu vực chín
-command_lead_way,a,dẫn đường cho tôi tới khu vực mười
-command_lead_way,a,dẫn đường cho tôi tới khu vực mười một
-command_lead_way,a,dẫn đường cho tôi tới khu vực mười hai
-command_lead_way,a,dẫn đường cho tôi tới khu vực mười ba
 command_lead_way,a,đưa mình tới khu trưng bày ảnh các đời giám đốc và phó giám đốc của đại học quốc gia
 command_lead_way,a,đưa mình tới các thành tựu nghiên cứu khoa học của đại học quốc gia
 command_lead_way,a,chỉ dẫn cho mình tời vị thế của đại học quốc gia trên trường quốc tế
@@ -577,8 +564,48 @@ command_lead_way,a,chỉ cho tôi ngôi sao lớn của đại học quốc gia
 command_lead_way,a,nơi trưng bày danh sách các tiến sĩ danh dự của đại học quốc gia ở đâu nhỉ
 command_lead_way,a,dẫn tôi tới khu trưng bày các đối tác của đại học quốc gia
 command_lead_way,a,dẫn tôi tới khu sự quan tâm của đảng dành cho đại học quốc gia
+command_lead_way,a,đưa tôi tới khu vực của sự quan tâm của đảng và nhà nước
+command_lead_way,a,dẫn tôi tới chỗ sự quan tâm của đảng và nhà nước
+command_lead_way,a,chỉ tôi tới sự quan tâm của đảng và nhà nước
 command_lead_way,a,dẫn tôi tới khu vực các công trình nghiên cứu tiêu biểu của đại học quốc gia
 command_lead_way,a,dẫn tôi tới khu vực đại học quốc gia việt nam
 command_lead_way,a,chỉ cho tôi khu các giải thưởng trong nước của đại học quốc gia
 command_lead_way,a,dẫn đường cho tôi tới khu vực giải thưởng quốc tế của đại học quốc gia
 command_lead_way,a,vị thế của đại học quốc gia ở đâu nhỉ
+command_lead_way,a,đưa đến các tiến sĩ danh dự của đại học quốc gia
+command_lead_way,a,đưa đến khu vực đại học quốc gia hà nội
+command_lead_way,a,đưa đến khu vực đại học quốc gia việt nam
+command_lead_way,a,đến khu vực đại học quốc gia hà nội
+command_lead_way,a,đưa tôi đến khu vực đại học quốc gia hà nội
+command_lead_way,a,đưa tôi tới chỗ trưng bày các tiến sĩ danh dự của đại học quốc gia
+command_lead_way,a,đưa tôi tới khu vực quá trình hình thành và phát triển
+command_lead_way,a,đưa tôi tới chỗ quá trình hình thành và phát triển
+command_lead_way,a,đưa tôi tới khu quá trình hình thành và phát triển
+command_lead_way,a,đưa tôi tới khu vực đại học quốc gia việt nam
+command_lead_way,a,đưa tôi tới chỗ có các đặc trưng của đại học quốc gia việt nam
+command_lead_way,a,đưa tôi tới khu vực các đặc trưng cơ bản của đại học quốc gia việt nam
+command_lead_way,a,đưa tôi tới khu các đặc trưng cơ bản của đại học quốc gia việt nam
+command_lead_way,a,tới khu vực các đặc trưng cơ bản của đại học quốc gia việt nam
+command_lead_way,a,đến chỗ các đặc trưng cơ bản của đại học quốc gia việt nam
+command_lead_way,a,đưa tôi tới khu lịch sử của đại học đông dương
+command_lead_way,a,đưa tôi tới khu lịch sử của đại học quốc gia việt nam
+command_lead_way,a,đưa tôi tới khu lịch sử của đại học quốc gia hà nội
+command_lead_way,a,đưa tôi tới chỗ thành tựu nổi bật
+command_lead_way,a,đưa tôi tới những thành tựu nổi bật
+command_lead_way,a,đưa tới các chỗ thành tựu nổi bật
+command_lead_way,a,tới chỗ thành tựu nổi bật
+command_lead_way,a,đưa tôi tới khu vực giải thưởng trong nước
+command_lead_way,a,đưa tôi tới khu vực giải thưởng quốc tế
+command_lead_way,a,đến khu vực giải thưởng quốc tế
+command_lead_way,a,tới khu vực giải thưởng quốc tế
+command_lead_way,a,đưa tôi tới chỗ vị thế quốc tế
+command_lead_way,a,đưa tôi tới khu vị thế quốc tế
+command_lead_way,a,đến chỗ vị thế quốc tế
+command_lead_way,a,đến các giám đốc
+command_lead_way,a,tới chỗ các giám đốc
+command_lead_way,a,tới nơi của các giám đốc
+command_lead_way,a,tới tôi đến chỗ các giám đốc
+command_lead_way,a,tới tôi đến khu hoa sen
+command_lead_way,a,tới tôi đến khu vực hoa sen
+command_lead_way,a,tới tôi đến bông hoa sen
+command_lead_way,a,tới tôi đến bông hoa sen của đại học quốc gia

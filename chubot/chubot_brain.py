@@ -63,7 +63,7 @@ class ChuBotBrain():
 
         for cell in data['nlu_data']['lookup_tables']:
             self.lookup_tables.append(cell)
-
+            
     def train(self, **kwargs):
         """Training
             train nercrf and intent classification models
@@ -77,7 +77,7 @@ class ChuBotBrain():
 
     def train_nercrf(self, train_test_ratio=1.0, **kwargs):
         """
-        *kwargs for future arguments of CRF and learning algorithm
+        *kwargs for future arguments of CRF and learning algorith
         train_test_ratio= 1 if using all data for training
         TODO: handle multiple datafiles?
         """
