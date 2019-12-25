@@ -284,7 +284,7 @@ if __name__ == "__main__":
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    test.create_model('an')
+    # test.create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################
@@ -296,14 +296,18 @@ if __name__ == "__main__":
     def hello_world():
         if request.method == 'GET':
             mess = request.args.get('mess', '')
+            if mess == None or mess=="":
+                result_json = {"mp3":-1,"section_id":-1,
+                    "code": 0, "response": ""}
+                return str(result_json)    
             print(mess)
             line = test.predict(mess)
             return str(line).replace("'",'"')
 
     #     # return "null"
 
-    # app.run(host= '0.0.0.0')
-    #########Server Code#################
+    app.run(host= '0.0.0.0')
+    ########Server Code#################
 
     
     # test_input_predict()
