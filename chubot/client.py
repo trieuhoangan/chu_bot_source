@@ -192,6 +192,15 @@ class ChatbotServer:
             response = response[0]
         else:
             response =""
+        if len(entities) >0:
+            for entity in entities:
+                if entity["entity"] =="present":
+                    mp3 = 100
+                    code = self.use_mp3_code
+                    section_id = -1
+                    result_json = {"mp3":mp3,"section_id":section_id,
+                    "code": code, "response": response}
+                    return result_json
         if intent=='chitchat':
             most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,0)
             print(most_similar_question)
