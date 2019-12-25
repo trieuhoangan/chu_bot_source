@@ -46,18 +46,12 @@ class ChatbotServer:
         self.answer_retriever.add_more_data(lead_to_section_file)
         self.nlp = spacy.load('vi_spacy_model')
     def create_model(self,name):
-        # self.chubot = ChuBotBrain(name, language='vi')
-        # self.chubot.load_data("data/full_train.json")
-        # # chubot.load_data("data/vi_nlu_ask_way.json")
-        # self.meta = self.chubot.train()
-        # print(meta)
-        # print(chubot.entity_synonyms)
         self.action.chubot.load_data("data/full_train.json")
         self.meta = self.action.chubot.train()
     def test_entity_train(self,name):
         chubot = ChuBotBrain(name, language='vi')
         chubot.load_data("data/full_train.json")
-        # chubot.load_data("data/vi_nlu_ask_way.json")
+        
         meta = chubot.train_nercrf()
 
     def encode_intent(self,intent):
@@ -85,7 +79,6 @@ class ChatbotServer:
     def test_intent_train(self,name):
         chubot = ChuBotBrain(name, language='vi')
         chubot.load_data("data/train.json")
-        # chubot.load_data("data/vi_nlu_ask_way.json")
         meta = chubot.train_intent_classification()
         test_link = "data/test.txt"
         with open(test_link,'r',encoding='utf=8') as f:
@@ -181,13 +174,6 @@ class ChatbotServer:
     #use to demo on web and main predict, if fix format ouput or input, fix in here
     #
     def predict(self,inmessage):
-        #prepare for chatbot
-        
-        # botname = "an"
-        # action_domain_file = "data/new_domain.json"
-        # action = ChuBotAction(botname)
-        # action.load_domain(action_domain_file)
-
         speak_code = 0
         go_around_code = 1
         lead_to_section_code = 2
@@ -195,23 +181,6 @@ class ChatbotServer:
         code = 0
         mp3 = -1
         section_id = -1
-        # ##load data to retrieve answer
-        # chitchat_file = 'data/chitchat.csv'
-        # ask_what_file = 'data/ask_what.csv'
-        # ask_who_file = 'data/ask_who.csv'
-        # ask_where_file = 'data/ask_where.csv'
-        # ask_number_file = 'data/ask_number.csv'
-        # ask_when_file = 'data/ask_when.csv'
-        # lead_to_section_file = 'data/lead_to_section.csv'
-        # answer_retriever = ChitChat(chitchat_file)
-        # answer_retriever.add_more_data(ask_what_file)
-        # answer_retriever.add_more_data(ask_who_file)
-        # answer_retriever.add_more_data(ask_where_file)
-        # answer_retriever.add_more_data(ask_number_file)
-        # answer_retriever.add_more_data(ask_when_file)
-        # answer_retriever.add_more_data(lead_to_section_file)
-
-
         inmessage = inmessage.lower()
         print(inmessage)
         responses = self.action.chubot.predict_intent(inmessage)
@@ -222,7 +191,7 @@ class ChatbotServer:
         if(len(response)>0):
             response = response[0]
         else:
-            response ="bạn hỏi lại được không"
+            response =""
         if intent=='chitchat':
             most_similar_question, answer = self.answer_retriever.retrieve_answer(inmessage,0)
             print(most_similar_question)
@@ -268,7 +237,7 @@ class ChatbotServer:
             mp3 = 15
             code = use_mp3_code
         if response == None:
-            response = "bạn nói lại có được không"
+            response = ""
         result_json = {"mp3":mp3,"section_id":section_id,
                     "code": code, "response": response}
         print(intent)
@@ -284,7 +253,7 @@ if __name__ == "__main__":
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    # test.create_model('an')
+    test.create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################
