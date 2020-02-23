@@ -120,7 +120,7 @@ def test_answer_retrieval(filename):
         parts = row.split(',')
         origin = parts[0]
         text = parts[1]
-        most_similar_question, answer = chitchat.retrieve_answer(text)
+        most_similar_question, answer = chitchat.retrieve_answer(text,0)[0]
         results.append(most_similar_question)
         origins.append(origin)
     print('answer retriver precision ',precision_score(origins,results,average='weighted'))
@@ -243,6 +243,7 @@ def test_answer_retrieval(filename):
 #                 # print(text)
 #             except sr.RequestError as e:
 #                 print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
+
 ##
 ## use to test chatbot
 ##
@@ -286,32 +287,32 @@ def predict(inmessage):
             mp3 = 100
             code = use_mp3_code
     if intent=='ask_what':
-        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)[0]
         print(most_similar_question)
         response = answer
         if str(response) == "100.mp3":
             mp3 = 100
             code = use_mp3_code
     if intent=='ask_who':
-        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,2)
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,2)[0]
         print(most_similar_question)
         response = answer
     if intent=='ask_where':
-        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,3)
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,3)[0]
         print(most_similar_question)
         response = answer
     if intent=='ask_number':
-        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,4)
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,4)[0]
         print(most_similar_question)
         response = answer
     if intent=='ask_when':
-        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,5)
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,5)[0]
         print(most_similar_question)
         response = answer
     if intent =='command_lead_way' and len(entities)!=0:
         for entity in entities:
             if entity["entity"] =="section":
-                most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)
+                most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
                 print(most_similar_question)
                 section_id = answer
                 code = lead_to_section_code

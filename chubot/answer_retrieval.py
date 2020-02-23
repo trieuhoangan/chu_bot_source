@@ -1,6 +1,7 @@
 import numpy as np
 import spacy
 import pandas as pd
+import heapq
 from gensim.models import KeyedVectors
 #load spacy model
 #Need to install spacy version >2.1
@@ -37,8 +38,15 @@ class ChitChat:
         distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
         id=np.argmin(distances)
         print(distances[id])
-        print(id)
-        return self.qa_list[ids][id]
+        if distances[id] >25:
+            return [self.qa_list[ids][0],self.qa_list[ids][0],self.qa_list[ids][0]]
+        # print(id)
+        top3 = heapq.nsmallest(3,range(len(distances)),distances.__getitem__)
+        print(top3)
+        list_answer = []
+        for id_ans in top3:
+            list_answer.append(self.qa_list[ids][id_ans])
+        return list_answer
 
     def add_more_data(self,datafile):
         df = pd.read_csv(datafile, header=None, names=['intent', 'q', 'n', 'a'])
@@ -56,7 +64,7 @@ if __name__ == '__main__':
     
     # input_question = 'bạn thích gì nhất?'
     input_question = 'hiệu trưởng trường đại học công nghệ là ai'
-    most_similar_question, answer = chitchat.retrieve_answer(input_question)
+    most_similar_question, answer = chitchat.retrieve_answer(input_question,0)
     
     print("inputquestion: ", input_question)
     print("most similar question found: ", most_similar_question)

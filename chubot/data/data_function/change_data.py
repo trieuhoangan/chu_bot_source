@@ -17,6 +17,7 @@ usable_set = []
 ###
 class DataObject():
     def __init__(self):
+        self.count = 0
         self.json_object = {"nlu_data": {"common_examples": [],
                                 "regex_features": [], "lookup_tables": [], "entity_synonyms": []}}
     #####
@@ -94,6 +95,7 @@ class DataObject():
             intent = row[entity_col].lower()
             if text !='':
                 if text not in lines:
+                    self.count = self.count+1
                     lines.append(text)
                     examples.append({'text':text,'intent':intent})
 
@@ -189,7 +191,8 @@ class DataObject():
         #         test_out.write('{},{}\n'.format(test.get('intent'),test.get('text')))
     
     # use to write data as the noised data to recognise noise and good data
-
+    def printCount(self):
+        print(self.count)
     def split_train_test_chitchat(self,list_filename,origin_col,noice_col,test_output,train_output):
         dataset = []
         test = []
@@ -253,6 +256,7 @@ if __name__=="__main__":
     a.load_distinc_data('../command_lead_way.csv',2,0)
     a.load_distinc_data('../ask_robot.csv',2,0)
     a.load_distinc_data('../greeting_end.csv',2,0)
+    a.printCount()
     # a.load_quest_data('../oldata/quest_data.csv',2,0)
     # a.load_distinc_data('quest_data_noise.csv',2,0)
     # load_quest_data('Q.csv',2,0)
