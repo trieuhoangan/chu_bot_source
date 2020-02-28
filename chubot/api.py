@@ -4,21 +4,35 @@ import sklearn_crfsuite
 import io
 import csv
 from answer_retrieval import ChitChat
-
-
+import os
+import spacy
 class ChatBotAPI():
     def __init__(self, language, botname):
         self.followup_actions = []
         self.action_templates = []
         self.action_custom = []
         self.slots = []
+        self.name = botname
+        self.model_folder = "./models"
+        self.crf_model_path = os.path.join(
+            "./models", self.name + "_NERCRF.pkl")
+        self.intent_cls_model_path = os.path.join(
+            "./models", self.name + "_intent_classification.pkl")
         domain_file = "data/new_domain.json"
         # self.load_domain(action_domain_file)
-        self.chatbot = ChuBotBrain(botname, "vi")
+        # self.chatbot = ChuBotBrain(botname, "vi")
         self.tfidf = None
         self.le = None
         self.crf = None
         self.clf = None
+        self.lead_to_section_code =2
+        self.go_around_code = 1
+        self.speak_code = 0
+        self.use_mp3_code = 3
+        self.code = 0
+        self.mp3 = -1
+        self.section_id = -1
+        
         with io.open(domain_file) as f:
             action_domain = json.loads(
                 open(domain_file, encoding="utf-8").read())
@@ -31,7 +45,22 @@ class ChatBotAPI():
         self.action_templates = action_domain["action_domain_data"]["action_templates"]
         self.action_custom = action_domain["action_domain_data"]["action_custom"]
         self.slots = action_domain["action_domain_data"]["slots"]
-
+    def load_answers(self):
+        chitchat_file = 'usingdata/chitchat.csv'
+        ask_what_file = 'usingdata/ask_what.csv'
+        ask_who_file = 'usingdata/ask_who.csv'
+        ask_where_file = 'usingdata/ask_where.csv'
+        ask_number_file = 'usingdata/ask_number.csv'
+        ask_when_file = 'usingdata/ask_when.csv'
+        lead_to_section_file = 'usingdata/lead_to_section.csv'
+        answer_retriever = ChitChat(chitchat_file)
+        answer_retriever.add_more_data(ask_what_file)
+        answer_retriever.add_more_data(ask_who_file)
+        answer_retriever.add_more_data(ask_where_file)
+        answer_retriever.add_more_data(ask_number_file)
+        answer_retriever.add_more_data(ask_when_file)
+        answer_retriever.add_more_data(lead_to_section_file)
+        self.retriever = answer_retriever
     def load_domain(self, domain_file):
         """Load domain info to bot
         """
@@ -50,14 +79,14 @@ class ChatBotAPI():
     def load_model(self):
         import cloudpickle
         from sklearn.externals import joblib
-        crf = joblib.load(self.chatbot.crf_model_path)
+        crf = joblib.load(self.crf_model_path)
         self.crf = crf
-        with io.open(self.chatbot.intent_cls_model_path, "rb") as f:
+        with io.open(self.intent_cls_model_path, "rb") as f:
             tfidf, le, clf = cloudpickle.load(f)
         self.clf = clf
         self.le = le
         self.tfidf = tfidf
-
+        self.nlp = spacy.load('vi_spacy_model')
     def handle_action(self, action, **kwargs):
         """Handle a response action
             Select a random template for the action
@@ -131,7 +160,7 @@ class ChatBotAPI():
         return bot_responses
 
     def predict_intent(self, message):
-        inmessage_tokens = [token.text for token in self.chatbot.nlp(message)]
+        inmessage_tokens = [token.text for token in self.nlp(message)]
         inmessage_join_tokens = " ".join(inmessage_tokens)
         inmessage_vector = self.tfidf.transform([inmessage_join_tokens])
         # predict the probabilies
@@ -147,11 +176,62 @@ class ChatBotAPI():
         y_probs_with_labels.sort(key=lambda v: -v[0])
 
         return y_probs_with_labels
+    def word2features(self, sent, i):
+        word = sent[i][0]
+        postag = sent[i][1]
 
+        features = {
+            'bias': 1.0,
+            'word.lower()': word.lower(),
+            'word[-3:]': word[-3:],
+            'word[-2:]': word[-2:],
+            'word.isupper()': word.isupper(),
+            'word.istitle()': word.istitle(),
+            'word.isdigit()': word.isdigit(),
+            'postag': postag,
+            'postag[:2]': postag[:2],
+        }
+        if i > 0:
+            word1 = sent[i-1][0]
+            postag1 = sent[i-1][1]
+            features.update({
+                '-1:word.lower()': word1.lower(),
+                '-1:word.istitle()': word1.istitle(),
+                '-1:word.isupper()': word1.isupper(),
+                '-1:postag': postag1,
+                '-1:postag[:2]': postag1[:2],
+            })
+        else:
+            features['BOS'] = True
+
+        if i < len(sent)-1:
+            word1 = sent[i+1][0]
+            postag1 = sent[i+1][1]
+            features.update({
+                '+1:word.lower()': word1.lower(),
+                '+1:word.istitle()': word1.istitle(),
+                '+1:word.isupper()': word1.isupper(),
+                '+1:postag': postag1,
+                '+1:postag[:2]': postag1[:2],
+            })
+        else:
+            features['EOS'] = True
+
+        return features
+
+    def sent2features(self, sent):
+        return [self.word2features(sent, i) for i in range(len(sent))]
+
+    def sent2labels(self, sent):
+        return [label for token, postag, label in sent]
+
+    def sent2tokens(self, sent):
+        # token is the word!
+        return [token for token, postag, label in sent]
     def predict_entity(self, message):
-        indoc = self.chatbot.nlp(message)
+        indoc = self.nlp(message)
         insent = [(ii.text, ii.tag_, 'N/A') for ii in indoc]
-        insent_features = self.chatbot.sent2features(insent)
+        insent_features = self.sent2features(insent)
         ent_probs = self.crf.predict_marginals_single(insent_features)
         # max of probability of each token
         ent_probs_sorted = [sorted(eprob.items(), key=lambda kv:(
@@ -179,59 +259,60 @@ class ChatBotAPI():
         list_command_code = []
         for row in csvreader:
             list_command_code.append(row)
-        print(list_command_code)
         response = self.handle_message(inmessage)
         intents = self.predict_intent(inmessage)
         entities = self.predict_entity(inmessage)
         (prob, intent) = intents[0]
-        command_code = 0
-        mp3 = -1
-        intent_id = 0
-        chitchat_file = 'data/chitchat.csv'
-        ask_what_file = 'data/ask_what.csv'
-        ask_who_file = 'data/ask_who.csv'
-        ask_where_file = 'data/ask_where.csv'
-        ask_number_file = 'data/ask_number.csv'
-        ask_when_file = 'data/ask_when.csv'
-        chitchat = ChitChat(chitchat_file)
-        ask_what = ChitChat(ask_what_file)
-        ask_who = ChitChat(ask_who_file)
-        ask_where = ChitChat(ask_where_file)
-        ask_when = ChitChat(ask_when_file)
-        ask_number = ChitChat(ask_number_file)
-        for command in list_command_code:
-            if(command[1] == intent):
-                print(command[2])
-                command_code = command[2]
-                intent_id = command[0]
+        mp3 = -1   
+        section_id = -1
+        code = 0
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
-        if intent=='ask_number':
-            most_similar_question, answer = ask_number.retrieve_answer(inmessage)
-            print(most_similar_question)
+        
+        if intent=='chitchat':
+            most_similar_question, answer = self.retriever.retrieve_answer(inmessage,0)[0]
+            
             response = answer
-        if intent=='ask_when':
-            most_similar_question, answer = ask_when.retrieve_answer(inmessage)
-            print(most_similar_question)
+        ## open mp3 file to introduce the room
+        if str(response) == "100.mp3":
+            mp3 = 100
+            code = self.use_mp3_code
+        if intent=='ask_what':
+            most_similar_question, answer = self.retriever.retrieve_answer(inmessage,1)[0]
+            
             response = answer
+            if str(response) == "100.mp3":
+                mp3 = 100
+                code = self.use_mp3_code
         if intent=='ask_who':
-            most_similar_question, answer = ask_who.retrieve_answer(inmessage)
-            print(most_similar_question)
+            most_similar_question, answer = self.retriever.retrieve_answer(inmessage,2)[0]
+            
             response = answer
         if intent=='ask_where':
-            most_similar_question, answer = ask_where.retrieve_answer(inmessage)
-            print(most_similar_question)
+            most_similar_question, answer = self.retriever.retrieve_answer(inmessage,3)[0]
+            
             response = answer
-        if intent=='ask_what':
-            most_similar_question, answer = ask_what.retrieve_answer(inmessage)
-            print(most_similar_question)
+        if intent=='ask_number':
+            most_similar_question, answer = self.retriever.retrieve_answer(inmessage,4)[0]
+            
             response = answer
-        if intent=='chitchat':
-            most_similar_question, answer = chitchat.retrieve_answer(inmessage)
-            print(most_similar_question)
+        if intent=='ask_when':
+            most_similar_question, answer = self.retriever.retrieve_answer(inmessage,5)[0]
+            
             response = answer
-        if intent=='introduce_vnu':
-            mp3 = int(response[0])
-        result_json = {"intent": intent_id, "entities": entities,
-                       "command_code": command_code, "response": response,'mp3':mp3}
+        if intent =='command_lead_way' and len(entities)!=0:
+            for entity in entities:
+                if entity["entity"] =="section":
+                    most_similar_question, answer = self.retriever.retrieve_answer(inmessage,6)[0]
+                    section_id = answer
+                    code = self.lead_to_section_code
+                if entity["entity"] =="area":
+                    code = self.go_around_code
+            
+        if intent=='ask_where' and len(entities)==0:
+            mp3 = 15
+            code = self.use_mp3_code
+
+        result_json = {"mp3":mp3,"section_id":section_id,
+                "code": code, "response": response}
         return json.dumps(result_json, ensure_ascii=False)

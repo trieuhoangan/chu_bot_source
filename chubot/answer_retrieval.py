@@ -38,7 +38,7 @@ class ChitChat:
         distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
         id=np.argmin(distances)
         print(distances[id])
-        if distances[id] >25:
+        if distances[id] >27:
             return [self.qa_list[ids][0],self.qa_list[ids][0],self.qa_list[ids][0]]
         # print(id)
         top3 = heapq.nsmallest(3,range(len(distances)),distances.__getitem__)
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     
     # input_question = 'bạn thích gì nhất?'
     input_question = 'hiệu trưởng trường đại học công nghệ là ai'
-    most_similar_question, answer = chitchat.retrieve_answer(input_question,0)
+    most_similar_question, answer = chitchat.retrieve_answer(input_question,0)[0]
     
     print("inputquestion: ", input_question)
     print("most similar question found: ", most_similar_question)

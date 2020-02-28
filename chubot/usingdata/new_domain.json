@@ -1,0 +1,91 @@
+{
+  "action_domain_data": {
+    "user_intents": [
+      "command_return",
+      "greeting",
+      "introduce_vnu",
+      "command_lead_way",
+      "ask_who",
+      "ask_where",
+      "ask_what",
+      "chitchat",
+      "end_conversation",
+      "ask_number",
+      "ask_when",
+      "ask_location"
+    ],
+    "bot_actions": [
+      "default_fallback",
+      "bot_goodbye",
+      "bot_greeting",
+      "bot_return",
+      "bot_lead_way",
+      "bot_answer",
+      "bot_introduce_vnu",
+      "bot_chitchat",
+      "bot_ask_who",
+      "bot_ask_what",
+      "bot_ask_where",
+      "bot_answer_when",
+      "bot_answer_number",
+      "bot_ask_location"
+    ],
+    "followup_actions": {
+      "chitchat": ["bot_chitchat"],
+      "greeting": ["bot_greeting"],
+      "command_return": ["bot_return"],
+      "introduce_vnu": ["bot_introduce_vnu"],
+      "ask_who": ["bot_ask_who"],
+      "ask_where": ["bot_ask_where"],
+      "ask_what": ["bot_ask_what"],
+      "command_lead_way": ["bot_command_lead_way"],
+      "end_conversation": ["bot_goodbye"],
+      "ask_when":["bot_answer_when"],
+      "ask_number":["bot_answer_number"],
+      "ask_location" : ["bot_ask_location"]
+    },
+    "action_templates": {
+      "default_fallback": [
+        "Xin lỗi tôi không hiểu ý bạn",
+        "mình không hiểu ý bạn",
+        "bạn có thể nói to hơn được không",
+        "tôi không nghe rõ, bạn nói lại được không"
+      ],
+      "bot_goodbye": [
+        "tạm biệt",
+        "Hẹn gặp lại",
+        "xin chào bạn",
+        "tạm biệt nhé"
+      ],
+      "bot_answer_number":["tôi không biết"],
+      "bot_answer_when":["tôi không biết"],
+      "bot_return": ["xin phép về chỗ", "cảm ơn bạn"],
+      "bot_greeting": [
+        "xin chào bạn",
+        "chào bạn, chúc bạn một ngày tốt lành",
+        "xin chào bạn, rất hân hạnh được làm quen",
+        "mình rất vui khi được gặp bạn",
+        "rất vui được gặp bạn"
+      ],
+      "bot_introduce": ["tên mình là FUTO, tôi được làm từ nhựa và sắt, và tôi có 3 bánh xe", "tôi là FUSO, tôi được tạo ra từ các sinh viên đại học công nghệ"],
+      "bot_answer": ["xin chào"],
+      "bot_command_lead_way": ["đi theo mình nào", "xin hãy đi theo tôi", "hãy để tôi dẫn đường cho bạn"],
+      "bot_ask_who": ["đây là bác hồ"],
+      "bot_ask_where": ["đây là việt nam"],
+      "bot_ask_what": ["đây là bức tranh"],
+      "bot_introduce_vnu": ["14","15","16","17","18","19","20","21","22","23","24"],
+      "bot_chitchat": ["Well, i think so too","wow, that was cool"]
+    },
+    "action_custom": {
+      "custom_retrieve_image": {
+        "func_name": "retrieve_image",
+        "kwargs": {
+          "entity": "group",
+          "value": "default_value"
+        }
+      }
+    },
+    
+    "slots": [{ "entity": "group", "type": "text" }]
+  }
+}
