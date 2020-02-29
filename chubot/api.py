@@ -35,7 +35,7 @@ class ChatBotAPI():
         self.mp3 = -1
         self.section_id = -1
         self.last_request_moment = 0
-        self.sessinon_length = 30
+        self.sessinon_length = 50
         with io.open(domain_file) as f:
             action_domain = json.loads(
                 open(domain_file, encoding="utf-8").read())
