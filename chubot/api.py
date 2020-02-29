@@ -1,3 +1,4 @@
+import time
 import json
 from chubot_brain import ChuBotBrain
 import sklearn_crfsuite
@@ -8,6 +9,7 @@ import os
 import spacy
 class ChatBotAPI():
     def __init__(self, language, botname):
+        self.is_in_session = False
         self.followup_actions = []
         self.action_templates = []
         self.action_custom = []
@@ -32,7 +34,8 @@ class ChatBotAPI():
         self.code = 0
         self.mp3 = -1
         self.section_id = -1
-        
+        self.last_request_moment = 0
+        self.sessinon_length = 30
         with io.open(domain_file) as f:
             action_domain = json.loads(
                 open(domain_file, encoding="utf-8").read())
@@ -253,25 +256,46 @@ class ChatBotAPI():
 
         return tagged_entities
 
-    def predict_message(self, inmessage):
-        intent_file = open('data/intent.csv', 'r', encoding="utf8")
-        csvreader = csv.reader(intent_file, delimiter=',')
-        list_command_code = []
-        for row in csvreader:
-            list_command_code.append(row)
+    def get_answer(self,inmessage):
         response = self.handle_message(inmessage)
         intents = self.predict_intent(inmessage)
         entities = self.predict_entity(inmessage)
         (prob, intent) = intents[0]
+        if self.is_in_session == False:
+            if intent == "greeting" and prob >0.25:
+                self.is_in_session = True
+                self.last_request_moment = time.time()
+                return self.answer(entities,intent,prob,response,inmessage)
+            else:
+                result_json = {"mp3":-1,"section_id":-1,
+            "code": 0, "response": ""}
+                self.is_in_session = False
+                return json.dumps(result_json, ensure_ascii=False)
+        else:
+            timestamp = time.time()
+            if (timestamp - self.last_request_moment) > self.sessinon_length:
+                print("session expired")
+                if intent == "greeting" and prob >0.25:
+                    self.is_in_session = True
+                    self.last_request_moment = time.time()
+                    return self.answer(entities,intent,prob,response,inmessage)
+                else:
+                    result_json = {"mp3":-1,"section_id":-1,
+                "code": 0, "response": ""}
+                    self.is_in_session = False
+                    return json.dumps(result_json, ensure_ascii=False)
+            else:
+                self.last_request_moment = time.time()
+                return self.answer(entities,intent,prob,response,inmessage)
+                
+    def answer(self, entities,intent,prob,response,inmessage):
         mp3 = -1   
         section_id = -1
         code = 0
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
-        
         if intent=='chitchat':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,0)[0]
-            
             response = answer
         ## open mp3 file to introduce the room
         if str(response) == "100.mp3":
