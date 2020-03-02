@@ -270,7 +270,7 @@ class ChatBotAPI():
                 result_json = {"mp3":-1,"section_id":-1,
             "code": 0, "response": ""}
                 self.is_in_session = False
-                return json.dumps(result_json, ensure_ascii=False)
+                return result_json
         else:
             timestamp = time.time()
             if (timestamp - self.last_request_moment) > self.sessinon_length:
@@ -283,7 +283,7 @@ class ChatBotAPI():
                     result_json = {"mp3":-1,"section_id":-1,
                 "code": 0, "response": ""}
                     self.is_in_session = False
-                    return json.dumps(result_json, ensure_ascii=False)
+                    return result_json
             else:
                 self.last_request_moment = time.time()
                 return self.answer(entities,intent,prob,response,inmessage)
@@ -339,4 +339,4 @@ class ChatBotAPI():
 
         result_json = {"mp3":mp3,"section_id":section_id,
                 "code": code, "response": response}
-        return json.dumps(result_json, ensure_ascii=False)
+        return result_json
