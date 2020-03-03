@@ -30,15 +30,17 @@ class ChitChat:
         self.targets.append(targets)
         self.qa_list = []
         self.qa_list.append(qa_list)
+
     def retrieve_answer(self, question,ids):
         '''
         Question:: String
         '''
+        print(self.qa_list[ids])
         distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
         id=np.argmin(distances)
         print(distances[id])
         if distances[id] >27:
-            return [self.qa_list[ids][0],self.qa_list[ids][0],self.qa_list[ids][0]]
+            return [self.qa_list[ids][1],self.qa_list[ids][1],self.qa_list[ids][1]]
             # return self.qa_list[ids][0]
         # print(id)
         # top3 = heapq.nsmallest(3,range(len(distances)),distances.__getitem__)

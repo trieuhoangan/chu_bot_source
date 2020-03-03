@@ -1,5 +1,5 @@
 intent,q,noisyq,a
-unknown,idk,a,Xin lỗi, mình chưa nghe rõ, bạn có thể nói lại được không
+unknown,idk,a,Xin lỗi mình chưa nghe rõ bạn có thể nói lại được không
 unknown,idk,a,bạn có thể đặt câu hỏi chi tiết hơn không
 ask_what, trường đại học nào được tách thành hai trường là đại học tổng hợp hà nội và đại học sư phạm hà nội, b, đại học sư phạm khoa học
 ask_what, ban đầu  trường đại học tổng hợp hà nội có hai khoa là, b, khoa tự nhiên và văn khoa
