@@ -24,7 +24,6 @@ class ChitChat:
         targets = [
             q for q, a in qa_list
         ]
-        nlp = spacy.load('vi_spacy_model')
         word2vecmodel_link = "models/wiki.vi.model.bin"
         self.word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
         self.targets = []
@@ -40,13 +39,15 @@ class ChitChat:
         print(distances[id])
         if distances[id] >27:
             return [self.qa_list[ids][0],self.qa_list[ids][0],self.qa_list[ids][0]]
+            # return self.qa_list[ids][0]
         # print(id)
-        top3 = heapq.nsmallest(3,range(len(distances)),distances.__getitem__)
-        print(top3)
-        list_answer = []
-        for id_ans in top3:
-            list_answer.append(self.qa_list[ids][id_ans])
-        return list_answer
+        # top3 = heapq.nsmallest(3,range(len(distances)),distances.__getitem__)
+        # print(top3)
+        # list_answer = []
+        # for id_ans in top3:
+        #     list_answer.append(self.qa_list[ids][id_ans])
+        # return list_answer
+        return [self.qa_list[ids][id],self.qa_list[ids][id],self.qa_list[ids][id]]
 
     def add_more_data(self,datafile):
         df = pd.read_csv(datafile, header=None, names=['intent', 'q', 'n', 'a'])
