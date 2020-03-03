@@ -268,7 +268,7 @@ class ChatBotAPI():
                 return self.answer(entities,intent,prob,response,inmessage)
             else:
                 result_json = {"mp3":-1,"section_id":-1,
-            "code": 0, "response": " "}
+            "code": 0, "response": [" "]}
                 self.is_in_session = False
                 return result_json
         else:
@@ -281,7 +281,7 @@ class ChatBotAPI():
                     return self.answer(entities,intent,prob,response,inmessage)
                 else:
                     result_json = {"mp3":-1,"section_id":-1,
-                "code": 0, "response": " "}
+                "code": 0, "response": [" "]}
                     self.is_in_session = False
                     return result_json
             else:
