@@ -259,13 +259,14 @@ class ChatBotAPI():
     def return_silent(self):
         result_json = {"mp3":-1,"section_id":-1,
             "code": 0, "response": [" "]}
-        self.is_in_session = False
         return result_json
     def return_unknown(self):
         result_json = {"mp3":-1,"section_id":-1,
             "code": 0, "response": ["xin lỗi bạn nói lại được không"]}
         return result_json    
     def get_answer(self,inmessage):
+        if inmessage =="" or inmessage == " ":
+            return self.return_silent()
         response = self.handle_message(inmessage)
         intents = self.predict_intent(inmessage)
         entities = self.predict_entity(inmessage)
@@ -287,6 +288,7 @@ class ChatBotAPI():
                     self.last_request_moment = time.time()
                     return self.answer(entities,intent,prob,response,inmessage)
                 else:
+                    self.is_in_session = False
                     return self.return_silent()
             else:
                 self.last_request_moment = time.time()
