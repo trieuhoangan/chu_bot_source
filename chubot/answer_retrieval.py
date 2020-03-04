@@ -35,7 +35,7 @@ class ChitChat:
         '''
         Question:: String
         '''
-        print(self.qa_list[ids])
+        
         distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
         id=np.argmin(distances)
         print(distances[id])

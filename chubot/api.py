@@ -9,6 +9,7 @@ import os
 import spacy
 class ChatBotAPI():
     def __init__(self, language, botname):
+        self.standard_prob = 0.5
         self.is_in_session = False
         self.followup_actions = []
         self.action_templates = []
@@ -20,7 +21,7 @@ class ChatBotAPI():
             "./models", self.name + "_NERCRF.pkl")
         self.intent_cls_model_path = os.path.join(
             "./models", self.name + "_intent_classification.pkl")
-        domain_file = "data/new_domain.json"
+        domain_file = "./usingdata/new_domain.json"
         # self.load_domain(action_domain_file)
         # self.chatbot = ChuBotBrain(botname, "vi")
         self.tfidf = None
@@ -255,35 +256,38 @@ class ChatBotAPI():
              'confidence': conf} for ix, label, conf in ent_probs_idx]
 
         return tagged_entities
-
+    def return_silent(self):
+        result_json = {"mp3":-1,"section_id":-1,
+            "code": 0, "response": [" "]}
+        self.is_in_session = False
+        return result_json
+    def return_unknown(self):
+        result_json = {"mp3":-1,"section_id":-1,
+            "code": 0, "response": ["xin lỗi bạn nói lại được không"]}
+        return result_json    
     def get_answer(self,inmessage):
         response = self.handle_message(inmessage)
         intents = self.predict_intent(inmessage)
         entities = self.predict_entity(inmessage)
         (prob, intent) = intents[0]
+        print(prob)
         if self.is_in_session == False:
-            if intent == "greeting" and prob >0.25:
+            if intent == "greeting" and prob > self.standard_prob:
                 self.is_in_session = True
                 self.last_request_moment = time.time()
                 return self.answer(entities,intent,prob,response,inmessage)
             else:
-                result_json = {"mp3":-1,"section_id":-1,
-            "code": 0, "response": [" "]}
-                self.is_in_session = False
-                return result_json
+                return self.return_silent()
         else:
             timestamp = time.time()
             if (timestamp - self.last_request_moment) > self.sessinon_length:
                 print("session expired")
-                if intent == "greeting" and prob >0.25:
+                if intent == "greeting" and prob >self.standard_prob:
                     self.is_in_session = True
                     self.last_request_moment = time.time()
                     return self.answer(entities,intent,prob,response,inmessage)
                 else:
-                    result_json = {"mp3":-1,"section_id":-1,
-                "code": 0, "response": [" "]}
-                    self.is_in_session = False
-                    return result_json
+                    return self.return_silent()
             else:
                 self.last_request_moment = time.time()
                 return self.answer(entities,intent,prob,response,inmessage)
@@ -292,10 +296,13 @@ class ChatBotAPI():
         mp3 = -1   
         section_id = -1
         code = 0
+        if prob < 0.5:
+            return self.return_unknown()
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
         if intent=='chitchat':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,0)[0]
+            print(most_similar_question)
             response = answer
         ## open mp3 file to introduce the room
         if str(response) == "100.mp3":
@@ -336,7 +343,7 @@ class ChatBotAPI():
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
             code = self.use_mp3_code
-
+        
         result_json = {"mp3":mp3,"section_id":section_id,
                 "code": code, "response": response}
         return result_json
