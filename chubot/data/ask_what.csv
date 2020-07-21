@@ -124,7 +124,7 @@ ask_what, đâu không phải là tiêu chuẩn sinh viên 5 tốt của  đại
 ask_what, đâu là một trong những tiêu chuẩn để đạt được danh hiệu tập thể sinh viên 5 tốt cấp trung ương, b, 100% sinh viên tham gia phong trào sinh viên 5 tốt
 ask_what, trong quá trình thi kết thúc học phần  sinh viên sẽ bị khiển trách khi nào, b, sinh viên phạm lỗi nhìn bài của người khác một lần  trao đổi bài  thảo luận bài trong giờ thi
 ask_what,  đại học quốc gia hà nội hỗ trợ học bổng như thế nào đối với các nghiên cứu sinh chuyển tiếp từ cử nhân, b, mức học bổng toàn phần cho nghiên cứu sinh là 90 triệu đồng/khóa học
-ask_what, hiện nay  trong các trường đại học của đhgqhn  sinh viên đăng ký lớp học phần bằng cách, b, đăng ký tại cổng thông tin đại học quốc gia
+ask_what, hiện nay  trong các trường đại học của đại học quốc gia hà nội  sinh viên đăng ký lớp học phần bằng cách, b, đăng ký tại cổng thông tin đại học quốc gia
 ask_what, trong quá trình thi kết thúc học phần  sau khi đã bóc đề thi  phát hiện sinh viên mang trong người những vật dụng không được phép  sinh viên sẽ phải nhận hình thức kỷ luật nào sau đây, b, sau khi đã bóc đề thi bị phát hiện mang theo những vật dụng không được phép thì bị đình chỉ thi.
 ask_what, sinh viên sẽ bị cảnh cáo học vụ khi nào, b, điểm chung bình chung học kỳ đạt dưới 0.8 đối với học kỳ đầu của khóa học và dưới 1.0 đối với học kỳ tiếp theo.
 ask_what, sinh viên cử nhân khoa học tài năng được đào tạo tại đơn vị nào của  đại học quốc gia hà nội, b, trường đại học khoa học tự nhiên

@@ -181,10 +181,15 @@ def predict(inmessage):
     print(inmessage)
     responses = action.chubot.predict_intent(inmessage)
     entities = action.chubot.predict_entity(inmessage)
+    # for entity in entities:
+    #     if entity['entity'] == 'present' and entity['confidence'] > 0.85:
+    #         mp3 = 100
+    #         code = use_mp3_code
+
     (prob, intent) = responses[0]
     response = action.handle_message(inmessage)[0]
     if intent=='chitchat':
-        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)[0]
         print(most_similar_question)
         response = answer
         ## open mp3 file to introduce the room
@@ -198,6 +203,11 @@ def predict(inmessage):
         if str(response) == "100.mp3":
             mp3 = 100
             code = use_mp3_code
+        for entity in entities:
+            if entity['entity'] == 'present' and entity['confidence'] > 0.85:
+                mp3 = 100
+                code = use_mp3_code
+                response = "100.mp3"
     if intent=='ask_who':
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,2)[0]
         print(most_similar_question)
@@ -243,12 +253,12 @@ if __name__ == "__main__":
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    create_model('an')
+    # create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################
 
-    
+    # hãy giới thiệu về đại học quốc gia
     # app = Flask(__name__)
     # @app.route('/')
     # def hello_world():
