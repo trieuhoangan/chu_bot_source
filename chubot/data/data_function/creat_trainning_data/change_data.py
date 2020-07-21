@@ -76,10 +76,11 @@ class DataObject():
         intent_file.close()
     ###
     # load data from csv and remove duplicate data
-    # load sentences and the type of sentences
-    # load entities and position in the sentences
+    # load sentences and the label of sentences only
+    # load entities and the position on the sentences
     ###
-    def load_distinc_data(self,filename,intent_col,entity_col):
+    def load_distinc_data(self,filename,text_col,intent_col):
+        "first param is text, second param is intent"
         intent_file = open(filename, newline='', encoding="utf8")
 
         # nlp = spacy.load('vi_core_news_md')
@@ -93,8 +94,8 @@ class DataObject():
             if line_count == 0:
                 line_count = line_count+1
                 continue
-            text = row[intent_col].lower()
-            intent = row[entity_col].lower()
+            text = row[text_col].lower()
+            intent = row[intent_col].lower()
             if text !='':
                 if text not in lines:
                     self.count = self.count+1
@@ -253,14 +254,16 @@ if __name__=="__main__":
     # list_filename=['../chitchat.csv','../command_lead_way.csv',"../ask_robot.csv",'../greeting_end.csv']
     a = DataObject()
     # a.split_train_test_dataset(list_filename,0,2,1,train_link,test_link)
-    a.load_entity_data('../entity_list.csv')
-    a.load_distinc_data('../chitchat.csv',2,0)
-    a.load_distinc_data('../command_lead_way.csv',2,0)
-    a.load_distinc_data('../ask_robot.csv',2,0)
-    a.load_distinc_data('../greeting_end.csv',2,0)
-    a.load_distinc_data('../greeting_end.csv',2,0)
-    a.load_distinc_data('../greeting_end.csv',2,0)
-    a.load_distinc_data('../greeting_end.csv',2,0)
+    a.load_entity_data('./entity_list.csv')
+    a.load_distinc_data('./chitchat.csv',1,0)
+    a.load_distinc_data('./command_lead_way.csv',2,0)
+    a.load_distinc_data('./ask_robot.csv',2,0)
+    a.load_distinc_data('./ask_who.csv',1,0)
+    a.load_distinc_data('./ask_where.csv',1,0)
+    a.load_distinc_data('./ask_what.csv',1,0)
+    a.load_distinc_data('./ask_when.csv',1,0)
+    a.load_distinc_data('./ask_number.csv',1,0)
+    a.load_distinc_data('./ask_when.csv',1,0)
     a.printCount()
     # a.load_quest_data('../oldata/quest_data.csv',2,0)
     # a.load_distinc_data('quest_data_noise.csv',2,0)
@@ -281,7 +284,7 @@ if __name__=="__main__":
     #     print('done')
     # b = DataObject()
     # b.load_quest_data('full_train.txt',1,0)
-    full_train_output = '../full_train.json'
+    full_train_output = './full_train.json'
     with open(full_train_output, 'w', encoding='utf8') as output:
         output.write(json.dumps(a.json_object, ensure_ascii=False))
         print('done')

@@ -3,6 +3,7 @@ import spacy
 import pandas as pd
 import heapq
 from gensim.models import KeyedVectors
+
 #load spacy model
 #Need to install spacy version >2.1
 # and install vi_spacy
@@ -30,16 +31,17 @@ class ChitChat:
         self.targets.append(targets)
         self.qa_list = []
         self.qa_list.append(qa_list)
+        
 
     def retrieve_answer(self, question,ids):
         '''
         Question:: String
         '''
-        
+        # print("this is the bank {}".format(self.qa_list))
         distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
-        id=np.argmin(distances)
-        print(distances[id])
-        if distances[id] >27:
+        id_result=np.argmin(distances)
+        print(distances[id_result])
+        if distances[id_result] >27:
             return [self.qa_list[ids][1],self.qa_list[ids][1],self.qa_list[ids][1]]
             # return self.qa_list[ids][0]
         # print(id)
@@ -49,7 +51,7 @@ class ChitChat:
         # for id_ans in top3:
         #     list_answer.append(self.qa_list[ids][id_ans])
         # return list_answer
-        return [self.qa_list[ids][id],self.qa_list[ids][id],self.qa_list[ids][id]]
+        return [self.qa_list[ids][id_result],self.qa_list[ids][id_result],self.qa_list[ids][id_result]]
 
     def add_more_data(self,datafile):
         df = pd.read_csv(datafile, header=None, names=['intent', 'q', 'n', 'a'])
@@ -60,7 +62,19 @@ class ChitChat:
         ]
         self.targets.append(targets)
         self.qa_list.append(qa_list)
-
+        # print("this is the bank {}".format(self.qa_list))
+        # print("this is the target {}".format(self.targets))
+    def print_all_data(self):
+        outfile_link="data_of_ar.csv"
+        output_stream = open(outfile_link,'w',encoding='utf-8')
+        i = 16
+        for dataset in self.qa_list:
+            for sentence in dataset:
+                q,a = sentence
+                if q !='q':
+                    output_stream.write("{},{},{}\n".format(i,q,a))
+                    i = i + 1
+        output_stream.close()
 if __name__ == '__main__':
     chitchat_file = 'data/chitchat.csv'
     chitchat = ChitChat(chitchat_file)

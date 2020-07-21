@@ -65,6 +65,8 @@ class ChatBotAPI():
         answer_retriever.add_more_data(ask_when_file)
         answer_retriever.add_more_data(lead_to_section_file)
         self.retriever = answer_retriever
+    def upload_answer(self):
+        self.retriever.print_all_data()
     def load_domain(self, domain_file):
         """Load domain info to bot
         """

@@ -243,7 +243,7 @@ if __name__ == "__main__":
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    # create_model('an')
+    create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################

@@ -1,0 +1,11 @@
+STT,intent,command_code
+1,greeting,0
+2,introduce,2
+3,command_return,3
+4,command_lead_way,4
+5,ask_what,5
+6,ask_who,6
+7,ask_why,7
+8,chat,0
+9,end_conversation,1
+10,introduce_vnu,1
