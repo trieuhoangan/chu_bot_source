@@ -2,6 +2,7 @@ import numpy as np
 import spacy
 import pandas as pd
 import heapq
+import datetime
 from gensim.models import KeyedVectors
 
 #load spacy model
@@ -38,10 +39,11 @@ class ChitChat:
         Question:: String
         '''
         # print("this is the bank {}".format(self.qa_list))
+        start = datetime.datetime.now()
         distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
         id_result=np.argmin(distances)
         print(distances[id_result])
-        if distances[id_result] >20:
+        if distances[id_result] >28:
             return [self.qa_list[ids][1],self.qa_list[ids][1],self.qa_list[ids][1]]
             # return self.qa_list[ids][0]
         # print(id)
@@ -51,6 +53,8 @@ class ChitChat:
         # for id_ans in top3:
         #     list_answer.append(self.qa_list[ids][id_ans])
         # return list_answer
+        end = datetime.datetime.now()
+        print("retrieval time : ",end-start)
         return [self.qa_list[ids][id_result],self.qa_list[ids][id_result],self.qa_list[ids][id_result]]
 
     def add_more_data(self,datafile):
