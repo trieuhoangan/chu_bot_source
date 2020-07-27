@@ -314,26 +314,26 @@ class ChatBotAPI():
             code = self.use_mp3_code
         if intent=='ask_what':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,1)[0]
-            
             response = answer
             if str(response) == "100.mp3":
                 mp3 = 100
                 code = self.use_mp3_code
+            for entity in entities:
+                if entity['entity'] == 'present' and entity['confidence'] > 0.85:
+                    mp3 = 100
+                    code = self.use_mp3_code
+                    response = "100.mp3"
         if intent=='ask_who':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,2)[0]
-            
             response = answer
         if intent=='ask_where':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,3)[0]
-            
             response = answer
         if intent=='ask_number':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,4)[0]
-            
             response = answer
         if intent=='ask_when':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,5)[0]
-            
             response = answer
         if intent =='command_lead_way' and len(entities)!=0:
             for entity in entities:
@@ -347,7 +347,7 @@ class ChatBotAPI():
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
             code = self.use_mp3_code
-        
+        print(most_similar_question)
         result_json = {"mp3":mp3,"section_id":section_id,
                 "code": code, "response": response}
         return result_json
