@@ -11,7 +11,7 @@ from flask import request
 import spacy
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
-import speech_recognition as sr
+# import speech_recognition as sr
 from answer_retrieval import ChitChat
 from custom_lib import changeUnicode
 # from langdetect import detect
