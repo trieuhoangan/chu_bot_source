@@ -264,6 +264,9 @@ if __name__=="__main__":
     a.load_distinc_data('./ask_when.csv',1,0)
     a.load_distinc_data('./ask_number.csv',1,0)
     a.load_distinc_data('./ask_when.csv',1,0)
+    a.load_distinc_data('./greeting_end.csv',2,0)
+    a.load_distinc_data('./presentation.csv',1,0)
+    
     a.printCount()
     # a.load_quest_data('../oldata/quest_data.csv',2,0)
     # a.load_distinc_data('quest_data_noise.csv',2,0)

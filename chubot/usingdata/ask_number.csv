@@ -128,4 +128,5 @@ ask_number, sinh viên xếp loại xuất sắc khi nào, b, có điểm trung 
 ask_number, sinh viên xếp loại yếu có điểm trung bình chung khi nào, b, tích lũy đạt dưới 2 00 nhưng chưa thuộc trường hợp bị buộc thôi học.
 ask_number, quy chế đào tạo của  đại học quốc gia hà nội quy định mỗi kì gồm bao nhiêu tuần, b, mỗi kì học chính có 15 tuần học và từ 3 đến 4 tuần thi 
 ask_number, sinh viên xếp loại khá có điểm trung bình chung tích lũy là bao nhiêu, b, điểm trung bình tích lũy từ 2.5 đến 3.19
-
+ask_number,hiện nay ĐẠI HỌC QUỐC GIA HÀ NỘI có bao nhiều đơn vị thành viên, b,hiện nay ĐẠI HỌC QUỐC GIA HÀ NỘI là cơ quan ngang Bộ và là đại học đa ngành đa lĩnh vực ĐẠI HỌC QUỐC GIA HÀ NỘI có 34 đơn vị thành viên trong đó có 7 trường đại học 5 khoa đào tạo đại học và sau đại học 2 trung tâm đào tạo và nghiên cứu 7 viện nghiên cứu 12 đơn vị phục vụ hoạt động tự chủ dưới sự điều hành của ĐẠI HỌC QUỐC GIA HÀ NỘI
+ask_number,bạn có thể cho biết hiện nay ĐẠI HỌC QUỐC GIA HÀ NỘI có bao nhiều đơn vị thành viên không, b,hiện nay ĐẠI HỌC QUỐC GIA HÀ NỘI là cơ quan ngang Bộ và là đại học đa ngành đa lĩnh vực ĐẠI HỌC QUỐC GIA HÀ NỘI có 34 đơn vị thành viên trong đó có 7 trường đại học 5 khoa đào tạo đại học và sau đại học 2 trung tâm đào tạo và nghiên cứu 7 viện nghiên cứu 12 đơn vị phục vụ hoạt động tự chủ dưới sự điều hành của ĐẠI HỌC QUỐC GIA HÀ NỘI.

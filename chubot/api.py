@@ -1,3 +1,4 @@
+import numpy as np
 import time
 import json
 from chubot_brain import ChuBotBrain
@@ -8,9 +9,10 @@ from answer_retrieval import ChitChat
 import os
 import spacy
 import datetime
+from gensim.models import KeyedVectors
 class ChatBotAPI():
     def __init__(self, language, botname):
-        self.standard_prob = 0.5
+        self.standard_prob = 0.0
         self.is_in_session = False
         self.followup_actions = []
         self.action_templates = []
@@ -41,7 +43,8 @@ class ChatBotAPI():
         with io.open(domain_file) as f:
             action_domain = json.loads(
                 open(domain_file, encoding="utf-8").read())
-
+        # word2vecmodel_link = "models/wiki.vi.model.bin"
+        # self.word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
         # self.followup_actions = None
         # self.action_templates = None
         # self.action_custom = None
@@ -169,10 +172,19 @@ class ChatBotAPI():
         print("predict time: ",end-start)
         return [bot_responses,entities_pred,intents_pred]
 
-    def predict_intent(self, message):
+    def predict_intent(self, message):  
         inmessage_tokens = [token.text for token in self.nlp(message)]
         inmessage_join_tokens = " ".join(inmessage_tokens)
         inmessage_vector = self.tfidf.transform([inmessage_join_tokens])
+
+        # sent_vec = np.zeros(400)
+        # for token in inmessage_tokens:
+        #     if token in self.word2vec:
+        #         vector = self.word2vec[token]
+        #         sent_vec = np.add(sent_vec,vector)
+        # if np.sqrt(sent_vec.dot(sent_vec)) != 0:
+        #     sent_vec = sent_vec/np.sqrt(sent_vec.dot(sent_vec))
+        # inmessage_vector = [sent_vec]
         # predict the probabilies
         y_probs = self.clf.predict_proba(inmessage_vector)
         
@@ -270,7 +282,16 @@ class ChatBotAPI():
         result_json = {"mp3":-1,"section_id":-1,
             "code": 0, "response": ["xin lỗi bạn nói lại được không"]}
         return result_json   
-
+    def new_flow(self,inmessage):
+        if inmessage =="" or inmessage == " ":
+            return self.return_silent()
+        result = self.handle_message(inmessage)
+        response = result[0]
+        entities = result[1]
+        intents  = result[2]
+        (prob, intent) = intents[0]
+        
+        pass
     # the flow of old fuso, require user to say hello first before any other request. 
     # the turn the json form of message 
     def get_answer(self,inmessage):
@@ -309,24 +330,25 @@ class ChatBotAPI():
                 return self.answer(entities,intent,prob,response,inmessage)
     # return the json form of message and entity 
     def answer(self, entities,intent,prob,response,inmessage):
+        print("intent",intent)
         start = datetime.datetime.now()
         mp3 = -1   
         section_id = -1
         code = 0
-        if prob < 0.5:
-            return self.return_unknown()
+        # if prob < 0.5:
+        #     return self.return_unknown()
         if str(response) == "100.mp3":
             mp3 = 100
             code = self.use_mp3_code
         if intent=='ask_where' and len(entities)==0:
             mp3 = 15
-        elif intent=='chitchat':
+        if intent=='chitchat':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,0)[0]
             print(most_similar_question)
             response = answer
         ## open mp3 file to introduce the room
         
-        elif intent=='ask_what':
+        if intent=='ask_what':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,1)[0]
             response = answer
             print(most_similar_question)
@@ -338,23 +360,23 @@ class ChatBotAPI():
                     mp3 = 100
                     code = self.use_mp3_code
                     response = "100.mp3"
-        elif intent=='ask_who':
+        if intent=='ask_who':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,2)[0]
             response = answer
             print(most_similar_question)
-        elif intent=='ask_where':
+        if intent=='ask_where':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,3)[0]
             response = answer
             print(most_similar_question)
-        elif intent=='ask_number':
+        if intent=='ask_number':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,4)[0]
             response = answer
             print(most_similar_question)
-        elif intent=='ask_when':
+        if intent=='ask_when':
             most_similar_question, answer = self.retriever.retrieve_answer(inmessage,5)[0]
             response = answer
             print(most_similar_question)
-        elif intent =='command_lead_way' and len(entities)!=0:
+        if intent =='command_lead_way' and len(entities)!=0:
             for entity in entities:
                 if entity["entity"] =="section":
                     most_similar_question, answer = self.retriever.retrieve_answer(inmessage,6)[0]
@@ -370,4 +392,6 @@ class ChatBotAPI():
         result_json = {"mp3":mp3,"section_id":section_id,
                 "code": code, "response": response}
         print("answer time: ",end-start)
+        print("response ",response)
         return result_json
+    

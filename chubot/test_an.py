@@ -47,7 +47,7 @@ answer_retriever.add_more_data(lead_to_section_file)
 nlp = spacy.load('vi_spacy_model')
 def create_model(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data("usingdata/full_train.json")
+    chubot.load_data("data/full_train.json")
     # chubot.load_data("usingdata/vi_nlu_ask_way.json")
     meta = chubot.train()
     # print(meta)
@@ -55,7 +55,7 @@ def create_model(name):
 
 def test_entity_train(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data("usingdata/full_train.json")
+    chubot.load_data("data/full_train.json")
     # chubot.load_data("usingdata/vi_nlu_ask_way.json")
     meta = chubot.train_nercrf()
 
@@ -253,7 +253,7 @@ if __name__ == "__main__":
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    # create_model('an')
+    create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################
@@ -275,4 +275,4 @@ if __name__ == "__main__":
     ##########Server Code#################
 
     # test_predict()
-    test_input_predict()
+    # test_input_predict()

@@ -7,6 +7,8 @@ import random
 import io
 import codecs
 from spacy.gold import biluo_tags_from_offsets
+from gensim.models import KeyedVectors
+import numpy as np
 class ChuBotBrain():
     # TODO maybe init models folder here instead of handling in train*
     def __init__(self, name, language='vi'):
@@ -179,19 +181,50 @@ class ChuBotBrain():
         y_labels = [example['intent'] for example in self.common_examples]
 
         # extract tokens from Spacy Doc objects
+        
         x_tokenized = [[token.text for token in doc] for doc in x_docs]
+        # print(len(x_tokenized[0]))
+
         # join tokens
         x_join_tokens = [" ".join(token_list) for token_list in x_tokenized]
-
+        
+        # print(len(x_join_tokens))
         # vectorize x
-        # TODO Word embedding
+        # # TODO Word embedding
+        tfidf_train_set = []
+        tfidf_train_set.extend(x_join_tokens)
+        with open("data/none_data.txt",'r',encoding='utf-8') as f:
+            sentences = f.readlines()
+        # print(sentences)
+        tfidf_train_set.extend(sentences)
         tfidf = TfidfVectorizer()
-        x_train = tfidf.fit_transform(x_join_tokens)
+        tfidf.fit(tfidf_train_set)
+        x_train = tfidf.transform(x_join_tokens)
+        print(len(x_join_tokens))
+        print(x_train.shape)
+        # x_train=[]
+        # word2vecmodel_link = "models/wiki.vi.model.bin"
+        # word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
+        # for doc in x_docs:
+        #     sent_vec = np.zeros(400)
+        #     for token in doc:
+        #         if token.text in word2vec:
+        #             vector = word2vec[token.text]
+        #             sent_vec = np.add(sent_vec,vector)
+        #     if sent_vec.dot(sent_vec) !=0 :
+        #         sent_vec = sent_vec/np.sqrt(sent_vec.dot(sent_vec))
+        #     x_train.append(sent_vec)
+        # x_train = np.nan_to_num(x_train)
+        # print(np.any(np.isnan(x_train)))
+        # print(np.all(np.isfinite(x_train)))
+
         # print(x_train[0].todense())   ## x_train is in compressed sparse row format
         # transform y
+        # print(x_train)
         le = LabelEncoder()
         y_train = le.fit_transform(y_labels)
-
+        
+        print(len(y_train))
         # classifier
         # TODO do a gridsearch for xgboost or just a simple linear svc?
         clf = SVC(kernel='linear', C=1, probability=True)
@@ -238,6 +271,16 @@ class ChuBotBrain():
         inmessage_tokens = [token.text for token in self.nlp(inmessage)]
         inmessage_join_tokens = " ".join(inmessage_tokens)
         inmessage_vector = tfidf.transform([inmessage_join_tokens])
+
+        # word2vecmodel_link = "models/wiki.vi.model.bin"
+        # word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
+        # sent_vec = np.zeros(400)
+        # for token in inmessage_tokens:
+        #     vector = word2vec[token]
+        #     sent_vec = np.add(sent_vec,vector)
+        # sent_vec = sent_vec/np.sqrt(sent_vec.dot(sent_vec))
+        # inmessage_vector = [sent_vec]
+
         # predict the probabilies
         y_probs = clf.predict_proba(inmessage_vector)
         
@@ -301,7 +344,7 @@ class ChuBotBrain():
             example_data = [(token.text, token.tag_, bilou_tags[i])
                             for i, token in enumerate(doc)]
             # print("important ",list(enumerate(doc)))
-            print("entity_tag {}".format(example_count),bilou_tags)
+            # print("entity_tag {}".format(example_count),bilou_tags)
             dataset.append(example_data)
             example_count +=1
         return dataset

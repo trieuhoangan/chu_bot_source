@@ -43,7 +43,8 @@ class ChitChat:
         distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
         id_result=np.argmin(distances)
         print(distances[id_result])
-        if distances[id_result] >28:
+        print("answer",self.qa_list[ids][id_result])
+        if distances[id_result] >100:
             return [self.qa_list[ids][1],self.qa_list[ids][1],self.qa_list[ids][1]]
             # return self.qa_list[ids][0]
         # print(id)
