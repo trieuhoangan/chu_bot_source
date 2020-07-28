@@ -120,8 +120,8 @@ class ChuBotBrain():
             print("test accuracy", crf.score(x_test, y_test))
 
         # save model
-        # from sklearn.externals import joblib
-        import joblib
+        from sklearn.externals import joblib
+        # import joblib
         joblib.dump(crf, self.crf_model_path)
 
         return {"path_to_crf_model": self.crf_model_path}
@@ -131,8 +131,8 @@ class ChuBotBrain():
         load nercrf model then predict entity/entities in the input sentence
         return a list of recognized entites (dict)
         """
-        # from sklearn.externals import joblib
-        import joblib
+        from sklearn.externals import joblib
+        # import joblib
         # TODO Handle load model exception
         crf = joblib.load(self.crf_model_path)
 

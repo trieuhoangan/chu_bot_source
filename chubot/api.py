@@ -88,8 +88,8 @@ class ChatBotAPI():
 
     def load_model(self):
         import cloudpickle
-        # from sklearn.externals import joblib
-        import joblib
+        from sklearn.externals import joblib
+        # import joblib
         crf = joblib.load(self.crf_model_path)
         self.crf = crf
         with io.open(self.intent_cls_model_path, "rb") as f:
