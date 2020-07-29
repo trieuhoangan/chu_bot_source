@@ -273,7 +273,7 @@ if __name__ == "__main__":
             mess = request.args.get('mess', '')
             print(mess)
             line = predict(mess)
-            # print(str(line))
+            print(str(line))
             return str(line).replace("'",'"')
 
     #     # return "null"
