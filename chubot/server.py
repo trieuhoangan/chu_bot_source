@@ -191,10 +191,11 @@ def predict(inmessage):
     #         code = use_mp3_code
 
     (prob, intent) = responses[0]
+    print(prob)
     response = action.handle_message(inmessage)[0]
-    if prob <0.5:
-        result_json =  unknown()
-        return result_json
+    # if prob <0.5:
+    #     result_json =  unknown()
+    #     return result_json
     if intent=='chitchat':
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)[0]
         print(most_similar_question)
