@@ -170,7 +170,7 @@ def test_input_predict():
 #
 def unknown():
     result_json = {"mp3":-1,"section_id":-1,
-        "code": 0, "response": ["xin lỗi bạn nói lại được không"]}
+        "code": 0, "response": "xin lỗi bạn nói lại được không"}
     return result_json 
 def predict(inmessage):
     speak_code = 0
