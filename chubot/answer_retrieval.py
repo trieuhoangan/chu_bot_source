@@ -44,7 +44,7 @@ class ChitChat:
         id_result=np.argmin(distances)
         print(distances[id_result])
         print("answer",self.qa_list[ids][id_result])
-        if distances[id_result] >100:
+        if distances[id_result] >27:
             return [self.qa_list[ids][1],self.qa_list[ids][1],self.qa_list[ids][1]]
             # return self.qa_list[ids][0]
         # print(id)

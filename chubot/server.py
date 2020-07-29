@@ -168,6 +168,10 @@ def test_input_predict():
 #
 #use to demo on web
 #
+def unknown():
+    result_json = {"mp3":-1,"section_id":-1,
+        "code": 0, "response": ["xin lỗi bạn nói lại được không"]}
+    return result_json 
 def predict(inmessage):
     speak_code = 0
     go_around_code = 1
@@ -188,6 +192,9 @@ def predict(inmessage):
 
     (prob, intent) = responses[0]
     response = action.handle_message(inmessage)[0]
+    if prob <0.5:
+        result_json =  unknown()
+        return result_json
     if intent=='chitchat':
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)[0]
         print(most_similar_question)

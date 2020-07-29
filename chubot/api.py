@@ -12,7 +12,7 @@ import datetime
 from gensim.models import KeyedVectors
 class ChatBotAPI():
     def __init__(self, language, botname):
-        self.standard_prob = 0.0
+        self.standard_prob = 0.5
         self.is_in_session = False
         self.followup_actions = []
         self.action_templates = []
