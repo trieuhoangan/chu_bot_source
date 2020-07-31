@@ -203,7 +203,7 @@ def predict(inmessage):
             if entity['entity'] =='present':
                 ispresent = 1
             if entity['entity'] == 'section':
-                hasSection = answer_retriever.retrieve_answer(inmessage,6)[0]
+                most_similar_question,hasSection = answer_retriever.retrieve_answer(inmessage,6)[0]
         if ispresent !=0 and hasSection !=-1:
             result_json = {"mp3":hasSection,"section_id":hasSection,
                 "code": use_mp3_code, "response": ""}
@@ -267,6 +267,30 @@ def predict(inmessage):
     
     print(json.dumps(result_json, ensure_ascii=False))
     return result_json
+def get_confirm(inmessage):
+    entities = action.chubot.predict_entity(inmessage)
+    if len(entities)>0:
+        for entity in entities:
+            if entity['entity']=='present':
+                result_json = {"mp3":100,"section_id":-1,
+                "code": 3, "response": ""}
+                return result_json
+    result_json = {"mp3":-1,"section_id":-1,
+                "code": 4, "response": ""}
+    return result_json
+def determind_section(inmessage):
+    entities = action.chubot.predict_entity(inmessage)
+    if len(entities)>0:
+        for entity in entities:
+            if entity['entity']=='section':
+                most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
+                result_json = {"mp3":answer,"section_id":answer,
+                "code": 3, "response": ""}
+                return result_json
+    else:
+        result_json = {"mp3":-1,"section_id":-1,
+                "code": 0, "response": "Tôi không nghe rõ, bạn nói lại được không"}
+        return result_json
 
 if __name__ == "__main__":
     # test_entity_train('an')
@@ -290,7 +314,22 @@ if __name__ == "__main__":
             line = predict(mess)
             print(str(line))
             return str(line).replace("'",'"')
-
+    @app.route('/confirm/')
+    def confirm():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+            print(mess)
+            line = predict(mess)
+            print(str(line))
+            return str(line).replace("'",'"')
+    @app.route('/presentation/')
+    def get_section():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+            print(mess)
+            line = determind_section(mess)
+            print(str(line))
+            return str(line).replace("'",'"')
     #     # return "null"
 
     app.run(host= '0.0.0.0')
