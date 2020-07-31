@@ -285,7 +285,7 @@ def determind_section(inmessage):
             if entity['entity']=='section':
                 most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
                 result_json = {"mp3":answer,"section_id":answer,
-                "code": 3, "response": ""}
+                "code": 5, "response": ""}
                 return result_json
     else:
         result_json = {"mp3":-1,"section_id":-1,
