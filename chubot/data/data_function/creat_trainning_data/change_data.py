@@ -246,7 +246,6 @@ class DataObject():
 
 
 
-
 if __name__=="__main__":
     # list_filename=['chitchat.csv','greeting_end.csv','command_lead_way.csv','ask_robot.csv']
     train_link = 'train.json'
@@ -255,17 +254,17 @@ if __name__=="__main__":
     a = DataObject()
     # a.split_train_test_dataset(list_filename,0,2,1,train_link,test_link)
     a.load_entity_data('./entity_list.csv')
-    a.load_distinc_data('./chitchat.csv',1,0)
-    a.load_distinc_data('./command_lead_way.csv',2,0)
-    a.load_distinc_data('./ask_robot.csv',2,0)
-    a.load_distinc_data('./ask_who.csv',1,0)
-    a.load_distinc_data('./ask_where.csv',1,0)
-    a.load_distinc_data('./ask_what.csv',1,0)
-    a.load_distinc_data('./ask_when.csv',1,0)
-    a.load_distinc_data('./ask_number.csv',1,0)
-    a.load_distinc_data('./ask_when.csv',1,0)
-    a.load_distinc_data('./greeting_end.csv',2,0)
-    a.load_distinc_data('./presentation.csv',1,0)
+    # a.load_distinc_data('./chitchat.csv',1,0)
+    # a.load_distinc_data('./command_lead_way.csv',2,0)
+    # a.load_distinc_data('./ask_robot.csv',2,0)
+    # a.load_distinc_data('./ask_who.csv',1,0)
+    # a.load_distinc_data('./ask_where.csv',1,0)
+    # a.load_distinc_data('./ask_what.csv',1,0)
+    # a.load_distinc_data('./ask_when.csv',1,0)
+    # a.load_distinc_data('./ask_number.csv',1,0)
+    # a.load_distinc_data('./ask_when.csv',1,0)
+    # a.load_distinc_data('./greeting_end.csv',2,0)
+    # a.load_distinc_data('./presentation.csv',1,0)
     
     a.printCount()
     # a.load_quest_data('../oldata/quest_data.csv',2,0)
@@ -287,7 +286,8 @@ if __name__=="__main__":
     #     print('done')
     # b = DataObject()
     # b.load_quest_data('full_train.txt',1,0)
-    full_train_output = './full_train.json'
+    # full_train_output = './full_train.json'
+    full_train_output = './part.json'
     with open(full_train_output, 'w', encoding='utf8') as output:
         output.write(json.dumps(a.json_object, ensure_ascii=False))
         print('done')

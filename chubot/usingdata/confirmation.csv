@@ -1,0 +1,6 @@
+intent,q,noisyq,a
+accept, đồng ý, a, 1 
+decline, không, a, 0
+presentation, thuyết trình,a,5
+question, trả lời câu hỏi, a,4
+question,

@@ -196,6 +196,18 @@ def predict(inmessage):
     # if prob <0.5:
     #     result_json =  unknown()
     #     return result_json
+    if len(entities) > 0:
+        ispresent = 0
+        hasSection = -1
+        for entity in entities:
+            if entity['entity'] =='present':
+                ispresent = 1
+            if entity['entity'] == 'section':
+                hasSection = answer_retriever.retrieve_answer(inmessage,6)[0]
+        if ispresent !=0 and hasSection !=-1:
+            result_json = {"mp3":hasSection,"section_id":hasSection,
+                "code": use_mp3_code, "response": ""}
+            return result_json
     if intent=='chitchat':
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,0)[0]
         print(most_similar_question)
@@ -212,7 +224,7 @@ def predict(inmessage):
             mp3 = 100
             code = use_mp3_code
         for entity in entities:
-            if entity['entity'] == 'present' and entity['confidence'] > 0.85:
+            if entity['entity'] == 'present' and entity['confidence'] > 0.8:
                 mp3 = 100
                 code = use_mp3_code
                 response = "100.mp3"
@@ -233,6 +245,8 @@ def predict(inmessage):
         print(most_similar_question)
         response = answer
     if intent =='command_lead_way' and len(entities)!=0:
+        #TODO case command_lead_way dont have entities
+
         for entity in entities:
             if entity["entity"] =="section":
                 most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
