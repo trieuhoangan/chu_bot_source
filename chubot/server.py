@@ -163,8 +163,10 @@ def test_input_predict():
         if inmessage == 'stop' or inmessage=='bye':
             break
         inmessage = inmessage.lower()
-        print(inmessage)
-        predict(inmessage)
+        # print(inmessage)
+        # predict(inmessage)
+        line = determind_section(inmessage)
+        print(str(line))
 #
 #use to demo on web
 #
@@ -286,11 +288,12 @@ def determind_section(inmessage):
                 most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
                 result_json = {"mp3":answer,"section_id":answer,
                 "code": 5, "response": ""}
+                print(json.dumps(result_json, ensure_ascii=False))
                 return result_json
-    else:
-        result_json = {"mp3":-1,"section_id":-1,
-                "code": 0, "response": "Tôi không nghe rõ, bạn nói lại được không"}
-        return result_json
+    result_json = {"mp3":-1,"section_id":-1,
+            "code": 6, "response": "Tôi không nghe rõ, bạn nói lại được không"}
+    # print(json.dumps(result_json, ensure_ascii=False))
+    return result_json
 
 if __name__ == "__main__":
     # test_entity_train('an')
@@ -305,35 +308,35 @@ if __name__ == "__main__":
     ##########Server Code#################
 
     # hãy giới thiệu về đại học quốc gia
-    app = Flask(__name__)
-    @app.route('/')
-    def hello_world():
-        if request.method == 'GET':
-            mess = request.args.get('mess', '')
-            print(mess)
-            line = predict(mess)
-            print(str(line))
-            return str(line).replace("'",'"')
-    @app.route('/confirm/')
-    def confirm():
-        if request.method == 'GET':
-            mess = request.args.get('mess', '')
-            print(mess)
-            line = predict(mess)
-            print(str(line))
-            return str(line).replace("'",'"')
-    @app.route('/presentation/')
-    def get_section():
-        if request.method == 'GET':
-            mess = request.args.get('mess', '')
-            print(mess)
-            line = determind_section(mess)
-            print(str(line))
-            return str(line).replace("'",'"')
-    #     # return "null"
+    # app = Flask(__name__)
+    # @app.route('/')
+    # def hello_world():
+    #     if request.method == 'GET':
+    #         mess = request.args.get('mess', '')
+    #         print(mess)
+    #         line = predict(mess)
+    #         print(str(line))
+    #         return str(line).replace("'",'"')
+    # @app.route('/confirm/')
+    # def confirm():
+    #     if request.method == 'GET':
+    #         mess = request.args.get('mess', '')
+    #         print(mess)
+    #         line = predict(mess)
+    #         print(str(line))
+    #         return str(line).replace("'",'"')
+    # @app.route('/presentation/')
+    # def get_section():
+    #     if request.method == 'GET':
+    #         mess = request.args.get('mess', '')
+    #         print(mess)
+    #         line = determind_section(mess)
+    #         print(str(line))
+    #         return str(line).replace("'",'"')
+    # #     # return "null"
 
-    app.run(host= '0.0.0.0')
+    # app.run(host= '0.0.0.0')
     ##########Server Code#################
 
     # test_predict()
-    # test_input_predict()
+    test_input_predict()
