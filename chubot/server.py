@@ -34,8 +34,9 @@ ask_who_file = 'usingdata/ask_who.csv'
 ask_where_file = 'usingdata/ask_where.csv'
 ask_number_file = 'usingdata/ask_number.csv'
 ask_when_file = 'usingdata/ask_when.csv'
-lead_to_section_file = 'usingdata/lead_to_section.csv'
+lead_to_section_file = 'usingdata/lead_to_section2.csv'
 command_file = 'usingdata/command.csv'
+presentation_file = 'usingdata/presentation.csv'
 answer_retriever = ChitChat(chitchat_file)
 answer_retriever.add_more_data(ask_what_file)
 answer_retriever.add_more_data(ask_who_file)
@@ -44,6 +45,7 @@ answer_retriever.add_more_data(ask_number_file)
 answer_retriever.add_more_data(ask_when_file)
 answer_retriever.add_more_data(lead_to_section_file)
 answer_retriever.add_more_data(command_file)
+answer_retriever.add_more_data(presentation_file)
 
 nlp = spacy.load('vi_spacy_model')
 def create_model(name):
@@ -317,14 +319,13 @@ def get_confirm(inmessage):
     return result_json
 def determind_section(inmessage):
     entities = action.chubot.predict_entity(inmessage)
-    if len(entities)>0:
-        for entity in entities:
-            if entity['entity']=='section':
-                most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
-                result_json = {"mp3":answer,"section_id":answer,
-                "code": 5, "response": ""}
-                print(json.dumps(result_json, ensure_ascii=False))
-                return result_json
+    print(entities)
+    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
+    if most_similar_question!='idk':
+        result_json = {"mp3":answer,"section_id":answer,
+        "code": 5, "response": ""}
+        print(json.dumps(result_json, ensure_ascii=False))
+        return result_json
     result_json = {"mp3":-1,"section_id":-1,
             "code": 6, "response": "Tôi không nghe rõ, bạn nói lại được không"}
     # print(json.dumps(result_json, ensure_ascii=False))

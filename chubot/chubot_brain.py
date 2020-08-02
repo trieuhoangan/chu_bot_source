@@ -344,7 +344,7 @@ class ChuBotBrain():
             example_data = [(token.text, token.tag_, bilou_tags[i])
                             for i, token in enumerate(doc)]
             # print("important ",list(enumerate(doc)))
-            # print("entity_tag {}".format(example_count),bilou_tags)
+            print("entity_tag {}".format(example_count),bilou_tags)
             dataset.append(example_data)
             example_count +=1
         return dataset
