@@ -324,7 +324,7 @@ def determind_section(inmessage):
     print(entities)
     most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
     if most_similar_question!='idk':
-        result_json = {"mp3":answer,"section_id":answer,
+        result_json = {"mp3":answer,"section_id":int(answer),
         "code": 5, "response": ""}
         print(json.dumps(result_json, ensure_ascii=False))
         return result_json
