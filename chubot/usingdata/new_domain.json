@@ -12,7 +12,8 @@
       "end_conversation",
       "ask_number",
       "ask_when",
-      "ask_location"
+      "ask_location",
+      "command"
     ],
     "bot_actions": [
       "default_fallback",
@@ -42,7 +43,8 @@
       "end_conversation": ["bot_goodbye"],
       "ask_when":["bot_answer_when"],
       "ask_number":["bot_answer_number"],
-      "ask_location" : ["bot_ask_location"]
+      "ask_location" : ["bot_ask_location"],
+      "command":["bot_command_lead_way"]
     },
     "action_templates": {
       "default_fallback": [

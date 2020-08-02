@@ -35,6 +35,7 @@ ask_where_file = 'usingdata/ask_where.csv'
 ask_number_file = 'usingdata/ask_number.csv'
 ask_when_file = 'usingdata/ask_when.csv'
 lead_to_section_file = 'usingdata/lead_to_section.csv'
+command_file = 'usingdata/command.csv'
 answer_retriever = ChitChat(chitchat_file)
 answer_retriever.add_more_data(ask_what_file)
 answer_retriever.add_more_data(ask_who_file)
@@ -42,7 +43,7 @@ answer_retriever.add_more_data(ask_where_file)
 answer_retriever.add_more_data(ask_number_file)
 answer_retriever.add_more_data(ask_when_file)
 answer_retriever.add_more_data(lead_to_section_file)
-
+answer_retriever.add_more_data(command_file)
 
 nlp = spacy.load('vi_spacy_model')
 def create_model(name):
@@ -127,31 +128,31 @@ def test_answer_retrieval(filename):
 ##
 # use to demo chatbot
 ##
-def test_predict():
-    ####Declare Speech Recognition
-    r = sr.Recognizer()
-    mic = sr.Microphone()
-    with mic as source:
-        while True:
-            r.adjust_for_ambient_noise(source, 1)
-            print("ready to record, please speak >> ")
-            audio = r.listen(source,phrase_time_limit=4)
-            try:
-                inmessage = r.recognize_google(audio,None,"vi-VN" "en-US")
+# def test_predict():
+#     ####Declare Speech Recognition
+#     r = sr.Recognizer()
+#     mic = sr.Microphone()
+#     with mic as source:
+#         while True:
+#             r.adjust_for_ambient_noise(source, 1)
+#             print("ready to record, please speak >> ")
+#             audio = r.listen(source,phrase_time_limit=4)
+#             try:
+#                 inmessage = r.recognize_google(audio,None,"vi-VN" "en-US")
 
-                #inmessage = input()
-                if inmessage == 'stop' or inmessage=='bye':
-                    break
-                inmessage = inmessage.lower()
-                inmessage = changeUnicode.compound_unicode(inmessage)
-                print(inmessage)
-                predict(inmessage)
+#                 #inmessage = input()
+#                 if inmessage == 'stop' or inmessage=='bye':
+#                     break
+#                 inmessage = inmessage.lower()
+#                 inmessage = changeUnicode.compound_unicode(inmessage)
+#                 print(inmessage)
+#                 predict(inmessage)
 
-            except sr.UnknownValueError:
+#             except sr.UnknownValueError:
 
-                print("Oops! Didn't catch that ")
-            except sr.RequestError as e:
-                print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
+#                 print("Oops! Didn't catch that ")
+#             except sr.RequestError as e:
+#                 print("Uh oh! Couldn't request results from Google Speech Recognition service; {0}".format(e))
 
 ##
 ## use to test chatbot
@@ -270,15 +271,24 @@ def predict(inmessage):
     print(json.dumps(result_json, ensure_ascii=False))
     return result_json
 def get_confirm(inmessage):
-    entities = action.chubot.predict_entity(inmessage)
-    if len(entities)>0:
-        for entity in entities:
-            if entity['entity']=='present':
-                result_json = {"mp3":100,"section_id":-1,
-                "code": 3, "response": ""}
-                return result_json
+    # entities = action.chubot.predict_entity(inmessage)
+    responses = action.chubot.predict_intent(inmessage)
+    print(str(responses[0]))
+    (prob,intent) = responses[0]
+    # print(str(entities))
+    if prob > 0.5:
+        most_similar_question,command_stype = answer_retriever.retrieve_answer(inmessage,7)[0]
+        print(command_stype)
+        if command_stype=='present':
+            result_json = {"mp3":100,"section_id":-1,
+            "code": 3, "response": "Bạn muốn thuyết trình về cái gì"}
+            return result_json
+        if command_stype=='question':
+            result_json = {"mp3":-1,"section_id":-1,
+            "code": 0, "response": "bạn muốn hỏi j"}
+            return result_json
     result_json = {"mp3":-1,"section_id":-1,
-                "code": 4, "response": ""}
+                "code": 7, "response": "tôi không nghe rõ"}
     return result_json
 def determind_section(inmessage):
     entities = action.chubot.predict_entity(inmessage)
@@ -308,35 +318,35 @@ if __name__ == "__main__":
     ##########Server Code#################
 
     # hãy giới thiệu về đại học quốc gia
-    # app = Flask(__name__)
-    # @app.route('/')
-    # def hello_world():
-    #     if request.method == 'GET':
-    #         mess = request.args.get('mess', '')
-    #         print(mess)
-    #         line = predict(mess)
-    #         print(str(line))
-    #         return str(line).replace("'",'"')
-    # @app.route('/confirm/')
-    # def confirm():
-    #     if request.method == 'GET':
-    #         mess = request.args.get('mess', '')
-    #         print(mess)
-    #         line = predict(mess)
-    #         print(str(line))
-    #         return str(line).replace("'",'"')
-    # @app.route('/presentation/')
-    # def get_section():
-    #     if request.method == 'GET':
-    #         mess = request.args.get('mess', '')
-    #         print(mess)
-    #         line = determind_section(mess)
-    #         print(str(line))
-    #         return str(line).replace("'",'"')
-    # #     # return "null"
+    app = Flask(__name__)
+    @app.route('/')
+    def hello_world():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+            print(mess)
+            line = predict(mess)
+            print(str(line))
+            return str(line).replace("'",'"')
+    @app.route('/confirm/')
+    def confirm():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+            print(mess)
+            line = get_confirm(mess)
+            print(str(line))
+            return str(line).replace("'",'"')
+    @app.route('/presentation/')
+    def get_section():
+        if request.method == 'GET':
+            mess = request.args.get('mess', '')
+            print(mess)
+            line = determind_section(mess)
+            print(str(line))
+            return str(line).replace("'",'"')
+    #     # return "null"
 
-    # app.run(host= '0.0.0.0')
+    app.run(host= '0.0.0.0')
     ##########Server Code#################
 
     # test_predict()
-    test_input_predict()
+    # test_input_predict()

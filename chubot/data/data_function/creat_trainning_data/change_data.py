@@ -79,21 +79,28 @@ class DataObject():
     # load sentences and the label of sentences only
     # load entities and the position on the sentences
     ###
-    def load_distinc_data(self,filename,text_col,intent_col):
+    def load_distinc_data(self,filename,text_col,intent_col,limit_sentence):
         "first param is text, second param is intent"
         intent_file = open(filename, newline='', encoding="utf8")
 
         # nlp = spacy.load('vi_core_news_md')
+        if limit_sentence < 1:
+            limit_sentence = 100000
         all_entity = self.json_object.get("nlu_data").get("entity_synonyms")
         csv_reader = csv.reader(intent_file, delimiter=',')
         lines = []
         examples = []
         line_count = 0
+        count =0
         # read data from *.csv file and ignore duclicated data
         for row in csv_reader:
             if line_count == 0:
                 line_count = line_count+1
                 continue
+            if count > limit_sentence:
+                break
+            else:
+                count = count +1 
             text = row[text_col].lower()
             intent = row[intent_col].lower()
             if text !='':
@@ -101,9 +108,10 @@ class DataObject():
                     self.count = self.count+1
                     lines.append(text)
                     examples.append({'text':text,'intent':intent})
-
+        
         # put data into json object as the format
         for example in examples:
+            
             entities = []
             for entity in all_entity:
                 for symnonym in entity.get("synonyms"):
@@ -242,7 +250,7 @@ class DataObject():
         
     def make_chit_chat_train_test(self,filename,intent_col):
         df = pd.read_csv(filename, header=None, names=['intent', 'q', 'noisyq', 'a'])
-
+    
 
 
 
@@ -254,17 +262,18 @@ if __name__=="__main__":
     a = DataObject()
     # a.split_train_test_dataset(list_filename,0,2,1,train_link,test_link)
     a.load_entity_data('./entity_list.csv')
-    # a.load_distinc_data('./chitchat.csv',1,0)
-    # a.load_distinc_data('./command_lead_way.csv',2,0)
-    # a.load_distinc_data('./ask_robot.csv',2,0)
-    # a.load_distinc_data('./ask_who.csv',1,0)
-    # a.load_distinc_data('./ask_where.csv',1,0)
-    # a.load_distinc_data('./ask_what.csv',1,0)
-    # a.load_distinc_data('./ask_when.csv',1,0)
-    # a.load_distinc_data('./ask_number.csv',1,0)
-    # a.load_distinc_data('./ask_when.csv',1,0)
-    # a.load_distinc_data('./greeting_end.csv',2,0)
-    # a.load_distinc_data('./presentation.csv',1,0)
+    a.load_distinc_data('./chitchat.csv',1,0,-1)
+    a.load_distinc_data('./command_lead_way.csv',2,0,200)
+    # a.load_distinc_data('./ask_robot.csv',2,0,0)
+    a.load_distinc_data('./ask_who.csv',1,0,-1)
+    a.load_distinc_data('./ask_where.csv',1,0,-1)
+    a.load_distinc_data('./ask_what.csv',1,0,200)
+    a.load_distinc_data('./ask_when.csv',1,0,-1)
+    a.load_distinc_data('./ask_number.csv',1,0,200)
+    a.load_distinc_data('./ask_when.csv',1,0,-1)
+    a.load_distinc_data('./greeting_end.csv',2,0,-1)
+    a.load_distinc_data('./presentation.csv',1,0,-1)
+    a.load_distinc_data('./extend_data.csv',1,0,-1)
     
     a.printCount()
     # a.load_quest_data('../oldata/quest_data.csv',2,0)
@@ -286,8 +295,8 @@ if __name__=="__main__":
     #     print('done')
     # b = DataObject()
     # b.load_quest_data('full_train.txt',1,0)
-    # full_train_output = './full_train.json'
-    full_train_output = './part.json'
+    full_train_output = './full_train.json'
+    # full_train_output = './part.json'
     with open(full_train_output, 'w', encoding='utf8') as output:
         output.write(json.dumps(a.json_object, ensure_ascii=False))
         print('done')
