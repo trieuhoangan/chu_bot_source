@@ -204,7 +204,7 @@ def predict(inmessage):
     print(intent)
     print(entities)
     response = action.handle_message(inmessage)[0]
-    if prob <0.25:
+    if prob <0.4:
         
         result_json =  unknown()
         print(json.dumps(result_json, ensure_ascii=False))
