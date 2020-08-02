@@ -1,6 +1,5 @@
-intent,q,noisyq,a
-unknown,idk,a,Xin lỗi mình chưa nghe rõ bạn có thể nói lại được không
-unknown,idk,a,Xin lỗi tôi không đủ dữ liệu để trả lời câu hỏi này
+unknown,idk,a,tôi không biết thông tin này
+unknown,idk,a,tôi không biết bạn có thể đặt câu hỏi chi tiết hơn không
 chitchat,giới thiệu đi,a,100.mp3
 chitchat,giới thiệu qua về nơi này đi,a,100.mp3
 chitchat,thiệu qua về nơi này,a,100.mp3
@@ -16,8 +15,6 @@ chitchat,có gì trong này,a,100.mp3
 chitchat,phòng truyền thống có cái gì,a,100.mp3
 chitchat,giới thiệu phòng truyền thống đi,a,100.mp3
 chitchat,giới thiệu cho mình về phòng truyền thống,a,100.mp3
-chitchat,Bạn có thể nói lại qua cho tôi về những thứ này được không fuso,a,100.mp3
-chitchat,Hãy nói qua về bạn đi fuso,a,mình là fuso hướng dẫn viên
 chitchat,ai là người đặt tên cho bạn,ai là người đặbt tên cho,tên mình được các bạn sinh viên đặt cho
 chitchat,ai là người đặt tên cho bạn,ai là người đặt tên cho,tên mình được các bạn sinh viên đặt cho
 chitchat,ai là người đặt tên cho bạn,ai là người đặt tên cho bạn,tên mình được các bạn sinh viên đặt cho
@@ -613,4 +610,3 @@ chitchat,thời tiết hôm nay thế nào,thời tiết hôm nay thế nào,th�
 chitchat,thời tiết hôm nay thế nào,thời tiết hôm nay thế nào,thời tiết hôm nay rất đẹp
 chitchat,thời tiết hôm nay thế nào,thời tiết hôm nay thế nào,thời tiết hôm nay rất đẹp
 chitchat,who are you,who are you,mình là fuso hướng dẫn viên phòng truyền thống
-chitchat,Bạn có thể nói qua về các lãnh đạo đại học quốc gia được không fuso,a,1

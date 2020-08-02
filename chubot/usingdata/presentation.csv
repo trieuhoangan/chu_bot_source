@@ -1,0 +1,58 @@
+intent,q,noisyq,a
+unknown,idk,a,Xin lỗi mình chưa nghe rõ bạn có thể nói lại được không
+unknown,idk,a,Xin lỗi tôi không đủ dữ liệu để trả lời câu hỏi này
+presentation_demand,giới thiệu đi,a,100.mp3
+presentation_demand,giới thiệu qua về nơi này đi,a,100.mp3
+presentation_demand,thiệu qua về nơi này,a,100.mp3
+presentation_demand,phòng này có cái gì,a,100.mp3
+presentation_demand,nói qua về phòng này đi,a,100.mp3
+presentation_demand,nói cho tôi về phòng truyền thống đi,a,100.mp3
+presentation_demand,phòng truyền thống có cái gì,a,100.mp3
+presentation_demand,nói sơ qua về phòng truyền thống cho tôi,a,100.mp3
+presentation_demand,phòng truyền thống có ý nghĩa như thế nào,a,100.mp3
+presentation_demand,phòng này nói về cái gì,a,100.mp3
+presentation_demand,phòng này có cái gì,a,100.mp3
+presentation_demand,có gì trong này,a,100.mp3
+presentation_demand,nói qua về những thứ này đi,a,100.mp3
+presentation_demand,tôi muốn biết về những này,a,100.mp3
+presentation_demand,phòng truyền thống có cái gì,a,100.mp3
+presentation_demand,giới thiệu phòng truyền thống đi,a,100.mp3
+presentation_demand,giới thiệu cho mình về phòng truyền thống,a,100.mp3
+presentation_demand,giới thiệu về đại học quốc gia,a,100.mp3
+presentation_demand,nói về đại học quốc gia,a,100.mp3
+presentation_demand,nói qua về đại học quốc gia,a,100.mp3
+presentation_demand, tôi muốn nghe về đại học quốc gia,a,100.mp3
+presentation_demand, fuso có thể thuyết minh cho tôi về đại học quốc gia được không,a,100.mp3
+presentation_demand,Bạn có thể nói lại qua cho tôi về những thứ này được không fuso,a,100.mp3
+presentation_demand, tôi muốn nghe về quá trình hình thành và phát triển,a,1
+presentation_demand, đại học đông dương có lịch sử như thế nào vây,a,1
+presentation_demand, thuyết trình cho tôi về đại học tổng hợp,a,1
+presentation_demand, đại học tổng hợp có lịch sử như nào vậy,a,1
+presentation_demand, tôi muốn nghe về bề dày lịch sử của đại học tổng hợp,a,1
+presentation_demand, tôi muốn nghe thuyết minh về quá trình hình thành và phát triển,a,1
+presentation_demand, Giới thiệu cho tôi về đại học quốc gia việt nam,a,1
+presentation_demand, nói qua cho tôi về đại học quốc gia hà nội,a,1
+presentation_demand, cho tôi biết về các giám đốc và phó giám đốc của đại học quốc gia,a,1
+presentation_demand, sự quan tâm của đảng dành cho đại học quốc gia như thế nào,a,2
+presentation_demand, fuso có thể nói qua cho tôi về sự quan tâm của đảng dành cho đại học quốc gia như thế nào,a,2
+presentation_demand, giới thiệu về khu vực đại học quốc gia là ngôi sao lớn,a,2
+presentation_demand, giới thiệu về khu vực hoa sen,a,2
+presentation_demand, nói cho tôi về các đặc trưng của đại học quốc gia,a,3
+presentation_demand, tôi muốn nghe về các đặc trưng của đại học quốc gia,a,3
+presentation_demand, giới thiệu cho tôi về các đặc trưng của đại học quốc gia,a,3
+presentation_demand, bạn có thể cho tôi biết về các thành tựu nổi bật của đại học quốc gia,a,4
+presentation_demand, tôi có thể biết về các thành tựu nổi bật của đại học quốc gia được không,a,4
+presentation_demand, tôi muốn nghe về các công trình nghiên cứu khoa học của đại học quốc gia,a,4
+presentation_demand, bạn có thể giới thiệu cho tôi qua bề dày thành tích của đại học quốc gia,a,4
+presentation_demand, bạn có thể giới thiệu cho tôi qua bề dày thành tích của đại học quốc gia hà nội,a,4
+presentation_demand, bạn có thể nói cho tôi về bề dày thành tích của đại học quốc gia,a,4
+presentation_demand, có thể cho tôi biết về các đối tác quốc tế của đại học quốc gia,a,4
+presentation_demand, giới thiệu cho tôi biết về các đối tác quốc tế của đại học quốc gia,a,4
+presentation_demand, tôi muốn lắng nghe về các giải thưởng quốc tế của đại học quốc gia,a,4
+presentation_demand, fuso có thể cho tôi biết về các giải thưởng trong nước của đại học quốc gia được không ,a,4
+presentation_demand, tôi muốn biết về các tiến sĩ danh dự đại học quốc gia,a,4
+presentation_demand, liệu bạn có thể cho tôi biết về các tiến sĩ danh dự đại học quốc gia,a,4
+presentation_demand, fuso có thể cho tôi biết về các giải thưởng quốc tế của đại học quốc gia được không,a,4
+presentation_demand, fuso có thể cho tôi biết về vị thế trên trường quốc tế của đại học quốc gia được không,a,5
+presentation_demand, tôi muốn biết về vị thế trên trường quốc tế của đại học quốc gia được không,a,5
+presentation_demand, tôi có thể nghe về vị thế trên trường quốc tế của đại học quốc gia,a,5

@@ -1,6 +1,6 @@
 intent,q,noisyq,a
 unknown,idk,a,Xin lỗi mình chưa nghe rõ bạn có thể nói lại được không
-unknown,idk,a,bạn có thể đặt câu hỏi chi tiết hơn không
+unknown,idk,a,Xin lỗi tôi không đủ dữ liệu để trả lời câu hỏi này
 ask_number, tính đến năm 2000   đại học quốc gia hà nội có bao nhiêu trường đại học thành viên, b, đhqghn có 5 trường thành viên tính đến năm 2000
 ask_number, tính đến năm 2000   đại học quốc gia hà nội có bao nhiêu viện nghiên cứu, b, đhqghn có 1 viện nghiên cứu tính đến năm 2000
 ask_number, theo quyết định số 14/2001/qđ–ttg   đại học quốc gia hà nội có mấy trường đại học thành viên, b, đhqghn có 3 trường thành viên.

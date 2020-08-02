@@ -6,7 +6,7 @@ import sklearn_crfsuite
 import random
 import io
 import codecs
-from spacy.gold import biluo_tags_from_offsets
+# from spacy.gold import biluo_tags_from_offsets
 from gensim.models import KeyedVectors
 import numpy as np
 class ChuBotBrain():

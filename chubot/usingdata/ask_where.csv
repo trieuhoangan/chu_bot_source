@@ -1,6 +1,6 @@
 intent,q,noisyq,a
 unknown,idk,a,Xin lỗi mình chưa nghe rõ bạn có thể nói lại được không
-unknown,idk,a,bạn có thể đặt câu hỏi chi tiết hơn không
+unknown,idk,a,Xin lỗi tôi không đủ dữ liệu để trả lời câu hỏi này
 ask_where, trụ sở của đại học đông dương ở đâu, b, số 19 phố lê thánh tông  quận hoàn kiếm  thành phố hà nội
 ask_where, trụ sở của đại học quốc gia việt nam ở đâu, b, số 19 phố lê thánh tông  quận hoàn kiếm  thành phố hà nội
 ask_where, đại học quốc gia việt nam ở đâu, b, số 19 phố lê thánh tông  quận hoàn kiếm  thành phố hà nội
@@ -20,3 +20,4 @@ ask_where, trụ sở của đại học giáo dục ở đâu, b, ở số 144 
 ask_where, trụ sở của trường đại học luật ở đâu, b, ở số 144 xuân thủy cầu giấy.
 ask_where, trụ sở của đại học khoa học tự nhiên ở đâu, b, ở số 334 nguyễn trãi thanh xuân trung thanh xuân hà nội
 ask_where, trụ sở của đại học khoa học xã hội và nhân văn ở đâu, b, ở số 336 nguyễn trãi thanh xuân trung thanh xuân hà nội
+ask_where, nhà vệ sinh ở đâu vậy, b, đi thẳng ra cửa thì đi về hướng thang máy sẽ thấy nhà vệ sinh ở bên trái

@@ -13,7 +13,8 @@
       "ask_number",
       "ask_when",
       "ask_location",
-      "command"
+      "command",
+      "presentation_demand"
     ],
     "bot_actions": [
       "default_fallback",
@@ -44,7 +45,8 @@
       "ask_when":["bot_answer_when"],
       "ask_number":["bot_answer_number"],
       "ask_location" : ["bot_ask_location"],
-      "command":["bot_command_lead_way"]
+      "command":["bot_command_lead_way"],
+      "presentation_demand":["bot_command_lead_way"]
     },
     "action_templates": {
       "default_fallback": [

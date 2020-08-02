@@ -36,6 +36,7 @@ ask_number_file = 'usingdata/ask_number.csv'
 ask_when_file = 'usingdata/ask_when.csv'
 lead_to_section_file = 'usingdata/lead_to_section.csv'
 command_file = 'usingdata/command.csv'
+presentation_file = 'usingdata/presentation.csv'
 answer_retriever = ChitChat(chitchat_file)
 answer_retriever.add_more_data(ask_what_file)
 answer_retriever.add_more_data(ask_who_file)
@@ -44,7 +45,7 @@ answer_retriever.add_more_data(ask_number_file)
 answer_retriever.add_more_data(ask_when_file)
 answer_retriever.add_more_data(lead_to_section_file)
 answer_retriever.add_more_data(command_file)
-
+answer_retriever.add_more_data(presentation_file)
 
 nlp = spacy.load('vi_spacy_model')
 def create_model(name):
@@ -166,16 +167,21 @@ def test_input_predict():
             break
         inmessage = inmessage.lower()
         # print(inmessage)
-        # predict(inmessage)
-        line = get_confirm(inmessage)
-        print(str(line))
+        predict(inmessage)
+        # line = get_confirm(inmessage)
+        # print(str(line))
 #
 #use to demo on web
 #
-def unknown():
+def repeat():
     result_json = {"mp3":-1,"section_id":-1,
         "code": 0, "response": "xin lỗi bạn nói lại được không"}
     return result_json 
+def unknown():
+    result_json = {"mp3":-1,"section_id":-1,
+        "code": 0, "response": "xin lỗi tôi không hiểu được ý muốn của bạn"}
+    return result_json 
+
 def predict(inmessage):
     speak_code = 0
     go_around_code = 1
@@ -186,7 +192,7 @@ def predict(inmessage):
     section_id = -1
 
     inmessage = inmessage.lower()
-    print(inmessage)
+    # print(inmessage)
     responses = action.chubot.predict_intent(inmessage)
     entities = action.chubot.predict_entity(inmessage)
     # for entity in entities:
@@ -196,10 +202,18 @@ def predict(inmessage):
 
     (prob, intent) = responses[0]
     print(prob)
+    print(intent)
+    print(entities)
     response = action.handle_message(inmessage)[0]
-    # if prob <0.5:
-    #     result_json =  unknown()
-    #     return result_json
+    if prob <0.25:
+        
+        result_json =  unknown()
+        print(json.dumps(result_json, ensure_ascii=False))
+        return result_json
+    if prob <0.45:
+        result_json =  repeat()
+        print(json.dumps(result_json, ensure_ascii=False))
+        return result_json
     if len(entities) > 0:
         ispresent = 0
         hasSection = -1
@@ -219,6 +233,9 @@ def predict(inmessage):
         ## open mp3 file to introduce the room
         if str(response) == "100.mp3":
             mp3 = 100
+            code = use_mp3_code
+        if response.isdigit() and int(response) <7:
+            mp3 = int(response)
             code = use_mp3_code
     if intent=='ask_what':
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)[0]
@@ -263,11 +280,21 @@ def predict(inmessage):
     if intent=='ask_where' and len(entities)==0:
         mp3 = 15
         code = use_mp3_code
+    if intent =='presentation_demand':
+        most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,8)[0]
+        print(type(answer))
+        if answer == "100.mp3":
+            mp3 = 100
+            code = use_mp3_code
+            response = answer
+        elif answer.isdigit() == True:
+            mp3 = int(answer)
+            code = use_mp3_code
+            response = answer
     result_json = {"mp3":mp3,"section_id":section_id,
                 "code": code, "response": response}
-    
-    print(intent)
-    print(entities)
+    # print(intent)
+   
     
     print(json.dumps(result_json, ensure_ascii=False))
     return result_json
@@ -277,7 +304,7 @@ def get_confirm(inmessage):
     print(str(responses[0]))
     (prob,intent) = responses[0]
     # print(str(entities))
-    if prob > 0.5:
+    if prob > 0.45:
         most_similar_question,command_stype = answer_retriever.retrieve_answer(inmessage,7)[0]
         print(command_stype)
         if command_stype=='present':
@@ -289,7 +316,7 @@ def get_confirm(inmessage):
             "code": 0, "response": "bạn muốn hỏi j"}
             return result_json
     result_json = {"mp3":-1,"section_id":-1,
-                "code": 0, "response": "tôi không nghe rõ"}
+                "code": 7, "response": "tôi không nghe rõ"}
     return result_json
 def determind_section(inmessage):
     entities = action.chubot.predict_entity(inmessage)
@@ -314,7 +341,7 @@ if __name__ == "__main__":
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    # create_model('an')
+    create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################

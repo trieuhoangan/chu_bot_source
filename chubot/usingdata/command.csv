@@ -1,4 +1,6 @@
 intent,q,noisyq,a
+unknown,idk,a,Xin lỗi mình chưa nghe rõ bạn có thể nói lại được không
+unknown,idk,a,Xin lỗi tôi không đủ dữ liệu để trả lời câu hỏi này
 command, Tôi muốn đưa ra câu hỏi,a,question
 command, Tôi muốn đặt ra câu hỏi,a,question
 command, Tôi muốn hỏi về đại học quốc gia,a,question
