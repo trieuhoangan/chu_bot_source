@@ -167,9 +167,9 @@ def test_input_predict():
             break
         inmessage = inmessage.lower()
         # print(inmessage)
-        predict(inmessage)
+        # predict(inmessage)
         # line = get_confirm(inmessage)
-        # line = determind_section(inmessage)
+        line = determind_section(inmessage)
         # print(str(line))
 #
 #use to demo on web
@@ -340,7 +340,7 @@ if __name__ == "__main__":
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    # create_model('an')
+    create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################
