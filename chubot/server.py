@@ -371,7 +371,7 @@ if __name__ == "__main__":
             return str(line).replace("'",'"')
     #     # return "null"
 
-    app.run(host= '0.0.0.0')
+    app.run(host= '0.0.0.0',port=5001)
     ##########Server Code#################
 
     # test_predict()
