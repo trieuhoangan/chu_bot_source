@@ -34,9 +34,9 @@ ask_who_file = 'usingdata/ask_who.csv'
 ask_where_file = 'usingdata/ask_where.csv'
 ask_number_file = 'usingdata/ask_number.csv'
 ask_when_file = 'usingdata/ask_when.csv'
-lead_to_section_file = 'usingdata/lead_to_section2.csv'
+lead_to_section_file = 'usingdata/lead_to_section3.csv'
 command_file = 'usingdata/command.csv'
-presentation_file = 'usingdata/presentation.csv'
+presentation_file = 'usingdata/presentation2.csv'
 answer_retriever = ChitChat(chitchat_file)
 answer_retriever.add_more_data(ask_what_file)
 answer_retriever.add_more_data(ask_who_file)
