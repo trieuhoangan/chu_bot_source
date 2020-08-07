@@ -102,6 +102,7 @@ class ChuBotBrain():
 
         #save model
         from sklearn.externals import joblib
+        # import joblib
 
         joblib.dump(crf, self.crf_model_path)
 
@@ -113,6 +114,7 @@ class ChuBotBrain():
         return a list of recognized entites (dict)
         """
         from sklearn.externals import joblib
+        # import joblib
 
         #TODO Handle load model exception
         crf = joblib.load(self.crf_model_path)

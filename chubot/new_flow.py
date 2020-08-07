@@ -3,7 +3,7 @@ from flask import Flask
 from flask import request
 import datetime
 if __name__=="__main__":
-    domain_file = "usingdata/new_domain.json"
+    domain_file = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/new_domain.json"
     api = ChatBotAPI('vi','an')
     print("load answers")
     api.load_answers()

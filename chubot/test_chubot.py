@@ -3,7 +3,7 @@ from chubot_action import ChuBotAction
 import sys
 
 def test_nercrf():
-    nludatafile = "data/nlu_greet.json"
+    nludatafile = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/nlu_greet.json"
 
     chubot = ChuBotBrain("greet_en", language='en')
     chubot.load_data(nludatafile)
@@ -19,7 +19,7 @@ def test_nercrf():
 
 
 def test_intent_classification():
-    nludatafile = "data/nlu_greet.json"
+    nludatafile = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/nlu_greet.json"
 
     chubot = ChuBotBrain("greet_en", language='en')
     chubot.load_data(nludatafile)
@@ -32,7 +32,7 @@ def test_intent_classification():
 
 
 def test_nlu_predict():
-    nludatafile = "data/nlu_greet.json"
+    nludatafile = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/nlu_greet.json"
 
     chubot = ChuBotBrain("greet_en", language='en')
 
@@ -48,7 +48,7 @@ def test_nlu_predict():
 
 def test_train_models():
     botname = "greet_en"
-    nludatafile = "data/nlu_greet.json"
+    nludatafile = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/nlu_greet.json"
 
     chubot = ChuBotBrain(botname, language='en')
     chubot.load_data(nludatafile)
@@ -57,7 +57,7 @@ def test_train_models():
 
 def test_response():
     botname = "greet_en"
-    action_domain_file = "data/action_domain.json"
+    action_domain_file = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/action_domain.json"
     chubot = ChuBotAction(botname, language='en')
     chubot.load_domain(action_domain_file)
     chubot.run_commandline_bot()
