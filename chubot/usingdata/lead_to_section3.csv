@@ -1,0 +1,34 @@
+intent,q,noisyq,a
+unknown,idk,a,Xin lỗi mình chưa nghe rõ bạn có thể nói lại được không
+command_lead_way, quá trình hình thành,a,1
+command_lead_way, sự hình thành đại học đông dương,a,1
+command_lead_way, Quá trình phát triển đại học quốc gia,a,2
+command_lead_way, đại học quốc gia trong những năm tháng kháng chiến,a,2
+command_lead_way, đại học quốc gia thành lập,a,3
+command_lead_way, sự thành lập đại học quốc gia,a,3
+command_lead_way, các giám đốc và phó giám đốc của đại học quốc gia,a,4
+command_lead_way, các lãnh đạo của đại học quốc gia,a,4
+command_lead_way, sự quan tâm của đảng dành cho đại học quốc gia,a,5
+command_lead_way, đại học quốc gia là ngôi sao lớn,a,6
+command_lead_way, Những dấu ấn của đại học quốc gia,a,6
+command_lead_way, khu vực hoa sen,a,6
+command_lead_way, các đặc trưng của đại học quốc gia,a,7
+command_lead_way, các thành tựu nổi bật của đại học quốc gia,a,8
+command_lead_way, Sự tin tưởng của bạn bè quốc tế dành cho đại học quốc gia,a,9
+command_lead_way, các đối tác quốc tế của đại học quốc gia,a,9
+command_lead_way, các giải thưởng của đại học quốc gia,a,10
+command_lead_way, các giải thưởng mà đại học quốc gia đạt được,a,10
+command_lead_way, các tiến sĩ danh dự đại học quốc gia,a,11
+command_lead_way, vị thế trên trường quốc tế của đại học quốc gia,a,11
+command_lead_way, một,a,1
+command_lead_way, hai,a,2
+command_lead_way, ba,a,3
+command_lead_way, bốn,a,4
+command_lead_way, năm,a,5
+command_lead_way, sáu,a,6
+command_lead_way, bảy,a,7
+command_lead_way, tám,a,8
+command_lead_way, chín,a,9
+command_lead_way, mười,a,10
+command_lead_way, mười một,a,11
+

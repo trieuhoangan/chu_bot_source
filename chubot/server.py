@@ -320,7 +320,7 @@ def get_confirm(inmessage):
 def determind_section(inmessage):
     entities = action.chubot.predict_entity(inmessage)
     print(entities)
-    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
+    most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
     if most_similar_question!='idk':
         result_json = {"mp3":int(answer),"section_id":int(answer),
         "code": 5, "response": ""}
@@ -371,7 +371,7 @@ if __name__ == "__main__":
             return str(line).replace("'",'"')
     #     # return "null"
 
-    app.run(host= '0.0.0.0', port=5001)
+    app.run(host= '0.0.0.0',port=5001)
     ##########Server Code#################
 
     # test_predict()
