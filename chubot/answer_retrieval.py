@@ -59,7 +59,27 @@ class ChitChat:
         end = datetime.datetime.now()
         print("retrieval time : ",end-start)
         return [self.qa_list[ids][id_result],self.qa_list[ids][id_result],self.qa_list[ids][id_result]]
-
+    def retrieve_section(self, question,ids):
+        start = datetime.datetime.now()
+        distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
+        id_result=np.argmin(distances)
+        print(distances[id_result])
+        print("answer",self.qa_list[ids][id_result])
+        if distances[id_result] >35:
+            return [self.qa_list[ids][2],self.qa_list[ids][2],self.qa_list[ids][2]]
+        if distances[id_result] >32:
+            return [self.qa_list[ids][1],self.qa_list[ids][1],self.qa_list[ids][1]]
+            # return self.qa_list[ids][0]
+        # print(id)
+        # top3 = heapq.nsmallest(3,range(len(distances)),distances.__getitem__)
+        # print(top3)
+        # list_answer = []
+        # for id_ans in top3:
+        #     list_answer.append(self.qa_list[ids][id_ans])
+        # return list_answer
+        end = datetime.datetime.now()
+        print("retrieval time : ",end-start)
+        return [self.qa_list[ids][id_result],self.qa_list[ids][id_result],self.qa_list[ids][id_result]]
     def add_more_data(self,datafile):
         df = pd.read_csv(datafile, header=None, names=['intent', 'q', 'n', 'a'])
         qa = df[['q', 'a']].copy()

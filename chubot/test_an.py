@@ -34,9 +34,9 @@ ask_who_file = 'usingdata/ask_who.csv'
 ask_where_file = 'usingdata/ask_where.csv'
 ask_number_file = 'usingdata/ask_number.csv'
 ask_when_file = 'usingdata/ask_when.csv'
-lead_to_section_file = 'usingdata/lead_to_section2.csv'
+lead_to_section_file = 'usingdata/lead_to_section3.csv'
 command_file = 'usingdata/command.csv'
-presentation_file = 'usingdata/presentation.csv'
+presentation_file = 'usingdata/presentation2.csv'
 answer_retriever = ChitChat(chitchat_file)
 answer_retriever.add_more_data(ask_what_file)
 answer_retriever.add_more_data(ask_who_file)
@@ -170,7 +170,7 @@ def test_input_predict():
         # predict(inmessage)
         # line = get_confirm(inmessage)
         line = determind_section(inmessage)
-        # print(str(line))
+        print(str(line))
 #
 #use to demo on web
 #
@@ -322,7 +322,7 @@ def get_confirm(inmessage):
 def determind_section(inmessage):
     entities = action.chubot.predict_entity(inmessage)
     print(entities)
-    most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,6)[0]
+    most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
     if most_similar_question!='idk':
         result_json = {"mp3":int(answer),"section_id":int(answer),
         "code": 5, "response": ""}
