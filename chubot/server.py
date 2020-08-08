@@ -320,6 +320,17 @@ def get_confirm(inmessage):
 def determind_section(inmessage):
     entities = action.chubot.predict_entity(inmessage)
     print(entities)
+    if len(entities)>0:
+        for entity in entities:
+            if entity['entity'] =='area':
+                result_json = {"mp3":-1,"section_id":-1,
+                "code": 1, "response": "xin hãy đi theo tôi"}
+                return result_json
+    most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
+    if answer =='all':
+        result_json = {"mp3":-1,"section_id":-1,
+                "code": 1, "response": "xin hãy đi theo tôi"}
+        return result_json
     most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
     if most_similar_question!='idk':
         result_json = {"mp3":int(answer),"section_id":int(answer),

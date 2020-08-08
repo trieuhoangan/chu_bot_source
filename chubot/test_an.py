@@ -167,9 +167,9 @@ def test_input_predict():
             break
         inmessage = inmessage.lower()
         # print(inmessage)
-        # line = predict(inmessage)
+        line = predict(inmessage)
         # line = get_confirm(inmessage)
-        line = determind_section(inmessage)
+        # line = determind_section(inmessage)
         print(str(line))
 #
 #use to demo on web
