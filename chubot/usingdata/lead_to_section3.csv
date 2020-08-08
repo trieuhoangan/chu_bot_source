@@ -31,4 +31,11 @@ command_lead_way, tám,a,8
 command_lead_way, chín,a,9
 command_lead_way, mười,a,10
 command_lead_way, mười một,a,11
-
+command_lead_way, đi xung quanh,a,all
+command_lead_way, đi một vòng,a,all
+command_lead_way, toàn bộ,a,all
+command_lead_way, một lượt,a,all
+command_lead_way, tất cả,a,all
+command_lead_way, nghe tất cả,a,all
+command_lead_way, nghe toàn bộ,a,all
+command_lead_way, hết,a,all
