@@ -167,7 +167,7 @@ def test_input_predict():
             break
         inmessage = inmessage.lower()
         # print(inmessage)
-        # predict(inmessage)
+        # line = predict(inmessage)
         # line = get_confirm(inmessage)
         line = determind_section(inmessage)
         print(str(line))
@@ -206,7 +206,7 @@ def predict(inmessage):
     print(intent)
     print(entities)
     response = action.handle_message(inmessage)[0]
-    if prob <0.25:
+    if prob <0.3:
         
         result_json =  unknown()
         print(json.dumps(result_json, ensure_ascii=False))
@@ -306,6 +306,10 @@ def get_confirm(inmessage):
     (prob,intent) = responses[0]
     # print(str(entities))
     if prob > 0.45:
+        # if intent = "command_lead_way":
+        #     result_json = {"mp3":-1,"section_id":-1,
+        #     "code": 0, "response": "bạn muốn hỏi j"}
+        #     return result_json
         most_similar_question,command_stype = answer_retriever.retrieve_answer(inmessage,7)[0]
         print(command_stype)
         if command_stype=='present':
@@ -316,13 +320,24 @@ def get_confirm(inmessage):
             result_json = {"mp3":-1,"section_id":-1,
             "code": 0, "response": "bạn muốn hỏi j"}
             return result_json
+        
     result_json = {"mp3":-1,"section_id":-1,
                 "code": 7, "response": "tôi không nghe rõ"}
     return result_json
 def determind_section(inmessage):
     entities = action.chubot.predict_entity(inmessage)
     print(entities)
+    if len(entities)>0:
+        for entity in entities:
+            if entity['entity'] =='area':
+                result_json = {"mp3":-1,"section_id":-1,
+                "code": 1, "response": "xin hãy đi theo tôi"}
+                return result_json
     most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
+    if answer =='all':
+        result_json = {"mp3":-1,"section_id":-1,
+                "code": 1, "response": "xin hãy đi theo tôi"}
+        return result_json
     if most_similar_question!='idk':
         result_json = {"mp3":int(answer),"section_id":int(answer),
         "code": 5, "response": ""}
@@ -340,7 +355,7 @@ if __name__ == "__main__":
     # nlp = spacy.load('vi_spacy_model')
 
     ###############Retrain code################
-    create_model('an')
+    # create_model('an')
     ###############Retrain code################
 
     ##########Server Code#################
