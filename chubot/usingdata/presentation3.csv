@@ -1,0 +1,86 @@
+intent,q,noisyq,a
+unknown,idk,a,Xin lỗi mình chưa nghe rõ bạn có thể nói lại được không
+unknown,idk,a,Xin lỗi tôi không đủ dữ liệu để trả lời câu hỏi này
+presentation_demand,giới thiệu đi,a,100.mp3
+presentation_demand,giới thiệu qua về nơi này đi,a,100.mp3
+presentation_demand,thiệu qua về nơi này,a,100.mp3
+presentation_demand,phòng này có cái gì,a,100.mp3
+presentation_demand,nói qua về phòng này đi,a,100.mp3
+presentation_demand,nói cho tôi về phòng truyền thống đi,a,100.mp3
+presentation_demand,phòng truyền thống có cái gì,a,100.mp3
+presentation_demand,nói sơ qua về phòng truyền thống cho tôi,a,100.mp3
+presentation_demand,phòng truyền thống có ý nghĩa như thế nào,a,100.mp3
+presentation_demand,phòng này nói về cái gì,a,100.mp3
+presentation_demand,phòng này có cái gì,a,100.mp3
+presentation_demand,có gì trong này,a,100.mp3
+presentation_demand,nói qua về những thứ này đi,a,100.mp3
+presentation_demand,tôi muốn biết về những này,a,100.mp3
+presentation_demand,phòng truyền thống có cái gì,a,100.mp3
+presentation_demand,giới thiệu phòng truyền thống đi,a,100.mp3
+presentation_demand,giới thiệu cho mình về phòng truyền thống,a,100.mp3
+presentation_demand,giới thiệu về đại học quốc gia,a,100.mp3
+presentation_demand,nói về đại học quốc gia,a,100.mp3
+presentation_demand,nói qua về đại học quốc gia,a,100.mp3
+presentation_demand, tôi muốn nghe về đại học quốc gia,a,100.mp3
+presentation_demand, fuso có thể thuyết minh cho tôi về đại học quốc gia được không,a,100.mp3
+presentation_demand,Bạn có thể nói lại qua cho tôi về những thứ này được không fuso,a,100.mp3
+presentation_demand, tôi muốn nghe về khu vực sự hình thành đại học đông dương,a,1
+presentation_demand, đại học đông dương có lịch sử như thế nào vây,a,1
+presentation_demand, thuyết trình cho tôi về khu vực đại học tổng hợp trong thời kỳ kháng chiến,a,2
+presentation_demand, đại học tổng hợp có lịch sử phát triển như nào vậy,a,2
+presentation_demand, tôi muốn nghe về quá trình phát triển của đại học tổng hợp,a,2
+presentation_demand, tôi muốn nghe khu vực sự phát triển của đại học quốc gia,a,2
+presentation_demand, tôi muốn nghe về khu vực sự thành lập đại học quốc gia,a,3
+presentation_demand, đại học quốc gia được thành lập như nào,a,3
+presentation_demand, sự thành lập đại học quốc gia,a,3
+presentation_demand, Giới thiệu cho tôi về đại học quốc gia việt nam,a,100.mp3
+presentation_demand, nói qua cho tôi về đại học quốc gia hà nội,a,100.mp3
+presentation_demand, cho tôi biết về khu vực các giám đốc và phó giám đốc của đại học quốc gia,a,4
+presentation_demand, giới thiệu về các lãnh đạo của đại học quốc gia,a,4
+presentation_demand, sự quan tâm của đảng dành cho đại học quốc gia như thế nào,a,5
+presentation_demand, fuso có thể nói qua cho tôi về khu vực sự quan tâm của đảng dành cho đại học quốc gia như thế nào,a,5
+presentation_demand, giới thiệu về khu vực đại học quốc gia là ngôi sao lớn,a,6
+presentation_demand, giới thiệu về khu vực hoa sen,a,6
+presentation_demand, các dấu ấn của đại học quốc gia,a,6
+presentation_demand, giới thiệu về khu vực những dấu ấn của đại học quốc gia,a,6
+presentation_demand, nói cho tôi về khu vực các đặc trưng của đại học quốc gia,a,7
+presentation_demand, tôi muốn nghe về các đặc trưng của đại học quốc gia,a,7
+presentation_demand, giới thiệu cho tôi về các đặc trưng của đại học quốc gia,a,7
+presentation_demand, bạn có thể cho tôi biết về khu vực các thành tựu nổi bật của đại học quốc gia,a,8
+presentation_demand, tôi có thể biết về các thành tựu nổi bật của đại học quốc gia được không,a,8
+presentation_demand, tôi muốn nghe về khu vực các công trình nghiên cứu khoa học của đại học quốc gia,a,8
+presentation_demand, bạn có thể giới thiệu cho tôi qua bề dày thành tích của đại học quốc gia,a,8
+presentation_demand, bạn có thể giới thiệu cho tôi qua về khu vực bề dày thành tích của đại học quốc gia hà nội,a,8
+presentation_demand, bạn có thể nói cho tôi về bề dày thành tích của đại học quốc gia,a,8
+presentation_demand, có thể cho tôi biết về khu vực các đối tác quốc tế của đại học quốc gia,a,9
+presentation_demand, giới thiệu cho tôi biết về các đối tác quốc tế của đại học quốc gia,a,9
+presentation_demand, tôi muốn lắng nghe về các khu vực giải thưởng quốc tế của đại học quốc gia,a,10
+presentation_demand, fuso có thể cho tôi biết về các giải thưởng trong nước của đại học quốc gia được không ,a,10
+presentation_demand, tôi muốn biết về khu vực các tiến sĩ danh dự đại học quốc gia,a,11
+presentation_demand, liệu bạn có thể cho tôi biết về các tiến sĩ danh dự đại học quốc gia,a,11
+presentation_demand, fuso có thể cho tôi biết về các giải thưởng quốc tế của đại học quốc gia được không,a,10
+presentation_demand, fuso có thể cho tôi biết về khu vực vị thế trên trường quốc tế của đại học quốc gia được không,a,11
+presentation_demand, tôi muốn biết về vị thế trên trường quốc tế của đại học quốc gia được không,a,11
+presentation_demand, tôi có thể nghe về khu vực vị thế trên trường quốc tế của đại học quốc gia,a,11
+command_lead_way, tôi muốn nghe về khu vực số một,a,1
+command_lead_way, tôi muốn nghe về khu vực số hai,a,2
+command_lead_way, tôi muốn nghe về khu vực số ba,a,3
+command_lead_way, tôi muốn nghe về khu vực số bốn,a,4
+command_lead_way, tôi muốn nghe về khu vực số năm,a,5
+command_lead_way, tôi muốn nghe về khu vực số sáu,a,6
+command_lead_way, tôi muốn nghe về khu vực số bảy,a,7
+command_lead_way, tôi muốn nghe về khu vực số tám,a,8
+command_lead_way, tôi muốn nghe về khu vực số chín,a,9
+command_lead_way, tôi muốn nghe về khu vực số mười,a,10
+command_lead_way, tôi muốn nghe về khu vực số mười một,a,11
+command_lead_way, tôi muốn nghe về khu vực số 1,a,1
+command_lead_way, tôi muốn nghe về khu vực số 2,a,2
+command_lead_way, tôi muốn nghe về khu vực số 3,a,3
+command_lead_way, tôi muốn nghe về khu vực só 4,a,4
+command_lead_way, tôi muốn nghe về khu vực số 5,a,5
+command_lead_way, tôi muốn nghe về khu vực số 6,a,6
+command_lead_way, tôi muốn nghe về khu vực số 7,a,7
+command_lead_way, tôi muốn nghe về khu vực số 8a,8
+command_lead_way, tôi muốn nghe về khu vực số 9,a,9
+command_lead_way, tôi muốn nghe về khu vực số 10,a,10
+command_lead_way, tôi muốn nghe về khu vực số 11,a,11
