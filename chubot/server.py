@@ -36,7 +36,7 @@ ask_number_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingda
 ask_when_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_when.csv'
 lead_to_section_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/lead_to_section3.csv'
 command_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/command.csv'
-presentation_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/presentation2.csv'
+presentation_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/presentation3.csv'
 answer_retriever = ChitChat(chitchat_file)
 answer_retriever.add_more_data(ask_what_file)
 answer_retriever.add_more_data(ask_who_file)
