@@ -276,9 +276,9 @@ def predict(inmessage):
             if entity["entity"] =="area":
                 code = go_around_code
         
-    if intent=='ask_where' and len(entities)==0:
-        mp3 = 15
-        code = use_mp3_code
+    # if intent=='ask_where' and len(entities)==0:
+    #     mp3 = 15
+    #     code = use_mp3_code
     if intent =='presentation_demand':
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,8)[0]
         print(type(answer))
