@@ -10,7 +10,7 @@ from gensim.models import KeyedVectors
 # and install vi_spacy
 # using: https://github.com/trungtv/vi_spacy
 # nlp = spacy.load('vi_spacy_model')
-# word2vecmodel_link = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models/wiki.vi.model.bin"
+# word2vecmodel_link = "models/wiki.vi.model.bin"
 # word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
 class ChitChat:
     def __init__(self, datafile):
@@ -26,7 +26,7 @@ class ChitChat:
         targets = [
             q for q, a in qa_list
         ]
-        word2vecmodel_link = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models/wiki.vi.model.bin"
+        word2vecmodel_link = "models/wiki.vi.model.bin"
         self.word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
         self.targets = []
         self.targets.append(targets)
@@ -39,6 +39,13 @@ class ChitChat:
         Question:: String
         '''
         # print("this is the bank {}".format(self.qa_list))
+        question = question + " "
+        digits = [" 11 "," 10 "," 9 "," 8 "," 7 "," 6 "," 5 "," 4 "," 3 ",' 2 ',' 1 ']
+        text_digits = [' mười một',' mười',' chín',' tám',' bảy',' sáu',' năm',' bốn',' ba',' hai',' một']
+        for digit_ in digits:
+            if digit_ in question:
+                question = question.replace(digit_, text_digits[digits.index(digit_)])
+                break
         start = datetime.datetime.now()
         distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
         id_result=np.argmin(distances)
@@ -60,6 +67,16 @@ class ChitChat:
         print("retrieval time : ",end-start)
         return [self.qa_list[ids][id_result],self.qa_list[ids][id_result],self.qa_list[ids][id_result]]
     def retrieve_section(self, question,ids):
+        digits = [" 11"," 10"," 9"," 8"," 7"," 6"," 5"," 4"," 3",' 2',' 1']
+        text_digits = [' mười một',' mười',' chín',' tám',' bảy',' sáu',' năm',' bốn',' ba',' hai',' một']
+        for digit_ in digits:
+            if digit_ in question:
+                if digit_ == " 10":
+                    return [(' khu vực số mười','10')]
+                if digit_ ==" 1":
+                    return [(' khu vực số một','1')]    
+                question = question.replace(digit_, text_digits[digits.index(digit_)])
+                break
         start = datetime.datetime.now()
         distances = [self.word2vec.wmdistance(question.split(" "),t.split(" ")) for t in self.targets[ids]]
         id_result=np.argmin(distances)
@@ -103,7 +120,7 @@ class ChitChat:
                     i = i + 1
         output_stream.close()
 if __name__ == '__main__':
-    chitchat_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/chitchat.csv'
+    chitchat_file = 'data/chitchat.csv'
     chitchat = ChitChat(chitchat_file)
     
     # input_question = 'bạn thích gì nhất?'

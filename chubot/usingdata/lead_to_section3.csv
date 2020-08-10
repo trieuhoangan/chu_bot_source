@@ -11,7 +11,7 @@ command_lead_way, các lãnh đạo của đại học quốc gia,a,4
 command_lead_way, sự quan tâm của đảng dành cho đại học quốc gia,a,5
 command_lead_way, đại học quốc gia là ngôi sao lớn,a,6
 command_lead_way, Những dấu ấn của đại học quốc gia,a,6
-command_lead_way, khu vực hoa sen,a,6
+command_lead_way, hoa sen,a,6
 command_lead_way, các đặc trưng của đại học quốc gia,a,7
 command_lead_way, các thành tựu nổi bật của đại học quốc gia,a,8
 command_lead_way, Sự tin tưởng của bạn bè quốc tế dành cho đại học quốc gia,a,9
@@ -20,17 +20,17 @@ command_lead_way, các giải thưởng của đại học quốc gia,a,10
 command_lead_way, các giải thưởng mà đại học quốc gia đạt được,a,10
 command_lead_way, các tiến sĩ danh dự đại học quốc gia,a,11
 command_lead_way, vị thế trên trường quốc tế của đại học quốc gia,a,11
-command_lead_way, một,a,1
-command_lead_way, hai,a,2
-command_lead_way, ba,a,3
-command_lead_way, bốn,a,4
-command_lead_way, năm,a,5
-command_lead_way, sáu,a,6
-command_lead_way, bảy,a,7
-command_lead_way, tám,a,8
-command_lead_way, chín,a,9
-command_lead_way, mười,a,10
-command_lead_way, mười một,a,11
+command_lead_way, số một,a,1
+command_lead_way, số hai,a,2
+command_lead_way, số ba,a,3
+command_lead_way, số bốn,a,4
+command_lead_way, số năm,a,5
+command_lead_way, số sáu,a,6
+command_lead_way, số bảy,a,7
+command_lead_way, số tám,a,8
+command_lead_way, số chín,a,9
+command_lead_way, số mười,a,10
+command_lead_way, số mười một,a,11
 command_lead_way, đi xung quanh,a,all
 command_lead_way, đi một vòng,a,all
 command_lead_way, toàn bộ,a,all
@@ -39,3 +39,16 @@ command_lead_way, tất cả,a,all
 command_lead_way, nghe tất cả,a,all
 command_lead_way, nghe toàn bộ,a,all
 command_lead_way, hết,a,all
+command_lead_way, đầu tiên,a,1
+command_lead_way, cuối cùng,a,11
+command_lead_way, số 1,a,1
+command_lead_way, số 2,a,2
+command_lead_way, số 3,a,3
+command_lead_way, số 4,a,4
+command_lead_way, số 5,a,5
+command_lead_way, số 6,a,6
+command_lead_way, số 7,a,7
+command_lead_way, số 8,a,8
+command_lead_way, số 9,a,9
+command_lead_way, số 10,a,10
+command_lead_way, số 11,a,11
