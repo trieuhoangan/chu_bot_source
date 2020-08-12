@@ -39,6 +39,7 @@ command_lead_way, tất cả,a,all
 command_lead_way, nghe tất cả,a,all
 command_lead_way, nghe toàn bộ,a,all
 command_lead_way, hết,a,all
+command_lead_way, tổng hợp,a,all
 command_lead_way, đầu tiên,a,1
 command_lead_way, cuối cùng,a,11
 command_lead_way, số 1,a,1
