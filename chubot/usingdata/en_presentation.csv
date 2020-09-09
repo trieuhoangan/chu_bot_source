@@ -1,0 +1,86 @@
+intent,q,noisyq,a
+unknown,idk,a,sorry but i have not heard what you said can you repeat
+unknown,idk,a,oh i think my data do not allowed me to answer this question
+presentation_demand, introduce, a, 100.mp3
+presentation_demand, let's briefly introduce this place, a, 100.mp3
+presentation_demand, a brief introduction to this place, a, 100.mp3
+presentation_demand, What's in this room, a, 100.mp3
+presentation_demand, let's talk about this room, a, 100.mp3
+presentation_demand, tell me about the traditional room, a, 100.mp3
+presentation_demand, what is the traditional room, a, 100.mp3
+presentation_demand, give me a quick look at the traditional room, a, 100.mp3
+presentation_demand, What is the Meaning of Traditional Room, a, 100.mp3
+presentation_demand, what is this room talking about, a, 100.mp3
+presentation_demand, What's in this room, a, 100.mp3
+presentation_demand, what's in here, a, 100.mp3
+presentation_demand, let's go over these things, a, 100.mp3
+presentation_demand, I want to know about these, a, 100.mp3
+presentation_demand, what is the traditional room, a, 100.mp3
+presentation_demand, introduce the traditional room, a, 100.mp3
+presentation_demand, introduce yourself to the traditional room, a, 100.mp3
+presentation_demand, an introduction to national university, a, 100.mp3
+presentation_demand, talking about national university, a, 100.mp3
+presentation_demand, a brief talk about national university, a, 100.mp3
+presentation_demand, I want to hear about national university, a, 100.mp3
+presentation_demand, can fuso explain to me about national university, a, 100.mp3
+presentation_demand, Can you tell me back on these things fuso, a, 100.mp3
+presentation_demand, I want to hear about the Indochinese colony formation area, a, 1
+presentation_demand, How does Indochina University have a history, a, 1
+presentation_demand, give me a lecture on synthetic college sector during the Resistance War, a, 2
+presentation_demand, How does a synthetic university have a history of development, a, 2
+presentation_demand, I want to hear about the evolution of university development, a, 2
+presentation_demand, I would like to hear the national university development sector, a, 2
+presentation_demand, I want to hear about the national university establishment region, a, 3
+presentation_demand, how the national university was founded, a, 3
+presentation_demand, the establishment of the national university, a, 3
+presentation_demand, Introduce me to Vietnam National University, a, 100.mp3
+presentation_demand, tell me briefly about Hanoi National University, a, 100.mp3
+presentation_demand, tell me about national university directors and vice directors, a, 4
+presentation_demand, an introduction to national university leaders, a, 4
+presentation_demand, how party interest is in national university, a, 5
+presentation_demand, how can fuso tell me the party's area of ​​national college interest, a, 5
+presentation_demand, an introduction to the Big Star National University sector, a, 6
+presentation_demand, an introduction to the lotus area, a, 6
+presentation_demand, national university landmarks, a, 6
+presentation_demand, an introduction to regional national university landmarks, a, 6
+presentation_demand, tell me about national university regional features, a, 7
+presentation_demand, I want to hear about national university features, a, 7
+presentation_demand, introduce me to national university features, a, 7
+presentation_demand, can you tell me about the National University Achievements Area, a, 8
+presentation_demand, may I know about the outstanding achievements of the national university, a, 8
+presentation_demand, I would like to hear about the National University Scientific Research Area, a, 8
+presentation_demand, can you tell me from the record of national college achievement, a, 8
+presentation_demand, could you tell me about the performance area of ​​Hanoi National University, a, 8
+presentation_demand, can you tell me about the national college record, a, 8
+presentation_demand, can you tell me about national university international partners' region, a, 9
+presentation_demand, tell me about national university international partners, a, 9
+presentation_demand, I'd like to hear about the National University International Awards, a, 10
+presentation_demand, can fuso tell me about national university domestic awards, a, 10
+presentation_demand, I want to know about the national honorary doctorate area, a, 11
+presentation_demand, can you tell me about national university honorary doctorates, a, 11
+presentation_demand, can fuso tell me about national university international awards, a, 10
+presentation_demand, can fuso tell me about national university international status areas, a, 11
+presentation_demand, would I like to know about national university's international standing, a, 11
+presentation_demand, can I hear about national university status zones on international schools, a, 11
+command_lead_way, I want to hear about region number one, a, 1
+command_lead_way, I want to hear about area two, a, 2
+command_lead_way, I want to hear about area number three, a, 3
+command_lead_way, I want to hear about region number four, a, 4
+command_lead_way, I want to hear about region number five, a, 5
+command_lead_way, I want to hear about area number six, a, 6
+command_lead_way, I want to hear about area number seven, a, 7
+command_lead_way, I want to hear about area number eight, a, and eight
+command_lead_way, I want to hear about area nine, a, 9
+command_lead_way, I want to hear about area ten, a, 10
+command_lead_way, I want to hear about area eleven, a, 11
+command_lead_way, I want to hear about area number 1, a, 1
+command_lead_way, I want to hear about area 2, a, 2
+command_lead_way, I want to hear about area 3, a, 3
+command_lead_way, I want to hear about regions 4, a, 4
+command_lead_way, I want to hear about area 5, a, 5
+command_lead_way, I want to hear about area 6, a, 6
+command_lead_way, I want to hear about areas 7, a, 7
+command_lead_way, I want to hear about area 8a, 8
+command_lead_way, I want to hear about area 9, a, 9
+command_lead_way, I want to hear about area 10, a, 10
+command_lead_way, I want to hear about area 11, a, 11

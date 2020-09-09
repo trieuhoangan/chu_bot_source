@@ -1,0 +1,36 @@
+intent,q,noisyq,a
+unknown,idk,a,sorry but i have not heard what you said can you repeat
+unknown,idk,a,oh i think my data do not allowed me to answer this question
+command, I want to ask a question, a, question
+command, I want to ask a question, a, question
+command, I want to ask about national university, a, question
+command, Can you tell me what about national university, a, question
+command, What can I ask, a, question
+command, Let me ask a question, a, question
+command, present presentation, a, present
+command, I want to listen to a presentation, a, present
+command, You can demonstrate what, a, present
+command, Can you tell me what, a, present
+command, demonstration, a, present
+command, presentation, a, present
+command, Oh, then present the presentation, a, present
+command, I choose presentation, a, present
+command, Presentation to see, a, present
+command, so you can explain to me, a, present
+command, à yeah fuso can present for me, a, present
+command, Listen to the presentation, a, present
+command, for listening to the presentation, a, present
+command, Turn on narration, a, present
+command, Let me listen to the demonstration, a, present
+command, I want to hear your presentation, a, present
+command, explain to me, a, present
+command, let me hear, a, present
+command, oh so, just present, a, present
+command, brief introduction to national university, a, present
+command, Ask a question, a, question
+command, I have some questions, a, question
+command, I would like a little answer, a, question
+command, Can I ask you a question, a, question
+command, let me ask, a, question
+command, I want to ask, a, question
+command, I want to listen to the voiceover, a, present

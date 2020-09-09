@@ -1,0 +1,36 @@
+intent,q,noisyq,a
+unknown,idk,a,Xin lỗi mình chưa nghe rõ bạn có thể nói lại được không
+unknown,idk,a,Xin lỗi tôi không đủ dữ liệu để trả lời câu hỏi này
+command, Tôi muốn đưa ra câu hỏi,a,question
+command, Tôi muốn đặt ra câu hỏi,a,question
+command, Tôi muốn hỏi về đại học quốc gia,a,question
+command, Bạn có thể cho tôi biết những gì về đại học quốc gia,a,question
+command, Tôi có thể hỏi những gì,a,question
+command, Cho tôi đặt câu hỏi đi,a,question
+command, thuyết trình đi,a,present
+command, Tôi muốn nghe thuyết trình,a,present
+command, Bạn có thể thuyết minh những gì,a,present
+command, Bạn có thể nói cho tôi nghe những gì,a,present
+command, thuyết minh,a,present
+command, thuyết trình,a,present
+command, Ồ vậy thì thuyết trình đi,a,present
+command, tôi chọn thuyết trình,a,present
+command, Thuyết trình đi xem nào,a,present
+command, vậy bạn thuyết minh cho mình nghe đi,a,present
+command, à vâng fuso có thể thuyết trình cho mình nghe,a,present
+command, Cho nghe phần thuyết trình đi ,a,present
+command, cho nghe thuyết trình,a,present
+command, Bật thuyết minh lên,a,present
+command, Cho tôi nghe phần thuyết minh đi,a,present
+command, tôi muốn nghe bạn thuyết trình,a,present
+command, thuyết minh cho tôi nghe đi,a,present
+command, thuyết minh cho tôi nghe nào,a,present
+command, ồ vậy thì thuyết minh đi,a,present
+command, giới thiệu qua về đại học quốc gia,a,present
+command, Đưa ra câu hỏi,a,question
+command, Tôi có vài thắc mắc,a,question
+command, Tôi muốn được giải đáp một chút,a,question
+command, Cho tôi hỏi một chút, a,question
+command, Cho tôi hỏi, a, question
+command, tôi muốn hỏi, a,question
+command, tôi muốn nghe thuyết minh,a,present

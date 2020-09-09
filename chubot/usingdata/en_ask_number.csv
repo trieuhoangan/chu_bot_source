@@ -1,0 +1,11 @@
+intent,q,noisyq,a
+unknown,idk,a,sorry but i have not heard what you said can you repeat
+unknown,idk,a,oh i think my data do not allowed me to answer this question
+ask_number, how many universities which are members of vietnam national university , b, there are seven universities which are members of vietnam national university
+ask_number, what is the number of the members that vietnam national university have , b, there are seven universities which are members of vietnam national university
+ask_number, can you tell me the number of the members of that vietnam national university, b, there are seven universities which are members of vietnam national university
+ask_number, today how many universities which can be considered as a member of vietnam national university, b, there are seven universities which are members of vietnam national university
+ask_number, what is the number of the universities which are parts of vietnam national university nowaday, b, there are seven universities which are members of vietnam national university
+ask_what, what is the postion of vietnam national university ,a, vietnam national university is now on the lead of the education system of vietnam and on the top 800-1000 of the best university globally arcording to QS World University Ranking 2020
+ask_what, what is the place of vietnam national university ,a, vietnam national university is now on the lead of the education system of vietnam and on the top 800-1000 of the best university globally arcording to QS World University Ranking 2020
+ask_what, how the others of vietnam national university ,a, vietnam national university is now on the lead of the education system of vietnam and on the top 800-1000 of the best university globally arcording to QS World University Ranking 2020

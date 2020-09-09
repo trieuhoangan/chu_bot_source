@@ -360,6 +360,12 @@ if __name__ == "__main__":
     def hello_world():
         if request.method == 'GET':
             mess = request.args.get('mess', '')
+            lang = request.args.get('lang', '')
+            if lang =='en':
+                result_json = {"mp3":-1,"section_id":-1,
+            "code": 0, "response": "Tôi không nghe rõ, bạn nói lại được không"}
+            # print(json.dumps(result_json, ensure_ascii=False))
+                return result_json
             print(mess)
             line = predict(mess)
             print(str(line))
@@ -368,18 +374,76 @@ if __name__ == "__main__":
     def confirm():
         if request.method == 'GET':
             mess = request.args.get('mess', '')
+            lang = request.args.get('lang', '')
             print(mess)
-            line = get_confirm(mess)
-            print(str(line))
-            return str(line).replace("'",'"')
+            if lang =='vi':
+                line = get_confirm(mess)
+                print(str(line))
+                return str(line).replace("'",'"')
+            else :
+                presentation_list = ['presentation',"listen",'explain','speech']
+                quesion_list = ['ask','question','issue','']
+                for word in presentation_list:
+                    if word in mess:
+                        result_json = {"mp3":100,"section_id":-1,
+                        "code": 3, "response": "Bạn muốn thuyết trình về cái gì"}
+                        return result_json
+                for word in quesion_list:
+                    if word in mess:
+                        result_json = {"mp3":-1,"section_id":-1,
+                        "code": 0, "response": "bạn muốn hỏi j"}
+                        return result_json
+                result_json = {"mp3":-1,"section_id":-1,
+                "code": 7, "response": "tôi không nghe rõ"}
+                return result_json
     @app.route('/presentation/')
     def get_section():
         if request.method == 'GET':
             mess = request.args.get('mess', '')
-            print(mess)
-            line = determind_section(mess)
-            print(str(line))
-            return str(line).replace("'",'"')
+            lang = request.args.get('lang', '')
+            if lang =='vi':
+                print(mess)
+                line = determind_section(mess)
+                print(str(line))
+                return str(line).replace("'",'"')
+            else:
+                if 'all' in mess:
+                    result_json = {"mp3":-1,"section_id":-1,
+                "code": 1, "response": "xin hãy đi theo tôi"}
+                    return result_json
+                sections = [ {"word":"first","section":1},
+                            {"word":"second","section":2},
+                            {"word":"third","section":3},
+                            {"word":"fouth","section":4},
+                            {"word":"fifth","section":5},
+                            {"word":"sixth","section":6},
+                            {"word":"senventh","section":7},    
+                            {"word":"eighth","section":8},
+                            {"word":"nineth","section":9},
+                            {"word":"tenth","section":10},
+                            {"word":"eleventh","section":11},
+                            {"word":"one","section":1},
+                            {"word":"two","section":2},
+                            {"word":"three","section":3},
+                            {"word":"four","section":4},
+                            {"word":"five","section":5},
+                            {"word":"six","section":6},
+                            {"word":"seven","section":7},
+                            {"word":"eight","section":8},
+                            {"word":"nine","section":9},
+                            {"word":"ten","section":10},
+                            {"word":"eleven","section":11},
+                        ]
+                for section in sections:
+                    if section['word'] in mess:
+                        result_json = {"mp3":section['section'],"section_id":section['section'],
+                        "code": 5, "response": ""}
+                        print(json.dumps(result_json, ensure_ascii=False))
+                        return result_json
+                result_json = {"mp3":-1,"section_id":-1,
+                        "code": 6, "response": "Tôi không nghe rõ, bạn nói lại được không"}
+                # print(json.dumps(result_json, ensure_ascii=False))
+                return result_json
     #     # return "null"
 
     app.run(host= '0.0.0.0',port=5001)
