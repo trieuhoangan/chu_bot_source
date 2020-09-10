@@ -382,7 +382,7 @@ if __name__ == "__main__":
                 return str(line).replace("'",'"')
             else :
                 presentation_list = ['presentation',"listen",'explain','speech']
-                quesion_list = ['ask','question','issue','']
+                quesion_list = ['ask','question','issue']
                 for word in presentation_list:
                     if word in mess:
                         result_json = {"mp3":100,"section_id":-1,
