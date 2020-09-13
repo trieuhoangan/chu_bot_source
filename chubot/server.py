@@ -307,7 +307,7 @@ def get_confirm(inmessage):
         most_similar_question,command_stype = answer_retriever.retrieve_answer(inmessage,7)[0]
         print(command_stype)
         if command_stype=='present':
-            result_json = {"mp3":100,"section_id":-1,
+            result_json = {"mp3":"100-vi","section_id":-1,
             "code": 3, "response": "Bạn muốn thuyết trình về cái gì"}
             return result_json
         if command_stype=='question':
@@ -385,7 +385,7 @@ if __name__ == "__main__":
                 quesion_list = ['ask','question','issue']
                 for word in presentation_list:
                     if word in mess:
-                        result_json = {"mp3":100,"section_id":-1,
+                        result_json = {"mp3":"100-en","section_id":-1,
                         "code": 3, "response": "Bạn muốn thuyết trình về cái gì"}
                         return result_json
                 for word in quesion_list:
