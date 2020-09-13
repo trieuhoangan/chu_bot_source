@@ -333,7 +333,7 @@ def determind_section(inmessage):
         return result_json
     most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
     if most_similar_question!='idk':
-        result_json = {"mp3":int(answer),"section_id":int(answer),
+        result_json = {"mp3":answer+'-vi',"section_id":int(answer),
         "code": 5, "response": ""}
         print(json.dumps(result_json, ensure_ascii=False))
         return result_json
@@ -436,7 +436,7 @@ if __name__ == "__main__":
                         ]
                 for section in sections:
                     if section['word'] in mess:
-                        result_json = {"mp3":section['section'],"section_id":section['section'],
+                        result_json = {"mp3":str(section['section'])+'-'+lang,"section_id":section['section'],
                         "code": 5, "response": ""}
                         print(json.dumps(result_json, ensure_ascii=False))
                         return result_json
