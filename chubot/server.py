@@ -231,21 +231,21 @@ def predict(inmessage):
         response = answer
         ## open mp3 file to introduce the room
         if str(response) == "100.mp3":
-            mp3 = 100
+            mp3 = "100-vi"
             code = use_mp3_code
         if response.isdigit() and int(response) <7:
-            mp3 = int(response)
+            mp3 = response+"-vi"
             code = use_mp3_code
     if intent=='ask_what':
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)[0]
         print(most_similar_question)
         response = answer
         if str(response) == "100.mp3":
-            mp3 = 100
+            mp3 = "100-vi"
             code = use_mp3_code
         for entity in entities:
             if entity['entity'] == 'present' and entity['confidence'] > 0.8:
-                mp3 = 100
+                mp3 = "100-vi"
                 code = use_mp3_code
                 response = "100.mp3"
     if intent=='ask_who':
@@ -283,11 +283,11 @@ def predict(inmessage):
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,8)[0]
         print(type(answer))
         if answer == "100.mp3":
-            mp3 = 100
+            mp3 = "100-vi"
             code = use_mp3_code
             response = answer
         elif answer.isdigit() == True:
-            mp3 = int(answer)
+            mp3 = answer+"-vi"
             code = use_mp3_code
             response = answer
     result_json = {"mp3":mp3,"section_id":section_id,
