@@ -26,7 +26,7 @@ class ChitChat:
         targets = [
             q for q, a in qa_list
         ]
-        word2vecmodel_link = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models/wiki.vi.model.bin"
+        word2vecmodel_link = "/models/wiki.vi.model.bin"
         self.word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
         self.targets = []
         self.targets.append(targets)
@@ -120,7 +120,7 @@ class ChitChat:
                     i = i + 1
         output_stream.close()
 if __name__ == '__main__':
-    chitchat_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/chitchat.csv'
+    chitchat_file = '/data/chitchat.csv'
     chitchat = ChitChat(chitchat_file)
     
     # input_question = 'bạn thích gì nhất?'

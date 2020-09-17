@@ -16,7 +16,7 @@ from answer_retrieval import ChitChat
 from custom_lib import changeUnicode
 # from langdetect import detect
 botname = "an"
-action_domain_file = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/new_domain.json"
+action_domain_file = "/usingdata/new_domain.json"
 action = ChuBotAction(botname)
 action.load_domain(action_domain_file)
 
@@ -28,15 +28,15 @@ code = 0
 mp3 = -1
 section_id = -1
 ##load data to retrieve answer
-chitchat_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/chitchat.csv'
-ask_what_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_what.csv'
-ask_who_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_who.csv'
-ask_where_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_where.csv'
-ask_number_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_number.csv'
-ask_when_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_when.csv'
-lead_to_section_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/lead_to_section3.csv'
-command_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/command.csv'
-presentation_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/presentation3.csv'
+chitchat_file = '/usingdata/chitchat.csv'
+ask_what_file = '/usingdata/ask_what.csv'
+ask_who_file = '/usingdata/ask_who.csv'
+ask_where_file = '/usingdata/ask_where.csv'
+ask_number_file = '/usingdata/ask_number.csv'
+ask_when_file = '/usingdata/ask_when.csv'
+lead_to_section_file = '/usingdata/lead_to_section3.csv'
+command_file = '/usingdata/command.csv'
+presentation_file = '/usingdata/presentation3.csv'
 answer_retriever = ChitChat(chitchat_file)
 answer_retriever.add_more_data(ask_what_file)
 answer_retriever.add_more_data(ask_who_file)
@@ -50,7 +50,7 @@ answer_retriever.add_more_data(presentation_file)
 nlp = spacy.load('vi_spacy_model')
 def create_model(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data("/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/full_train.json")
+    chubot.load_data("/usingdata/full_train.json")
     # chubot.load_data("usingdata/vi_nlu_ask_way.json")
     meta = chubot.train()
     # print(meta)
@@ -58,7 +58,7 @@ def create_model(name):
 
 def test_entity_train(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data("/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/full_train.json")
+    chubot.load_data("/usingdata/full_train.json")
     # chubot.load_data("usingdata/vi_nlu_ask_way.json")
     meta = chubot.train_nercrf()
 
@@ -86,10 +86,10 @@ def encode_intent(intent):
     
 def test_intent_train(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data("/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/train.json")
+    chubot.load_data("/data/train.json")
     # chubot.load_data("data/vi_nlu_ask_way.json")
     meta = chubot.train_intent_classification()
-    test_link = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/test.txt"
+    test_link = "/data/test.txt"
     with open(test_link,'r',encoding='utf=8') as f:
         rows = f.readlines()
     intent_list_test = []
@@ -107,13 +107,13 @@ def test_intent_train(name):
 
 def test_response():
     botname = "an"
-    action_domain_file = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/action_domain.json"
+    action_domain_file = "/data/action_domain.json"
     chubot = ChuBotAction(botname, language='vi')
     chubot.load_domain(action_domain_file)
     chubot.run_commandline_bot()
 
 def test_answer_retrieval(filename):
-    chitchat_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/chitchat_train.csv'
+    chitchat_file = '/usingdata/chitchat_train.csv'
     chitchat = ChitChat(chitchat_file)
     with open(filename,'r',encoding='utf-8')as f:
         rows = f.readlines()

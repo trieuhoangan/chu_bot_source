@@ -16,7 +16,7 @@ from answer_retrieval import ChitChat
 from custom_lib import changeUnicode
 # from langdetect import detect
 botname = "an"
-action_domain_file = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/new_domain.json"
+action_domain_file = "/usingdata/new_domain.json"
 action = ChuBotAction(botname)
 action.load_domain(action_domain_file)
 
@@ -28,15 +28,15 @@ code = 0
 mp3 = -1
 section_id = -1
 ##load data to retrieve answer
-chitchat_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/chitchat.csv'
-ask_what_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_what.csv'
-ask_who_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_who.csv'
-ask_where_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_where.csv'
-ask_number_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_number.csv'
-ask_when_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_when.csv'
-lead_to_section_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/lead_to_section3.csv'
-command_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/command.csv'
-presentation_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/presentation3.csv'
+chitchat_file = '/usingdata/chitchat.csv'
+ask_what_file = '/usingdata/ask_what.csv'
+ask_who_file = '/usingdata/ask_who.csv'
+ask_where_file = '/usingdata/ask_where.csv'
+ask_number_file = '/usingdata/ask_number.csv'
+ask_when_file = '/usingdata/ask_when.csv'
+lead_to_section_file = '/usingdata/lead_to_section3.csv'
+command_file = '/usingdata/command.csv'
+presentation_file = '/usingdata/presentation3.csv'
 answer_retriever = ChitChat(chitchat_file)
 answer_retriever.add_more_data(ask_what_file)
 answer_retriever.add_more_data(ask_who_file)
@@ -50,7 +50,7 @@ answer_retriever.add_more_data(presentation_file)
 nlp = spacy.load('vi_spacy_model')
 def create_model(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data("/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/full_train.json")
+    chubot.load_data("/usingdata/full_train.json")
     # chubot.load_data("usingdata/vi_nlu_ask_way.json")
     meta = chubot.train()
     # print(meta)
@@ -58,7 +58,7 @@ def create_model(name):
 
 def test_entity_train(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data("/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/full_train.json")
+    chubot.load_data("/usingdata/full_train.json")
     # chubot.load_data("usingdata/vi_nlu_ask_way.json")
     meta = chubot.train_nercrf()
 
@@ -86,10 +86,10 @@ def encode_intent(intent):
     
 def test_intent_train(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data("data/train.json")
+    chubot.load_data("/data/train.json")
     # chubot.load_data("data/vi_nlu_ask_way.json")
     meta = chubot.train_intent_classification()
-    test_link = "data/test.txt"
+    test_link = "/data/test.txt"
     with open(test_link,'r',encoding='utf=8') as f:
         rows = f.readlines()
     intent_list_test = []
@@ -107,13 +107,13 @@ def test_intent_train(name):
 
 def test_response():
     botname = "an"
-    action_domain_file = "data/action_domain.json"
+    action_domain_file = "/data/action_domain.json"
     chubot = ChuBotAction(botname, language='vi')
     chubot.load_domain(action_domain_file)
     chubot.run_commandline_bot()
 
 def test_answer_retrieval(filename):
-    chitchat_file = 'usingdata/chitchat_train.csv'
+    chitchat_file = '/usingdata/chitchat_train.csv'
     chitchat = ChitChat(chitchat_file)
     with open(filename,'r',encoding='utf-8')as f:
         rows = f.readlines()
@@ -167,22 +167,21 @@ def test_input_predict():
             break
         inmessage = inmessage.lower()
         # print(inmessage)
-        line = predict(inmessage)
-        # line = get_confirm(inmessage)
+        # predict(inmessage)
         # line = determind_section(inmessage)
+        line = get_confirm(inmessage)
         print(str(line))
 #
 #use to demo on web
 #
 def repeat():
-    result_json = {"mp3":-1,"section_id":-1,
+    result_json = {"mp3":"-1","section_id":-1,
         "code": 0, "response": "xin lỗi bạn nói lại được không"}
     return result_json 
 def unknown():
-    result_json = {"mp3":-1,"section_id":-1,
+    result_json = {"mp3":"-1","section_id":-1,
         "code": 0, "response": "xin lỗi tôi không hiểu được ý muốn của bạn"}
     return result_json 
-
 def predict(inmessage):
     speak_code = 0
     go_around_code = 1
@@ -206,7 +205,7 @@ def predict(inmessage):
     print(intent)
     print(entities)
     response = action.handle_message(inmessage)[0]
-    if prob <0.3:
+    if prob <0.4:
         
         result_json =  unknown()
         print(json.dumps(result_json, ensure_ascii=False))
@@ -224,7 +223,7 @@ def predict(inmessage):
             if entity['entity'] == 'section':
                 most_similar_question,hasSection = answer_retriever.retrieve_answer(inmessage,6)[0]
         if ispresent !=0 and hasSection !=-1:
-            result_json = {"mp3":hasSection,"section_id":hasSection,
+            result_json = {"mp3":str(hasSection)+'-vi',"section_id":hasSection,
                 "code": use_mp3_code, "response": ""}
             return result_json
     if intent=='chitchat':
@@ -233,21 +232,21 @@ def predict(inmessage):
         response = answer
         ## open mp3 file to introduce the room
         if str(response) == "100.mp3":
-            mp3 = 100
+            mp3 = "100-vi"
             code = use_mp3_code
         if response.isdigit() and int(response) <7:
-            mp3 = int(response)
+            mp3 = response+"-vi"
             code = use_mp3_code
     if intent=='ask_what':
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,1)[0]
         print(most_similar_question)
         response = answer
         if str(response) == "100.mp3":
-            mp3 = 100
+            mp3 = "100-vi"
             code = use_mp3_code
         for entity in entities:
             if entity['entity'] == 'present' and entity['confidence'] > 0.8:
-                mp3 = 100
+                mp3 = "100-vi"
                 code = use_mp3_code
                 response = "100.mp3"
     if intent=='ask_who':
@@ -285,13 +284,12 @@ def predict(inmessage):
         most_similar_question, answer = answer_retriever.retrieve_answer(inmessage,8)[0]
         print(type(answer))
         if answer == "100.mp3":
-            mp3 = 100
+            mp3 = "100-vi"
             code = use_mp3_code
             response = answer
         elif answer.isdigit() == True:
-            mp3 = int(answer)
+            mp3 = answer+"-vi"
             code = use_mp3_code
-            # section_id = int()
             response = answer
     result_json = {"mp3":mp3,"section_id":section_id,
                 "code": code, "response": response}
@@ -306,23 +304,18 @@ def get_confirm(inmessage):
     print(str(responses[0]))
     (prob,intent) = responses[0]
     # print(str(entities))
-    if prob > 0.45:
-        # if intent = "command_lead_way":
-        #     result_json = {"mp3":-1,"section_id":-1,
-        #     "code": 0, "response": "bạn muốn hỏi j"}
-        #     return result_json
+    if prob > 0.5:
         most_similar_question,command_stype = answer_retriever.retrieve_answer(inmessage,7)[0]
         print(command_stype)
         if command_stype=='present':
-            result_json = {"mp3":100,"section_id":-1,
+            result_json = {"mp3":"100-vi","section_id":-1,
             "code": 3, "response": "Bạn muốn thuyết trình về cái gì"}
             return result_json
         if command_stype=='question':
-            result_json = {"mp3":-1,"section_id":-1,
+            result_json = {"mp3":"-1","section_id":-1,
             "code": 0, "response": "bạn muốn hỏi j"}
             return result_json
-        
-    result_json = {"mp3":-1,"section_id":-1,
+    result_json = {"mp3":"-1","section_id":-1,
                 "code": 7, "response": "tôi không nghe rõ"}
     return result_json
 def determind_section(inmessage):
@@ -331,20 +324,21 @@ def determind_section(inmessage):
     if len(entities)>0:
         for entity in entities:
             if entity['entity'] =='area':
-                result_json = {"mp3":-1,"section_id":-1,
+                result_json = {"mp3":"-1","section_id":-1,
                 "code": 1, "response": "xin hãy đi theo tôi"}
                 return result_json
     most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
     if answer =='all':
-        result_json = {"mp3":-1,"section_id":-1,
+        result_json = {"mp3":"-1","section_id":-1,
                 "code": 1, "response": "xin hãy đi theo tôi"}
         return result_json
+    most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
     if most_similar_question!='idk':
-        result_json = {"mp3":int(answer),"section_id":int(answer),
+        result_json = {"mp3":answer+'-vi',"section_id":int(answer),
         "code": 5, "response": ""}
         print(json.dumps(result_json, ensure_ascii=False))
         return result_json
-    result_json = {"mp3":-1,"section_id":-1,
+    result_json = {"mp3":"-1","section_id":-1,
             "code": 6, "response": "Tôi không nghe rõ, bạn nói lại được không"}
     # print(json.dumps(result_json, ensure_ascii=False))
     return result_json
@@ -367,6 +361,12 @@ if __name__ == "__main__":
     # def hello_world():
     #     if request.method == 'GET':
     #         mess = request.args.get('mess', '')
+    #         lang = request.args.get('lang', '')
+    #         if lang =='en':
+    #             result_json = {"mp3":"-1","section_id":-1,
+    #         "code": 0, "response": "Tôi không nghe rõ, bạn nói lại được không"}
+    #         # print(json.dumps(result_json, ensure_ascii=False))
+    #             return result_json
     #         print(mess)
     #         line = predict(mess)
     #         print(str(line))
@@ -375,21 +375,79 @@ if __name__ == "__main__":
     # def confirm():
     #     if request.method == 'GET':
     #         mess = request.args.get('mess', '')
+    #         lang = request.args.get('lang', '')
     #         print(mess)
-    #         line = predict(mess)
-    #         print(str(line))
-    #         return str(line).replace("'",'"')
+    #         if lang =='vi':
+    #             line = get_confirm(mess)
+    #             print(str(line))
+    #             return str(line).replace("'",'"')
+    #         else :
+    #             presentation_list = ['presentation',"listen",'explain','speech']
+    #             quesion_list = ['ask','question','issue']
+    #             for word in presentation_list:
+    #                 if word in mess:
+    #                     result_json = {"mp3":"100-en","section_id":-1,
+    #                     "code": 3, "response": "Bạn muốn thuyết trình về cái gì"}
+    #                     return result_json
+    #             for word in quesion_list:
+    #                 if word in mess:
+    #                     result_json = {"mp3":"-1","section_id":-1,
+    #                     "code": 0, "response": "bạn muốn hỏi j"}
+    #                     return result_json
+    #             result_json = {"mp3":"-1","section_id":-1,
+    #             "code": 7, "response": "tôi không nghe rõ"}
+    #             return result_json
     # @app.route('/presentation/')
     # def get_section():
     #     if request.method == 'GET':
     #         mess = request.args.get('mess', '')
-    #         print(mess)
-    #         line = determind_section(mess)
-    #         print(str(line))
-    #         return str(line).replace("'",'"')
+    #         lang = request.args.get('lang', '')
+    #         if lang =='vi':
+    #             print(mess)
+    #             line = determind_section(mess)
+    #             print(str(line))
+    #             return str(line).replace("'",'"')
+    #         else:
+    #             if 'all' in mess:
+    #                 result_json = {"mp3":"-1","section_id":-1,
+    #             "code": 1, "response": "xin hãy đi theo tôi"}
+    #                 return result_json
+    #             sections = [ {"word":"first","section":1},
+    #                         {"word":"second","section":2},
+    #                         {"word":"third","section":3},
+    #                         {"word":"fouth","section":4},
+    #                         {"word":"fifth","section":5},
+    #                         {"word":"sixth","section":6},
+    #                         {"word":"senventh","section":7},    
+    #                         {"word":"eighth","section":8},
+    #                         {"word":"nineth","section":9},
+    #                         {"word":"tenth","section":10},
+    #                         {"word":"eleventh","section":11},
+    #                         {"word":"one","section":1},
+    #                         {"word":"two","section":2},
+    #                         {"word":"three","section":3},
+    #                         {"word":"four","section":4},
+    #                         {"word":"five","section":5},
+    #                         {"word":"six","section":6},
+    #                         {"word":"seven","section":7},
+    #                         {"word":"eight","section":8},
+    #                         {"word":"nine","section":9},
+    #                         {"word":"ten","section":10},
+    #                         {"word":"eleven","section":11},
+    #                     ]
+    #             for section in sections:
+    #                 if section['word'] in mess:
+    #                     result_json = {"mp3":str(section['section'])+'-'+lang,"section_id":section['section'],
+    #                     "code": 5, "response": ""}
+    #                     print(json.dumps(result_json, ensure_ascii=False))
+    #                     return result_json
+    #             result_json = {"mp3":"-1","section_id":-1,
+    #                     "code": 6, "response": "Tôi không nghe rõ, bạn nói lại được không"}
+    #             # print(json.dumps(result_json, ensure_ascii=False))
+    #             return result_json
     # #     # return "null"
 
-    # app.run(host= '0.0.0.0')
+    # app.run(host= '0.0.0.0',port=5001)
     ##########Server Code#################
 
     # test_predict()

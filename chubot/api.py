@@ -19,12 +19,12 @@ class ChatBotAPI():
         self.action_custom = []
         self.slots = []
         self.name = botname
-        self.model_folder = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models"
+        self.model_folder = "/models"
         self.crf_model_path = os.path.join(
-            "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models", self.name + "_NERCRF.pkl")
+            "/models", self.name + "_NERCRF.pkl")
         self.intent_cls_model_path = os.path.join(
-            "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models", self.name + "_intent_classification.pkl")
-        domain_file = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/new_domain.json"
+            "/models", self.name + "_intent_classification.pkl")
+        domain_file = "/usingdata/new_domain.json"
         # self.load_domain(action_domain_file)
         # self.chatbot = ChuBotBrain(botname, "vi")
         self.tfidf = None
@@ -43,7 +43,7 @@ class ChatBotAPI():
         with io.open(domain_file) as f:
             action_domain = json.loads(
                 open(domain_file, encoding="utf-8").read())
-        # word2vecmodel_link = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models/wiki.vi.model.bin"
+        # word2vecmodel_link = "/models/wiki.vi.model.bin"
         # self.word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
         # self.followup_actions = None
         # self.action_templates = None
@@ -54,13 +54,13 @@ class ChatBotAPI():
         self.action_custom = action_domain["action_domain_data"]["action_custom"]
         self.slots = action_domain["action_domain_data"]["slots"]
     def load_answers(self):
-        chitchat_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/chitchat.csv'
-        ask_what_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_what.csv'
-        ask_who_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_who.csv'
-        ask_where_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_where.csv'
-        ask_number_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_number.csv'
-        ask_when_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/ask_when.csv'
-        lead_to_section_file = '/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/usingdata/lead_to_section.csv'
+        chitchat_file = '/usingdata/chitchat.csv'
+        ask_what_file = '/usingdata/ask_what.csv'
+        ask_who_file = '/usingdata/ask_who.csv'
+        ask_where_file = '/usingdata/ask_where.csv'
+        ask_number_file = '/usingdata/ask_number.csv'
+        ask_when_file = '/usingdata/ask_when.csv'
+        lead_to_section_file = '/usingdata/lead_to_section.csv'
         answer_retriever = ChitChat(chitchat_file)
         answer_retriever.add_more_data(ask_what_file)
         answer_retriever.add_more_data(ask_who_file)

@@ -14,12 +14,12 @@ class ChuBotBrain():
     def __init__(self, name, language='vi'):
         
         self.name = name
-        self.model_folder = "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models"
+        self.model_folder = "/models"
         
         self.crf_model_path = os.path.join(
-            "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models", self.name + "_NERCRF.pkl")
+            "/models", self.name + "_NERCRF.pkl")
         self.intent_cls_model_path = os.path.join(
-            "/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/models", self.name + "_intent_classification.pkl")
+            "/models", self.name + "_intent_classification.pkl")
         self.language = language
         self.common_examples = []
         self.regex_features = []
@@ -193,7 +193,7 @@ class ChuBotBrain():
         # # TODO Word embedding
         tfidf_train_set = []
         tfidf_train_set.extend(x_join_tokens)
-        with open("/media/nvidia/ssd/catkin_ws/src/chu_bot_source/chubot/data/none_data.txt",'r',encoding='utf-8') as f:
+        with open("/data/none_data.txt",'r',encoding='utf-8') as f:
             sentences = f.readlines()
         # print(sentences)
         tfidf_train_set.extend(sentences)
