@@ -433,6 +433,17 @@ if __name__ == "__main__":
                             {"word":"nine","section":9},
                             {"word":"ten","section":10},
                             {"word":"eleven","section":11},
+                            {"word":"1","section":1},
+                            {"word":"2","section":2},
+                            {"word":"3","section":3},
+                            {"word":"4","section":4},
+                            {"word":"5","section":5},
+                            {"word":"6","section":6},
+                            {"word":"7","section":7},
+                            {"word":"8","section":8},
+                            {"word":"9","section":9},
+                            {"word":"10","section":10},
+                            {"word":"11","section":11}, 
                         ]
                 for section in sections:
                     if section['word'] in mess:
