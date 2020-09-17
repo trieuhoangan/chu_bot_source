@@ -174,11 +174,11 @@ def test_input_predict():
 #use to demo on web
 #
 def repeat():
-    result_json = {"mp3":-1,"section_id":-1,
+    result_json = {"mp3":"-1","section_id":-1,
         "code": 0, "response": "xin lỗi bạn nói lại được không"}
     return result_json 
 def unknown():
-    result_json = {"mp3":-1,"section_id":-1,
+    result_json = {"mp3":"-1","section_id":-1,
         "code": 0, "response": "xin lỗi tôi không hiểu được ý muốn của bạn"}
     return result_json 
 def predict(inmessage):
@@ -222,7 +222,7 @@ def predict(inmessage):
             if entity['entity'] == 'section':
                 most_similar_question,hasSection = answer_retriever.retrieve_answer(inmessage,6)[0]
         if ispresent !=0 and hasSection !=-1:
-            result_json = {"mp3":hasSection,"section_id":hasSection,
+            result_json = {"mp3":str(hasSection)+'-vi',"section_id":hasSection,
                 "code": use_mp3_code, "response": ""}
             return result_json
     if intent=='chitchat':
@@ -311,10 +311,10 @@ def get_confirm(inmessage):
             "code": 3, "response": "Bạn muốn thuyết trình về cái gì"}
             return result_json
         if command_stype=='question':
-            result_json = {"mp3":-1,"section_id":-1,
+            result_json = {"mp3":"-1","section_id":-1,
             "code": 0, "response": "bạn muốn hỏi j"}
             return result_json
-    result_json = {"mp3":-1,"section_id":-1,
+    result_json = {"mp3":"-1","section_id":-1,
                 "code": 7, "response": "tôi không nghe rõ"}
     return result_json
 def determind_section(inmessage):
@@ -323,12 +323,12 @@ def determind_section(inmessage):
     if len(entities)>0:
         for entity in entities:
             if entity['entity'] =='area':
-                result_json = {"mp3":-1,"section_id":-1,
+                result_json = {"mp3":"-1","section_id":-1,
                 "code": 1, "response": "xin hãy đi theo tôi"}
                 return result_json
     most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
     if answer =='all':
-        result_json = {"mp3":-1,"section_id":-1,
+        result_json = {"mp3":"-1","section_id":-1,
                 "code": 1, "response": "xin hãy đi theo tôi"}
         return result_json
     most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
@@ -337,7 +337,7 @@ def determind_section(inmessage):
         "code": 5, "response": ""}
         print(json.dumps(result_json, ensure_ascii=False))
         return result_json
-    result_json = {"mp3":-1,"section_id":-1,
+    result_json = {"mp3":"-1","section_id":-1,
             "code": 6, "response": "Tôi không nghe rõ, bạn nói lại được không"}
     # print(json.dumps(result_json, ensure_ascii=False))
     return result_json
@@ -362,7 +362,7 @@ if __name__ == "__main__":
             mess = request.args.get('mess', '')
             lang = request.args.get('lang', '')
             if lang =='en':
-                result_json = {"mp3":-1,"section_id":-1,
+                result_json = {"mp3":"-1","section_id":-1,
             "code": 0, "response": "Tôi không nghe rõ, bạn nói lại được không"}
             # print(json.dumps(result_json, ensure_ascii=False))
                 return result_json
@@ -390,10 +390,10 @@ if __name__ == "__main__":
                         return result_json
                 for word in quesion_list:
                     if word in mess:
-                        result_json = {"mp3":-1,"section_id":-1,
+                        result_json = {"mp3":"-1","section_id":-1,
                         "code": 0, "response": "bạn muốn hỏi j"}
                         return result_json
-                result_json = {"mp3":-1,"section_id":-1,
+                result_json = {"mp3":"-1","section_id":-1,
                 "code": 7, "response": "tôi không nghe rõ"}
                 return result_json
     @app.route('/presentation/')
@@ -408,7 +408,7 @@ if __name__ == "__main__":
                 return str(line).replace("'",'"')
             else:
                 if 'all' in mess:
-                    result_json = {"mp3":-1,"section_id":-1,
+                    result_json = {"mp3":"-1","section_id":-1,
                 "code": 1, "response": "xin hãy đi theo tôi"}
                     return result_json
                 sections = [ {"word":"first","section":1},
@@ -440,7 +440,7 @@ if __name__ == "__main__":
                         "code": 5, "response": ""}
                         print(json.dumps(result_json, ensure_ascii=False))
                         return result_json
-                result_json = {"mp3":-1,"section_id":-1,
+                result_json = {"mp3":"-1","section_id":-1,
                         "code": 6, "response": "Tôi không nghe rõ, bạn nói lại được không"}
                 # print(json.dumps(result_json, ensure_ascii=False))
                 return result_json
