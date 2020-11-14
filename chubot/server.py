@@ -25,7 +25,7 @@ go_around_code = 1
 lead_to_section_code = 2
 use_mp3_code = 3
 code = 0
-mp3 = -1
+mp3 = "-1"
 section_id = -1
 ##load data to retrieve answer
 chitchat_file = '/usingdata/chitchat.csv'
@@ -187,7 +187,7 @@ def predict(inmessage):
     lead_to_section_code = 2
     use_mp3_code = 3
     code = 0
-    mp3 = -1
+    mp3 = "-1"
     section_id = -1
 
     inmessage = inmessage.lower()
@@ -422,17 +422,17 @@ if __name__ == "__main__":
                             {"word":"nineth","section":9},
                             {"word":"tenth","section":10},
                             {"word":"eleventh","section":11},
-                            {"word":"one","section":1},
-                            {"word":"two","section":2},
-                            {"word":"three","section":3},
-                            {"word":"four","section":4},
-                            {"word":"five","section":5},
-                            {"word":"six","section":6},
-                            {"word":"seven","section":7},
-                            {"word":"eight","section":8},
-                            {"word":"nine","section":9},
-                            {"word":"ten","section":10},
-                            {"word":"eleven","section":11},
+                            {"word":" one ","section":1},
+                            {"word":" two ","section":2},
+                            {"word":" three ","section":3},
+                            {"word":" four ","section":4},
+                            {"word":" five ","section":5},
+                            {"word":" six ","section":6},
+                            {"word":" seven ","section":7},
+                            {"word":" eight ","section":8},
+                            {"word":" nine ","section":9},
+                            {"word":" ten ","section":10},
+                            {"word":" eleven ","section":11},
                             {"word":"1","section":1},
                             {"word":"2","section":2},
                             {"word":"3","section":3},
