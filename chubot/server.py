@@ -18,8 +18,10 @@ from custom_lib import changeUnicode
 # from langdetect import detect
 botname = "an"
 filename = os.path.dirname(__file__)
+domain_name = "usingdata/new_domain.json"
+action_domain_file = os.path.join(filename, domain_name)
 
-action_domain_file = filename + "usingdata/new_domain.json"
+print(action_domain_file)
 action = ChuBotAction(botname)
 action.load_domain(action_domain_file)
 
@@ -31,15 +33,15 @@ code = 0
 mp3 = "-1"
 section_id = -1
 ##load data to retrieve answer
-chitchat_file = filename +  'usingdata/chitchat.csv'
-ask_what_file =filename +  'usingdata/ask_what.csv'
-ask_who_file = filename + 'usingdata/ask_who.csv'
-ask_where_file = filename + 'usingdata/ask_where.csv'
-ask_number_file = filename + 'usingdata/ask_number.csv'
-ask_when_file = filename + 'usingdata/ask_when.csv'
-lead_to_section_file = filename + 'usingdata/lead_to_section3.csv'
-command_file = filename + 'usingdata/command.csv'
-presentation_file = filename + 'usingdata/presentation3.csv'
+chitchat_file = os.path.join(filename,  'usingdata/chitchat.csv')
+ask_what_file = os.path.join(filename, 'usingdata/ask_what.csv')
+ask_who_file = os.path.join(filename, 'usingdata/ask_who.csv')
+ask_where_file = os.path.join(filename, 'usingdata/ask_where.csv')
+ask_number_file = os.path.join(filename, 'usingdata/ask_number.csv')
+ask_when_file = os.path.join(filename, 'usingdata/ask_when.csv')
+lead_to_section_file = os.path.join(filename, 'usingdata/lead_to_section3.csv')
+command_file = os.path.join(filename, 'usingdata/command.csv')
+presentation_file = os.path.join(filename, 'usingdata/presentation3.csv')
 answer_retriever = ChitChat(chitchat_file)
 answer_retriever.add_more_data(ask_what_file)
 answer_retriever.add_more_data(ask_who_file)
@@ -53,7 +55,7 @@ answer_retriever.add_more_data(presentation_file)
 nlp = spacy.load('vi_spacy_model')
 def create_model(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data(filename + "usingdata/full_train.json")
+    chubot.load_data(os.path.join(filename, "usingdata/full_train.json"))
     # chubot.load_data("usingdata/vi_nlu_ask_way.json")
     meta = chubot.train()
     # print(meta)
@@ -61,7 +63,7 @@ def create_model(name):
 
 def test_entity_train(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data(filename + "usingdata/full_train.json")
+    chubot.load_data(os.path.join(filename,"usingdata/full_train.json"))
     # chubot.load_data("usingdata/vi_nlu_ask_way.json")
     meta = chubot.train_nercrf()
 
@@ -89,10 +91,10 @@ def encode_intent(intent):
     
 def test_intent_train(name):
     chubot = ChuBotBrain(name, language='vi')
-    chubot.load_data(filename + "/data/train.json")
+    chubot.load_data(os.path.join(filename, "data/train.json"))
     # chubot.load_data("data/vi_nlu_ask_way.json")
     meta = chubot.train_intent_classification()
-    test_link = filename + "/data/test.txt"
+    test_link = os.path.join(filename, "data/test.txt")
     with open(test_link,'r',encoding='utf=8') as f:
         rows = f.readlines()
     intent_list_test = []
@@ -110,13 +112,13 @@ def test_intent_train(name):
 
 def test_response():
     botname = "an"
-    action_domain_file = filename + "data/action_domain.json"
+    action_domain_file = os.path.join(filename, "data/action_domain.json")
     chubot = ChuBotAction(botname, language='vi')
     chubot.load_domain(action_domain_file)
     chubot.run_commandline_bot()
 
 def test_answer_retrieval(filename):
-    chitchat_file = filename + 'usingdata/chitchat_train.csv'
+    chitchat_file = os.path.join(filename, 'usingdata/chitchat_train.csv')
     chitchat = ChitChat(chitchat_file)
     with open(filename,'r',encoding='utf-8')as f:
         rows = f.readlines()

@@ -15,7 +15,7 @@ class ChuBotBrain():
         
         self.name = name
         self.filename = os.path.dirname(__file__)
-        self.model_folder = self.filename + "models"
+        self.model_folder = os.path.join(self.filename, "models")
         
         self.crf_model_path = os.path.join(
             "models", self.name + "_NERCRF.pkl")
@@ -194,7 +194,7 @@ class ChuBotBrain():
         # # TODO Word embedding
         tfidf_train_set = []
         tfidf_train_set.extend(x_join_tokens)
-        with open(self.filename+"data/none_data.txt",'r',encoding='utf-8') as f:
+        with open(os.path.join(self.filename,"data/none_data.txt"),'r',encoding='utf-8') as f:
             sentences = f.readlines()
         # print(sentences)
         tfidf_train_set.extend(sentences)
