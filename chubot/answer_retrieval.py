@@ -27,7 +27,7 @@ class ChitChat:
         targets = [
             q for q, a in qa_list
         ]
-        word2vecmodel_link = self.dirname + "/models/wiki.vi.model.bin"
+        word2vecmodel_link = os.path.join( self.dirname, "models/wiki.vi.model.bin")
         self.word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
         self.targets = []
         self.targets.append(targets)
