@@ -8,6 +8,7 @@ import sys
 class ChuBotAction():
 
     def __init__(self, botname, language='vi'):
+        self.filename = os.path.dirname(__file__)
         self.botname = botname
         self.chubot = ChuBotBrain(botname, language)
         self.followup_actions = None

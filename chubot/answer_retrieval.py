@@ -4,7 +4,7 @@ import pandas as pd
 import heapq
 import datetime
 from gensim.models import KeyedVectors
-
+import os
 #load spacy model
 #Need to install spacy version >2.1
 # and install vi_spacy
@@ -15,6 +15,7 @@ from gensim.models import KeyedVectors
 class ChitChat:
     def __init__(self, datafile):
         #read data file
+        self.dirname = os.path.dirname(__file__)
         df = pd.read_csv(datafile, header=None, names=['intent', 'q', 'noisyq', 'a'])
         qa = df[['q', 'a']].copy()
         # Remove duplicate questions
@@ -26,7 +27,7 @@ class ChitChat:
         targets = [
             q for q, a in qa_list
         ]
-        word2vecmodel_link = "/models/wiki.vi.model.bin"
+        word2vecmodel_link = self.dirname + "/models/wiki.vi.model.bin"
         self.word2vec = KeyedVectors.load_word2vec_format(fname=word2vecmodel_link,binary=True,unicode_errors='strict')
         self.targets = []
         self.targets.append(targets)

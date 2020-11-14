@@ -14,12 +14,13 @@ class ChuBotBrain():
     def __init__(self, name, language='vi'):
         
         self.name = name
-        self.model_folder = "/models"
+        self.filename = os.path.dirname(__file__)
+        self.model_folder = self.filename + "models"
         
         self.crf_model_path = os.path.join(
-            "/models", self.name + "_NERCRF.pkl")
+            "models", self.name + "_NERCRF.pkl")
         self.intent_cls_model_path = os.path.join(
-            "/models", self.name + "_intent_classification.pkl")
+            "models", self.name + "_intent_classification.pkl")
         self.language = language
         self.common_examples = []
         self.regex_features = []
@@ -193,7 +194,7 @@ class ChuBotBrain():
         # # TODO Word embedding
         tfidf_train_set = []
         tfidf_train_set.extend(x_join_tokens)
-        with open("/data/none_data.txt",'r',encoding='utf-8') as f:
+        with open(self.filename+"data/none_data.txt",'r',encoding='utf-8') as f:
             sentences = f.readlines()
         # print(sentences)
         tfidf_train_set.extend(sentences)
@@ -317,7 +318,7 @@ class ChuBotBrain():
 
         # dataset
         dataset = []
-        with open('log.txt','w',encoding='utf-8') as f:
+        with open(self.filename+'log.txt','w',encoding='utf-8') as f:
             f.write(str(self.common_examples))
         example_count = 0
         for example in self.common_examples:
