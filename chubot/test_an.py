@@ -169,8 +169,8 @@ def test_input_predict():
             break
         inmessage = inmessage.lower()
         # print(inmessage)
-        # predict(inmessage)
-        line = determind_section(inmessage)
+        line = predict(inmessage)
+        # line = determind_section(inmessage)
         # line = get_confirm(inmessage)
         print(str(line))
 #
@@ -330,18 +330,19 @@ def determind_section(inmessage):
                 "code": 1, "response": "xin hãy đi theo tôi"}
                 return result_json
     most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
+    print(most_similar_question,answer)
     if answer =='all':
         result_json = {"mp3":"-1","section_id":-1,
                 "code": 1, "response": "xin hãy đi theo tôi"}
         return result_json
-    most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
+    # most_similar_question, answer = answer_retriever.retrieve_section(inmessage,6)[0]
     if most_similar_question!='idk':
         result_json = {"mp3":answer+'-vi',"section_id":int(answer),
         "code": 5, "response": ""}
         print(json.dumps(result_json, ensure_ascii=False))
         return result_json
     result_json = {"mp3":"-1","section_id":-1,
-            "code": 6, "response": "Tôi không nghe rõ, bạn nói lại được không"}
+            "code": 6, "response": "xin lỗi tôi không thể trả lời câu hỏi này, bạn có thể hỏi câu khác được không"}
     # print(json.dumps(result_json, ensure_ascii=False))
     return result_json
 

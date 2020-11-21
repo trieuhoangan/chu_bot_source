@@ -452,7 +452,7 @@ if __name__ == "__main__":
                         print(json.dumps(result_json, ensure_ascii=False))
                         return result_json
                 result_json = {"mp3":"-1","section_id":-1,
-                        "code": 6, "response": "Tôi không nghe rõ, bạn nói lại được không"}
+                        "code": 6, "response": "Tôi không thể trả lời câu hỏi này, bạn có thể hỏi lại được không"}
                 # print(json.dumps(result_json, ensure_ascii=False))
                 return result_json
     #     # return "null"
