@@ -393,11 +393,6 @@ if __name__ == "__main__":
                         result_json = {"mp3":"100-en","section_id":-1,
                         "code": 3, "response": "Bạn muốn thuyết trình về cái gì"}
                         return result_json
-                for word in quesion_list:
-                    if word in mess:
-                        result_json = {"mp3":"-1","section_id":-1,
-                        "code": 0, "response": "bạn muốn hỏi j"}
-                        return result_json
                 result_json = {"mp3":"-1","section_id":-1,
                 "code": 7, "response": "tôi không nghe rõ"}
                 return result_json
