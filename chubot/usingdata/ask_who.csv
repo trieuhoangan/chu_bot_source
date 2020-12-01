@@ -1,16 +1,14 @@
 intent,q,noisyq,a
 unknown,idk,a,Xin lỗi mình không thể trả lời được câu hỏi này bạn có thể hỏi lại được không
 unknown,idk,a,Xin lỗi tôi không đủ dữ liệu để trả lời câu hỏi này
-ask_who, giám đốc và các phó giám đốc  đại học quốc gia hà nội do ai bổ nhiệm  miễn nhiệm, b, thủ tướng chính phủ
 ask_who, khai giảng khóa đầu tiên của đại học quốc gia việt nam dưới sự chủ tọa của ai, b, chủ tịch hồ chí minh
 ask_who, ngày 20/12/2003  ai là người đã chính thức động thổ xây dựng  đại học quốc gia hà nội, b, thủ tướng chính phủ phan văn khải
 ask_who, ai là người ký sắc lệnh thành lập đại học quốc gia việt nam – nay là đại học quốc gia hà nội , b, chủ tịch hồ chính minh đã kí sắc lệnh thành lập đại học quốc gia việt nam
 ask_who, ai đã kí quyết định thành lập đại học tổng hợp hà nội, b, thủ tướng chính phủ
 ask_who, hiệu trưởng đầu tiên của đại học tổng hợp hà nội là ai, b, giáo sư ngụy như kon tum là hiệu trưởng đầu tiên trường đại học tổng hợp hà nội
-ask_who, ai là người đã ký quyết định thành lập viện trần nhân tông vào ngày 01/09/2016, b, thủ tướng chính phủ đã kí quyết định thành lập viện trần nhân tông
 ask_who, bệnh viện  đại học quốc gia hà nội được thành lập theo quyết định của ai, b, giám đốc đại học quốc gia hà nội
 ask_who, thủ tướng chính phủ nước việt nam dân chủ cộng hòa nguời mà đã ký quyết định số 128/cp ngày 14/8/1967 chia trường đại học sư phạm hà nội thành 3 trường đại học sư phạm thuộc bộ giáo dục là ai, b, thủ tướng phan văn khải đã kí quyết định chia đại học sư phạm thành 3 trường đại học sư phạm
-ask_who, trưởng ban đào tạo của  đại học quốc gia hà nội hiện này là ai, b, giáo sư.tiến sĩkh. nguyễn đình đức là trưởng ban đào tạo của đại học quốc gia hà nội
+ask_who, trưởng ban đào tạo của  đại học quốc gia hà nội hiện này là ai, b, giáo sư.tiến sĩ khoa học . nguyễn đình đức là trưởng ban đào tạo của đại học quốc gia hà nội
 ask_who, ai là người đã ký quyết định số 2068/qđ-ttg ngày 21/12/2017 về việc chuyển giao chủ dự án xây dựng  đại học quốc gia hà nội tại hòa lạc từ bộ xây dựng sang  đại học quốc gia hà nội, b, thủ tướng chính phủ
 ask_who, ai là người đầu tiên đề xuất việc thành lập các lớp đào tạo học sinh năng khiếu hiện nay là 02 trường trung học phổ thông chuyên , b, cố thủ tướng phạm văn đồng
 ask_who, bài hát truyền thống của  đại học quốc gia hà nội do ai sáng tác, b, nhạc sĩ hoàng vân sáng tác ra bài hát truyền thống của đại học quốc gia hà nội
@@ -25,10 +23,10 @@ ask_who, ai hiện đang chức chủ tịch hội đồng đảm bảo chất l
 ask_who, nữ phó giáo sư trẻ nhất năm 2016 là một giảng viên của  đại học quốc gia hà nội  cô là ai, b, bùi thị hồng thái là nữ phó giáo sư trẻ nhất đại học quốc gia hà nội năm 2016 
 ask_who, giáo sư trẻ nhất năm 2006 là một giảng viên của  đại học quốc gia hà nội  là ai, b, giáo sư.tiến sĩ nguyễn hữu dư là giáo sư trẻ nhất đại học quốc gia hà nội năm 2006
 ask_who, hiện nay  ai đang giữ chức chủ tịch hội đồng khoa học và đào tạo  đại học quốc gia hà nội, b, vũ minh giang hiện đang là chủ tịch hội đông khoa học và đào tạo đại học quốc gia hà nội
-ask_who, hiệu trưởng trường đại học ngoại ngữ   đại học quốc gia hà nội hiện nay là ai, b, đỗ tuấn minh đang là hiệu trưởng trường đại học ngoại ngữ.
-ask_who, hiệu trưởng trường đại học công nghệ   đại học quốc gia hà nội hiện nay là ai, b, nguyễn việt hà đang là hiệu trưởng trường đại học công nghệ.
-ask_who, hiệu trưởng trường đại học kinh tế   đại học quốc gia hà nội hiện nay là ai, b, nguyễn trúc lê đang là hiệu trưởng trường đại học kinh tế.
-ask_who, hiệu trưởng trường đại học giáo dục   đại học quốc gia hà nội hiện nay là ai, b, nguyễn quý thanh đang là hiệu trưởng trường đại học giáo dục
+ask_who, hiệu trưởng trường đại học ngoại ngữ   đại học quốc gia hà nội hiện nay là ai, b, thầy đỗ tuấn minh đang là hiệu trưởng trường đại học ngoại ngữ.
+ask_who, hiệu trưởng trường đại học công nghệ   đại học quốc gia hà nội hiện nay là ai, b, thầy nguyễn việt hà đang là hiệu trưởng trường đại học công nghệ.
+ask_who, hiệu trưởng trường đại học kinh tế   đại học quốc gia hà nội hiện nay là ai, b, thầy nguyễn trúc lê đang là hiệu trưởng trường đại học kinh tế.
+ask_who, hiệu trưởng trường đại học giáo dục   đại học quốc gia hà nội hiện nay là ai, b, thầy nguyễn quý thanh đang là hiệu trưởng trường đại học giáo dục
 ask_who, viện trưởng viện trần nhân tông   đại học quốc gia hà nội hiện nay là ai, b, phó giáo sư.tiến sĩ nguyễn kim sơn đang là viện trưởng viện trần nhân tông  đại học quốc gia hà nội
 ask_who, viện trưởng viện công nghệ thông tin   đại học quốc gia hà nội hiện nay là ai, b, phó giáo sư.tiến sĩ. đỗ toàn năng đang là viện trưởng viện công nghệ thông tin  đại học quốc gia hà nội
 ask_who, viện trưởng viện việt nam học và khoa học phát triển   đại học quốc gia hà nội hiện nay là ai, b, giáo sư.tiến sĩ phạm hồng tung đang là viện trưởng viện việt nam học và khoa học phát triển  đại học quốc gia hà nội
@@ -38,18 +36,14 @@ ask_who, viện trưởng viện quốc tế pháp ngữ   đại học quốc g
 ask_who, hiệu trưởng đầu tiên của trường đại học tổng hợp hà nội là ai, b, ngụy như kon tum là hiệu trưởng đầu tiên của đại học tổng hợp
 ask_who, giám đốc đầu tiên của đại học quốc gia hà nội là ai, b, nguyễn văn đạo là giám đốc đầu tiên của đại học quốc gia hà nội
 ask_who, ai là nhà toán học việt nam đương đại đầu tiên được đặt tên đường, b, lê văn thiêm là nhà toán học đầu tiên được đặt tên đường
-ask_who, năm 2017  nhà giáo nào của  đại học quốc gia hà nội đã nhận giải thưởng hồ chí minh về khoa học và công nghệ lần thứ v với công trình lịch sử và văn hóa việt nam - tiếp cận bộ phận, b, phan huy lê nhận giải thưởng hồ chí minh về khoa học và công nghệ lần thứ v
-ask_who, năm 2017  nhà giáo nào của  đại học quốc gia hà nội đã nhận giải thưởng nhà nước về khoa học và công nghệ lần thứ v với cụm công trình nghiên cứu cơ bản và định hướng ứng dụng các vật liệu từ liên kim loại đất hiếm - kim loại chuyển tiếp, b, thân đức hiền nhận giải thưởng nhà nước về khoa học và công nghệ lần thứ v
-ask_who, hiệu trưởng trường đại học khoa học tự nhiên   đại học quốc gia hà nội hiện nay là ai, b, nguyễn văn nội hiện đang là hiệu trưởng trường đại học khoa học tự nhiên  đại học quốc gia hà nội
-ask_who, ai là đại biểu quốc hội việt nam khóa 3 1964-1971 và 4 1971-1975 trong những người sau đây, b, ngụy như kon tum là đại biểu quốc hội khóa 3 và khóa 4
+ask_who, hiệu trưởng trường đại học khoa học tự nhiên   đại học quốc gia hà nội hiện nay là ai, b, thầy nguyễn văn nội hiện đang là hiệu trưởng trường đại học khoa học tự nhiên  đại học quốc gia hà nội
 ask_who, nhóm tác giả trường đại học công nghệ   đại học quốc gia hà nội đã đạt giải nhì giải thưởng nhân tài đất việt năm 2017 với sản phẩm mang tên gì, b, doit – hệ thống hỗ trợ nâng cao chất lượng văn bản
 ask_who, chánh văn phòng  đại học quốc gia hà nội hiện nay là ai, b, trần quốc bình hiện đang là chánh văn phòng đại học quốc gia hà nội
-ask_who, trưởng ban tổ chức cán bộ  đại học quốc gia hà nội hiện nay là ai, b, nguyễn hiệu đang là trưởng ban tổ chức cán bộ đại học quốc gia hà nội
-ask_who, trưởng ban đào tạo  đại học quốc gia hà nội hiện nay là ai, b, nguyễn đình đức đang là trưởng ban đào tạo đại học quốc gia hà nội
+ask_who, trưởng ban tổ chức cán bộ  đại học quốc gia hà nội hiện nay là ai, b, thầy nguyễn hiệu đang là trưởng ban tổ chức cán bộ đại học quốc gia hà nội
+ask_who, trưởng ban đào tạo  đại học quốc gia hà nội hiện nay là ai, b,thầy nguyễn đình đức đang là trưởng ban đào tạo đại học quốc gia hà nội
 ask_who, trưởng ban chính trị và công tác học sinh  sinh viên của  đại học quốc gia hà nội hiện nay là ai, b, đinh văn hường hiện đang là trưởng ban chính trị và công tác học sinh  sinh viên đại học quốc gia hà nội
 ask_who, ai là tác giả của cụm công trình lịch sử và văn hóa việt nam gồm 4 cuốn lịch sử việt nam từ nguồn gốc đến cuối thế kỉ xix  lịch sử cổ đại việt nam  việt nam văn hóa sử đại cương  đất nước việt nam qua các đời, b, giáo sư. đào duy anh
 ask_who, ai là hiệu trưởng đầu tiên của trường đại học văn khoa 1954-1956, b, đặng thai mai là hiệu trưởng đầu tiên đại học văn khoa
-ask_who, ai là người vinh dự nhận giải thưởng dành cho các nhà khoa học nữ có nhiều cống hiến  giải thưởng kovale giáo sưkaia lần đầu tiên được trao tại việt nam năm 1988, b, giáo sư.tiến sĩkh.ngưt phạm thị trân châu đã từng nhận giải thưởng kovalevskaia
 ask_who, ai là nữ giáo sư đầu tiên của ngành ngôn ngữ học việt nam, b, hoàng thị châu là nữ giáo sư đầu tiên ngành ngôn ngữ học việt nam
 ask_who, ông nguyên là bộ trưởng bộ giáo dục  tên ông nay đã trở thành tên một con phố dài 700m của quận tây hồ  hà nội ông là ai, b, giáo sư. đặng thai mai
 ask_who, tác giả của bộ giáo trình giải tích 3 tập là ai, b, giáo sư.tiến sĩkh.ngưt nguyễn thừa hợp là tác giả của bộ giải tích
@@ -76,3 +70,4 @@ ask_who, tuổi trẻ đại học quốc gia hà nội có một gương mặt 
 ask_who, phó chủ tịch hội sinh viên đại học quốc gia hà nội khóa iv  là sinh viên là ai, b, đặng huyền thư
 ask_who, chủ tịch hội sinh viên  đại học quốc gia hà nội là ai, b, đồng chí hứa thanh hoa được bầu làm tân chủ tịch hội sinh viên đại học quốc gia hà nội
 ask_who, tiến sĩ nguyễn kim sơn là ai,a, nguyễn kim sơn (sinh ngày 18 tháng 11 năm 1966) là một nhà khoa học về lĩnh vực khoa học xã hội và nhân văn. ông hiện là giám đốc đại học quốc gia hà nội. 
+ask_who, phó giám đốc đại học quốc gia hà nội hiện nay là ai, b, Phó giáo sư tiến sĩ Phạm Bảo Sơn và phó giáo sư tiến sĩ Nguyễn Hoàng Hải hiện đang là phó giám đốc đại học quốc gia hà nội
