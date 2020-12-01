@@ -15,12 +15,12 @@ class ChuBotBrain():
         
         self.name = name
         self.filename = os.path.dirname(__file__)
-        self.model_folder = os.path.join(self.filename, "models")
+        self.model_folder = os.path.join(self.filename, "/models")
         
-        self.crf_model_path = os.path.join(
-            "models", self.name + "_NERCRF.pkl")
-        self.intent_cls_model_path = os.path.join(
-            "models", self.name + "_intent_classification.pkl")
+        self.crf_model_path = os.path.join(self.filename +
+            "/models", self.name + "_NERCRF.pkl")
+        self.intent_cls_model_path = os.path.join(self.filename +
+            "/models", self.name + "_intent_classification.pkl")
         self.language = language
         self.common_examples = []
         self.regex_features = []
